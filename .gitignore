@@ -1,0 +1,12 @@
+/*
+!/.gitignore
+!/01_游戏开发/
+!/02_美术资源/
+*.zip
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Bb]uilds/
+**/UserSettings/
+**/.env*
