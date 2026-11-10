@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-10",
+  "version": "v01",
+  "method": "built-in image_gen",
+  "status": "待用户确认",
+  "key": "logo",
+  "file": "Logo_交子赶工记_正方形_v01_20261110.png",
+  "reference": "03_历史成果/原工作区/output/jiaozi-gangongji-visual-kit-20261103-v2/01_交子赶工记_Logo.png",
+  "prompt": "Use case: logo-brand / precise-object-edit. Redesign the supplied official 《交子赶工记》 game logo into a strong SQUARE1:1 standalone logo composition. Output a truly square canvas, not landscape with padding bars. Preserve the exact FIVE Chinese characters and official naming: top line “交子”, bottom line “赶工记”. Every character complete and legible. No additional text.\nMaintain the established joyful folded-paper identity: broad expressive hand-cut Chinese lettering, ivory paper faces, ochre/honey layered edges, dark indigo united silhouette as backing, restrained cinnabar folded stroke tips, teal banknote borders. A small pair of overlapping folded JIAOZI paper notes with square-hole coin motif integrated into upper-left corner, smaller than lettering. Small cinnabar circular accent lower-right. Make entire graphic compact and roughly square, centered with safe margins of8-10% on all sides; not a stretched or distorted version of original wide logo. Large upper two characters and balanced lower three characters fill the square naturally. Gentle asymmetry gives handcrafted game energy while strokes remain clean.\nWarm ivory solid paper background with restrained subtle texture, original opacity preserved. No rounded app-icon frame, no buttonmockup, no external device, no scene, no characters or mascot figures, no slogan, no English, no watermark. Texture lighter and cleaner than original, no dense wrinkles that obscure text. Soft relief/shadow only, handsome high-contrast readability at thumbnail size. One square logo only, not a design board and not a grid of alternatives."
+}

@@ -1,0 +1,216 @@
+{
+  "version": "v02_20261110",
+  "status": "美术与布局拟案；待图片确认及首组联调",
+  "units": "meters",
+  "dimension_order": [
+    "width",
+    "depth",
+    "height"
+  ],
+  "coordinate_system": {
+    "layout": "Unity: +X right, +Y up, +Z from front to back",
+    "origin": "floor front-left corner",
+    "blender": "Z up; export axis conversion requires validation"
+  },
+  "base": {
+    "floor": [
+      12,
+      8
+    ],
+    "tile": [
+      2,
+      2,
+      0.1
+    ],
+    "character_height_including_hat": 1.2,
+    "character_collider_diameter_initial": 0.65,
+    "table_height": 0.65,
+    "front_wall_height": 0.45,
+    "back_wall_height": 2.4,
+    "clear_lane_z": [
+      3.3,
+      5.7
+    ],
+    "lane_width": 2.4,
+    "paper": [
+      0.42,
+      0.6
+    ],
+    "screen": [
+      0.52,
+      0.7
+    ]
+  },
+  "modules": [
+    {
+      "id": "env_wall_plain",
+      "dimensions": [
+        2,
+        0.2,
+        2.4
+      ]
+    },
+    {
+      "id": "env_wall_window",
+      "dimensions": [
+        2,
+        0.2,
+        2.4
+      ]
+    },
+    {
+      "id": "env_wall_corner",
+      "dimensions": [
+        0.4,
+        0.4,
+        2.4
+      ]
+    },
+    {
+      "id": "env_pillar",
+      "dimensions": [
+        0.2,
+        0.2,
+        2.4
+      ]
+    },
+    {
+      "id": "env_beam",
+      "dimensions": [
+        2,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "id": "env_portal",
+      "dimensions": [
+        2.8,
+        0.2,
+        2.4
+      ]
+    },
+    {
+      "id": "env_floor_courtyard",
+      "dimensions": [
+        2,
+        2,
+        0.1
+      ]
+    },
+    {
+      "id": "env_floor_workshop",
+      "dimensions": [
+        2,
+        2,
+        0.1
+      ]
+    },
+    {
+      "id": "env_wall_low",
+      "dimensions": [
+        2,
+        0.2,
+        0.45
+      ]
+    },
+    {
+      "id": "env_eave",
+      "dimensions": [
+        2,
+        0.6,
+        0.4
+      ]
+    }
+  ],
+  "portal_opening": {
+    "width": 2.4,
+    "height": 2.1
+  },
+  "stations": [
+    {
+      "task": "F05",
+      "id": "station_pulp",
+      "dimensions": [
+        2,
+        1.2,
+        0.65
+      ],
+      "center_xz": [
+        2,
+        2.4
+      ]
+    },
+    {
+      "task": "F06",
+      "id": "station_dry",
+      "dimensions": [
+        2,
+        0.8,
+        1.6
+      ],
+      "center_xz": [
+        2.3,
+        6.7
+      ]
+    },
+    {
+      "task": "F07",
+      "id": "station_print",
+      "dimensions": [
+        1.6,
+        1,
+        0.65
+      ],
+      "center_xz": [
+        8.1,
+        6.2
+      ]
+    },
+    {
+      "task": "F08",
+      "id": "station_stamp",
+      "dimensions": [
+        1.6,
+        1,
+        0.65
+      ],
+      "center_xz": [
+        10.3,
+        2.8
+      ]
+    },
+    {
+      "task": "F09",
+      "id": "station_delivery",
+      "dimensions": [
+        2,
+        0.6,
+        2.4
+      ],
+      "center_xz": [
+        10.6,
+        7.6
+      ]
+    },
+    {
+      "task": "F04",
+      "id": "station_shared",
+      "dimensions": [
+        1,
+        1,
+        0.65
+      ],
+      "center_xz": [
+        7.8,
+        1.2
+      ]
+    }
+  ],
+  "notes": [
+    "Coordinates are layout proposal values, not measured geometry from the remote developer's Unity project.",
+    "Table height excludes separately modeled tools.",
+    "All stations contain one slot except station_dry with exactly two side-by-side slots; dry-slot center distance 1m.",
+    "Raster views may simplify details; use these numeric dimensions and the written specification when making scale blockouts."
+  ]
+}

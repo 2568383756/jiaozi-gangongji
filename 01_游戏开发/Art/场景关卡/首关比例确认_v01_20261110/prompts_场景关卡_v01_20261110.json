@@ -1,0 +1,76 @@
+{
+  "version": "v01_20261110",
+  "date": "2026-11-10",
+  "method": "built-in image_gen; no Blender modeling",
+  "status": "待用户图片确认；未做Unity接入与运行验收",
+  "tasks": [
+    "F15",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09"
+  ],
+  "assets": [
+    {
+      "file": "01_建筑模块尺寸图_v01_20261110.png",
+      "original_generated_path": "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-f1981de6-b01b-4c63-94a2-a4b9d46a5714.png",
+      "initial_prompt": "Use case: stylized-concept. Edit and expand image 1's four architecture modules into a coherent professional modular environment concept sheet. Image 2 is the exact character style and scale reference; call him 纸团, never the old name. 《交子赶工记》第一关“开张第一单”的纸艺游戏美术确认稿。必须保持参考图的古代中国纸艺玩具风格：宽大折面，叠纸边缘，克制手绘质感，暖纸白、蜂蜜木色、靛蓝瓦，青绿绑带与朱红小点缀。不用噪点颗粒，不要塑料高光，不要现代设施。所有图共用尺寸基线：1单位=1米；纸团含帽高1.20m，碰撞直径参考0.65m；普通工作台面高0.65m；建筑高墙2.40m；低前墙0.45m；通道与门净宽2.40m。画面是供确认的美术稿，不是已经完成的模型。\nCreate a very crisp landscape 3:2 production-art board on warm ivory, with clean Chinese typography, fine gray dimension lines and generous margins. Title exactly “场景模块 · 比例确认 v01”; subtitle exactly “尺寸：宽 × 深 × 高 / m”. Ten numbered cells in a 5-column, 2-row grid, EACH ISOLATED ASSET drawn using the SAME orthographic isometric camera and SAME pixels-per-meter, no individual auto-rescaling. Tall pieces clearly taller than floor pieces. Small ruler and one 1.20m character at the side or footer, not an 11th module.\nAssets and exact labels:\n01 纸院地面 / 2.0 × 2.0 × 0.10: pale warm cut-paper paving flat square, layered edge.\n02 印坊地面 / 2.0 × 2.0 × 0.10: honey beige wide wooden planks in paper material, same tile square and thickness.\n03 素面直墙 / 2.0 × 0.20 × 2.40: cream paper infill and wood edges, NO built-in roof.\n04 窗格后墙 / 2.0 × 0.20 × 2.40: same envelope with restrained wood lattice window, NO built-in roof.\n05 转角接头 / 0.40 × 0.40 × 2.40: L-shaped upright corner with 0.20m wall thickness, visibly a corner with two attachment faces.\n06 低前墙 / 2.0 × 0.20 × 0.45: very low cream paper parapet, subtle blue coping included in height.\n07 方柱 / 0.20 × 0.20 × 2.40: single upright square wooden pillar.\n08 横梁 / 2.0 × 0.20 × 0.20: straight horizontal honey wood beam lying in presentation space.\n09 贯通门框 / 2.80 × 0.20 × 2.40: 0.20m square posts with a header, NO door leaf, clear opening labeled “净宽 2.40 / 净高 2.10”; connector ends visible so it reads as module that joins walls, not a standalone door in a level.\n10 敞口檐片 / 2.0 × 0.60 × 0.40: narrow indigo paper roof-tile eave strip with timber underside; only edge strip, not full closed roof.\nUnder footer put exactly “角色含帽高 1.20m · 台高 0.65m · 通道净宽 2.40m” and “美术比例拟案 · 尺寸以清单为准”.\nDo not add tree, bookshelf, workstation, extra modules, doors, logos or watermark. Technical clean visibility, no props obscuring seams. Labels should be legible; dimension values above are authoritative.",
+      "reference_images": [
+        "03_历史成果/原工作区/output/jiaozi-gangongji-assets3-20261103/04_纸坊建筑模块_四格参考.png",
+        "03_历史成果/原工作区/output/jiaozi-production-assets-20261103/01_纸团_多视图_旧标阿楮.png"
+      ]
+    },
+    {
+      "file": "02_工位角色比例图_v01_20261110.png",
+      "original_generated_path": "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-6204f5ed-349a-4fb3-b570-bc969ef9a02d.png",
+      "initial_prompt": "Use case: stylized-concept. Recompose the six references into a single consistent workstation/character scale sheet, modifying the old objects to match the current specifications. References 1-4 are style and form references; reference 5 is the exact paper-hat boy character 纸团, not the obsolete name. 《交子赶工记》第一关“开张第一单”的纸艺游戏美术确认稿。必须保持参考图的古代中国纸艺玩具风格：宽大折面，叠纸边缘，克制手绘质感，暖纸白、蜂蜜木色、靛蓝瓦，青绿绑带与朱红小点缀。不用噪点颗粒，不要塑料高光，不要现代设施。所有图共用尺寸基线：1单位=1米；纸团含帽高1.20m，碰撞直径参考0.65m；普通工作台面高0.65m；建筑高墙2.40m；低前墙0.45m；通道与门净宽2.40m。画面是供确认的美术稿，不是已经完成的模型。\nLandscape 3:2 ivory production board, title “五工位与共享台 · 统一比例 v01”. Six cells, three columns and two rows. Render all six stations at identical orthographic camera angle, identical pixels-per-meter, on identical subtle floor grids. Put the SAME 1.20m character standing beside EACH station as a scale reference, empty hands, clearly shorter than rack and architecture but taller than tabletops. His head and folded hat must not change dimensions between cells. Fine dimension lines, clear Chinese labels, spacious composition.\nTop left: “F05 抄纸槽” “2.0 × 1.2 × 0.65m”. Low open honey wooden vat with pale aqua pulp water; separate bamboo screen nested at waterline. One working area only.\nTop middle: “F06 双槽晾纸架” “2.0 × 0.8 × 1.6m”. EDIT THE OLD THREE-PAPER RACK INTO EXACTLY TWO SIDE-BY-SIDE HANGING SLOTS. Two separate sheets, left visibly wet pale gray-blue, right dry ivory, two sets of clips, no third sheet, no stack. Label slots “A” “B”. Slots center distance 1.0m.\nTop right: “F07 印刷台” “1.6 × 1.0 × 0.65m”. Low wooden bench with a single flat jiaozi woodblock showing paper-hat boy and double-bun girl, black ink bowl and rubbing pad together in a narrow tool area. No modern press, no paper stacks.\nBottom left: “F08 盖印台” “1.6 × 1.0 × 0.65m”. Same bench family and exact same tabletop height as print table; one single jiaozi sheet and one separate red block seal, clear empty operating edge.\nBottom middle: “F09 交付窗口” “2.0 × 0.6 × 2.4m”. A wall-mounted receiving window, complete cream paper wall panel and wooden frame attached to its sides, low receiving counter at exactly 0.65m, single teal receiving tray with small red receipt marker; no free standing detached window. Add “台高 0.65m”.\nBottom right: “F04 单槽共享台” “1.0 × 1.0 × 0.65m”. Plain empty square wooden table, ONE central shallow paper placement outline, NO stacked materials, NO extra compartments.\nFooter show a horizontal ruler plus a small separate flat single sheet silhouette “纸张 0.42 × 0.60m” and screen “帘框 0.52 × 0.70m”. Include text “台面统一 0.65m · 角色含帽高 1.20m · 美术比例拟案”. Rendering must prioritize accurate relative size over pretty framing, top of all ordinary tables reaches same low torso level on the reference character. Do not reproduce opaque black or golden glow backgrounds of reference PNGs. No UI, no Boss, no extra workstations.\nCritical scale check: use a front-biased orthographic view, tabletop y=0.65 and top of hat y=1.20 against a faint vertical centimeter ruler. The rack at1.6m is 1.333 times as tall as character; delivery wall at2.4m is TWICE character height. Do not enlarge characters to fill their cells. Dimension labels are not a substitute for visibly matching proportions.",
+      "reference_images": [
+        "03_历史成果/原工作区/output/jiaozi-gangongji-assets2-20261103/01_抄纸槽_独立透明底.png",
+        "03_历史成果/原工作区/output/jiaozi-gangongji-assets2-20261103/02_晾纸架_独立透明底.png",
+        "03_历史成果/原工作区/output/jiaozi-gangongji-assets2-20261103/03_印刷台_独立透明底.png",
+        "03_历史成果/原工作区/output/jiaozi-gangongji-assets2-20261103/04_盖印台_独立透明底.png",
+        "03_历史成果/原工作区/output/jiaozi-production-assets-20261103/01_纸团_多视图_旧标阿楮.png"
+      ]
+    },
+    {
+      "file": "03_首关整体效果图_v01_20261110.png",
+      "original_generated_path": "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-82a63686-8d62-4e34-8721-28731ff772b3.png",
+      "initial_prompt": "Use case: stylized-concept. Redesign reference image 1 into the actual first-level environment art approval image. Preserve its folded-paper world, blue eaves, honey wood, paper-hat boy and red-clad double-bun girl, but simplify its obsolete machinery and overcrowded workflow into the six specified stations. Reference image 2 fixes the boy's proportions. 《交子赶工记》第一关“开张第一单”的纸艺游戏美术确认稿。必须保持参考图的古代中国纸艺玩具风格：宽大折面，叠纸边缘，克制手绘质感，暖纸白、蜂蜜木色、靛蓝瓦，青绿绑带与朱红小点缀。不用噪点颗粒，不要塑料高光，不要现代设施。所有图共用尺寸基线：1单位=1米；纸团含帽高1.20m，碰撞直径参考0.65m；普通工作台面高0.65m；建筑高墙2.40m；低前墙0.45m；通道与门净宽2.40m。画面是供确认的美术稿，不是已经完成的模型。\nOne beautiful large landscape 3:2 environment concept image. High-angle near-orthographic gameplay camera, looking downward about 55 degrees, front edge roughly horizontal, no extreme perspective or depth of field. A complete 12m-wide by 8m-deep rectangular papercraft diorama, clean cut layered-paper base and generous border, tiny 12m and 8m dimension indicators OUTSIDE the base. Left 6x8m courtyard with pale stone-paper tiles; right 6x8m printing workshop with honey timber-paper floor. Floor divided subtly into consistent 2x2m modules, 6 columns by 4 rows, continuous same elevation without internal steps.\nExactly two characters at equal 1.20m head-to-foot scale: paper-hat boy in olive clothing at the vat, red-clad girl near print/seal workstation holding ONE sheet. Character height one half of the 2.4m back wall; neither enlarged as hero.\nEXACTLY these six visible functional station objects, all table surfaces 0.65m high:\n1 a 2x1.2m aqua papermaking vat on left-middle edge, open working face toward central walking space.\n2 a 2x0.8m, 1.6m tall drying rack at left-back, EXACTLY TWO side-by-side hanging sheets A and B, no third slot.\n3 a 1.6x1m printing bench in right half toward back-left, dark jiaozi woodblock with two character engravings and small black ink pot.\n4 a 1.6x1m sealing bench in right-middle beside the right edge, one red seal and one printed jiaozi sheet.\n5 a receiving window embedded into right BACK wall near far right, 2m wide, counter 0.65m, teal single tray, one simple sign “交付”. Window clearly attached to wall, not freestanding.\n6 a 1x1m EMPTY single-slot shared table near the connection on the FRONT side, outside the clear cross-zone lane, never in the middle of the doorway.\nArchitecture: cream back wall 2.4m with attached square honey posts and blue narrow eave strips. Front edge low wall only 0.45m and a central entrance. Left/right boundary walls reduced in front. Between courtyard/workshop, attached structural portal on boundary has 2.4m NET CLEAR opening with 0.2m posts and header height2.4m, opening height2.1m; structure joins back partition/wooden structure and reads as attached building opening, no floating door leaf. Keep BOTH characters, every tabletop and the TWO drying sheets unoccluded. CENTRAL WORKSHOP ROOF IS REMOVED/open; eaves only at rear boundary, no full roof or beam masking stations. Provide broad visibly walkable cross-zone lane at least2.4m wide clear of pillar feet, benches and decorations.\nOnly restrained background decoration: one low-detail folded golden ginkgo OUTSIDE upper-left perimeter and a few small shrubs OUTSIDE collision bounds; one small red lantern on far back pillar. No bookshelves, paper stacks, extra tables, press/weights, bundles, wastebasket, Boss, river or extra production steps.\nWarm soft daylight from upper left, mild blue ambient shadows, clear material color hierarchy, hand-drawn lines subtle, layered cut-paper edges with low poly facets. Plenty of navigable negative space. Title in border exactly “开张第一单 · 首关场景确认 v01”; small subtitle exactly “12 × 8m / 双槽晾纸 / 五工位 + 共享台”; footer “角色 1.20m · 台高 0.65m · 通道净宽 2.40m”. No HUD, no order cards, no big floating labels over stations. This should look like coherent achievable modular game art, not a photoreal architectural scene.",
+      "reference_images": [
+        "03_历史成果/原工作区/output/jiaozi-gangongji-visual-kit-20261103-v2/02_游戏概念图_敞口修正版.png",
+        "03_历史成果/原工作区/output/jiaozi-production-assets-20261103/01_纸团_多视图_旧标阿楮.png"
+      ]
+    }
+  ],
+  "refinements": [
+    {
+      "key": "modules",
+      "refs": [
+        "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-907cc384-845a-44c4-8586-0297f2898d7c.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Edit this exact existing environment module production board. Preserve every title, label, numeric dimension, module silhouette, cell, color, grid, border, the positions and sizes of all ten architectural modules. Only correct the footer character scale: shrink the paper-hat boy himself to exactly 64% of his current drawn width and height, preserving his body design and aspect ratio, keep his feet on the existing baseline, leaving more empty space above. The vertical 1.20 dimension arrow beside him should shorten to the newly scaled hat top. This makes his physical 1.2m height half the 2.4m column shown in cell07; the original boy is oversized. Do not change his name 纸团, the horizontal scale ruler, or any other text. Keep all else identical."
+    },
+    {
+      "key": "level",
+      "refs": [
+        "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-66efa214-bdb5-46f0-abf6-072f8de44fe9.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Edit this exact first-level papercraft game environment concept. Preserve the same complete 12x8m base, all six station positions and sizes, exact TWO drying sheets, low front wall, open roof, back window, floor material regions, tree, border, titles, all dimension labels and lighting. Correct only two problems. 1) Both characters are oversized relative to the2.4m walls and0.65m tables. Shrink BOTH characters to 62% of their current drawn height and width, preserving their original character design, clothes and proportions, anchor their feet at the same ground locations. Boy's top of hat must lie below the drying rack crossbar at equal ground depth; girl must be similarly small, tabletops around low torso. Scale the boy's handheld screen down with him and position his smaller hands naturally toward the front-right edge of the vat; maintain the girl's ONE handheld paper. Characters are small1.2m high game figures, not large protagonists. Do not shrink the stations. 2) The printing bench currently has two block squares marked 交 and 子 that look like books. Replace ONLY the top print-block contents with ONE FLAT dark jiaozi printing block showing two engraved small portraits, paper-hat boy and double-bun girl, and coin ornament. Keep the black ink bowl and the table itself. All remaining layout elements unchanged. High orthographic paper-art consistency. No third drying sheet, no additional station, no roof over gameplay."
+    },
+    {
+      "key": "stations",
+      "refs": [
+        "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-511e5075-5431-4af8-b6da-394bd74e8450.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Preserve this exact 6-cell workstation scale concept sheet, all objects, all characters, all sizes and numeric local dimension arrows, Chinese labels, row/column layout, colors, border, header and bottom legend. Make ONLY these annotation corrections: REMOVE the large global vertical height ruler at the far LEFT margin headed 高度 (m), including its tick marks and numeric labels from2.40 through0.00. It wrongly applies a single height origin across separate rows. Replace that narrow ruler area with matching empty ivory paper; keep the fine background grid and keep ALL local per-object dimensions unchanged. At the bottom mini bamboo-screen illustration correct its label to the Chinese word 帘框, keeping the 0.52 × 0.70m dimension unchanged. Do not add anything. Everything else identical."
+    }
+  ],
+  "notes": [
+    "所有尺寸拟案以制作说明为准，图中像素不作尺寸测量依据。",
+    "同一确认轮的中间图不作为正式参考，最终交付以本目录01/02/03图为准。",
+    "图片中的票面和木刻为布景示意，不替代正式组合交子源图。"
+  ]
+}
