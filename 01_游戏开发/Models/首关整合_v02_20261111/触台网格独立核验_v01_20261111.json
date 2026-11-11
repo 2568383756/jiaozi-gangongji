@@ -1,0 +1,2069 @@
+{
+  "version": "v01_20261111",
+  "method": "Evaluated triangles; only explicit _SolidHand_ skin materials excluded from body BVH, sleeve linings included; real palm probes nearest named allowed surfaces.",
+  "frames": [
+    1,
+    8,
+    16,
+    24,
+    31
+  ],
+  "cases": [
+    {
+      "character": "zhituan",
+      "station": "station_print",
+      "slot": null,
+      "standing_world": [
+        7.87000036239624,
+        5.599999904632568,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                7.7000003,
+                5.8769999,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                7.7000003,
+                5.8769999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                8.04,
+                5.8769999,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                8.04,
+                5.8769999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                7.7000003,
+                5.8769999,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                7.7000003,
+                5.8769999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                8.04,
+                5.8769999,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                8.04,
+                5.8769999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        }
+      ]
+    },
+    {
+      "character": "zhituan",
+      "station": "station_stamp",
+      "slot": null,
+      "standing_world": [
+        10.09000015258789,
+        3.4000000953674316,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                10.2600002,
+                3.1230001,
+                0.3500001
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                10.2600002,
+                3.1230001,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                9.9200001,
+                3.1230001,
+                0.3500001
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                9.9200001,
+                3.1230001,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                10.2600002,
+                3.1230001,
+                0.3500001
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                10.2600002,
+                3.1230001,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                9.9200001,
+                3.1230001,
+                0.3500001
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                9.9200001,
+                3.1230001,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        }
+      ]
+    },
+    {
+      "character": "zhituan",
+      "station": "station_shared",
+      "slot": null,
+      "standing_world": [
+        7.800000190734863,
+        1.7899999618530273,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                7.9700003,
+                1.513,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                7.9700003,
+                1.513,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                7.6300001,
+                1.5129999,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                7.6300001,
+                1.5129999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                7.9700003,
+                1.513,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                7.9700003,
+                1.513,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                7.6300001,
+                1.5129999,
+                0.3500001
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                7.6300001,
+                1.5129999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        }
+      ]
+    },
+    {
+      "character": "zhituan",
+      "station": "station_pulp",
+      "slot": null,
+      "standing_world": [
+        2.2699999809265137,
+        3.0500001907348633,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                2.4400001,
+                2.7730002,
+                0.3500001
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                2.4400001,
+                2.7730002,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                2.0999999,
+                2.7730002,
+                0.3500001
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                2.0999999,
+                2.7730002,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                2.4400001,
+                2.7730002,
+                0.3500001
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                2.4400001,
+                2.7730002,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                2.0999999,
+                2.7730002,
+                0.3500001
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                2.0999999,
+                2.7730002,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        }
+      ]
+    },
+    {
+      "character": "zhituan",
+      "station": "station_dry",
+      "slot": "A",
+      "standing_world": [
+        1.649999976158142,
+        6.159999847412109,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                1.48,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                1.48,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                1.8200001,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 5.960464477539063e-08,
+              "surface_point": [
+                1.8200001,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                1.4799999,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                1.4799999,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                1.8199999,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                1.8199999,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        }
+      ]
+    },
+    {
+      "character": "zhituan",
+      "station": "station_dry",
+      "slot": "B",
+      "standing_world": [
+        2.9499998092651367,
+        6.159999847412109,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                2.7799997,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                2.7799997,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                3.1199999,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 5.960464477539063e-08,
+              "surface_point": [
+                3.1199999,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                2.7799997,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                2.7799997,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                3.1199999,
+                6.4369998,
+                0.3500001
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                3.1199999,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        }
+      ]
+    },
+    {
+      "character": "zhituan",
+      "station": "station_delivery",
+      "slot": null,
+      "standing_world": [
+        10.450000762939453,
+        7.059999942779541,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                10.2800007,
+                7.3369999,
+                0.3500001
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.652457038100692e-07,
+              "surface_point": [
+                10.2800016,
+                7.3369999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                10.6200008,
+                7.3369999,
+                0.3500001
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.555351425660774e-07,
+              "surface_point": [
+                10.6200018,
+                7.3369999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5703,
+              "world": [
+                10.2800007,
+                7.3369999,
+                0.3500001
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.652457038100692e-07,
+              "surface_point": [
+                10.2800016,
+                7.3369999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 6144,
+              "world": [
+                10.6200008,
+                7.3369999,
+                0.3500001
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.652457038100692e-07,
+              "surface_point": [
+                10.6200018,
+                7.3369999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.001000019023194909,
+          "foot_min_z": {
+            "L": 0.001000019023194909,
+            "R": 0.001000048709101975
+          }
+        }
+      ]
+    },
+    {
+      "character": "yintao",
+      "station": "station_print",
+      "slot": null,
+      "standing_world": [
+        7.87000036239624,
+        5.599999904632568,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                7.7000003,
+                5.8769999,
+                0.3499999
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 8.940696716308594e-08,
+              "surface_point": [
+                7.7000003,
+                5.8769999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                8.04,
+                5.8769999,
+                0.3499999
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                8.04,
+                5.8769999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                7.7000003,
+                5.8769999,
+                0.35
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                7.7000003,
+                5.8769999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                8.04,
+                5.8769999,
+                0.35
+              ],
+              "nearest_surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+              "distance_m": 0.0,
+              "surface_point": [
+                8.04,
+                5.8769999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        }
+      ]
+    },
+    {
+      "character": "yintao",
+      "station": "station_stamp",
+      "slot": null,
+      "standing_world": [
+        10.09000015258789,
+        3.4000000953674316,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                10.2600002,
+                3.1230001,
+                0.3499999
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 8.940696716308594e-08,
+              "surface_point": [
+                10.2600002,
+                3.1230001,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                9.9200001,
+                3.1230001,
+                0.3499999
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                9.9200001,
+                3.1230001,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                10.2600002,
+                3.1230001,
+                0.35
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                10.2600002,
+                3.1230001,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                9.9200001,
+                3.1230001,
+                0.35
+              ],
+              "nearest_surface": "v01_stamp_red_ticket__paper_red__paper_body",
+              "distance_m": 0.0,
+              "surface_point": [
+                9.9200001,
+                3.1230001,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        }
+      ]
+    },
+    {
+      "character": "yintao",
+      "station": "station_shared",
+      "slot": null,
+      "standing_world": [
+        7.800000190734863,
+        1.7899999618530273,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                7.9700003,
+                1.513,
+                0.3499999
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 8.940696716308594e-08,
+              "surface_point": [
+                7.9700003,
+                1.513,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                7.6300001,
+                1.513,
+                0.3499999
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 1.4901161193847656e-07,
+              "surface_point": [
+                7.6300001,
+                1.513,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                7.9700003,
+                1.513,
+                0.35
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                7.9700003,
+                1.513,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                7.6300001,
+                1.513,
+                0.35
+              ],
+              "nearest_surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+              "distance_m": 0.0,
+              "surface_point": [
+                7.6300001,
+                1.513,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        }
+      ]
+    },
+    {
+      "character": "yintao",
+      "station": "station_pulp",
+      "slot": null,
+      "standing_world": [
+        2.2699999809265137,
+        3.0500001907348633,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                2.4399998,
+                2.7730002,
+                0.3499999
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 8.940696716308594e-08,
+              "surface_point": [
+                2.4399998,
+                2.7730002,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                2.1000001,
+                2.7730002,
+                0.3499999
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 2.811545414260763e-07,
+              "surface_point": [
+                2.0999999,
+                2.7730002,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                2.4400001,
+                2.7730002,
+                0.35
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                2.4400001,
+                2.7730002,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                2.0999999,
+                2.7730002,
+                0.35
+              ],
+              "nearest_surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+              "distance_m": 0.0,
+              "surface_point": [
+                2.0999999,
+                2.7730002,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        }
+      ]
+    },
+    {
+      "character": "yintao",
+      "station": "station_dry",
+      "slot": "A",
+      "standing_world": [
+        1.649999976158142,
+        6.159999847412109,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                1.48,
+                6.4369998,
+                0.3499999
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 5.960464477539063e-08,
+              "surface_point": [
+                1.48,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                1.8199998,
+                6.4369998,
+                0.3499999
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                1.8199998,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                1.4799999,
+                6.4369998,
+                0.35
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 0.0,
+              "surface_point": [
+                1.4799999,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                1.8199999,
+                6.4369998,
+                0.35
+              ],
+              "nearest_surface": "station_dry__receiving_bar_A",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                1.8199999,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        }
+      ]
+    },
+    {
+      "character": "yintao",
+      "station": "station_dry",
+      "slot": "B",
+      "standing_world": [
+        2.9499998092651367,
+        6.159999847412109,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                2.78,
+                6.4369998,
+                0.3499999
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 5.960464477539063e-08,
+              "surface_point": [
+                2.78,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                3.1199996,
+                6.4369998,
+                0.3499999
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 1.1920928955078125e-07,
+              "surface_point": [
+                3.1199996,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                2.7799997,
+                6.4369998,
+                0.35
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 0.0,
+              "surface_point": [
+                2.7799997,
+                6.4369998,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                3.1199999,
+                6.4369998,
+                0.35
+              ],
+              "nearest_surface": "station_dry__receiving_bar_B",
+              "distance_m": 2.9802322387695312e-08,
+              "surface_point": [
+                3.1199999,
+                6.4369998,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        }
+      ]
+    },
+    {
+      "character": "yintao",
+      "station": "station_delivery",
+      "slot": null,
+      "standing_world": [
+        10.450000762939453,
+        7.059999942779541,
+        0.0
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                10.2800007,
+                7.3369999,
+                0.3499999
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.555351425660774e-07,
+              "surface_point": [
+                10.2800016,
+                7.3369999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                10.6200008,
+                7.3369999,
+                0.3499999
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.610960205463925e-07,
+              "surface_point": [
+                10.6200018,
+                7.3369999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 8,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 16,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 24,
+          "body_intersections": [],
+          "contacts": [],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        },
+        {
+          "frame": 31,
+          "body_intersections": [],
+          "contacts": [
+            {
+              "side": "L",
+              "vertex_id": 5103,
+              "world": [
+                10.2800007,
+                7.3369999,
+                0.35
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.5367431640625e-07,
+              "surface_point": [
+                10.2800016,
+                7.3369999,
+                0.35
+              ]
+            },
+            {
+              "side": "R",
+              "vertex_id": 5544,
+              "world": [
+                10.6200008,
+                7.3369999,
+                0.35
+              ],
+              "nearest_surface": "station_delivery__tray_end",
+              "distance_m": 9.5413986400672e-07,
+              "surface_point": [
+                10.6200018,
+                7.3369999,
+                0.35
+              ]
+            }
+          ],
+          "mesh_floor_z": 0.0010000087786465883,
+          "foot_min_z": {
+            "L": 0.0010000087786465883,
+            "R": 0.0010000196052715182
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "zhituan_station_print_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_print_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_print_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_stamp_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_stamp_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_stamp_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_shared_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_shared_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_shared_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_pulp_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_pulp_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_pulp_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_dry_A_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_dry_A_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_dry_A_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_dry_B_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_dry_B_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_dry_B_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_delivery_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_delivery_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_station_delivery_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_print_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_print_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_print_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_stamp_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_stamp_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_stamp_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_shared_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_shared_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_shared_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_pulp_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_pulp_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_pulp_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_dry_A_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_dry_A_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_dry_A_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_dry_B_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_dry_B_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_dry_B_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_delivery_main_no_body_triangles_cross_station",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_delivery_main_both_feet_grounded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_station_delivery_main_real_palm_contacts_within_2mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "dual_drying_zhituan_at_A_no_character_mesh_intersections",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "dual_drying_yintao_at_A_no_character_mesh_intersections",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "check_count": 44,
+  "dual_drying_cases": [
+    {
+      "A": "zhituan",
+      "B": "yintao",
+      "frames": [
+        {
+          "frame": 1,
+          "triangle_pairs": 0
+        },
+        {
+          "frame": 16,
+          "triangle_pairs": 0
+        },
+        {
+          "frame": 31,
+          "triangle_pairs": 0
+        }
+      ]
+    },
+    {
+      "A": "yintao",
+      "B": "zhituan",
+      "frames": [
+        {
+          "frame": 1,
+          "triangle_pairs": 0
+        },
+        {
+          "frame": 16,
+          "triangle_pairs": 0
+        },
+        {
+          "frame": 31,
+          "triangle_pairs": 0
+        }
+      ]
+    }
+  ],
+  "all_passed": true,
+  "unity_physics_tested": false,
+  "limits": "Five sampled pose frames for station/body intersections; does not prove every interpolated instant, navigation or the runtime controller."
+}

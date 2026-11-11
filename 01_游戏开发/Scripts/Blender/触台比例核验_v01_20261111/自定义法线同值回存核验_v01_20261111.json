@@ -1,0 +1,21 @@
+{
+  "method": "Read native v01. Copy mesh in memory, set identical corner normals, then read the stored normals. Do not save any Blender asset.",
+  "characters": {
+    "zhituan": {
+      "source": "01_游戏开发\\Models\\首批角色_v01_20261111\\角色_纸团_整合_v01_20261111.blend",
+      "source_sha256": "5d9734acea01acf61231f1c8fba05156af860989385cd574aab401bbf30b5ea3",
+      "source_unchanged": true,
+      "loops": 33349,
+      "identical_input_roundtrip_max_chord_delta": 0.0004979632261860483,
+      "identical_input_roundtrip_max_angle_deg": 0.02853111302282778
+    },
+    "yintao": {
+      "source": "01_游戏开发\\Models\\首批角色_v01_20261111\\角色_印桃_整合_v01_20261111.blend",
+      "source_sha256": "26cd8b7a8ea0beab4b0bb1eeb5d8954059707bf4aa00a7124431fd83b707a808",
+      "source_unchanged": true,
+      "loops": 21033,
+      "identical_input_roundtrip_max_chord_delta": 0.0005130137011517815,
+      "identical_input_roundtrip_max_angle_deg": 0.029393520230710974
+    }
+  }
+}

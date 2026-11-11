@@ -1,0 +1,1061 @@
+{
+  "version": "v01_20261111",
+  "scope": "Existing v02 hands only; no model or texture changes.",
+  "note": "A C-shaped visible silhouette is not equivalent to a topological hole. Boundary counts of bone-weight subsets include intentional wrist seams.",
+  "characters": {
+    "zhituan": {
+      "file": "01_游戏开发\\Models\\首批角色_v02_20261111\\角色_纸团_整合_v02_20261111.blend",
+      "sha256": "8a84910a65977612a61ed3597719de4e467b5ffde264d207a8bca99183f03af3",
+      "source_unchanged": true,
+      "samples": [
+        {
+          "frame": 1,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  0.119719,
+                  0.238536
+                ],
+                [
+                  -0.354711,
+                  -0.221081
+                ],
+                [
+                  0.35,
+                  0.47748
+                ]
+              ],
+              "wrist": [
+                0.202726,
+                -0.261954,
+                0.422706
+              ],
+              "bone_tip": [
+                0.169239,
+                -0.276941,
+                0.360136
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.461684,
+                -0.206622,
+                -0.862644
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.076,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 10,
+              "near_bottom_vertex_ids": [
+                3057,
+                3240,
+                3242,
+                3243,
+                3244,
+                3245,
+                3248,
+                3249,
+                3317,
+                3321
+              ],
+              "near_bottom_xy_span": [
+                0.03089,
+                0.037891
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  -0.238596,
+                  -0.120002
+                ],
+                [
+                  -0.354933,
+                  -0.221119
+                ],
+                [
+                  0.35,
+                  0.477751
+                ]
+              ],
+              "wrist": [
+                -0.202989,
+                -0.261974,
+                0.423067
+              ],
+              "bone_tip": [
+                -0.169229,
+                -0.276926,
+                0.360635
+              ],
+              "bone_longitudinal_axis_world": [
+                0.465438,
+                -0.206137,
+                -0.860741
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.104,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                285,
+                289,
+                290,
+                292,
+                295,
+                296,
+                379
+              ],
+              "near_bottom_xy_span": [
+                0.019008,
+                0.037885
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  0.11931,
+                  0.238536
+                ],
+                [
+                  -0.34754,
+                  -0.21624
+                ],
+                [
+                  0.351343,
+                  0.47962
+                ]
+              ],
+              "wrist": [
+                0.202727,
+                -0.257477,
+                0.42405
+              ],
+              "bone_tip": [
+                0.169239,
+                -0.272465,
+                0.361479
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.461684,
+                -0.206622,
+                -0.862644
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.076,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 10,
+              "near_bottom_vertex_ids": [
+                3057,
+                3240,
+                3242,
+                3243,
+                3244,
+                3245,
+                3248,
+                3249,
+                3317,
+                3321
+              ],
+              "near_bottom_xy_span": [
+                0.03089,
+                0.037891
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  -0.238595,
+                  -0.119564
+                ],
+                [
+                  -0.347638,
+                  -0.216252
+                ],
+                [
+                  0.351343,
+                  0.479935
+                ]
+              ],
+              "wrist": [
+                -0.202988,
+                -0.257495,
+                0.42441
+              ],
+              "bone_tip": [
+                -0.169228,
+                -0.272447,
+                0.361978
+              ],
+              "bone_longitudinal_axis_world": [
+                0.465438,
+                -0.206137,
+                -0.860741
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.104,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                285,
+                289,
+                290,
+                292,
+                295,
+                296,
+                379
+              ],
+              "near_bottom_xy_span": [
+                0.019008,
+                0.037885
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  0.118825,
+                  0.238537
+                ],
+                [
+                  -0.340366,
+                  -0.210504
+                ],
+                [
+                  0.353,
+                  0.481731
+                ]
+              ],
+              "wrist": [
+                0.202727,
+                -0.251955,
+                0.425707
+              ],
+              "bone_tip": [
+                0.169239,
+                -0.266942,
+                0.363136
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.461683,
+                -0.206623,
+                -0.862644
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.075,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 10,
+              "near_bottom_vertex_ids": [
+                3057,
+                3240,
+                3242,
+                3243,
+                3244,
+                3245,
+                3248,
+                3249,
+                3317,
+                3321
+              ],
+              "near_bottom_xy_span": [
+                0.03089,
+                0.037891
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  -0.238596,
+                  -0.1191
+                ],
+                [
+                  -0.34044,
+                  -0.210512
+                ],
+                [
+                  0.353,
+                  0.482056
+                ]
+              ],
+              "wrist": [
+                -0.202989,
+                -0.251973,
+                0.426067
+              ],
+              "bone_tip": [
+                -0.169229,
+                -0.266925,
+                0.363634
+              ],
+              "bone_longitudinal_axis_world": [
+                0.465438,
+                -0.206138,
+                -0.860741
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.104,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                285,
+                289,
+                290,
+                292,
+                295,
+                296,
+                379
+              ],
+              "near_bottom_xy_span": [
+                0.019008,
+                0.037885
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 24,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  0.11931,
+                  0.238536
+                ],
+                [
+                  -0.34754,
+                  -0.21624
+                ],
+                [
+                  0.351343,
+                  0.47962
+                ]
+              ],
+              "wrist": [
+                0.202727,
+                -0.257477,
+                0.42405
+              ],
+              "bone_tip": [
+                0.169239,
+                -0.272465,
+                0.361479
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.461684,
+                -0.206622,
+                -0.862644
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.076,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 10,
+              "near_bottom_vertex_ids": [
+                3057,
+                3240,
+                3242,
+                3243,
+                3244,
+                3245,
+                3248,
+                3249,
+                3317,
+                3321
+              ],
+              "near_bottom_xy_span": [
+                0.03089,
+                0.037891
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  -0.238595,
+                  -0.119564
+                ],
+                [
+                  -0.347638,
+                  -0.216252
+                ],
+                [
+                  0.351343,
+                  0.479935
+                ]
+              ],
+              "wrist": [
+                -0.202988,
+                -0.257495,
+                0.42441
+              ],
+              "bone_tip": [
+                -0.169228,
+                -0.272447,
+                0.361978
+              ],
+              "bone_longitudinal_axis_world": [
+                0.465438,
+                -0.206137,
+                -0.860741
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.104,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                285,
+                289,
+                290,
+                292,
+                295,
+                296,
+                379
+              ],
+              "near_bottom_xy_span": [
+                0.019008,
+                0.037885
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 31,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  0.119719,
+                  0.238536
+                ],
+                [
+                  -0.354711,
+                  -0.221081
+                ],
+                [
+                  0.35,
+                  0.477479
+                ]
+              ],
+              "wrist": [
+                0.202726,
+                -0.261954,
+                0.422706
+              ],
+              "bone_tip": [
+                0.169239,
+                -0.276941,
+                0.360136
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.461684,
+                -0.206622,
+                -0.862644
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.076,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 10,
+              "near_bottom_vertex_ids": [
+                3057,
+                3240,
+                3242,
+                3243,
+                3244,
+                3245,
+                3248,
+                3249,
+                3317,
+                3321
+              ],
+              "near_bottom_xy_span": [
+                0.03089,
+                0.037891
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 252,
+              "bounds_xyz": [
+                [
+                  -0.238596,
+                  -0.120002
+                ],
+                [
+                  -0.354933,
+                  -0.221119
+                ],
+                [
+                  0.35,
+                  0.477751
+                ]
+              ],
+              "wrist": [
+                -0.202989,
+                -0.261974,
+                0.423067
+              ],
+              "bone_tip": [
+                -0.169229,
+                -0.276925,
+                0.360635
+              ],
+              "bone_longitudinal_axis_world": [
+                0.465438,
+                -0.206137,
+                -0.860741
+              ],
+              "bone_axis_angle_to_forward_degrees": 78.104,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                285,
+                289,
+                290,
+                292,
+                295,
+                296,
+                379
+              ],
+              "near_bottom_xy_span": [
+                0.019008,
+                0.037885
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        }
+      ]
+    },
+    "yintao": {
+      "file": "01_游戏开发\\Models\\首批角色_v02_20261111\\角色_印桃_整合_v02_20261111.blend",
+      "sha256": "91452225138087a73e23d0b0b4cb9b5780a321fcff3826ba6cd68851b9eef475",
+      "source_unchanged": true,
+      "samples": [
+        {
+          "frame": 1,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  0.072065,
+                  0.225734
+                ],
+                [
+                  -0.327875,
+                  -0.226789
+                ],
+                [
+                  0.35,
+                  0.457608
+                ]
+              ],
+              "wrist": [
+                0.141168,
+                -0.257003,
+                0.394075
+              ],
+              "bone_tip": [
+                0.20068,
+                -0.265687,
+                0.378627
+              ],
+              "bone_longitudinal_axis_world": [
+                0.958408,
+                -0.13986,
+                -0.248784
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.96,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                3052,
+                3053,
+                3054,
+                3055,
+                3056,
+                3064,
+                3066
+              ],
+              "near_bottom_xy_span": [
+                0.042543,
+                0.020694
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  -0.226881,
+                  -0.072286
+                ],
+                [
+                  -0.325728,
+                  -0.224249
+                ],
+                [
+                  0.35,
+                  0.458562
+                ]
+              ],
+              "wrist": [
+                -0.149377,
+                -0.263685,
+                0.396562
+              ],
+              "bone_tip": [
+                -0.208605,
+                -0.273169,
+                0.380506
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.953838,
+                -0.152734,
+                -0.258585
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.215,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 6,
+              "near_bottom_vertex_ids": [
+                70,
+                72,
+                73,
+                79,
+                80,
+                82
+              ],
+              "near_bottom_xy_span": [
+                0.040214,
+                0.019663
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  0.072063,
+                  0.225732
+                ],
+                [
+                  -0.323397,
+                  -0.222311
+                ],
+                [
+                  0.351343,
+                  0.458951
+                ]
+              ],
+              "wrist": [
+                0.141166,
+                -0.252525,
+                0.395418
+              ],
+              "bone_tip": [
+                0.200678,
+                -0.26121,
+                0.37997
+              ],
+              "bone_longitudinal_axis_world": [
+                0.958408,
+                -0.13986,
+                -0.248784
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.96,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                3052,
+                3053,
+                3054,
+                3055,
+                3056,
+                3064,
+                3066
+              ],
+              "near_bottom_xy_span": [
+                0.042543,
+                0.020694
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  -0.226881,
+                  -0.072287
+                ],
+                [
+                  -0.32125,
+                  -0.219772
+                ],
+                [
+                  0.351343,
+                  0.459905
+                ]
+              ],
+              "wrist": [
+                -0.149377,
+                -0.259208,
+                0.397906
+              ],
+              "bone_tip": [
+                -0.208605,
+                -0.268692,
+                0.381849
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.953838,
+                -0.152734,
+                -0.258585
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.215,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 6,
+              "near_bottom_vertex_ids": [
+                70,
+                72,
+                73,
+                79,
+                80,
+                82
+              ],
+              "near_bottom_xy_span": [
+                0.040214,
+                0.019663
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 16,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  0.072063,
+                  0.225732
+                ],
+                [
+                  -0.317875,
+                  -0.216789
+                ],
+                [
+                  0.353,
+                  0.460608
+                ]
+              ],
+              "wrist": [
+                0.141166,
+                -0.247003,
+                0.397075
+              ],
+              "bone_tip": [
+                0.200678,
+                -0.255687,
+                0.381627
+              ],
+              "bone_longitudinal_axis_world": [
+                0.958408,
+                -0.13986,
+                -0.248784
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.96,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                3052,
+                3053,
+                3054,
+                3055,
+                3056,
+                3064,
+                3066
+              ],
+              "near_bottom_xy_span": [
+                0.042543,
+                0.020694
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  -0.22688,
+                  -0.072285
+                ],
+                [
+                  -0.315728,
+                  -0.214249
+                ],
+                [
+                  0.353,
+                  0.461562
+                ]
+              ],
+              "wrist": [
+                -0.149376,
+                -0.253685,
+                0.399562
+              ],
+              "bone_tip": [
+                -0.208604,
+                -0.263169,
+                0.383505
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.953838,
+                -0.152734,
+                -0.258585
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.215,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 6,
+              "near_bottom_vertex_ids": [
+                70,
+                72,
+                73,
+                79,
+                80,
+                82
+              ],
+              "near_bottom_xy_span": [
+                0.040214,
+                0.019663
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 24,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  0.072063,
+                  0.225732
+                ],
+                [
+                  -0.323397,
+                  -0.222311
+                ],
+                [
+                  0.351343,
+                  0.458951
+                ]
+              ],
+              "wrist": [
+                0.141166,
+                -0.252525,
+                0.395418
+              ],
+              "bone_tip": [
+                0.200678,
+                -0.26121,
+                0.37997
+              ],
+              "bone_longitudinal_axis_world": [
+                0.958408,
+                -0.13986,
+                -0.248784
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.96,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                3052,
+                3053,
+                3054,
+                3055,
+                3056,
+                3064,
+                3066
+              ],
+              "near_bottom_xy_span": [
+                0.042543,
+                0.020694
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  -0.226881,
+                  -0.072287
+                ],
+                [
+                  -0.32125,
+                  -0.219772
+                ],
+                [
+                  0.351343,
+                  0.459905
+                ]
+              ],
+              "wrist": [
+                -0.149377,
+                -0.259208,
+                0.397906
+              ],
+              "bone_tip": [
+                -0.208605,
+                -0.268692,
+                0.381849
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.953838,
+                -0.152734,
+                -0.258585
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.215,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 6,
+              "near_bottom_vertex_ids": [
+                70,
+                72,
+                73,
+                79,
+                80,
+                82
+              ],
+              "near_bottom_xy_span": [
+                0.040214,
+                0.019663
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        },
+        {
+          "frame": 31,
+          "hands": {
+            "L": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  0.072065,
+                  0.225734
+                ],
+                [
+                  -0.327875,
+                  -0.226789
+                ],
+                [
+                  0.35,
+                  0.457608
+                ]
+              ],
+              "wrist": [
+                0.141168,
+                -0.257003,
+                0.394075
+              ],
+              "bone_tip": [
+                0.20068,
+                -0.265687,
+                0.378627
+              ],
+              "bone_longitudinal_axis_world": [
+                0.958408,
+                -0.13986,
+                -0.248784
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.96,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 7,
+              "near_bottom_vertex_ids": [
+                3052,
+                3053,
+                3054,
+                3055,
+                3056,
+                3064,
+                3066
+              ],
+              "near_bottom_xy_span": [
+                0.042543,
+                0.020694
+              ],
+              "rig_has_finger_bones": false
+            },
+            "R": {
+              "dominant_hand_vertex_count": 188,
+              "bounds_xyz": [
+                [
+                  -0.226881,
+                  -0.072286
+                ],
+                [
+                  -0.325728,
+                  -0.224249
+                ],
+                [
+                  0.35,
+                  0.458562
+                ]
+              ],
+              "wrist": [
+                -0.149377,
+                -0.263685,
+                0.396562
+              ],
+              "bone_tip": [
+                -0.208605,
+                -0.273169,
+                0.380506
+              ],
+              "bone_longitudinal_axis_world": [
+                -0.953838,
+                -0.152734,
+                -0.258585
+              ],
+              "bone_axis_angle_to_forward_degrees": 81.215,
+              "lowest_support_band_m": 0.003,
+              "near_bottom_vertex_count": 6,
+              "near_bottom_vertex_ids": [
+                70,
+                72,
+                73,
+                79,
+                80,
+                82
+              ],
+              "near_bottom_xy_span": [
+                0.040214,
+                0.019663
+              ],
+              "rig_has_finger_bones": false
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "version": "station_fit_v01_20261111",
+  "blender": "5.3.0",
+  "method": "real evaluated triangle BVH nearest surface; root armature matrices/rest bones/actions compared",
+  "contact_results": [
+    {
+      "station": "station_print",
+      "slot": null,
+      "hand": "L",
+      "grip": "station_print__tool_Grip_L_main",
+      "grip_world": [
+        8.039999961853027,
+        5.872999668121338,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+        "distance_m": 2.9802322387695312e-08,
+        "point_world": [
+          8.039999961853027,
+          5.872999668121338,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_print",
+      "slot": null,
+      "hand": "R",
+      "grip": "station_print__tool_Grip_R_main",
+      "grip_world": [
+        7.700000286102295,
+        5.872999668121338,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "adapt_print_dry_sheet__paper_dry__paper_body",
+        "distance_m": 4.777675730550706e-07,
+        "point_world": [
+          7.699999809265137,
+          5.872999668121338,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_stamp",
+      "slot": null,
+      "hand": "L",
+      "grip": "station_stamp__tool_Grip_L_main",
+      "grip_world": [
+        9.920000076293945,
+        3.126999855041504,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "v01_stamp_red_ticket__paper_red__paper_body",
+        "distance_m": 2.9802322387695312e-08,
+        "point_world": [
+          9.920000076293945,
+          3.126999855041504,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_stamp",
+      "slot": null,
+      "hand": "R",
+      "grip": "station_stamp__tool_Grip_R_main",
+      "grip_world": [
+        10.260000228881836,
+        3.126999855041504,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "v01_stamp_red_ticket__paper_red__paper_body",
+        "distance_m": 2.9802322387695312e-08,
+        "point_world": [
+          10.260000228881836,
+          3.126999855041504,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_shared",
+      "slot": null,
+      "hand": "L",
+      "grip": "station_shared__tool_Grip_L_main",
+      "grip_world": [
+        7.630000114440918,
+        1.5170000791549683,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+        "distance_m": 2.9802322387695312e-08,
+        "point_world": [
+          7.630000114440918,
+          1.5170000791549683,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_shared",
+      "slot": null,
+      "hand": "R",
+      "grip": "station_shared__tool_Grip_R_main",
+      "grip_world": [
+        7.970000267028809,
+        1.5170000791549683,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "adapt_shared_dry_sheet__paper_dry__paper_body",
+        "distance_m": 2.9802322387695312e-08,
+        "point_world": [
+          7.970000267028809,
+          1.5170000791549683,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_pulp",
+      "slot": null,
+      "hand": "L",
+      "grip": "station_pulp__tool_Grip_L_main",
+      "grip_world": [
+        2.0999999046325684,
+        2.7770001888275146,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+        "distance_m": 2.4027400458748785e-07,
+        "point_world": [
+          2.1000001430511475,
+          2.7770001888275146,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_pulp",
+      "slot": null,
+      "hand": "R",
+      "grip": "station_pulp__tool_Grip_R_main",
+      "grip_world": [
+        2.440000057220459,
+        2.7770001888275146,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001",
+        "distance_m": 2.9802322387695312e-08,
+        "point_world": [
+          2.440000057220459,
+          2.7770001888275146,
+          0.3500000238418579
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_dry",
+      "slot": "A",
+      "hand": "L",
+      "grip": "station_dry__tool_Grip_L_A",
+      "grip_world": [
+        1.8199999332427979,
+        6.432999610900879,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "station_dry__receiving_bar_A",
+        "distance_m": 0.0,
+        "point_world": [
+          1.8199999332427979,
+          6.432999610900879,
+          0.3499999940395355
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_dry",
+      "slot": "A",
+      "hand": "R",
+      "grip": "station_dry__tool_Grip_R_A",
+      "grip_world": [
+        1.4800000190734863,
+        6.432999610900879,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "station_dry__receiving_bar_A",
+        "distance_m": 0.0,
+        "point_world": [
+          1.4800000190734863,
+          6.432999610900879,
+          0.3499999940395355
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_dry",
+      "slot": "B",
+      "hand": "L",
+      "grip": "station_dry__tool_Grip_L_B",
+      "grip_world": [
+        3.119999885559082,
+        6.432999610900879,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "station_dry__receiving_bar_B",
+        "distance_m": 0.0,
+        "point_world": [
+          3.119999885559082,
+          6.432999610900879,
+          0.3499999940395355
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_dry",
+      "slot": "B",
+      "hand": "R",
+      "grip": "station_dry__tool_Grip_R_B",
+      "grip_world": [
+        2.7799999713897705,
+        6.432999610900879,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "station_dry__receiving_bar_B",
+        "distance_m": 0.0,
+        "point_world": [
+          2.7799999713897705,
+          6.432999610900879,
+          0.3499999940395355
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_delivery",
+      "slot": null,
+      "hand": "L",
+      "grip": "station_delivery__tool_Grip_L_main",
+      "grip_world": [
+        10.620000839233398,
+        7.3329997062683105,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "station_delivery__tray_end",
+        "distance_m": 9.5367431640625e-07,
+        "point_world": [
+          10.620001792907715,
+          7.3329997062683105,
+          0.3499999940395355
+        ]
+      },
+      "pass": true
+    },
+    {
+      "station": "station_delivery",
+      "slot": null,
+      "hand": "R",
+      "grip": "station_delivery__tool_Grip_R_main",
+      "grip_world": [
+        10.280000686645508,
+        7.3329997062683105,
+        0.3499999940395355
+      ],
+      "nearest_surface": {
+        "surface": "station_delivery__tray_end",
+        "distance_m": 0.0,
+        "point_world": [
+          10.280000686645508,
+          7.3329997062683105,
+          0.3499999940395355
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "14_contact_helpers_on_real_mesh",
+      "pass": true
+    },
+    {
+      "name": "character_armatures_unchanged",
+      "pass": true
+    },
+    {
+      "name": "source_blend_sha_unchanged",
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "limitations": "This verifies station helper surfaces only. Character mesh collision across all Work frames is independently reviewed by the parent/review agents."
+}

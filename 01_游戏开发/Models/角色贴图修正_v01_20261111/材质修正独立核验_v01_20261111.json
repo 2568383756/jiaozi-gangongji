@@ -1,0 +1,42 @@
+{
+  "scope": "No original atlas pixel edits, no geometry/weight edits; material and UV changes limited to garment faces.",
+  "characters": {
+    "zhituan": {
+      "changed_faces": 847,
+      "cloth_faces": 680,
+      "belt_faces": 167,
+      "source_blend_sha256": "5d9734acea01acf61231f1c8fba05156af860989385cd574aab401bbf30b5ea3",
+      "original_image_sha256": {
+        "tripo_image_32b70fc4_0": "5989314396dc0c5a9731a8e4d38af8f97f1d14aa82f92b91c0c7faa8b2045879"
+      },
+      "checks": {
+        "mesh_vertices_weights_and_topology_unchanged": true,
+        "original_packed_images_byte_identical": true,
+        "unchanged_faces_keep_material": true,
+        "unchanged_faces_keep_exact_uvs": true,
+        "source_blend_file_unchanged": true,
+        "new_materials_have_direct_basecolor_texture_and_normalmap": true
+      },
+      "all_passed": true
+    },
+    "yintao": {
+      "changed_faces": 274,
+      "cloth_faces": 141,
+      "belt_faces": 133,
+      "source_blend_sha256": "26cd8b7a8ea0beab4b0bb1eeb5d8954059707bf4aa00a7124431fd83b707a808",
+      "original_image_sha256": {
+        "tripo_image_69800d4e_0": "934f657410d12904cbfd36bffeaf890bbee451315bd1916794152b96600e760c"
+      },
+      "checks": {
+        "mesh_vertices_weights_and_topology_unchanged": true,
+        "original_packed_images_byte_identical": true,
+        "unchanged_faces_keep_material": true,
+        "unchanged_faces_keep_exact_uvs": true,
+        "source_blend_file_unchanged": true,
+        "new_materials_have_direct_basecolor_texture_and_normalmap": true
+      },
+      "all_passed": true
+    }
+  },
+  "all_passed": true
+}

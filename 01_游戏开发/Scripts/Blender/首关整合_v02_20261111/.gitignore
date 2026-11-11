@@ -1,0 +1,6 @@
+*.blend1
+*.blend2
+work/
+*.log
+__pycache__/
+*.pyc

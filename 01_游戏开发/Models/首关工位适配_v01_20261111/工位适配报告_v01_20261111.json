@@ -1,0 +1,862 @@
+{
+  "version": "station_fit_v01_20261111",
+  "params": {
+    "table_top": 0.33,
+    "contact_z": 0.35,
+    "paper_base_z": 0.344,
+    "board_or_mat_thickness": 0.014,
+    "standing_gap": 0.24,
+    "core_collision_radius": 0.22,
+    "collision_skin": 0.015,
+    "paper_size": [
+      0.42,
+      0.6
+    ],
+    "palm_x": 0.17,
+    "palm_forward": 0.273,
+    "table_depth": 0.72,
+    "shared_depth": 0.7,
+    "dry_width": 2.4,
+    "dry_depth": 0.6,
+    "dry_slot_spacing": 1.3,
+    "dry_paper_tilt_degrees": 30.0,
+    "pulp_depth": 0.82,
+    "pulp_operator_panel_inset": 0.04,
+    "create_contact_demo_sheets": true
+  },
+  "stations": [
+    {
+      "id": "station_print",
+      "dimensions": [
+        1.6,
+        0.72,
+        0.33
+      ],
+      "work_frames": [
+        {
+          "slot": null,
+          "standing_name": "station_print__standing_main",
+          "standing_local": [
+            -0.23,
+            -0.6,
+            0
+          ],
+          "facing_z_degrees": 180.0,
+          "contact_local": [
+            -0.23,
+            -0.32699999999999996,
+            0.35
+          ],
+          "contact_height_m": 0.35,
+          "contact_kind": "paper_surface",
+          "tool_grips": {
+            "L": {
+              "name": "station_print__tool_Grip_L_main",
+              "local_xyz": [
+                -0.06,
+                -0.32699999999999996,
+                0.35
+              ]
+            },
+            "R": {
+              "name": "station_print__tool_Grip_R_main",
+              "local_xyz": [
+                -0.4,
+                -0.32699999999999996,
+                0.35
+              ]
+            }
+          },
+          "work_frame": "station_print__work_frame_main",
+          "allowed_contact_surface_names": [
+            "adapt_print_dry_sheet__paper_dry__paper_body"
+          ],
+          "table_edge_gap_m": 0.24,
+          "core_radius_m": 0.22,
+          "skin_m": 0.015,
+          "proxy_clearance_m": 0.0049999999999999906,
+          "standing_world": [
+            7.87000036239624,
+            5.599999904632568,
+            0.0
+          ],
+          "contact_world": [
+            7.87000036239624,
+            5.872999668121338,
+            0.3499999940395355
+          ]
+        }
+      ],
+      "colliders": [
+        {
+          "name": "station_print__Collider_top",
+          "center_local": [
+            0,
+            0,
+            0.295
+          ],
+          "size_m": [
+            1.6,
+            0.72,
+            0.07
+          ]
+        },
+        {
+          "name": "station_print__Collider_core",
+          "center_local": [
+            0,
+            0,
+            0.13
+          ],
+          "size_m": [
+            1.52,
+            0.48,
+            0.26
+          ]
+        }
+      ],
+      "world_root": [
+        8.100000381469727,
+        6.199999809265137,
+        0.0
+      ],
+      "actual_visible_bounds_local": {
+        "min": [
+          -0.800000011920929,
+          -0.36000001430511475,
+          0.0
+        ],
+        "max": [
+          0.800000011920929,
+          0.36000001430511475,
+          0.43562498688697815
+        ],
+        "size": [
+          1.600000023841858,
+          0.7200000286102295,
+          0.43562498688697815
+        ]
+      }
+    },
+    {
+      "id": "station_stamp",
+      "dimensions": [
+        1.6,
+        0.72,
+        0.33
+      ],
+      "work_frames": [
+        {
+          "slot": null,
+          "standing_name": "station_stamp__standing_main",
+          "standing_local": [
+            -0.21,
+            0.6,
+            0
+          ],
+          "facing_z_degrees": 0.0,
+          "contact_local": [
+            -0.21,
+            0.32699999999999996,
+            0.35
+          ],
+          "contact_height_m": 0.35,
+          "contact_kind": "paper_surface",
+          "tool_grips": {
+            "L": {
+              "name": "station_stamp__tool_Grip_L_main",
+              "local_xyz": [
+                -0.38,
+                0.32699999999999996,
+                0.35
+              ]
+            },
+            "R": {
+              "name": "station_stamp__tool_Grip_R_main",
+              "local_xyz": [
+                -0.03999999999999998,
+                0.32699999999999996,
+                0.35
+              ]
+            }
+          },
+          "work_frame": "station_stamp__work_frame_main",
+          "allowed_contact_surface_names": [
+            "v01_stamp_red_ticket__paper_red__paper_body"
+          ],
+          "table_edge_gap_m": 0.24,
+          "core_radius_m": 0.22,
+          "skin_m": 0.015,
+          "proxy_clearance_m": 0.0049999999999999906,
+          "standing_world": [
+            10.09000015258789,
+            3.4000000953674316,
+            0.0
+          ],
+          "contact_world": [
+            10.09000015258789,
+            3.126999855041504,
+            0.3499999940395355
+          ]
+        }
+      ],
+      "colliders": [
+        {
+          "name": "station_stamp__Collider_top",
+          "center_local": [
+            0,
+            0,
+            0.295
+          ],
+          "size_m": [
+            1.6,
+            0.72,
+            0.07
+          ]
+        },
+        {
+          "name": "station_stamp__Collider_core",
+          "center_local": [
+            0,
+            0,
+            0.13
+          ],
+          "size_m": [
+            1.52,
+            0.48,
+            0.26
+          ]
+        }
+      ],
+      "stamp_handle_work_animation_validated": false,
+      "stamp_display_scale": 0.45,
+      "world_root": [
+        10.300000190734863,
+        2.799999952316284,
+        0.0
+      ],
+      "actual_visible_bounds_local": {
+        "min": [
+          -0.800000011920929,
+          -0.36000001430511475,
+          0.0
+        ],
+        "max": [
+          0.800000011920929,
+          0.36000001430511475,
+          0.46050000190734863
+        ],
+        "size": [
+          1.600000023841858,
+          0.7200000286102295,
+          0.46050000190734863
+        ]
+      }
+    },
+    {
+      "id": "station_shared",
+      "dimensions": [
+        1.0,
+        0.7,
+        0.33
+      ],
+      "work_frames": [
+        {
+          "slot": null,
+          "standing_name": "station_shared__standing_main",
+          "standing_local": [
+            0,
+            0.59,
+            0
+          ],
+          "facing_z_degrees": 0.0,
+          "contact_local": [
+            0,
+            0.31699999999999995,
+            0.35
+          ],
+          "contact_height_m": 0.35,
+          "contact_kind": "paper_surface",
+          "tool_grips": {
+            "L": {
+              "name": "station_shared__tool_Grip_L_main",
+              "local_xyz": [
+                -0.17,
+                0.31699999999999995,
+                0.35
+              ]
+            },
+            "R": {
+              "name": "station_shared__tool_Grip_R_main",
+              "local_xyz": [
+                0.17,
+                0.31699999999999995,
+                0.35
+              ]
+            }
+          },
+          "work_frame": "station_shared__work_frame_main",
+          "allowed_contact_surface_names": [
+            "adapt_shared_dry_sheet__paper_dry__paper_body"
+          ],
+          "table_edge_gap_m": 0.24,
+          "core_radius_m": 0.22,
+          "skin_m": 0.015,
+          "proxy_clearance_m": 0.0049999999999999906,
+          "standing_world": [
+            7.800000190734863,
+            1.7899999618530273,
+            0.0
+          ],
+          "contact_world": [
+            7.800000190734863,
+            1.5170000791549683,
+            0.3499999940395355
+          ]
+        }
+      ],
+      "colliders": [
+        {
+          "name": "station_shared__Collider_top",
+          "center_local": [
+            0,
+            0,
+            0.295
+          ],
+          "size_m": [
+            1.0,
+            0.7,
+            0.07
+          ]
+        },
+        {
+          "name": "station_shared__Collider_core",
+          "center_local": [
+            0,
+            0,
+            0.13
+          ],
+          "size_m": [
+            0.92,
+            0.45999999999999996,
+            0.26
+          ]
+        }
+      ],
+      "slot_count": 1,
+      "world_root": [
+        7.800000190734863,
+        1.2000000476837158,
+        0.0
+      ],
+      "actual_visible_bounds_local": {
+        "min": [
+          -0.5,
+          -0.3499999940395355,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.3499999940395355,
+          0.367000013589859
+        ],
+        "size": [
+          1.0,
+          0.699999988079071,
+          0.367000013589859
+        ]
+      }
+    },
+    {
+      "id": "station_pulp",
+      "dimensions": [
+        2.0,
+        0.82,
+        0.36
+      ],
+      "work_frames": [
+        {
+          "slot": null,
+          "standing_name": "station_pulp__standing_main",
+          "standing_local": [
+            0.27,
+            0.6499999999999999,
+            0
+          ],
+          "facing_z_degrees": 0.0,
+          "contact_local": [
+            0.27,
+            0.3769999999999999,
+            0.35
+          ],
+          "contact_height_m": 0.35,
+          "contact_kind": "front_screen_beam_top",
+          "tool_grips": {
+            "L": {
+              "name": "station_pulp__tool_Grip_L_main",
+              "local_xyz": [
+                0.1,
+                0.3769999999999999,
+                0.35
+              ]
+            },
+            "R": {
+              "name": "station_pulp__tool_Grip_R_main",
+              "local_xyz": [
+                0.44000000000000006,
+                0.3769999999999999,
+                0.35
+              ]
+            }
+          },
+          "work_frame": "station_pulp__work_frame_main",
+          "allowed_contact_surface_names": [
+            "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001"
+          ],
+          "table_edge_gap_m": 0.24,
+          "core_radius_m": 0.22,
+          "skin_m": 0.015,
+          "proxy_clearance_m": 0.0049999999999999906,
+          "standing_world": [
+            2.2699999809265137,
+            3.0500001907348633,
+            0.0
+          ],
+          "contact_world": [
+            2.2699999809265137,
+            2.7770001888275146,
+            0.3499999940395355
+          ]
+        }
+      ],
+      "colliders": [
+        {
+          "name": "station_pulp__Collider_vat_core",
+          "center_local": [
+            0,
+            -0.02,
+            0.15
+          ],
+          "size_m": [
+            1.82,
+            0.72,
+            0.3
+          ]
+        },
+        {
+          "name": "station_pulp__Collider_vat_operator_panel",
+          "center_local": [
+            0,
+            0.3221666666666667,
+            0.15
+          ],
+          "size_m": [
+            1.85,
+            0.09566666666666668,
+            0.3
+          ]
+        },
+        {
+          "name": "station_pulp__Collider_vat_far_wall",
+          "center_local": [
+            0,
+            -0.375,
+            0.18
+          ],
+          "size_m": [
+            1.8,
+            0.07,
+            0.36
+          ]
+        },
+        {
+          "name": "station_pulp__Collider_vat_side_-1",
+          "center_local": [
+            -0.9,
+            0,
+            0.18
+          ],
+          "size_m": [
+            0.2,
+            0.82,
+            0.36
+          ]
+        },
+        {
+          "name": "station_pulp__Collider_vat_side_1",
+          "center_local": [
+            0.9,
+            0,
+            0.18
+          ],
+          "size_m": [
+            0.2,
+            0.82,
+            0.36
+          ]
+        }
+      ],
+      "screen_size_unchanged": [
+        0.52,
+        0.7
+      ],
+      "paper_output_z": 0.352,
+      "operator_panel_inset_m": 0.04,
+      "operator_panel_front_y": 0.37,
+      "world_root": [
+        2.0,
+        2.4000000953674316,
+        0.0
+      ],
+      "actual_visible_bounds_local": {
+        "min": [
+          -1.0000001192092896,
+          -0.4100000262260437,
+          0.0
+        ],
+        "max": [
+          1.0000001192092896,
+          0.4088681936264038,
+          0.40114516019821167
+        ],
+        "size": [
+          2.000000238418579,
+          0.8188682198524475,
+          0.40114516019821167
+        ]
+      }
+    },
+    {
+      "id": "station_dry",
+      "dimensions": [
+        2.4,
+        0.6,
+        1.6
+      ],
+      "work_frames": [
+        {
+          "slot": "A",
+          "standing_name": "station_dry__standing_A",
+          "standing_local": [
+            -0.65,
+            -0.54,
+            0
+          ],
+          "facing_z_degrees": 180.0,
+          "contact_local": [
+            -0.65,
+            -0.267,
+            0.35
+          ],
+          "contact_height_m": 0.35,
+          "contact_kind": "horizontal_drying_transfer_bar",
+          "tool_grips": {
+            "L": {
+              "name": "station_dry__tool_Grip_L_A",
+              "local_xyz": [
+                -0.48,
+                -0.267,
+                0.35
+              ]
+            },
+            "R": {
+              "name": "station_dry__tool_Grip_R_A",
+              "local_xyz": [
+                -0.8200000000000001,
+                -0.267,
+                0.35
+              ]
+            }
+          },
+          "work_frame": "station_dry__work_frame_A",
+          "allowed_contact_surface_names": [
+            "station_dry__receiving_bar_A"
+          ],
+          "table_edge_gap_m": 0.24,
+          "core_radius_m": 0.22,
+          "skin_m": 0.015,
+          "proxy_clearance_m": 0.0049999999999999906,
+          "standing_world": [
+            1.649999976158142,
+            6.159999847412109,
+            0.0
+          ],
+          "contact_world": [
+            1.649999976158142,
+            6.432999610900879,
+            0.3499999940395355
+          ]
+        },
+        {
+          "slot": "B",
+          "standing_name": "station_dry__standing_B",
+          "standing_local": [
+            0.65,
+            -0.54,
+            0
+          ],
+          "facing_z_degrees": 180.0,
+          "contact_local": [
+            0.65,
+            -0.267,
+            0.35
+          ],
+          "contact_height_m": 0.35,
+          "contact_kind": "horizontal_drying_transfer_bar",
+          "tool_grips": {
+            "L": {
+              "name": "station_dry__tool_Grip_L_B",
+              "local_xyz": [
+                0.8200000000000001,
+                -0.267,
+                0.35
+              ]
+            },
+            "R": {
+              "name": "station_dry__tool_Grip_R_B",
+              "local_xyz": [
+                0.48,
+                -0.267,
+                0.35
+              ]
+            }
+          },
+          "work_frame": "station_dry__work_frame_B",
+          "allowed_contact_surface_names": [
+            "station_dry__receiving_bar_B"
+          ],
+          "table_edge_gap_m": 0.24,
+          "core_radius_m": 0.22,
+          "skin_m": 0.015,
+          "proxy_clearance_m": 0.0049999999999999906,
+          "standing_world": [
+            2.9499998092651367,
+            6.159999847412109,
+            0.0
+          ],
+          "contact_world": [
+            2.9499998092651367,
+            6.432999610900879,
+            0.3499999940395355
+          ]
+        }
+      ],
+      "colliders": [
+        {
+          "name": "station_dry__Collider_foot_-1",
+          "center_local": [
+            -1.08,
+            0,
+            0.07
+          ],
+          "size_m": [
+            0.24,
+            0.6,
+            0.14
+          ]
+        },
+        {
+          "name": "station_dry__Collider_post_-1",
+          "center_local": [
+            -1.08,
+            0.1,
+            0.83
+          ],
+          "size_m": [
+            0.16,
+            0.16,
+            1.54
+          ]
+        },
+        {
+          "name": "station_dry__Collider_foot_1",
+          "center_local": [
+            1.08,
+            0,
+            0.07
+          ],
+          "size_m": [
+            0.24,
+            0.6,
+            0.14
+          ]
+        },
+        {
+          "name": "station_dry__Collider_post_1",
+          "center_local": [
+            1.08,
+            0.1,
+            0.83
+          ],
+          "size_m": [
+            0.16,
+            0.16,
+            1.54
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "slot_spacing": 1.3,
+      "paper_tilt_degrees": 30.0,
+      "reachable_part": "horizontal .35m transfer bar; inclined sheet begins 3cm behind it, near edge .35 far edge .65; high frame retained",
+      "world_root": [
+        2.299999952316284,
+        6.699999809265137,
+        0.0
+      ],
+      "actual_visible_bounds_local": {
+        "min": [
+          -1.2000000476837158,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          1.1999999284744263,
+          0.301615446805954,
+          1.600000023841858
+        ],
+        "size": [
+          2.399999976158142,
+          0.6016154587268829,
+          1.600000023841858
+        ]
+      }
+    },
+    {
+      "id": "station_delivery",
+      "dimensions": [
+        2,
+        0.6,
+        2.4
+      ],
+      "work_frames": [
+        {
+          "slot": null,
+          "standing_name": "station_delivery__standing_main",
+          "standing_local": [
+            -0.15,
+            -0.54,
+            0
+          ],
+          "facing_z_degrees": 180.0,
+          "contact_local": [
+            -0.15,
+            -0.267,
+            0.35
+          ],
+          "contact_height_m": 0.35,
+          "contact_kind": "receiving_tray_front_lip",
+          "tool_grips": {
+            "L": {
+              "name": "station_delivery__tool_Grip_L_main",
+              "local_xyz": [
+                0.020000000000000018,
+                -0.267,
+                0.35
+              ]
+            },
+            "R": {
+              "name": "station_delivery__tool_Grip_R_main",
+              "local_xyz": [
+                -0.32,
+                -0.267,
+                0.35
+              ]
+            }
+          },
+          "work_frame": "station_delivery__work_frame_main",
+          "allowed_contact_surface_names": [
+            "station_delivery__tray_end"
+          ],
+          "table_edge_gap_m": 0.24,
+          "core_radius_m": 0.22,
+          "skin_m": 0.015,
+          "proxy_clearance_m": 0.0049999999999999906,
+          "standing_world": [
+            10.450000762939453,
+            7.059999942779541,
+            0.0
+          ],
+          "contact_world": [
+            10.450000762939453,
+            7.3329997062683105,
+            0.3499999940395355
+          ]
+        }
+      ],
+      "colliders": [
+        {
+          "name": "station_delivery__Collider_counter",
+          "center_local": [
+            0,
+            0,
+            0.3025
+          ],
+          "size_m": [
+            1.96,
+            0.6,
+            0.055
+          ]
+        }
+      ],
+      "window_roof_scroll_unchanged": true,
+      "delivered_paper_is_consumed_not_stored": true,
+      "world_root": [
+        10.600000381469727,
+        7.599999904632568,
+        0.0
+      ],
+      "actual_visible_bounds_local": {
+        "min": [
+          -1.0,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.30656448006629944,
+          2.4000000953674316
+        ],
+        "size": [
+          2.0,
+          0.6065644919872284,
+          2.4000000953674316
+        ]
+      }
+    }
+  ],
+  "changes": [
+    "furniture height/depth only, no global scene scaling",
+    "paper dimensions unchanged; worktop sheets rotated Z90",
+    "table legs grounded, front apron/stretchers recessed",
+    "tool parking transforms explicit; stamp handle motion not certified",
+    "dry width 2.4, slot spacing 1.3; reachable lower sheet edge",
+    "upper delivery frame, roof and scroll unchanged",
+    "pulp operator panel recessed .04 m with separate wall/core proxies; screen and standing root unchanged"
+  ],
+  "checks": [
+    {
+      "name": "six_station_roots",
+      "pass": true
+    },
+    {
+      "name": "seven_work_frames",
+      "pass": true
+    },
+    {
+      "name": "torso_proxy_outside_top_edge",
+      "pass": true
+    },
+    {
+      "name": "character_rigs_not_modified",
+      "pass": true
+    },
+    {
+      "name": "paper_scale_unchanged",
+      "pass": true
+    }
+  ],
+  "scope": "station art and interfaces only; no role root, rig, source file or gameplay state modified",
+  "collision_note": "r=.22 is a torso core proxy, not the complete shoe/hat envelope; actual meshes require separate review",
+  "work_scope": "generic paper/frame contact only; precise stamp handle choreography and top drying clips are not certified"
+}

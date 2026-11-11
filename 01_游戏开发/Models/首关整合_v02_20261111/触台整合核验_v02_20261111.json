@@ -1,0 +1,1697 @@
+{
+  "version": "v02_20261111",
+  "source": "01_游戏开发\\Models\\首关整合_v01_20261111\\首关_角色道具整合_v01_20261111.blend",
+  "source_sha256": "ce426ab659db9495e901e0df6e19d3c20058968a065b3163611ed4b58bbfa790",
+  "characters": [
+    {
+      "id": "zhituan",
+      "source": "01_游戏开发\\Models\\首批角色_v02_20261111\\角色_纸团_整合_v02_20261111.blend",
+      "sha256": "835c350ae2c6b21ff161309d6a78ca45bc7cc20608d349bb8bd468ab380e40aa"
+    },
+    {
+      "id": "yintao",
+      "source": "01_游戏开发\\Models\\首批角色_v02_20261111\\角色_印桃_整合_v02_20261111.blend",
+      "sha256": "2dcccfaa581a7a8d8210c9d1b7a958c537c3ecff2515e71126882e8113f4e193"
+    }
+  ],
+  "station_adaptation": {
+    "version": "station_fit_v01_20261111",
+    "params": {
+      "table_top": 0.33,
+      "contact_z": 0.35,
+      "paper_base_z": 0.344,
+      "board_or_mat_thickness": 0.014,
+      "standing_gap": 0.24,
+      "core_collision_radius": 0.22,
+      "collision_skin": 0.015,
+      "paper_size": [
+        0.42,
+        0.6
+      ],
+      "palm_x": 0.17,
+      "palm_forward": 0.273,
+      "table_depth": 0.72,
+      "shared_depth": 0.7,
+      "dry_width": 2.4,
+      "dry_depth": 0.6,
+      "dry_slot_spacing": 1.3,
+      "dry_paper_tilt_degrees": 30.0,
+      "pulp_depth": 0.82,
+      "pulp_operator_panel_inset": 0.04,
+      "create_contact_demo_sheets": true
+    },
+    "stations": [
+      {
+        "id": "station_print",
+        "dimensions": [
+          1.6,
+          0.72,
+          0.33
+        ],
+        "work_frames": [
+          {
+            "slot": null,
+            "standing_name": "station_print__standing_main",
+            "standing_local": [
+              -0.23,
+              -0.6,
+              0
+            ],
+            "facing_z_degrees": 180.0,
+            "contact_local": [
+              -0.23,
+              -0.32699999999999996,
+              0.35
+            ],
+            "contact_height_m": 0.35,
+            "contact_kind": "paper_surface",
+            "tool_grips": {
+              "L": {
+                "name": "station_print__tool_Grip_L_main",
+                "local_xyz": [
+                  -0.06,
+                  -0.32699999999999996,
+                  0.35
+                ]
+              },
+              "R": {
+                "name": "station_print__tool_Grip_R_main",
+                "local_xyz": [
+                  -0.4,
+                  -0.32699999999999996,
+                  0.35
+                ]
+              }
+            },
+            "work_frame": "station_print__work_frame_main",
+            "allowed_contact_surface_names": [
+              "adapt_print_dry_sheet__paper_dry__paper_body"
+            ],
+            "table_edge_gap_m": 0.24,
+            "core_radius_m": 0.22,
+            "skin_m": 0.015,
+            "proxy_clearance_m": 0.0049999999999999906,
+            "standing_world": [
+              7.87000036239624,
+              5.599999904632568,
+              0.0
+            ],
+            "contact_world": [
+              7.87000036239624,
+              5.872999668121338,
+              0.3499999940395355
+            ]
+          }
+        ],
+        "colliders": [
+          {
+            "name": "station_print__Collider_top",
+            "center_local": [
+              0,
+              0,
+              0.295
+            ],
+            "size_m": [
+              1.6,
+              0.72,
+              0.07
+            ]
+          },
+          {
+            "name": "station_print__Collider_core",
+            "center_local": [
+              0,
+              0,
+              0.13
+            ],
+            "size_m": [
+              1.52,
+              0.48,
+              0.26
+            ]
+          }
+        ],
+        "world_root": [
+          8.100000381469727,
+          6.199999809265137,
+          0.0
+        ],
+        "actual_visible_bounds_local": {
+          "min": [
+            -0.800000011920929,
+            -0.36000001430511475,
+            0.0
+          ],
+          "max": [
+            0.800000011920929,
+            0.36000001430511475,
+            0.43562498688697815
+          ],
+          "size": [
+            1.600000023841858,
+            0.7200000286102295,
+            0.43562498688697815
+          ]
+        }
+      },
+      {
+        "id": "station_stamp",
+        "dimensions": [
+          1.6,
+          0.72,
+          0.33
+        ],
+        "work_frames": [
+          {
+            "slot": null,
+            "standing_name": "station_stamp__standing_main",
+            "standing_local": [
+              -0.21,
+              0.6,
+              0
+            ],
+            "facing_z_degrees": 0.0,
+            "contact_local": [
+              -0.21,
+              0.32699999999999996,
+              0.35
+            ],
+            "contact_height_m": 0.35,
+            "contact_kind": "paper_surface",
+            "tool_grips": {
+              "L": {
+                "name": "station_stamp__tool_Grip_L_main",
+                "local_xyz": [
+                  -0.38,
+                  0.32699999999999996,
+                  0.35
+                ]
+              },
+              "R": {
+                "name": "station_stamp__tool_Grip_R_main",
+                "local_xyz": [
+                  -0.03999999999999998,
+                  0.32699999999999996,
+                  0.35
+                ]
+              }
+            },
+            "work_frame": "station_stamp__work_frame_main",
+            "allowed_contact_surface_names": [
+              "v01_stamp_red_ticket__paper_red__paper_body"
+            ],
+            "table_edge_gap_m": 0.24,
+            "core_radius_m": 0.22,
+            "skin_m": 0.015,
+            "proxy_clearance_m": 0.0049999999999999906,
+            "standing_world": [
+              10.09000015258789,
+              3.4000000953674316,
+              0.0
+            ],
+            "contact_world": [
+              10.09000015258789,
+              3.126999855041504,
+              0.3499999940395355
+            ]
+          }
+        ],
+        "colliders": [
+          {
+            "name": "station_stamp__Collider_top",
+            "center_local": [
+              0,
+              0,
+              0.295
+            ],
+            "size_m": [
+              1.6,
+              0.72,
+              0.07
+            ]
+          },
+          {
+            "name": "station_stamp__Collider_core",
+            "center_local": [
+              0,
+              0,
+              0.13
+            ],
+            "size_m": [
+              1.52,
+              0.48,
+              0.26
+            ]
+          }
+        ],
+        "stamp_handle_work_animation_validated": false,
+        "stamp_display_scale": 0.45,
+        "world_root": [
+          10.300000190734863,
+          2.799999952316284,
+          0.0
+        ],
+        "actual_visible_bounds_local": {
+          "min": [
+            -0.800000011920929,
+            -0.36000001430511475,
+            0.0
+          ],
+          "max": [
+            0.800000011920929,
+            0.36000001430511475,
+            0.46050000190734863
+          ],
+          "size": [
+            1.600000023841858,
+            0.7200000286102295,
+            0.46050000190734863
+          ]
+        }
+      },
+      {
+        "id": "station_shared",
+        "dimensions": [
+          1.0,
+          0.7,
+          0.33
+        ],
+        "work_frames": [
+          {
+            "slot": null,
+            "standing_name": "station_shared__standing_main",
+            "standing_local": [
+              0,
+              0.59,
+              0
+            ],
+            "facing_z_degrees": 0.0,
+            "contact_local": [
+              0,
+              0.31699999999999995,
+              0.35
+            ],
+            "contact_height_m": 0.35,
+            "contact_kind": "paper_surface",
+            "tool_grips": {
+              "L": {
+                "name": "station_shared__tool_Grip_L_main",
+                "local_xyz": [
+                  -0.17,
+                  0.31699999999999995,
+                  0.35
+                ]
+              },
+              "R": {
+                "name": "station_shared__tool_Grip_R_main",
+                "local_xyz": [
+                  0.17,
+                  0.31699999999999995,
+                  0.35
+                ]
+              }
+            },
+            "work_frame": "station_shared__work_frame_main",
+            "allowed_contact_surface_names": [
+              "adapt_shared_dry_sheet__paper_dry__paper_body"
+            ],
+            "table_edge_gap_m": 0.24,
+            "core_radius_m": 0.22,
+            "skin_m": 0.015,
+            "proxy_clearance_m": 0.0049999999999999906,
+            "standing_world": [
+              7.800000190734863,
+              1.7899999618530273,
+              0.0
+            ],
+            "contact_world": [
+              7.800000190734863,
+              1.5170000791549683,
+              0.3499999940395355
+            ]
+          }
+        ],
+        "colliders": [
+          {
+            "name": "station_shared__Collider_top",
+            "center_local": [
+              0,
+              0,
+              0.295
+            ],
+            "size_m": [
+              1.0,
+              0.7,
+              0.07
+            ]
+          },
+          {
+            "name": "station_shared__Collider_core",
+            "center_local": [
+              0,
+              0,
+              0.13
+            ],
+            "size_m": [
+              0.92,
+              0.45999999999999996,
+              0.26
+            ]
+          }
+        ],
+        "slot_count": 1,
+        "world_root": [
+          7.800000190734863,
+          1.2000000476837158,
+          0.0
+        ],
+        "actual_visible_bounds_local": {
+          "min": [
+            -0.5,
+            -0.3499999940395355,
+            0.0
+          ],
+          "max": [
+            0.5,
+            0.3499999940395355,
+            0.367000013589859
+          ],
+          "size": [
+            1.0,
+            0.699999988079071,
+            0.367000013589859
+          ]
+        }
+      },
+      {
+        "id": "station_pulp",
+        "dimensions": [
+          2.0,
+          0.82,
+          0.36
+        ],
+        "work_frames": [
+          {
+            "slot": null,
+            "standing_name": "station_pulp__standing_main",
+            "standing_local": [
+              0.27,
+              0.6499999999999999,
+              0
+            ],
+            "facing_z_degrees": 0.0,
+            "contact_local": [
+              0.27,
+              0.3769999999999999,
+              0.35
+            ],
+            "contact_height_m": 0.35,
+            "contact_kind": "front_screen_beam_top",
+            "tool_grips": {
+              "L": {
+                "name": "station_pulp__tool_Grip_L_main",
+                "local_xyz": [
+                  0.1,
+                  0.3769999999999999,
+                  0.35
+                ]
+              },
+              "R": {
+                "name": "station_pulp__tool_Grip_R_main",
+                "local_xyz": [
+                  0.44000000000000006,
+                  0.3769999999999999,
+                  0.35
+                ]
+              }
+            },
+            "work_frame": "station_pulp__work_frame_main",
+            "allowed_contact_surface_names": [
+              "v01_pulp_screen__tool_papermaking_screen__bamboo_end.001"
+            ],
+            "table_edge_gap_m": 0.24,
+            "core_radius_m": 0.22,
+            "skin_m": 0.015,
+            "proxy_clearance_m": 0.0049999999999999906,
+            "standing_world": [
+              2.2699999809265137,
+              3.0500001907348633,
+              0.0
+            ],
+            "contact_world": [
+              2.2699999809265137,
+              2.7770001888275146,
+              0.3499999940395355
+            ]
+          }
+        ],
+        "colliders": [
+          {
+            "name": "station_pulp__Collider_vat_core",
+            "center_local": [
+              0,
+              -0.02,
+              0.15
+            ],
+            "size_m": [
+              1.82,
+              0.72,
+              0.3
+            ]
+          },
+          {
+            "name": "station_pulp__Collider_vat_operator_panel",
+            "center_local": [
+              0,
+              0.3221666666666667,
+              0.15
+            ],
+            "size_m": [
+              1.85,
+              0.09566666666666668,
+              0.3
+            ]
+          },
+          {
+            "name": "station_pulp__Collider_vat_far_wall",
+            "center_local": [
+              0,
+              -0.375,
+              0.18
+            ],
+            "size_m": [
+              1.8,
+              0.07,
+              0.36
+            ]
+          },
+          {
+            "name": "station_pulp__Collider_vat_side_-1",
+            "center_local": [
+              -0.9,
+              0,
+              0.18
+            ],
+            "size_m": [
+              0.2,
+              0.82,
+              0.36
+            ]
+          },
+          {
+            "name": "station_pulp__Collider_vat_side_1",
+            "center_local": [
+              0.9,
+              0,
+              0.18
+            ],
+            "size_m": [
+              0.2,
+              0.82,
+              0.36
+            ]
+          }
+        ],
+        "screen_size_unchanged": [
+          0.52,
+          0.7
+        ],
+        "paper_output_z": 0.352,
+        "operator_panel_inset_m": 0.04,
+        "operator_panel_front_y": 0.37,
+        "world_root": [
+          2.0,
+          2.4000000953674316,
+          0.0
+        ],
+        "actual_visible_bounds_local": {
+          "min": [
+            -1.0000001192092896,
+            -0.4100000262260437,
+            0.0
+          ],
+          "max": [
+            1.0000001192092896,
+            0.4088681936264038,
+            0.40114516019821167
+          ],
+          "size": [
+            2.000000238418579,
+            0.8188682198524475,
+            0.40114516019821167
+          ]
+        }
+      },
+      {
+        "id": "station_dry",
+        "dimensions": [
+          2.4,
+          0.6,
+          1.6
+        ],
+        "work_frames": [
+          {
+            "slot": "A",
+            "standing_name": "station_dry__standing_A",
+            "standing_local": [
+              -0.65,
+              -0.54,
+              0
+            ],
+            "facing_z_degrees": 180.0,
+            "contact_local": [
+              -0.65,
+              -0.267,
+              0.35
+            ],
+            "contact_height_m": 0.35,
+            "contact_kind": "horizontal_drying_transfer_bar",
+            "tool_grips": {
+              "L": {
+                "name": "station_dry__tool_Grip_L_A",
+                "local_xyz": [
+                  -0.48,
+                  -0.267,
+                  0.35
+                ]
+              },
+              "R": {
+                "name": "station_dry__tool_Grip_R_A",
+                "local_xyz": [
+                  -0.8200000000000001,
+                  -0.267,
+                  0.35
+                ]
+              }
+            },
+            "work_frame": "station_dry__work_frame_A",
+            "allowed_contact_surface_names": [
+              "station_dry__receiving_bar_A"
+            ],
+            "table_edge_gap_m": 0.24,
+            "core_radius_m": 0.22,
+            "skin_m": 0.015,
+            "proxy_clearance_m": 0.0049999999999999906,
+            "standing_world": [
+              1.649999976158142,
+              6.159999847412109,
+              0.0
+            ],
+            "contact_world": [
+              1.649999976158142,
+              6.432999610900879,
+              0.3499999940395355
+            ]
+          },
+          {
+            "slot": "B",
+            "standing_name": "station_dry__standing_B",
+            "standing_local": [
+              0.65,
+              -0.54,
+              0
+            ],
+            "facing_z_degrees": 180.0,
+            "contact_local": [
+              0.65,
+              -0.267,
+              0.35
+            ],
+            "contact_height_m": 0.35,
+            "contact_kind": "horizontal_drying_transfer_bar",
+            "tool_grips": {
+              "L": {
+                "name": "station_dry__tool_Grip_L_B",
+                "local_xyz": [
+                  0.8200000000000001,
+                  -0.267,
+                  0.35
+                ]
+              },
+              "R": {
+                "name": "station_dry__tool_Grip_R_B",
+                "local_xyz": [
+                  0.48,
+                  -0.267,
+                  0.35
+                ]
+              }
+            },
+            "work_frame": "station_dry__work_frame_B",
+            "allowed_contact_surface_names": [
+              "station_dry__receiving_bar_B"
+            ],
+            "table_edge_gap_m": 0.24,
+            "core_radius_m": 0.22,
+            "skin_m": 0.015,
+            "proxy_clearance_m": 0.0049999999999999906,
+            "standing_world": [
+              2.9499998092651367,
+              6.159999847412109,
+              0.0
+            ],
+            "contact_world": [
+              2.9499998092651367,
+              6.432999610900879,
+              0.3499999940395355
+            ]
+          }
+        ],
+        "colliders": [
+          {
+            "name": "station_dry__Collider_foot_-1",
+            "center_local": [
+              -1.08,
+              0,
+              0.07
+            ],
+            "size_m": [
+              0.24,
+              0.6,
+              0.14
+            ]
+          },
+          {
+            "name": "station_dry__Collider_post_-1",
+            "center_local": [
+              -1.08,
+              0.1,
+              0.83
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              1.54
+            ]
+          },
+          {
+            "name": "station_dry__Collider_foot_1",
+            "center_local": [
+              1.08,
+              0,
+              0.07
+            ],
+            "size_m": [
+              0.24,
+              0.6,
+              0.14
+            ]
+          },
+          {
+            "name": "station_dry__Collider_post_1",
+            "center_local": [
+              1.08,
+              0.1,
+              0.83
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              1.54
+            ]
+          }
+        ],
+        "slot_count": 2,
+        "slot_spacing": 1.3,
+        "paper_tilt_degrees": 30.0,
+        "reachable_part": "horizontal .35m transfer bar; inclined sheet begins 3cm behind it, near edge .35 far edge .65; high frame retained",
+        "world_root": [
+          2.299999952316284,
+          6.699999809265137,
+          0.0
+        ],
+        "actual_visible_bounds_local": {
+          "min": [
+            -1.2000000476837158,
+            -0.30000001192092896,
+            0.0
+          ],
+          "max": [
+            1.1999999284744263,
+            0.301615446805954,
+            1.600000023841858
+          ],
+          "size": [
+            2.399999976158142,
+            0.6016154587268829,
+            1.600000023841858
+          ]
+        }
+      },
+      {
+        "id": "station_delivery",
+        "dimensions": [
+          2,
+          0.6,
+          2.4
+        ],
+        "work_frames": [
+          {
+            "slot": null,
+            "standing_name": "station_delivery__standing_main",
+            "standing_local": [
+              -0.15,
+              -0.54,
+              0
+            ],
+            "facing_z_degrees": 180.0,
+            "contact_local": [
+              -0.15,
+              -0.267,
+              0.35
+            ],
+            "contact_height_m": 0.35,
+            "contact_kind": "receiving_tray_front_lip",
+            "tool_grips": {
+              "L": {
+                "name": "station_delivery__tool_Grip_L_main",
+                "local_xyz": [
+                  0.020000000000000018,
+                  -0.267,
+                  0.35
+                ]
+              },
+              "R": {
+                "name": "station_delivery__tool_Grip_R_main",
+                "local_xyz": [
+                  -0.32,
+                  -0.267,
+                  0.35
+                ]
+              }
+            },
+            "work_frame": "station_delivery__work_frame_main",
+            "allowed_contact_surface_names": [
+              "station_delivery__tray_end"
+            ],
+            "table_edge_gap_m": 0.24,
+            "core_radius_m": 0.22,
+            "skin_m": 0.015,
+            "proxy_clearance_m": 0.0049999999999999906,
+            "standing_world": [
+              10.450000762939453,
+              7.059999942779541,
+              0.0
+            ],
+            "contact_world": [
+              10.450000762939453,
+              7.3329997062683105,
+              0.3499999940395355
+            ]
+          }
+        ],
+        "colliders": [
+          {
+            "name": "station_delivery__Collider_counter",
+            "center_local": [
+              0,
+              0,
+              0.3025
+            ],
+            "size_m": [
+              1.96,
+              0.6,
+              0.055
+            ]
+          }
+        ],
+        "window_roof_scroll_unchanged": true,
+        "delivered_paper_is_consumed_not_stored": true,
+        "world_root": [
+          10.600000381469727,
+          7.599999904632568,
+          0.0
+        ],
+        "actual_visible_bounds_local": {
+          "min": [
+            -1.0,
+            -0.30000001192092896,
+            0.0
+          ],
+          "max": [
+            1.0,
+            0.30656448006629944,
+            2.4000000953674316
+          ],
+          "size": [
+            2.0,
+            0.6065644919872284,
+            2.4000000953674316
+          ]
+        }
+      }
+    ],
+    "changes": [
+      "furniture height/depth only, no global scene scaling",
+      "paper dimensions unchanged; worktop sheets rotated Z90",
+      "table legs grounded, front apron/stretchers recessed",
+      "tool parking transforms explicit; stamp handle motion not certified",
+      "dry width 2.4, slot spacing 1.3; reachable lower sheet edge",
+      "upper delivery frame, roof and scroll unchanged",
+      "pulp operator panel recessed .04 m with separate wall/core proxies; screen and standing root unchanged"
+    ],
+    "checks": [
+      {
+        "name": "six_station_roots",
+        "pass": true
+      },
+      {
+        "name": "seven_work_frames",
+        "pass": true
+      },
+      {
+        "name": "torso_proxy_outside_top_edge",
+        "pass": true
+      },
+      {
+        "name": "character_rigs_not_modified",
+        "pass": true
+      },
+      {
+        "name": "paper_scale_unchanged",
+        "pass": true
+      }
+    ],
+    "scope": "station art and interfaces only; no role root, rig, source file or gameplay state modified",
+    "collision_note": "r=.22 is a torso core proxy, not the complete shoe/hat envelope; actual meshes require separate review",
+    "work_scope": "generic paper/frame contact only; precise stamp handle choreography and top drying clips are not certified"
+  },
+  "exports": [
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\首关_触台比例环境_v02_20261111.glb",
+      "sha256": "86762444158cfabd0de79ae15f80ce600a1b9b07b94ef6eb844617ea4d14cd4b",
+      "bytes": 40958880,
+      "mesh_count": 859
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_pulp.glb",
+      "sha256": "0bf025f08ddf22f83521416cd9abd6af6dbf4daeb08a3bbc4001eeb66763bc00",
+      "bytes": 12256468,
+      "mesh_count": 91
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_dry.glb",
+      "sha256": "9d1b34c372fc85434fb31e90d273aa45a67aaea6a2fe88de0e31f4cb00af600f",
+      "bytes": 9000388,
+      "mesh_count": 66
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_print.glb",
+      "sha256": "326b3e3c81398771cacd512abecdc8643e8f245d340dbae13882ca4c54fba99b",
+      "bytes": 17148464,
+      "mesh_count": 84
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_stamp.glb",
+      "sha256": "ecb44f5d9d7571cbb4b1453eee5080427ef1df5b1234658f6523f4685e6867c1",
+      "bytes": 13868968,
+      "mesh_count": 56
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_delivery.glb",
+      "sha256": "c0f0fd38e6d428c2a0247bad7d979fa3df545a107ec5ada9fc3143dad297b0b7",
+      "bytes": 9526492,
+      "mesh_count": 47
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_shared.glb",
+      "sha256": "bfc0acfa7ecd5e54e883fc15c63d166b0b347484221e8076ac3e45ac93df1502",
+      "bytes": 8373640,
+      "mesh_count": 42
+    }
+  ],
+  "texture_optimization": {
+    "before": 55,
+    "after": 41,
+    "byte_identical_remaps": [
+      {
+        "duplicate": "TEX_GarmentRepair_belt_BaseColor_v01_20261111.001",
+        "retained": "TEX_GarmentRepair_belt_BaseColor_v01_20261111",
+        "sha256": "6a5c5ad47954ab3b73a9af1a1ca76c4ecdc9fed7d258c29ff010e7a2d837bcfc"
+      },
+      {
+        "duplicate": "TEX_GarmentRepair_Paper_Normal_v01_20261111.001",
+        "retained": "TEX_GarmentRepair_Paper_Normal_v01_20261111",
+        "sha256": "f3760248165846aab1f5702211d9e319f0bc24f55f5aea7aa157667753122b34"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.002",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.003",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.004",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_paper_BaseColor.001",
+        "sha256": "222f13a5124bf059307f04fd9d0c2aea50bbae7591c7f823a92cf3d2a4c48295"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_paper_BaseColor.001",
+        "sha256": "222f13a5124bf059307f04fd9d0c2aea50bbae7591c7f823a92cf3d2a4c48295"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.004",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_teal_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_teal_BaseColor.001",
+        "sha256": "b03cb38d123d0c064bd2256bb01fab35e80da51464550b4b7f8b497222b35279"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wet_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_wet_BaseColor.001",
+        "sha256": "728aea469977098609f82e84ab01786d84933163bada20be2774b2b2f82bf592"
+      },
+      {
+        "duplicate": "tripo_image_32b70fc4_0.001",
+        "retained": "tripo_image_32b70fc4_0",
+        "sha256": "5989314396dc0c5a9731a8e4d38af8f97f1d14aa82f92b91c0c7faa8b2045879"
+      },
+      {
+        "duplicate": "tripo_image_69800d4e_0.001",
+        "retained": "tripo_image_69800d4e_0",
+        "sha256": "934f657410d12904cbfd36bffeaf890bbee451315bd1916794152b96600e760c"
+      }
+    ]
+  },
+  "blend_sha256": "cc0b3edb410b3cf48cf6525b39dc387e595703309fd6a09e559ca6fb03492f8a",
+  "review_cutaway": {
+    "cameras": [
+      "CAM_Contact_Print",
+      "CAM_Contact_Dry"
+    ],
+    "temporary_hidden_collections": [
+      "ENV_02_Back_Walls",
+      "ENV_03_Low_Boundary",
+      "ENV_04_Open_Eaves",
+      "ENV_05_Decoration"
+    ],
+    "saved_model_and_gameplay_camera_unaffected": true
+  },
+  "unity_runtime_tested": false,
+  "delivery_checks": [
+    {
+      "name": "saved_blend_reopened",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "one_unit_one_metre",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "two_character_armatures",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source_v01_assembly_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_referenced_character_sources_match",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "twenty_one_named_gameplay_interfaces",
+      "pass": true,
+      "detail": {
+        "station_pulp__slot_0": [
+          2.27,
+          2.44,
+          0.352
+        ],
+        "station_pulp__interaction_main": [
+          2.27,
+          2.845,
+          0.35
+        ],
+        "station_pulp__standing_main": [
+          2.27,
+          3.05,
+          0.0
+        ],
+        "station_dry__slot_A": [
+          1.65,
+          6.725808,
+          0.494804
+        ],
+        "station_dry__interaction_A": [
+          1.65,
+          6.365,
+          0.35
+        ],
+        "station_dry__standing_A": [
+          1.65,
+          6.16,
+          0.0
+        ],
+        "station_dry__slot_B": [
+          2.95,
+          6.725808,
+          0.494804
+        ],
+        "station_dry__interaction_B": [
+          2.95,
+          6.365,
+          0.35
+        ],
+        "station_dry__standing_B": [
+          2.95,
+          6.16,
+          0.0
+        ],
+        "station_print__slot_0": [
+          7.87,
+          6.07,
+          0.344
+        ],
+        "station_print__interaction_main": [
+          7.87,
+          5.805,
+          0.35
+        ],
+        "station_print__standing_main": [
+          7.87,
+          5.6,
+          0.0
+        ],
+        "station_stamp__slot_0": [
+          10.09,
+          2.93,
+          0.344
+        ],
+        "station_stamp__interaction_main": [
+          10.09,
+          3.195,
+          0.35
+        ],
+        "station_stamp__standing_main": [
+          10.09,
+          3.4,
+          0.0
+        ],
+        "station_delivery__receiving_slot": [
+          10.450001,
+          7.53,
+          0.344
+        ],
+        "station_delivery__interaction_main": [
+          10.450001,
+          7.265,
+          0.35
+        ],
+        "station_delivery__standing_main": [
+          10.450001,
+          7.06,
+          0.0
+        ],
+        "station_shared__slot_0": [
+          7.8,
+          1.32,
+          0.344
+        ],
+        "station_shared__interaction_main": [
+          7.8,
+          1.585,
+          0.35
+        ],
+        "station_shared__standing_main": [
+          7.8,
+          1.79,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "six_station_roots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "used_file_images_packed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_root_identity_scale",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_five_actions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_carry_sockets_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zhituan_work_feet_not_below_floor",
+      "pass": true,
+      "detail": [
+        {
+          "frame": 1,
+          "min_z": 0.001000019023194909
+        },
+        {
+          "frame": 6,
+          "min_z": 0.001000019023194909
+        },
+        {
+          "frame": 11,
+          "min_z": 0.001000019023194909
+        },
+        {
+          "frame": 16,
+          "min_z": 0.001000019023194909
+        },
+        {
+          "frame": 21,
+          "min_z": 0.001000019023194909
+        },
+        {
+          "frame": 26,
+          "min_z": 0.001000019023194909
+        },
+        {
+          "frame": 31,
+          "min_z": 0.001000019023194909
+        }
+      ]
+    },
+    {
+      "name": "yintao_root_identity_scale",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_five_actions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_carry_sockets_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "yintao_work_feet_not_below_floor",
+      "pass": true,
+      "detail": [
+        {
+          "frame": 1,
+          "min_z": 0.0010000087786465883
+        },
+        {
+          "frame": 6,
+          "min_z": 0.0010000087786465883
+        },
+        {
+          "frame": 11,
+          "min_z": 0.0010000087786465883
+        },
+        {
+          "frame": 16,
+          "min_z": 0.0010000087786465883
+        },
+        {
+          "frame": 21,
+          "min_z": 0.0010000087786465883
+        },
+        {
+          "frame": 26,
+          "min_z": 0.0010000087786465883
+        },
+        {
+          "frame": 31,
+          "min_z": 0.0010000087786465883
+        }
+      ]
+    },
+    {
+      "name": "首关_触台比例环境_v02_20261111_sha256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "首关_触台比例环境_v02_20261111_embedded_images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "首关_触台比例环境_v02_20261111_static_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "首关_触台比例环境_v02_20261111_mesh_count_roundtrip",
+      "pass": true,
+      "detail": {
+        "expected": 859,
+        "actual": 859
+      }
+    },
+    {
+      "name": "environment_21_anchor_positions_roundtrip",
+      "pass": true,
+      "detail": {
+        "station_pulp__slot_0": 0.0,
+        "station_pulp__interaction_main": 0.0,
+        "station_pulp__standing_main": 2.384185791015625e-07,
+        "station_dry__slot_A": 4.995779578161303e-07,
+        "station_dry__interaction_A": 0.0,
+        "station_dry__standing_A": 0.0,
+        "station_dry__slot_B": 5.535535699429127e-07,
+        "station_dry__interaction_B": 2.384185791015625e-07,
+        "station_dry__standing_B": 2.384185791015625e-07,
+        "station_print__slot_0": 6.743495761743046e-07,
+        "station_print__interaction_main": 4.76837158203125e-07,
+        "station_print__standing_main": 4.76837158203125e-07,
+        "station_stamp__slot_0": 2.384185791015625e-07,
+        "station_stamp__interaction_main": 0.0,
+        "station_stamp__standing_main": 0.0,
+        "station_delivery__receiving_slot": 4.76837158203125e-07,
+        "station_delivery__interaction_main": 0.0,
+        "station_delivery__standing_main": 0.0,
+        "station_shared__slot_0": 0.0,
+        "station_shared__interaction_main": 0.0,
+        "station_shared__standing_main": 0.0
+      }
+    },
+    {
+      "name": "station_pulp_sha256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_pulp_embedded_images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_pulp_static_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_pulp_mesh_count_roundtrip",
+      "pass": true,
+      "detail": {
+        "expected": 91,
+        "actual": 91
+      }
+    },
+    {
+      "name": "station_pulp_zero_local_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_dry_sha256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_dry_embedded_images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_dry_static_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_dry_mesh_count_roundtrip",
+      "pass": true,
+      "detail": {
+        "expected": 66,
+        "actual": 66
+      }
+    },
+    {
+      "name": "station_dry_zero_local_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_print_sha256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_print_embedded_images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_print_static_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_print_mesh_count_roundtrip",
+      "pass": true,
+      "detail": {
+        "expected": 84,
+        "actual": 84
+      }
+    },
+    {
+      "name": "station_print_zero_local_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_stamp_sha256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_stamp_embedded_images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_stamp_static_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_stamp_mesh_count_roundtrip",
+      "pass": true,
+      "detail": {
+        "expected": 56,
+        "actual": 56
+      }
+    },
+    {
+      "name": "station_stamp_zero_local_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_delivery_sha256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_delivery_embedded_images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_delivery_static_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_delivery_mesh_count_roundtrip",
+      "pass": true,
+      "detail": {
+        "expected": 47,
+        "actual": 47
+      }
+    },
+    {
+      "name": "station_delivery_zero_local_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_shared_sha256",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_shared_embedded_images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_shared_static_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "station_shared_mesh_count_roundtrip",
+      "pass": true,
+      "detail": {
+        "expected": 42,
+        "actual": 42
+      }
+    },
+    {
+      "name": "station_shared_zero_local_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "six_review_renders",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "delivery_check_count": 52,
+  "delivery_all_passed": true,
+  "glb_roundtrips": [
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\首关_触台比例环境_v02_20261111.glb",
+      "meshes": 859,
+      "images": 44,
+      "anchor_errors": {
+        "station_pulp__slot_0": 0.0,
+        "station_pulp__interaction_main": 0.0,
+        "station_pulp__standing_main": 2.384185791015625e-07,
+        "station_dry__slot_A": 4.995779578161303e-07,
+        "station_dry__interaction_A": 0.0,
+        "station_dry__standing_A": 0.0,
+        "station_dry__slot_B": 5.535535699429127e-07,
+        "station_dry__interaction_B": 2.384185791015625e-07,
+        "station_dry__standing_B": 2.384185791015625e-07,
+        "station_print__slot_0": 6.743495761743046e-07,
+        "station_print__interaction_main": 4.76837158203125e-07,
+        "station_print__standing_main": 4.76837158203125e-07,
+        "station_stamp__slot_0": 2.384185791015625e-07,
+        "station_stamp__interaction_main": 0.0,
+        "station_stamp__standing_main": 0.0,
+        "station_delivery__receiving_slot": 4.76837158203125e-07,
+        "station_delivery__interaction_main": 0.0,
+        "station_delivery__standing_main": 0.0,
+        "station_shared__slot_0": 0.0,
+        "station_shared__interaction_main": 0.0,
+        "station_shared__standing_main": 0.0
+      }
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_pulp.glb",
+      "meshes": 91,
+      "images": 16,
+      "anchor_errors": {}
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_dry.glb",
+      "meshes": 66,
+      "images": 11,
+      "anchor_errors": {}
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_print.glb",
+      "meshes": 84,
+      "images": 18,
+      "anchor_errors": {}
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_stamp.glb",
+      "meshes": 56,
+      "images": 15,
+      "anchor_errors": {}
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_delivery.glb",
+      "meshes": 47,
+      "images": 13,
+      "anchor_errors": {}
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关整合_v02_20261111\\工位GLB\\station_shared.glb",
+      "meshes": 42,
+      "images": 10,
+      "anchor_errors": {}
+    }
+  ],
+  "previews": [
+    {
+      "file": "预览_印桃章台接触_v02_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "87d188d43b1148e202fb15d92b2aa40501a449febf7b4679f7875939ec43640a"
+    },
+    {
+      "file": "预览_双槽低位晾纸_v02_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "f28362bec9aa52c9247d698d20efa2cdfb3467834c0aea0833a75c3b6ef8e0b0"
+    },
+    {
+      "file": "预览_台高侧面核对_v02_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "c772e0c732e1675d7d4a044945ee122e0b3fec1b688cbd34db09c24c4b7876aa"
+    },
+    {
+      "file": "预览_旧版触台侧面对照_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "1706f3624aa7fdbdec3fffd66a64f7eba92f91fd824fd37b3ad5f5f6e016ddd0"
+    },
+    {
+      "file": "预览_纸团印台接触_v02_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "1c4e639efe30da61a72c0d07eae391d0952d48038fdb6e50a9350d94035acdef"
+    },
+    {
+      "file": "预览_触台比例全景_v02_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "a6160e2e154ef365737668c438a5515d18448e439501c5e4f96be5999a11bb9a"
+    }
+  ],
+  "saved_gameplay_interfaces": {
+    "station_pulp__slot_0": [
+      2.27,
+      2.44,
+      0.352
+    ],
+    "station_pulp__interaction_main": [
+      2.27,
+      2.845,
+      0.35
+    ],
+    "station_pulp__standing_main": [
+      2.27,
+      3.05,
+      0.0
+    ],
+    "station_dry__slot_A": [
+      1.65,
+      6.725808,
+      0.494804
+    ],
+    "station_dry__interaction_A": [
+      1.65,
+      6.365,
+      0.35
+    ],
+    "station_dry__standing_A": [
+      1.65,
+      6.16,
+      0.0
+    ],
+    "station_dry__slot_B": [
+      2.95,
+      6.725808,
+      0.494804
+    ],
+    "station_dry__interaction_B": [
+      2.95,
+      6.365,
+      0.35
+    ],
+    "station_dry__standing_B": [
+      2.95,
+      6.16,
+      0.0
+    ],
+    "station_print__slot_0": [
+      7.87,
+      6.07,
+      0.344
+    ],
+    "station_print__interaction_main": [
+      7.87,
+      5.805,
+      0.35
+    ],
+    "station_print__standing_main": [
+      7.87,
+      5.6,
+      0.0
+    ],
+    "station_stamp__slot_0": [
+      10.09,
+      2.93,
+      0.344
+    ],
+    "station_stamp__interaction_main": [
+      10.09,
+      3.195,
+      0.35
+    ],
+    "station_stamp__standing_main": [
+      10.09,
+      3.4,
+      0.0
+    ],
+    "station_delivery__receiving_slot": [
+      10.450001,
+      7.53,
+      0.344
+    ],
+    "station_delivery__interaction_main": [
+      10.450001,
+      7.265,
+      0.35
+    ],
+    "station_delivery__standing_main": [
+      10.450001,
+      7.06,
+      0.0
+    ],
+    "station_shared__slot_0": [
+      7.8,
+      1.32,
+      0.344
+    ],
+    "station_shared__interaction_main": [
+      7.8,
+      1.585,
+      0.35
+    ],
+    "station_shared__standing_main": [
+      7.8,
+      1.79,
+      0.0
+    ]
+  },
+  "validation_boundary": "Asset and geometry checks only; other developer Unity runtime remains untested."
+}

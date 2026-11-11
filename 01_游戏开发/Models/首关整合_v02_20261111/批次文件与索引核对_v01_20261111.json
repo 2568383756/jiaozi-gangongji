@@ -1,0 +1,2186 @@
+{
+  "version": "v01_20261111",
+  "scope": "Explicit current contact/garment/hand batch only; unrelated opening-book work excluded.",
+  "file_count": 114,
+  "bytes": 227938627,
+  "link_count": 226,
+  "checks": [
+    {
+      "name": "no_file_reaches_95_MiB",
+      "pass": true
+    },
+    {
+      "name": "all_local_markdown_targets_exist",
+      "pass": true
+    },
+    {
+      "name": "no_cache_or_log_in_batch",
+      "pass": true
+    },
+    {
+      "name": "all_batch_files_in_git_index",
+      "pass": true
+    },
+    {
+      "name": "all_local_link_targets_in_git_index",
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "files": [
+    {
+      "path": "01_游戏开发/Art/角色/服装贴图修正参考_v01_20261111/来源说明.md",
+      "bytes": 832,
+      "sha256": "fe9e8688c8e9e44d7ab0408dd7cc561628402cdd78cab67e24bb6451ff68e68a"
+    },
+    {
+      "path": "01_游戏开发/Art/角色/服装贴图修正参考_v01_20261111/用户参考_纸团侧腰贴图问题_v01_20261111.png",
+      "bytes": 131194,
+      "sha256": "97b60cc9e5ae58efbd518fb622625f112b8ea95640e536c9c9ef25879fa24ccd"
+    },
+    {
+      "path": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "bytes": 7425,
+      "sha256": "ec58b0872a2c6096f7980646dd0e6e7e53bb65bf9ce3039cb4db6739dcb37fe3"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/.gitignore",
+      "bytes": 15,
+      "sha256": "ae6dbd086b158ad7c6b267c09ef9f02e9563db0c108a49eae8f0f64b336a11b8"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "bytes": 2580,
+      "sha256": "3d50a510615af36f32766dd59f050f07991fb79887dbeedd38f91173c8d904d2"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/服装修正核验_v01_20261111.json",
+      "bytes": 239665,
+      "sha256": "8c8846046bdc35a5550f228a71f80b5cd2115ed129dc47cc4af4bdc2448eebc7"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/材质修正独立核验_v01_20261111.json",
+      "bytes": 1659,
+      "sha256": "75d7e0ea7fcc1f3502503bd1725cec2da74e2c43e4a4a696ffd3cdd6eff36951"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_印桃正面_修正后_v01_20261111.png",
+      "bytes": 1820831,
+      "sha256": "da9fc098d6c35c9686bf3cda24c00e0bbf243a56020b8622ae727f1b34670faf"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_印桃背侧_核对_v01_20261111.png",
+      "bytes": 1769053,
+      "sha256": "eb2e5365bdc70e5aee7d63d9d0332aa686ce6ad8164c437fd2ac0ad1c826de26"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团侧腰_修正前_v01_20261111.png",
+      "bytes": 1796251,
+      "sha256": "2fcb1a06e7756879b15f7ccaee8058627dbdcc4545fa8e4ea5a11eb31b84f12b"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团侧腰_修正后_v01_20261111.png",
+      "bytes": 1760766,
+      "sha256": "d9c16a722c813dd6cd8869bb4d1dc82b1b93fe2d24aa9818cf1f7996e74e3d32"
+    },
+    {
+      "path": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团正面_修正后_v01_20261111.png",
+      "bytes": 1747419,
+      "sha256": "bee17c9efba24e39cee84b66900cc57ee0a3d5f11a8514d87c6305b19f8530eb"
+    },
+    {
+      "path": "01_游戏开发/Models/首关工位适配_v01_20261111/.gitignore",
+      "bytes": 49,
+      "sha256": "5d9e13830a80f625a9ae70e78c61b4e863a9fd7af50319e638e7827263d960b8"
+    },
+    {
+      "path": "01_游戏开发/Models/首关工位适配_v01_20261111/工位接口几何核验_v01_20261111.json",
+      "bytes": 8311,
+      "sha256": "d01eac8ef48f0e8efac22407cd8a28741c713a8c824695da4e5bd06d2dff0489"
+    },
+    {
+      "path": "01_游戏开发/Models/首关工位适配_v01_20261111/工位适配与接触接口说明_v01_20261111.md",
+      "bytes": 5832,
+      "sha256": "de03f14bd7ccb872685aaf7b6896ce5043b9bff70a8ad23827bf076220379900"
+    },
+    {
+      "path": "01_游戏开发/Models/首关工位适配_v01_20261111/工位适配报告_v01_20261111.json",
+      "bytes": 21508,
+      "sha256": "bbe1aee2eea074a495cf7beb374148bf08fe8950578b354062fc1b08255e38c0"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/.gitignore",
+      "bytes": 49,
+      "sha256": "a0ff5723ec6e327f18b32f813fbe62403efd93dea31203a60515b327129b31ac"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "bytes": 5360,
+      "sha256": "b91395de5f87d5afb359e11e5bb3b49343a6a2bb66bffc0965fee26040f7f728"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB/station_delivery.glb",
+      "bytes": 9526492,
+      "sha256": "c0f0fd38e6d428c2a0247bad7d979fa3df545a107ec5ada9fc3143dad297b0b7"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB/station_dry.glb",
+      "bytes": 9000388,
+      "sha256": "9d1b34c372fc85434fb31e90d273aa45a67aaea6a2fe88de0e31f4cb00af600f"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB/station_print.glb",
+      "bytes": 17148464,
+      "sha256": "326b3e3c81398771cacd512abecdc8643e8f245d340dbae13882ca4c54fba99b"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB/station_pulp.glb",
+      "bytes": 12256468,
+      "sha256": "0bf025f08ddf22f83521416cd9abd6af6dbf4daeb08a3bbc4001eeb66763bc00"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB/station_shared.glb",
+      "bytes": 8373640,
+      "sha256": "bfc0acfa7ecd5e54e883fc15c63d166b0b347484221e8076ac3e45ac93df1502"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB/station_stamp.glb",
+      "bytes": 13868968,
+      "sha256": "ecb44f5d9d7571cbb4b1453eee5080427ef1df5b1234658f6523f4685e6867c1"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/触台整合核验_v02_20261111.json",
+      "bytes": 45708,
+      "sha256": "df7f8132fd75612d75821a25ef5011b940c62d991c35e515feaf795053043448"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/触台网格独立核验_v01_20261111.json",
+      "bytes": 56594,
+      "sha256": "7af1e4f9b3b0f5c8a72ec572147d6d658033841e16599d1d3ae6912a354001d5"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/预览_印桃章台接触_v02_20261111.png",
+      "bytes": 3082676,
+      "sha256": "87d188d43b1148e202fb15d92b2aa40501a449febf7b4679f7875939ec43640a"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/预览_双槽低位晾纸_v02_20261111.png",
+      "bytes": 3229971,
+      "sha256": "f28362bec9aa52c9247d698d20efa2cdfb3467834c0aea0833a75c3b6ef8e0b0"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/预览_台高侧面核对_v02_20261111.png",
+      "bytes": 2669375,
+      "sha256": "c772e0c732e1675d7d4a044945ee122e0b3fec1b688cbd34db09c24c4b7876aa"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/预览_旧版触台侧面对照_20261111.png",
+      "bytes": 2672336,
+      "sha256": "1706f3624aa7fdbdec3fffd66a64f7eba92f91fd824fd37b3ad5f5f6e016ddd0"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/预览_纸团印台接触_v02_20261111.png",
+      "bytes": 3067176,
+      "sha256": "1c4e639efe30da61a72c0d07eae391d0952d48038fdb6e50a9350d94035acdef"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/预览_触台比例全景_v02_20261111.png",
+      "bytes": 3294874,
+      "sha256": "a6160e2e154ef365737668c438a5515d18448e439501c5e4f96be5999a11bb9a"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例整合_v02_20261111.blend",
+      "bytes": 33480544,
+      "sha256": "cc0b3edb410b3cf48cf6525b39dc387e595703309fd6a09e559ca6fb03492f8a"
+    },
+    {
+      "path": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例环境_v02_20261111.glb",
+      "bytes": 40958880,
+      "sha256": "86762444158cfabd0de79ae15f80ce600a1b9b07b94ef6eb844617ea4d14cd4b"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/.gitignore",
+      "bytes": 30,
+      "sha256": "d93181f058f7f73f8454e82fb99fcec8143e051ac8e7271bca4e451a1c678313"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/Textures/TEX_GarmentRepair_Paper_Normal_v01_20261111.png",
+      "bytes": 43617,
+      "sha256": "f3760248165846aab1f5702211d9e319f0bc24f55f5aea7aa157667753122b34"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/Textures/TEX_GarmentRepair_belt_BaseColor_v01_20261111.png",
+      "bytes": 5641,
+      "sha256": "6a5c5ad47954ab3b73a9af1a1ca76c4ecdc9fed7d258c29ff010e7a2d837bcfc"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/Textures/TEX_GarmentRepair_olive_BaseColor_v01_20261111.png",
+      "bytes": 5264,
+      "sha256": "2573f452452bb991ed4528ec34546e19e8515d7311634efa2cee7f3e99d4bba0"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/Textures/TEX_GarmentRepair_red_BaseColor_v01_20261111.png",
+      "bytes": 36544,
+      "sha256": "006f5c7684f0e8277c2ec3fea282860a9a343b993e0d3637673b3fd7819e9390"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/Textures/yintao_basecolor_2048.png",
+      "bytes": 5082714,
+      "sha256": "934f657410d12904cbfd36bffeaf890bbee451315bd1916794152b96600e760c"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/Textures/zhituan_basecolor_2048.png",
+      "bytes": 5213877,
+      "sha256": "5989314396dc0c5a9731a8e4d38af8f97f1d14aa82f92b91c0c7faa8b2045879"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.blend",
+      "bytes": 5942587,
+      "sha256": "2dcccfaa581a7a8d8210c9d1b7a958c537c3ecff2515e71126882e8113f4e193"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.fbx",
+      "bytes": 6644316,
+      "sha256": "e8525f1a67798a304e41635838653e6cc44978923d4ae768ab3f170280054372"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.glb",
+      "bytes": 1845960,
+      "sha256": "989261124e2fbdec96707d6c4387dd0bc68efc915255986332c5ef60b61def1b"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.blend",
+      "bytes": 6171405,
+      "sha256": "835c350ae2c6b21ff161309d6a78ca45bc7cc20608d349bb8bd468ab380e40aa"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.fbx",
+      "bytes": 6833740,
+      "sha256": "9854a4cd778a8082a47bd9fc63a956ff9f52946e2f2f7c48e1eef4950b63aeda"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.glb",
+      "bytes": 1919756,
+      "sha256": "c419fe7ece18790b4e98acb8d1518514389dfe701d4b584b999d7cd48e01a858"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色动作与触台核验_v02_20261111.json",
+      "bytes": 45216,
+      "sha256": "c3a84b2edcd774d8d79f7e5a7bff5302aca527cbde925c555a676a721304677f"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色复导核验_v02_20261111.json",
+      "bytes": 93332,
+      "sha256": "3726c00a49f3a27332050c4674076228ef8c04098446616214fd8cbd523f20ed"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "bytes": 9351,
+      "sha256": "ea2d419f571281a5e79f291392e26b3f72db8bc33a8a006e117a443c33991c93"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/角色触台报告_v02_20261111.json",
+      "bytes": 2123763,
+      "sha256": "4f7208d0395b5eb390347a35b2b787f8e0b429cbd164ee1ade21aa441382d22a"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/预览_双人真实触纸_v02_20261111.png",
+      "bytes": 1905484,
+      "sha256": "de8fe7ff8abc8e82f2fe54a5b5192b4b4b1028f5cc8be701a5a96c1d54aabdce"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/预览_双人触纸正侧面_v02_20261111.png",
+      "bytes": 1230421,
+      "sha256": "b3269f15f95142e30584f4c51cd45662adf85af6299d5dc6e2c97b4ceb478b03"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryIdle_v02_20261111.png",
+      "bytes": 1734222,
+      "sha256": "8df7e0bb2051e76a199fe6d66acf6e04e9d0f2a4c909c0033967158dbe1a6e82"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryWalk_v02_20261111.png",
+      "bytes": 1737361,
+      "sha256": "36636ed34784f4076625b446a1bb4c00bb455e2c97bc764fcbc92b161acd37c0"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_Idle_v02_20261111.png",
+      "bytes": 1637104,
+      "sha256": "6df2377a058ef618f8dd156b7c223ba5cea7269e0223ce8b1923e9a4b7a4eaba"
+    },
+    {
+      "path": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_Walk_v02_20261111.png",
+      "bytes": 1632888,
+      "sha256": "28af51b38fd646d21d8a3519071be7830494ca4594ea9095413d744a8a45f9f0"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/.gitignore",
+      "bytes": 25,
+      "sha256": "f9d616fdc0645191fa149e707ae881ed90c1a211c4c57323d7305fd27b7fece1"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/audit_cuff_geometry.py",
+      "bytes": 1400,
+      "sha256": "ad67eba9739840349bba6e51365b115310dad769671cc7c8ea2b5ed2e6eb12bc"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/audit_hand_draft.py",
+      "bytes": 2191,
+      "sha256": "b7282fda234b753fba0aec2b9615bbb5256eb7e1a7aad3e846501029196ebe97"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/audit_hand_regions.py",
+      "bytes": 2126,
+      "sha256": "3d159e13232f0e8ab60d0272ee60334016754fbbadca69aab47ec529f4a8f2a9"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/audit_normal_quantization.py",
+      "bytes": 1173,
+      "sha256": "e205d8884fa4afdee266c565b41e77fed983e6f9cc163660181b6db82c74a159"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/cuff_geometry.json",
+      "bytes": 84236,
+      "sha256": "72e36589162bc0b6eccc06cbc09fe482b29871e281a9144bf76566dea58e2352"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/hand_regions.json",
+      "bytes": 77290,
+      "sha256": "c772276dcfee14b8679eb145181ea7eb30d60eed647071c5b76bef3fe712aaf9"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/palm_surface_scan.json",
+      "bytes": 32390,
+      "sha256": "24d2b07ef39a70acaf2c8236a4bf9a39105a2ffe1ce7710cf83ebe00ab12a153"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/palm_surface_scan_protraction.json",
+      "bytes": 32416,
+      "sha256": "da0c723dcda8f31ea24aba768e9f573c8532f1ea2ea19fd48fcd50faea77e073"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/scan_palms.py",
+      "bytes": 4734,
+      "sha256": "81feaeeb36e2620f64e676b3ceef60a1ab308f3af490f8ed3940c3dfc0a1c8eb"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/scan_palms_protraction.py",
+      "bytes": 5097,
+      "sha256": "db5a5231e59bf61638c6c414e808e526be830cf7dbf23c1902d29fea91f31496"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/scan_yintao_cuff.py",
+      "bytes": 4062,
+      "sha256": "2fe26ac7a95501bb5adc49268b0787a9e4d13f8e98a84f00cf5522063f132591"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/yintao_cuff_scan.json",
+      "bytes": 7372,
+      "sha256": "82ee178669b02f661d9d17848d8e571d8482f491c408f591586556ddfacbae2d"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/历史_旧C手构建器_仅供阅读.py.txt",
+      "bytes": 13407,
+      "sha256": "6d59a4adf17a3efd7074dfaa030ca51f0ad03e888ef4bd1305b307e7520abe88"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/audit/法线重编码量化基准_v01_20261111.json",
+      "bytes": 702,
+      "sha256": "259119e5fd9eaafd9cacd59f3e3253b0840b080620f0a365f7dab5005a2e74bf"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/build_contact_characters.py",
+      "bytes": 222,
+      "sha256": "189faeb2982f0b34c7005b9f5578d7e93521a2c3a3b85d0cce7f857f5be4b1ed"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/build_hand_draft.py",
+      "bytes": 4309,
+      "sha256": "797982c99cf23dbd7650a3c13f91f1a330600c8a4f7d2f1bd73b7af8391bd555"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/build_solid_hand_characters.py",
+      "bytes": 12293,
+      "sha256": "3a20b192600c757df60d51ced00e0e323f24d4b2e61fac72a21df2cd33edb248"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/hand_geometry.py",
+      "bytes": 12262,
+      "sha256": "34a549b375c033ed8ff43475bee229724aed73aa83c9f3b90b76a0739db08a49"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/hand_integration.py",
+      "bytes": 9897,
+      "sha256": "db402a144f2902cda79a217fe0d57c66e12e55f0d0ae8b131bd0bebf2e5eb415"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/render_contact.py",
+      "bytes": 5782,
+      "sha256": "295afe519cc4c9e832895d51d8ef2cb689ada98c9275e104b40db8109051934a"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/render_hand_draft.py",
+      "bytes": 2303,
+      "sha256": "03a33639b9e0d59dce686826de863c2982d3813f3a327adbada9ac547bf021b2"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/render_hand_final.py",
+      "bytes": 1593,
+      "sha256": "542d14b7349d44cf9f8704c9fc869f0c69a09e23b5c0e809c90a7efc39239e2d"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/validate_characters.py",
+      "bytes": 9078,
+      "sha256": "e75a3096876ad0231fa3d331ebd6899e81b8508407470b5aee2af678d00a34ec"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/validate_contact_native.py",
+      "bytes": 226,
+      "sha256": "f93a64ec7408f579c72094cf4d8e0212b2cb66f2935c3a4f2351ebd40ca079ad"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/validate_solid_hand_native.py",
+      "bytes": 8238,
+      "sha256": "6e6998fa4d2efe0520a41b4b63aa81d45058f12507faf87b1c8eea1db1102f23"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/.gitignore",
+      "bytes": 49,
+      "sha256": "193e88da37560ff797a2480360e1831c1cb700ed19a1acebed77bcd24f684964"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/garment_materials.py",
+      "bytes": 7088,
+      "sha256": "5e6777bea25673ad99d34656e18099f1c822f66cd36adacb644ebbdecc389b10"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/inspect_regions.py",
+      "bytes": 1935,
+      "sha256": "d38adaf0bcef690cd9b48440bd25f070058ad13ffd83ab92cee23b1823159c3a"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/render_repair_preview.py",
+      "bytes": 3455,
+      "sha256": "4c136c37fa148bbdf42f60f7136a7859ec2ad8c4ce5f04faa966005f9af4a799"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/validate_garment_hook.py",
+      "bytes": 2664,
+      "sha256": "e4be2ca06d2eeda4bf8857a39371093ac0d3922e16dd028a2047a7de999f3a56"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/服装区域面样本_v01_20261111.json",
+      "bytes": 1101065,
+      "sha256": "ded4f2213c9d8bfb576232b4d195fd78f130b0656665538cb3a3e406f7152225"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/.gitignore",
+      "bytes": 49,
+      "sha256": "193e88da37560ff797a2480360e1831c1cb700ed19a1acebed77bcd24f684964"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/audit_existing_contact.py",
+      "bytes": 7000,
+      "sha256": "558a66a8c46148a42fcfcbcc5be18301d88987b7c719730e6eb1e192cd15981a"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/audit_hand_readability.py",
+      "bytes": 2922,
+      "sha256": "248bbcc245e8408eb5ab4261471711992b1dfaf1e9f06f71052e8de8bc37a185"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/audit_normal_roundtrip.py",
+      "bytes": 1699,
+      "sha256": "970d49de4d60761e9fcc27249ddfd199962a45a1ed587598a0e21e740dfde219"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/audit_rebuilt_hand_readability.py",
+      "bytes": 14003,
+      "sha256": "64ddd666f94caae66d65d7bf6abbfd3b554031f1e480034724d79a8800ab38b0"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/audit_zhituan_waist_uv.py",
+      "bytes": 5360,
+      "sha256": "51b213c89b8c180c6c520c022d1d3db57ca142fad835833100cabb11d0f6a395"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/diagnose_cuff_chin_contacts.py",
+      "bytes": 4008,
+      "sha256": "ef520e2e5420caa46783d7e16cd2e39d0142a5d32536ed6523eb253790df104f"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/原袖下颌接触来源核查_v01_20261111.json",
+      "bytes": 119025,
+      "sha256": "ff02d8d9b7fb0c36875a0de51180bb9cd319729e105dd3d4111f7f5e35f16f1e"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/新手最终独立核验_v01_20261111.json",
+      "bytes": 520063,
+      "sha256": "4f2a594f7ac9b2540e2d31787525103bc7f55b5ea041a5dd84b4a12910f6ecaf"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/新手草稿独立核验_v01_20261111.json",
+      "bytes": 7185,
+      "sha256": "702954c0362e7b21d35e7972c1c0fe50391df003a9f05d57a6fd26d72648d151"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/旧手部形状诊断_v01_20261111.json",
+      "bytes": 28898,
+      "sha256": "5c9440c6973017d73fec60db4d5466df71b97d71449ea51ff73f7ac223347b24"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/现有角色触台诊断_v01_20261111.json",
+      "bytes": 476423,
+      "sha256": "3626f59680c4e34ba5c4d1b9a402caac37987a6e3d2fb7b703eed75c26e67477"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/纸团侧腰材质定位_v01_20261111.json",
+      "bytes": 1260125,
+      "sha256": "3ec4dc8e4816bcccbdf44803137f433d4346c5898ce82b4de6e0ee0d19d1a5ee"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/自定义法线同值回存核验_v01_20261111.json",
+      "bytes": 1034,
+      "sha256": "5f0867a4f632d008f8d2089463e65216f5a655f99ccaa29b8b8d9c4dd4ba5886"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111/.gitignore",
+      "bytes": 49,
+      "sha256": "193e88da37560ff797a2480360e1831c1cb700ed19a1acebed77bcd24f684964"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111/adapt_stations.py",
+      "bytes": 23536,
+      "sha256": "f5faba7b47f50319ed968ab77a6f36758c4a02ba84c0e2403a9ce3846988f3df"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111/smoke_apply.py",
+      "bytes": 727,
+      "sha256": "15b69538213f28300104dbd9c5fb61bf5deeb9b4cfd3f18aa248052112a51106"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111/validate_contacts.py",
+      "bytes": 3275,
+      "sha256": "a84b94372183e54568ea68570050b99cfb8207cd9962b2ec4b0c501794e963ad"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111/适配尺寸配置_v01_20261111.json",
+      "bytes": 539,
+      "sha256": "40f37305375378258575bf17a610217b88e55806ec6b40795fab62ba3b715042"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111/.gitignore",
+      "bytes": 49,
+      "sha256": "a0ff5723ec6e327f18b32f813fbe62403efd93dea31203a60515b327129b31ac"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111/audit_contact_mesh.py",
+      "bytes": 8895,
+      "sha256": "2260467c67cbc36113ab906b953daf9e4c48f89ce2471e87bb517b079b76dcd8"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111/build_contact_assembly.py",
+      "bytes": 10175,
+      "sha256": "3e540aba89805545356034a13114ecc948b4dfd331abc92becf44888961d29bb"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111/validate_contact_delivery.py",
+      "bytes": 5248,
+      "sha256": "242d97ed2c855c6e74d1ac16369c47b40c0377101fb17d9e4ec885eaa57cd961"
+    },
+    {
+      "path": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111/verify_batch.py",
+      "bytes": 4023,
+      "sha256": "feef74d352d192714a897908b991d3fccc89430bf6b28c12414d0bccb449be8a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 37291,
+      "sha256": "de99c9839420c92cbd6f58bd147df28d1302cc14f726290761022555c50a4859"
+    }
+  ],
+  "links": [
+    {
+      "from": "01_游戏开发/Art/角色/服装贴图修正参考_v01_20261111/来源说明.md",
+      "target": "用户参考_纸团侧腰贴图问题_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/角色/服装贴图修正参考_v01_20261111/用户参考_纸团侧腰贴图问题_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Art/角色/服装贴图修正参考_v01_20261111/来源说明.md",
+      "target": "../../../Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Models/首批角色_v02_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Models/首关整合_v02_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Models/首关整合_v02_20261111/工位GLB/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Scripts/Blender/首关工位适配_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Models/首关工位适配_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关工位适配_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Scripts/Blender/角色贴图修正_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Models/角色贴图修正_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Art/角色/服装贴图修正参考_v01_20261111/来源说明.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/角色/服装贴图修正参考_v01_20261111/来源说明.md",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Scripts/Blender/首关整合_v02_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Models/首关整合_v02_20261111/触台整合核验_v02_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/触台整合核验_v02_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "target": "../Scripts/Blender/触台比例核验_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "../../Scripts/Blender/角色贴图修正_v01_20261111/garment_materials.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/garment_materials.py",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "预览_纸团侧腰_修正前_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团侧腰_修正前_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "预览_纸团侧腰_修正后_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团侧腰_修正后_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "预览_纸团正面_修正后_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团正面_修正后_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "预览_印桃背侧_核对_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_印桃背侧_核对_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "预览_印桃正面_修正后_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_印桃正面_修正后_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "材质修正独立核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/材质修正独立核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "target": "服装修正核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/服装修正核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关工位适配_v01_20261111/工位适配与接触接口说明_v01_20261111.md",
+      "target": "工位接口几何核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关工位适配_v01_20261111/工位接口几何核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关工位适配_v01_20261111/工位适配与接触接口说明_v01_20261111.md",
+      "target": "工位适配报告_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关工位适配_v01_20261111/工位适配报告_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "../首关整合_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "../首批角色_v02_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "../../Scripts/Blender/首关工位适配_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "首关_触台比例整合_v02_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例整合_v02_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "首关_触台比例环境_v02_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例环境_v02_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "工位GLB/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "预览_触台比例全景_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_触台比例全景_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "预览_纸团印台接触_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_纸团印台接触_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "预览_印桃章台接触_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_印桃章台接触_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "预览_台高侧面核对_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_台高侧面核对_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "预览_旧版触台侧面对照_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_旧版触台侧面对照_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "预览_双槽低位晾纸_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_双槽低位晾纸_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "触台整合核验_v02_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/触台整合核验_v02_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "触台网格独立核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/触台网格独立核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "批次文件与索引核对_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/批次文件与索引核对_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "../../Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "../../Scripts/Blender/触台比例核验_v01_20261111/新手最终独立核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/新手最终独立核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "../../Scripts/Blender/触台比例核验_v01_20261111/原袖下颌接触来源核查_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/原袖下颌接触来源核查_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首关整合_v02_20261111/制作说明_首关触台整合_v02_20261111.md",
+      "target": "../../Scripts/Blender/首关整合_v02_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色_纸团_整合_v02_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色_纸团_整合_v02_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色_纸团_整合_v02_20261111.fbx",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.fbx",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色_印桃_整合_v02_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色_印桃_整合_v02_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色_印桃_整合_v02_20261111.fbx",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.fbx",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "Textures/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/Textures",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "预览_双人真实触纸_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_双人真实触纸_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "预览_双人触纸正侧面_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_双人触纸正侧面_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "预览_新手_Idle_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_Idle_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "预览_新手_Walk_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_Walk_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "预览_新手_CarryIdle_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryIdle_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "预览_新手_CarryWalk_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryWalk_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色触台报告_v02_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色触台报告_v02_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色动作与触台核验_v02_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色动作与触台核验_v02_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "角色复导核验_v02_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色复导核验_v02_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/触台比例核验_v01_20261111/新手最终独立核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/新手最终独立核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/触台比例核验_v01_20261111/自定义法线同值回存核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/自定义法线同值回存核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/角色贴图修正_v01_20261111/garment_materials.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色贴图修正_v01_20261111/garment_materials.py",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/触台比例核验_v01_20261111/原袖下颌接触来源核查_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/原袖下颌接触来源核查_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/角色整合_v02_20261111/build_solid_hand_characters.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/build_solid_hand_characters.py",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/角色整合_v02_20261111/build_contact_characters.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/build_contact_characters.py",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/触台比例核验_v01_20261111/audit_normal_roundtrip.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/audit_normal_roundtrip.py",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/角色整合_v02_20261111/validate_solid_hand_native.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/validate_solid_hand_native.py",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/触台比例核验_v01_20261111/audit_rebuilt_hand_readability.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/触台比例核验_v01_20261111/audit_rebuilt_hand_readability.py",
+      "in_index": true
+    },
+    {
+      "from": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "target": "../../Scripts/Blender/角色整合_v02_20261111/render_contact.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色整合_v02_20261111/render_contact.py",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/参考文档_20261110/交子赶工记完整游戏设计文档.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/参考文档_20261110/交子赶工记完整游戏设计文档.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关工位适配_v01_20261111/工位适配与接触接口说明_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关工位适配_v01_20261111/工位适配与接触接口说明_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/制作说明_服装材质修正_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v02_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/角色接口说明_v02_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryIdle_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryIdle_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryWalk_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_CarryWalk_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_Idle_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v02_20261111/预览_新手_Idle_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例整合_v02_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例整合_v02_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例环境_v02_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/首关_触台比例环境_v02_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/工位GLB",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111/适配尺寸配置_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关工位适配_v01_20261111/适配尺寸配置_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/预览_触台比例全景_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_触台比例全景_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/预览_纸团印台接触_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_纸团印台接触_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/预览_印桃章台接触_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_印桃章台接触_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/预览_台高侧面核对_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_台高侧面核对_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/预览_旧版触台侧面对照_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_旧版触台侧面对照_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/预览_双槽低位晾纸_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_双槽低位晾纸_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团侧腰_修正后_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_纸团侧腰_修正后_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_印桃背侧_核对_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/角色贴图修正_v01_20261111/预览_印桃背侧_核对_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/触台整合核验_v02_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/触台整合核验_v02_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/触台网格独立核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/触台网格独立核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关整合_v02_20261111",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v02_20261111/预览_触台比例全景_v02_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v02_20261111/预览_触台比例全景_v02_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/首关角色与道具整合_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/首关角色与道具整合_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Imports/角色源仓_20261111/README.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Imports/角色源仓_20261111/README.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Imports/角色源仓_20261111/source_manifest.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Imports/角色源仓_20261111/source_manifest.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色_纸团_整合_v01_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色_纸团_整合_v01_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色_纸团_整合_v01_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色_纸团_整合_v01_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色_纸团_整合_v01_20261111.fbx",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色_纸团_整合_v01_20261111.fbx",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/角色整合_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/角色整合_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色_印桃_整合_v01_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色_印桃_整合_v01_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色_印桃_整合_v01_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色_印桃_整合_v01_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色_印桃_整合_v01_20261111.fbx",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色_印桃_整合_v01_20261111.fbx",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色接口说明_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色接口说明_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色复导核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色复导核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/角色整合报告_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/角色整合报告_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/预览_纸团_三视图_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/预览_纸团_三视图_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/预览_印桃_三视图_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/预览_印桃_三视图_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/预览_双人持纸验证_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/预览_双人持纸验证_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首批角色_v01_20261111/预览_双人通用加工示意_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首批角色_v01_20261111/预览_双人通用加工示意_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/GLB/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/GLB",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/首关纸艺道具包_v01_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/首关纸艺道具包_v01_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/资产清单_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/资产清单_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/纸张状态接口_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/纸张状态接口_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/道具制作与接入说明_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/道具制作与接入说明_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/道具实测验证_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/道具实测验证_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/预览_黑票与朱票分层_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/预览_黑票与朱票分层_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v01_20261111/首关_角色道具整合_v01_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111/首关_角色道具整合_v01_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v01_20261111/制作说明_首关整合_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111/制作说明_首关整合_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v01_20261111/整合核验_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111/整合核验_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v01_20261111/预览_双人单张持物_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111/预览_双人单张持物_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v01_20261111/预览_工位道具整合_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111/预览_工位道具整合_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v01_20261111/预览_首关双人整合_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111/预览_首关双人整合_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关道具_v01_20261111/预览_首关道具总览_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关道具_v01_20261111/预览_首关道具总览_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关整合_v01_20261111/交付文件核对_v01_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关整合_v01_20261111/交付文件核对_v01_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/制作说明_首关场景_v05_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/制作说明_首关场景_v05_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关场景_v05_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关场景_v05_20261111",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关植被色彩参考_v01_20261111/用户参考_银杏树与贴墙纸草_v01_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关植被色彩参考_v01_20261111/用户参考_银杏树与贴墙纸草_v01_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关植被色彩参考_v01_20261111/来源说明.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关植被色彩参考_v01_20261111/来源说明.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸坊主效果_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸坊主效果_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/首关_开张第一单_v05_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/首关_开张第一单_v05_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/首关_开张第一单_v05_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/首关_开张第一单_v05_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸坊主效果_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸坊主效果_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_外景总览_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_外景总览_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_游戏机位_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_游戏机位_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_俯视_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_俯视_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸感细节_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸感细节_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_银杏庭院_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_银杏庭院_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸片草丛_v05_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/预览_纸片草丛_v05_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v05_20261111/场景核验_v05_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v05_20261111/场景核验_v05_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/制作说明_首关场景_v04_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/制作说明_首关场景_v04_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关场景_v04_20261111/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关场景_v04_20261111",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "03_历史成果/原工作区/output/jiaozi-gangongji-visual-kit-20261103-v2/02_游戏概念图_敞口修正版.png",
+      "exists": true,
+      "git_target": "03_历史成果/原工作区/output/jiaozi-gangongji-visual-kit-20261103-v2/02_游戏概念图_敞口修正版.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸坊主效果_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸坊主效果_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/首关_开张第一单_v04_20261111.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/首关_开张第一单_v04_20261111.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/首关_开张第一单_v04_20261111.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/首关_开张第一单_v04_20261111.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸坊主效果_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸坊主效果_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_外景总览_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_外景总览_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸感细节_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸感细节_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_游戏机位_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_游戏机位_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_俯视_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_俯视_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_银杏庭院_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_银杏庭院_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸片草丛_v04_20261111.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/预览_纸片草丛_v04_20261111.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v04_20261111/场景核验_v04_20261111.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v04_20261111/场景核验_v04_20261111.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/制作说明_首关场景_v03_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/制作说明_首关场景_v03_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关场景_v03_20261110/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关场景_v03_20261110",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/预览_外景总览_v03_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/预览_外景总览_v03_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/首关_开张第一单_v03_20261110.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/首关_开张第一单_v03_20261110.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/首关_开张第一单_v03_20261110.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/首关_开张第一单_v03_20261110.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/预览_游戏机位_v03_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/预览_游戏机位_v03_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/预览_俯视_v03_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/预览_俯视_v03_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/预览_纸感细节_v03_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/预览_纸感细节_v03_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/预览_外景总览_v03_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/预览_外景总览_v03_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/预览_银杏庭院_v03_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/预览_银杏庭院_v03_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/预览_纸片草丛_v03_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/预览_纸片草丛_v03_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v03_20261110/场景核验_v03_20261110.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v03_20261110/场景核验_v03_20261110.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关纸片草丛参考_v01_20261110/用户参考_圆叶纸片草丛_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关纸片草丛参考_v01_20261110/用户参考_圆叶纸片草丛_v01_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关纸片草丛参考_v01_20261110/来源说明.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关纸片草丛参考_v01_20261110/来源说明.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v02_20261110/制作说明_首关场景_v02_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v02_20261110/制作说明_首关场景_v02_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关场景_v02_20261110/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关场景_v02_20261110",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v02_20261110/首关_开张第一单_v02_20261110.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v02_20261110/首关_开张第一单_v02_20261110.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v02_20261110/首关_开张第一单_v02_20261110.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v02_20261110/首关_开张第一单_v02_20261110.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v02_20261110/预览_游戏机位_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v02_20261110/预览_游戏机位_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v02_20261110/预览_俯视_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v02_20261110/预览_俯视_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v02_20261110/预览_纸感细节_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v02_20261110/预览_纸感细节_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v02_20261110/场景核验_v02_20261110.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v02_20261110/场景核验_v02_20261110.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v01_20261110/首关_开张第一单_v01_20261110.blend",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v01_20261110/首关_开张第一单_v01_20261110.blend",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v01_20261110/首关_开张第一单_v01_20261110.glb",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v01_20261110/首关_开张第一单_v01_20261110.glb",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v01_20261110/预览_游戏机位_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v01_20261110/预览_游戏机位_v01_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v01_20261110/预览_俯视_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v01_20261110/预览_俯视_v01_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v01_20261110/制作说明_首关场景_v01_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v01_20261110/制作说明_首关场景_v01_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/首关场景_v01_20261110/场景核验_v01_20261110.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Models/首关场景_v01_20261110/场景核验_v01_20261110.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关场景_v01_20261110/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关场景_v01_20261110",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关场景_v01_20261110/build_scene.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关场景_v01_20261110/build_scene.py",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/Blender/首关场景_v01_20261110/validate_scene.py",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts/Blender/首关场景_v01_20261110/validate_scene.py",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/制作说明_三视图_v02_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/制作说明_三视图_v02_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/尺寸与布局_v02_20261110.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/尺寸与布局_v02_20261110.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/prompts_三视图_v02_20261110.json",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/prompts_三视图_v02_20261110.json",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/01_墙体模块三视图_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/01_墙体模块三视图_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/02_木构模块三视图_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/02_木构模块三视图_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/03_地面与屋檐三视图_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/03_地面与屋檐三视图_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/04_纸院与共享台三视图_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/04_纸院与共享台三视图_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/05_印坊工位三视图_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/05_印坊工位三视图_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/06_首关场景三视图_v02_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关三视图_v02_20261110/06_首关场景三视图_v02_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/01_建筑模块尺寸图_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/01_建筑模块尺寸图_v01_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/02_工位角色比例图_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/02_工位角色比例图_v01_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/03_首关整体效果图_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/03_首关整体效果图_v01_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/制作说明_场景关卡比例_v01_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/场景关卡/首关比例确认_v01_20261110/制作说明_场景关卡比例_v01_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/品牌标识/方形Logo_v01_20261110/Logo_交子赶工记_正方形_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/品牌标识/方形Logo_v01_20261110/Logo_交子赶工记_正方形_v01_20261110.png",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/品牌标识/方形Logo_v01_20261110/制作说明_方形Logo_v01_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/品牌标识/方形Logo_v01_20261110/制作说明_方形Logo_v01_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/参考文档_20261110/交子赶工记完整游戏设计文档.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/参考文档_20261110/交子赶工记完整游戏设计文档.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/参考文档_20261110/程序与美术分工及资产清单.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/参考文档_20261110/程序与美术分工及资产清单.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/开发颗粒度对齐表_v02_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/开发颗粒度对齐表_v02_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/首关角色与道具整合_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/首关角色与道具整合_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/首关触台比例与角色材质修正_v01_20261111.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/",
+      "exists": true,
+      "git_target": "01_游戏开发",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/",
+      "exists": true,
+      "git_target": "01_游戏开发/Art",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Models/",
+      "exists": true,
+      "git_target": "01_游戏开发/Models",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Scripts/",
+      "exists": true,
+      "git_target": "01_游戏开发/Scripts",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Imports/",
+      "exists": true,
+      "git_target": "01_游戏开发/Imports",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "02_美术资源/",
+      "exists": true,
+      "git_target": "02_美术资源",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "03_历史成果/",
+      "exists": true,
+      "git_target": "03_历史成果",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "03_历史成果/原工作区/output/jiaozi-gangongji-visual-kit-20261103-v2/",
+      "exists": true,
+      "git_target": "03_历史成果/原工作区/output/jiaozi-gangongji-visual-kit-20261103-v2",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "03_历史成果/原工作区/output/jiaozi-production-assets-20261103/",
+      "exists": true,
+      "git_target": "03_历史成果/原工作区/output/jiaozi-production-assets-20261103",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "03_历史成果/原工作区/output/jiaozi-gangongji-assets2-20261103/",
+      "exists": true,
+      "git_target": "03_历史成果/原工作区/output/jiaozi-gangongji-assets2-20261103",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "03_历史成果/原工作区/output/jiaozi-gangongji-assets3-20261103/",
+      "exists": true,
+      "git_target": "03_历史成果/原工作区/output/jiaozi-gangongji-assets3-20261103",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "exists": true,
+      "git_target": "01_游戏开发/Docs/新窗口交接_游戏开发_v01_20261110.md",
+      "in_index": true
+    },
+    {
+      "from": "README.md",
+      "target": "01_游戏开发/Art/品牌标识/方形Logo_v01_20261110/Logo_交子赶工记_正方形_v01_20261110.png",
+      "exists": true,
+      "git_target": "01_游戏开发/Art/品牌标识/方形Logo_v01_20261110/Logo_交子赶工记_正方形_v01_20261110.png",
+      "in_index": true
+    }
+  ]
+}

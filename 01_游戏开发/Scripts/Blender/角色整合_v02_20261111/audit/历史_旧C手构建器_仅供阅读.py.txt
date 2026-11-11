@@ -1,0 +1,181 @@
+"""Versioned Work-only adaptation; immutable v01 is loaded afresh each run.
+Use --draft to omit exports and the optional garment hook while dimensions settle.
+"""
+import bpy, math, json, hashlib, sys, importlib.util, shutil
+import numpy as np
+from pathlib import Path
+from mathutils import Vector, Matrix, Quaternion
+from mathutils.bvhtree import BVHTree
+
+ROOT=Path('E:/codex-jiaozi/交子赶工记_项目总库_20261104/01_游戏开发')
+SOURCE=ROOT/'Models/首批角色_v01_20261111'
+OUT=ROOT/'Models/首批角色_v02_20261111'
+OUT.mkdir(parents=True,exist_ok=True);(OUT/'Textures').mkdir(exist_ok=True)
+DRAFT='--draft' in sys.argv
+HOOK=ROOT/'Scripts/Blender/角色贴图修正_v01_20261111/garment_materials.py'
+report={'version':'v02_20261111','blender':bpy.app.version_string,'draft':DRAFT,
+ 'surface_z_m':.350,'standing_distance_from_near_edge_m':.240,
+ 'bare_table_z_m':.330,'thin_block_or_pad_m':.014,'paper_thickness_m':.006,
+ 'work_contact_frame':1,'core_collision_radius_m':.22,'collision_skin_m':.015,
+ 'collision_note':'Core movement proxy only; not the full hat, garment or shoe silhouette.',
+ 'characters':[]}
+
+def activate(rig,a):
+ rig.animation_data_create();rig.animation_data.action=a;rig.animation_data.action_slot=a.slots[0]
+def curves(a):return [f for l in a.layers for s in l.strips for b in getattr(s,'channelbags',[]) for f in b.fcurves]
+def action_digest(a):
+ values=[(f.data_path,f.array_index,[(tuple(k.co),k.interpolation) for k in f.keyframe_points]) for f in curves(a)]
+ return hashlib.sha256(repr(values).encode()).hexdigest()
+def points(mesh):
+ ev=mesh.evaluated_get(bpy.context.evaluated_depsgraph_get());me=ev.to_mesh()
+ p=[ev.matrix_world@v.co for v in me.vertices];ev.to_mesh_clear();return p
+def pose(rig,base):
+ for p in rig.pose.bones:p.rotation_mode='QUATERNION';p.matrix_basis=base[p.name].copy()
+ bpy.context.view_layer.update()
+def solve(rig,targets,wrist,rots):
+ for side in ('L','R'):
+  targets[side].location=wrist[side];rig.pose.bones['forearm_'+side].constraints['TEMP_ContactIK'].mute=False
+ bpy.context.view_layer.update()
+ mats={n:rig.pose.bones[n].matrix.copy() for n in ('upper_arm_L','forearm_L','upper_arm_R','forearm_R')}
+ for side in ('L','R'):rig.pose.bones['forearm_'+side].constraints['TEMP_ContactIK'].mute=True
+ bpy.context.view_layer.update()
+ for side in ('L','R'):
+  for n in ('upper_arm_'+side,'forearm_'+side):rig.pose.bones[n].matrix=mats[n];bpy.context.view_layer.update()
+  mat=rots[side].to_matrix().to_4x4();mat.translation=rig.pose.bones['forearm_'+side].tail
+  rig.pose.bones['hand_'+side].matrix=mat;bpy.context.view_layer.update()
+def sockets(rig):
+ mid=sum(((rig.pose.bones['hand_'+s].head+rig.pose.bones['hand_'+s].tail)*.5 for s in ('L','R')),Vector())*.5
+ rig.pose.bones['PalmCenter'].matrix=Matrix.Translation(mid)
+ rig.pose.bones['HoldPoint'].matrix=Matrix.Translation(mid+Vector((0,-.21,.025)));bpy.context.view_layer.update()
+def export_selected(rig,mesh,root):
+ bpy.ops.object.select_all(action='DESELECT')
+ for o in (rig,mesh,root):o.select_set(True)
+ bpy.context.view_layer.objects.active=rig
+def call(op,args):
+ supported={p.identifier for p in op.get_rna_type().properties};return op(**{k:v for k,v in args.items() if k in supported})
+def box_bvh(lo,hi):
+ p=[Vector((x,y,z)) for x in (lo[0],hi[0]) for y in (lo[1],hi[1]) for z in (lo[2],hi[2])]
+ f=[(0,1,3,2),(4,6,7,5),(0,4,5,1),(2,3,7,6),(0,2,6,4),(1,5,7,3)]
+ return BVHTree.FromPolygons(p,f,all_triangles=False)
+references={'table':box_bvh((-.40,-.84,.275),(.40,-.24,.33)),
+ 'thin_block':box_bvh((-.315,-.695,.330),(.315,-.245,.344)),
+ 'paper':box_bvh((-.30,-.68,.344),(.30,-.26,.350))}
+
+for cid,label in [('zhituan','纸团'),('yintao','印桃')]:
+ source=SOURCE/('角色_'+label+'_整合_v01_20261111.blend')
+ bpy.ops.wm.open_mainfile(filepath=str(source),load_ui=False)
+ bpy.context.preferences.filepaths.save_version=0
+ scene=bpy.context.scene;scene.render.fps=30
+ rig=bpy.data.objects['rig_'+cid];mesh=bpy.data.objects['mesh_'+cid];root=bpy.data.objects['character_'+cid]
+ root['asset_version']='v02_20261111';root['work_surface_z']=.35;root['work_standing_distance']=.24
+ root['core_collision_radius']=.22;root['collision_skin']=.015
+ preserved={a.name:action_digest(a) for a in bpy.data.actions if a.name!=cid+'_Work'}
+ activate(rig,bpy.data.actions[cid+'_Idle']);scene.frame_set(1);bpy.context.view_layer.update()
+ base={p.name:p.matrix_basis.copy() for p in rig.pose.bones};pp=points(mesh)
+ dom={};rigid={}
+ for v in mesh.data.vertices:
+  w,n=max((g.weight,mesh.vertex_groups[g.group].name) for g in v.groups)
+  dom.setdefault(n,[]).append(v.index)
+  if w>.95:rigid.setdefault(n,[]).append(v.index)
+ masks={s:dom['hand_'+s] for s in ('L','R')};rot={};offset={};targets={};basis={}
+ hand_ids=set(masks['L']+masks['R']);mesh.data.calc_loop_triangles()
+ bodyfaces=[tuple(t.vertices) for t in mesh.data.loop_triangles if not any(i in hand_ids for i in t.vertices)]
+ headfaces=[tuple(p.vertices) for p in mesh.data.polygons if all(any(mesh.vertex_groups[g.group].name in ('head','neck') and g.weight>.4 for g in mesh.data.vertices[i].groups) for i in p.vertices)]
+ for side in ('L','R'):
+  hand=rig.pose.bones['hand_'+side];inv=hand.matrix.inverted()
+  loc=np.array([list(inv@pp[i]) for i in rigid['hand_'+side]])
+  center=loc.mean(axis=0);eig,axes=np.linalg.eigh(np.cov((loc-center).T))
+  normal=hand.matrix.to_quaternion()@Vector(axes[:,0]);normal=normal if normal.z>=0 else -normal
+  rot[side]=normal.rotation_difference(Vector((0,0,1)))@hand.matrix.to_quaternion();offset[side]=Vector(center)
+  if cid=='yintao':rot[side]=Quaternion((1,0,0),1.2)@rot[side]
+  basis[side]={'contact_mask_vertex_ids':masks[side],'palm_local_centroid':list(center),'palm_horizontal_quaternion':list(rot[side])}
+  target=bpy.data.objects.new('TEMP_ContactTarget_'+side,None);scene.collection.objects.link(target);targets[side]=target
+  c=rig.pose.bones['forearm_'+side].constraints.new('IK');c.name='TEMP_ContactIK';c.target=target;c.chain_count=2;c.iterations=256;c.use_tail=True;c.mute=True
+  rig.pose.bones['upper_arm_'+side].ik_stretch=0;rig.pose.bones['forearm_'+side].ik_stretch=0
+ rig.animation_data.action=None;bpy.data.actions.remove(bpy.data.actions[cid+'_Work'])
+ action=bpy.data.actions.new(cid+'_Work');action.use_fake_user=True;slot=action.slots.new(id_type='OBJECT',name=rig.name);activate(rig,action)
+ action['game_clip']=True;action['loop']=True;action['root_motion']=False
+ action['source']='v02 new neutral-feet palm press/rub; actual skin contacts 0.350m workpiece; source rig lengths and mesh preserved'
+ action['work_surface_z']=.350;action['contact_frames']=[1,31];action['work_kind']='palm_press_rub'
+ samples=[];first=None
+ for frame in range(1,32):
+  scene.frame_set(frame);phase=math.tau*(frame-1)/30
+  # Only 3 mm release, 10 mm return; broad palms remain below the large chin.
+  t=(1-math.cos(phase))*.5;plane=.350+.003*t;front=.280-.010*t
+  centers={s:Vector(((1 if s=='L' else -1)*.17,-front,plane+.035)) for s in ('L','R')}
+  for repeat in range(8 if cid=='yintao' else 5):
+   pose(rig,base)
+   if cid=='yintao':
+    hips=rig.pose.bones['hips'];hm=hips.matrix.copy();hm.translation.y+=.030;hips.matrix=hm;bpy.context.view_layer.update()
+   for side in ('L','R'):
+    shoulder=rig.pose.bones['upper_arm_'+side];m=shoulder.matrix.copy();m.translation.y-=.025;shoulder.matrix=m;bpy.context.view_layer.update()
+   head=rig.pose.bones['head'];pivot=head.head.copy();head.matrix=Matrix.Translation(pivot)@Matrix.Rotation(-.14,4,'X')@Matrix.Translation(-pivot)@head.matrix;bpy.context.view_layer.update()
+   wrist={s:centers[s]-rot[s]@offset[s] for s in ('L','R')};solve(rig,targets,wrist,rot)
+   pp=points(mesh)
+   for side in ('L','R'):
+    i=min(masks[side],key=lambda i:pp[i].z);centers[side].z+=plane-pp[i].z
+    if cid=='yintao':centers[side].y+=(-.277+.010*t)-pp[i].y
+  sockets(rig)
+  if frame==31:pose(rig,first);sockets(rig)
+  if frame==1:first={p.name:p.matrix_basis.copy() for p in rig.pose.bones}
+  for p in rig.pose.bones:
+   for channel in ('location','rotation_quaternion','scale'):p.keyframe_insert(channel,frame=frame,group=p.name)
+  pp=points(mesh);headtree=BVHTree.FromPolygons(pp,headfaces,all_triangles=False)
+  bodytree=BVHTree.FromPolygons(pp,bodyfaces,all_triangles=True)
+  sample={'frame':frame,'surface_z':.350,'target_palm_bottom':plane,'hands':{},'foot_min_z':min(v.z for v in pp),
+   'reference_body_intersections':{n:[{'skin_triangle_ids':bodyfaces[a],'posed_xyz':[list(pp[i]) for i in bodyfaces[a]]} for a,b in bodytree.overlap(tree)] for n,tree in references.items()}}
+  for side in ('L','R'):
+   ids=masks[side];i=min(ids,key=lambda i:pp[i].z)
+   patch=sorted(ids,key=lambda i:pp[i].z)[:max(4,len(ids)//10)]
+   handfaces=[tuple(p.vertices) for p in mesh.data.polygons if all(j in ids for j in p.vertices)]
+   handtree=BVHTree.FromPolygons(pp,handfaces,all_triangles=False)
+   sample['hands'][side]={'contact_vertex_id':i,'contact_xyz':list(pp[i]),
+    'palm_patch_vertex_ids':patch,'palm_patch_center':list(sum((pp[j] for j in patch),Vector())/len(patch)),
+    'bottom_z':min(pp[j].z for j in ids),'top_z':max(pp[j].z for j in ids),
+    'head_nearest_surface_gap':min(headtree.find_nearest(pp[j])[3] for j in ids),
+    'head_triangle_intersections':len(headtree.overlap(handtree)),
+    'wrist_target_error':(rig.pose.bones['forearm_'+side].tail-wrist[side]).length,
+    'hand_wrist_xyz':list(rig.pose.bones['hand_'+side].head)}
+  samples.append(sample)
+ for fc in curves(action):
+  for k in fc.keyframe_points:k.interpolation='LINEAR'
+ for side in ('L','R'):
+  rig.pose.bones['forearm_'+side].constraints.remove(rig.pose.bones['forearm_'+side].constraints['TEMP_ContactIK'])
+  bpy.data.objects.remove(targets[side],do_unlink=True)
+ preserved_after={a.name:action_digest(a) for a in bpy.data.actions if a.name!=cid+'_Work'}
+ hook_result={'status':'pending' if DRAFT else 'absent'}
+ if not DRAFT and HOOK.exists():
+  spec=importlib.util.spec_from_file_location('garment_materials',HOOK);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+  hook_result=module.apply(mesh,cid)
+ for image in bpy.data.images:
+  if image.source in ('FILE','GENERATED') and image.size[0]>0:
+   name=cid+'_basecolor_2048.png' if tuple(image.size)==(2048,2048) else image.name+'.png'
+   dest=OUT/'Textures'/name;image.filepath_raw=str(dest);image.file_format='PNG';image.save()
+   if image.packed_file:image.unpack(method='REMOVE')
+   image.source='FILE';image.filepath=str(dest);image.reload();image.pack()
+ root['texture_finalize_hook']=str(HOOK);root['texture_finalized']=not DRAFT and HOOK.exists()
+ activate(rig,action);scene.frame_start=1;scene.frame_end=31;scene.frame_set(1);bpy.context.view_layer.update()
+ stem='角色_'+label+'_整合_v02_20261111';blend=OUT/(stem+'.blend')
+ bpy.ops.wm.save_as_mainfile(filepath=str(blend))
+ export_selected(rig,mesh,root)
+ if not DRAFT:
+  call(bpy.ops.export_scene.gltf,dict(filepath=str(OUT/(stem+'.glb')),export_format='GLB',use_selection=True,
+   export_animations=True,export_animation_mode='ACTIONS',export_force_sampling=True,export_frame_range=False,
+   export_def_bones=False,export_yup=True,export_extras=True,export_materials='EXPORT',export_cameras=False,export_lights=False,
+   export_all_influences=False,export_image_format='JPEG',export_jpeg_quality=95,export_image_quality=95,export_current_frame=False))
+  call(bpy.ops.export_scene.fbx,dict(filepath=str(OUT/(stem+'.fbx')),use_selection=True,object_types={'EMPTY','MESH','ARMATURE'},
+   axis_forward='-Z',axis_up='Y',apply_unit_scale=True,apply_scale_options='FBX_SCALE_UNITS',add_leaf_bones=False,
+   use_armature_deform_only=False,bake_anim=True,bake_anim_use_all_actions=True,bake_anim_use_nla_strips=False,
+   bake_anim_force_startend_keying=True,bake_anim_step=1,bake_anim_simplify_factor=0,path_mode='COPY',embed_textures=True))
+ rec={'character_id':cid,'source':str(source),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+  'blend':str(blend),'blend_sha256':hashlib.sha256(blend.read_bytes()).hexdigest(),
+  'rest_mesh_unchanged':True,'rig_lengths_unchanged':True,'other_four_actions_unchanged':preserved==preserved_after,
+  'preserved_action_digests':preserved,'posture_changes':{'shoulder_forward_m':.025,'head_pitch_rad':-.14,'head_pitch_deg':math.degrees(-.14),'hips_back_m':.030 if cid=='yintao' else 0,'hand_pitch_from_horizontal_rad':1.2 if cid=='yintao' else 0,'feet':'Idle frame 1 neutral'},
+  'palm_basis':basis,'work_samples':samples,'texture_hook':hook_result,
+  'min_head_gap_m':min(h['head_nearest_surface_gap'] for s in samples for h in s['hands'].values()),
+  'head_triangle_intersections':sum(h['head_triangle_intersections'] for s in samples for h in s['hands'].values()),
+  'contact_probe_frame':1,'contact_probe_vertices':{s:samples[0]['hands'][s]['contact_vertex_id'] for s in ('L','R')}}
+ report['characters'].append(rec)
+ (OUT/'角色触台报告_v02_20261111.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+ print('CONTACT_CHARACTER_READY',cid,rec['min_head_gap_m'],rec['head_triangle_intersections'],{n:sum(len(s['reference_body_intersections'][n]) for s in samples) for n in references},flush=True)
+print('CONTACT_BUILD_FINISHED',flush=True)

@@ -1,0 +1,16 @@
+[
+  {
+    "character_id": "zhituan",
+    "unchanged_topology_reencoding_max_vector_error": 0.0004979632261860483,
+    "max_angle_degrees": 0.028531191507962496,
+    "source_encoding": "INT16_2D",
+    "method": "Copy the entire untouched source mesh and re-encode its own decoded corner normals; geometry/topology/UV/weights are unchanged."
+  },
+  {
+    "character_id": "yintao",
+    "unchanged_topology_reencoding_max_vector_error": 0.0005130137011517815,
+    "max_angle_degrees": 0.029393520230710974,
+    "source_encoding": "INT16_2D",
+    "method": "Copy the entire untouched source mesh and re-encode its own decoded corner normals; geometry/topology/UV/weights are unchanged."
+  }
+]

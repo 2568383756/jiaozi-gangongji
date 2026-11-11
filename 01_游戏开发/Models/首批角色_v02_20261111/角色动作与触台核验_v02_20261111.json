@@ -1,0 +1,1758 @@
+{
+  "version": "v02_solid_hands",
+  "checks": [
+    {
+      "name": "zhituan/authorized_hand_remesh_present",
+      "passed": true,
+      "details": 504
+    },
+    {
+      "name": "zhituan/all_retained_original_vertices_exact",
+      "passed": true,
+      "details": 5407
+    },
+    {
+      "name": "zhituan/all_retained_original_weights_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/original_nonhand_custom_normals_within_measured_reencoding",
+      "passed": true,
+      "details": {
+        "max_vector_delta": 0.0004979632261860483,
+        "max_angle_deg": 0.02853111302282778,
+        "angle_limit_deg": 0.05,
+        "source_identical_input_roundtrip_max_vector_delta": 0.0004979632261860483,
+        "allowed_vector_delta_over_measured_baseline": 1e-06,
+        "baseline_report": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Scripts\\Blender\\触台比例核验_v01_20261111\\自定义法线同值回存核验_v01_20261111.json",
+        "note": "Source corner-normal directions retained within the independently measured identical-input storage roundtrip; not byte-identical normals."
+      }
+    },
+    {
+      "name": "zhituan/rest_bones_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/source_file_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/Idle_Walk_bone_curves_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/no_unweighted_vertices",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/four_influences_max",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/L/closed_hand_surface",
+      "passed": true,
+      "details": {
+        "vertices": 297,
+        "faces": 324,
+        "euler": 2
+      }
+    },
+    {
+      "name": "zhituan/L/semantic_flat_pad",
+      "passed": true,
+      "details": [
+        0.035,
+        0.020995
+      ]
+    },
+    {
+      "name": "zhituan/R/closed_hand_surface",
+      "passed": true,
+      "details": {
+        "vertices": 297,
+        "faces": 324,
+        "euler": 2
+      }
+    },
+    {
+      "name": "zhituan/R/semantic_flat_pad",
+      "passed": true,
+      "details": [
+        0.035,
+        0.020995
+      ]
+    },
+    {
+      "name": "zhituan/zhituan_CarryIdle/loop",
+      "passed": true,
+      "details": 1.1920928955078125e-07
+    },
+    {
+      "name": "zhituan/zhituan_CarryIdle/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/zhituan_CarryIdle/grounded",
+      "passed": true,
+      "details": [
+        0.0010000092443078756,
+        0.0010000142501667142
+      ]
+    },
+    {
+      "name": "zhituan/zhituan_CarryIdle/arm_lengths_preserved",
+      "passed": true,
+      "details": 6.27126749142004e-08
+    },
+    {
+      "name": "zhituan/zhituan_CarryWalk/loop",
+      "passed": true,
+      "details": 1.1920928955078125e-07
+    },
+    {
+      "name": "zhituan/zhituan_CarryWalk/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/zhituan_CarryWalk/grounded",
+      "passed": true,
+      "details": [
+        0.0009999759495258331,
+        0.0010000299662351608
+      ]
+    },
+    {
+      "name": "zhituan/zhituan_CarryWalk/arm_lengths_preserved",
+      "passed": true,
+      "details": 9.198016828748656e-08
+    },
+    {
+      "name": "zhituan/zhituan_Idle/loop",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/zhituan_Idle/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/zhituan_Idle/grounded",
+      "passed": true,
+      "details": [
+        0.001000019023194909,
+        0.001000019023194909
+      ]
+    },
+    {
+      "name": "zhituan/zhituan_Idle/arm_lengths_preserved",
+      "passed": true,
+      "details": 5.4164805696199636e-08
+    },
+    {
+      "name": "zhituan/zhituan_Walk/loop",
+      "passed": true,
+      "details": 1.1920928955078125e-07
+    },
+    {
+      "name": "zhituan/zhituan_Walk/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/zhituan_Walk/grounded",
+      "passed": true,
+      "details": [
+        0.00099998340010643,
+        0.0010000206530094147
+      ]
+    },
+    {
+      "name": "zhituan/zhituan_Walk/arm_lengths_preserved",
+      "passed": true,
+      "details": 9.51778474922449e-08
+    },
+    {
+      "name": "zhituan/zhituan_Work/loop",
+      "passed": true,
+      "details": 1.7881393432617188e-07
+    },
+    {
+      "name": "zhituan/zhituan_Work/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/zhituan_Work/grounded",
+      "passed": true,
+      "details": [
+        0.001000019023194909,
+        0.001000019023194909
+      ]
+    },
+    {
+      "name": "zhituan/zhituan_Work/arm_lengths_preserved",
+      "passed": true,
+      "details": 5.4240504726577043e-08
+    },
+    {
+      "name": "zhituan/Work/all_frames_actual_skin_reloads",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/Work/actual_palmar_patch_plane",
+      "passed": true,
+      "details": 8.940696716308594e-08
+    },
+    {
+      "name": "zhituan/Work/body_and_cuff_fixture_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/Work/hands_clear_head_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/CarryIdle/all_frames_actual_skin_reloads",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/CarryIdle/actual_palmar_patch_plane",
+      "passed": true,
+      "details": 2.682209014892578e-07
+    },
+    {
+      "name": "zhituan/CarryIdle/body_and_cuff_fixture_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/CarryIdle/hands_clear_head_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/CarryIdle/new_surface_socket_calibration",
+      "passed": true,
+      "details": 8.429369702178807e-08
+    },
+    {
+      "name": "zhituan/CarryWalk/all_frames_actual_skin_reloads",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "zhituan/CarryWalk/actual_palmar_patch_plane",
+      "passed": true,
+      "details": 2.682209014892578e-07
+    },
+    {
+      "name": "zhituan/CarryWalk/body_and_cuff_fixture_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/CarryWalk/hands_clear_head_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zhituan/CarryWalk/new_surface_socket_calibration",
+      "passed": true,
+      "details": 8.462232866585662e-08
+    },
+    {
+      "name": "yintao/authorized_hand_remesh_present",
+      "passed": true,
+      "details": 376
+    },
+    {
+      "name": "yintao/all_retained_original_vertices_exact",
+      "passed": true,
+      "details": 4807
+    },
+    {
+      "name": "yintao/all_retained_original_weights_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/original_nonhand_custom_normals_within_measured_reencoding",
+      "passed": true,
+      "details": {
+        "max_vector_delta": 0.0005130137011517815,
+        "max_angle_deg": 0.029393520230710974,
+        "angle_limit_deg": 0.05,
+        "source_identical_input_roundtrip_max_vector_delta": 0.0005130137011517815,
+        "allowed_vector_delta_over_measured_baseline": 1e-06,
+        "baseline_report": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Scripts\\Blender\\触台比例核验_v01_20261111\\自定义法线同值回存核验_v01_20261111.json",
+        "note": "Source corner-normal directions retained within the independently measured identical-input storage roundtrip; not byte-identical normals."
+      }
+    },
+    {
+      "name": "yintao/rest_bones_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/source_file_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/Idle_Walk_bone_curves_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/no_unweighted_vertices",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/four_influences_max",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/L/closed_hand_surface",
+      "passed": true,
+      "details": {
+        "vertices": 297,
+        "faces": 324,
+        "euler": 2
+      }
+    },
+    {
+      "name": "yintao/L/semantic_flat_pad",
+      "passed": true,
+      "details": [
+        0.035,
+        0.020995
+      ]
+    },
+    {
+      "name": "yintao/R/closed_hand_surface",
+      "passed": true,
+      "details": {
+        "vertices": 297,
+        "faces": 324,
+        "euler": 2
+      }
+    },
+    {
+      "name": "yintao/R/semantic_flat_pad",
+      "passed": true,
+      "details": [
+        0.035,
+        0.020995
+      ]
+    },
+    {
+      "name": "yintao/yintao_CarryIdle/loop",
+      "passed": true,
+      "details": 2.980232238769531e-07
+    },
+    {
+      "name": "yintao/yintao_CarryIdle/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/yintao_CarryIdle/grounded",
+      "passed": true,
+      "details": [
+        0.0009999837493523955,
+        0.000999986776150763
+      ]
+    },
+    {
+      "name": "yintao/yintao_CarryIdle/arm_lengths_preserved",
+      "passed": true,
+      "details": 7.373988464287606e-08
+    },
+    {
+      "name": "yintao/yintao_CarryWalk/loop",
+      "passed": true,
+      "details": 2.980232238769531e-07
+    },
+    {
+      "name": "yintao/yintao_CarryWalk/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/yintao_CarryWalk/grounded",
+      "passed": true,
+      "details": [
+        0.0009999817702919245,
+        0.0010000377660617232
+      ]
+    },
+    {
+      "name": "yintao/yintao_CarryWalk/arm_lengths_preserved",
+      "passed": true,
+      "details": 8.687425886999556e-08
+    },
+    {
+      "name": "yintao/yintao_Idle/loop",
+      "passed": true,
+      "details": 5.960464477539063e-08
+    },
+    {
+      "name": "yintao/yintao_Idle/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/yintao_Idle/grounded",
+      "passed": true,
+      "details": [
+        0.0010000087786465883,
+        0.0010000087786465883
+      ]
+    },
+    {
+      "name": "yintao/yintao_Idle/arm_lengths_preserved",
+      "passed": true,
+      "details": 5.7123939273262536e-08
+    },
+    {
+      "name": "yintao/yintao_Walk/loop",
+      "passed": true,
+      "details": 1.1920928955078125e-07
+    },
+    {
+      "name": "yintao/yintao_Walk/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/yintao_Walk/grounded",
+      "passed": true,
+      "details": [
+        0.000999986194074154,
+        0.0010000149486586452
+      ]
+    },
+    {
+      "name": "yintao/yintao_Walk/arm_lengths_preserved",
+      "passed": true,
+      "details": 8.516724403495601e-08
+    },
+    {
+      "name": "yintao/yintao_Work/loop",
+      "passed": true,
+      "details": 2.0116567611694336e-07
+    },
+    {
+      "name": "yintao/yintao_Work/root_static",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/yintao_Work/grounded",
+      "passed": true,
+      "details": [
+        0.0010000087786465883,
+        0.0010000087786465883
+      ]
+    },
+    {
+      "name": "yintao/yintao_Work/arm_lengths_preserved",
+      "passed": true,
+      "details": 6.61327104467535e-08
+    },
+    {
+      "name": "yintao/Work/all_frames_actual_skin_reloads",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/Work/actual_palmar_patch_plane",
+      "passed": true,
+      "details": 8.940696716308594e-08
+    },
+    {
+      "name": "yintao/Work/body_and_cuff_fixture_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/Work/hands_clear_head_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/CarryIdle/all_frames_actual_skin_reloads",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/CarryIdle/actual_palmar_patch_plane",
+      "passed": true,
+      "details": 1.7881393432617188e-07
+    },
+    {
+      "name": "yintao/CarryIdle/body_and_cuff_fixture_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/CarryIdle/hands_clear_head_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/CarryIdle/new_surface_socket_calibration",
+      "passed": true,
+      "details": 4.2146848510894035e-08
+    },
+    {
+      "name": "yintao/CarryWalk/all_frames_actual_skin_reloads",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "yintao/CarryWalk/actual_palmar_patch_plane",
+      "passed": true,
+      "details": 2.384185791015625e-07
+    },
+    {
+      "name": "yintao/CarryWalk/body_and_cuff_fixture_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/CarryWalk/hands_clear_head_BVH",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "yintao/CarryWalk/new_surface_socket_calibration",
+      "passed": true,
+      "details": 4.280032699210963e-08
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "zhituan",
+      "actions": [
+        {
+          "name": "zhituan_CarryIdle",
+          "frames": [
+            1,
+            61
+          ],
+          "loop_error": 1.1920928955078125e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.0010000092443078756,
+            0.0010000142501667142
+          ]
+        },
+        {
+          "name": "zhituan_CarryWalk",
+          "frames": [
+            1,
+            65
+          ],
+          "loop_error": 1.1920928955078125e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.0009999759495258331,
+            0.0010000299662351608
+          ]
+        },
+        {
+          "name": "zhituan_Idle",
+          "frames": [
+            1,
+            61
+          ],
+          "loop_error": 0.0,
+          "root_drift": 0.0,
+          "ground": [
+            0.001000019023194909,
+            0.001000019023194909
+          ]
+        },
+        {
+          "name": "zhituan_Walk",
+          "frames": [
+            1,
+            33
+          ],
+          "loop_error": 1.1920928955078125e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.00099998340010643,
+            0.0010000206530094147
+          ]
+        },
+        {
+          "name": "zhituan_Work",
+          "frames": [
+            1,
+            31
+          ],
+          "loop_error": 1.7881393432617188e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.001000019023194909,
+            0.001000019023194909
+          ]
+        }
+      ],
+      "contact_probes": {
+        "5703": {
+          "vertex_id": 5703,
+          "rest_xyz": [
+            0.24513185024261475,
+            -0.07596030831336975,
+            0.16665011644363403
+          ],
+          "side": "L",
+          "samples": [
+            {
+              "frame": 1,
+              "xyz": [
+                0.16999997198581696,
+                -0.27699995040893555,
+                0.35000014305114746
+              ]
+            },
+            {
+              "frame": 2,
+              "xyz": [
+                0.17000000178813934,
+                -0.27637627720832825,
+                0.35000884532928467
+              ]
+            },
+            {
+              "frame": 3,
+              "xyz": [
+                0.17000004649162292,
+                -0.2757797837257385,
+                0.35003459453582764
+              ]
+            },
+            {
+              "frame": 4,
+              "xyz": [
+                0.16999991238117218,
+                -0.27523672580718994,
+                0.3500765264034271
+              ]
+            },
+            {
+              "frame": 5,
+              "xyz": [
+                0.16999997198581696,
+                -0.274770587682724,
+                0.35013240575790405
+              ]
+            },
+            {
+              "frame": 6,
+              "xyz": [
+                0.17000001668930054,
+                -0.2744019031524658,
+                0.3502000570297241
+              ]
+            },
+            {
+              "frame": 7,
+              "xyz": [
+                0.17000001668930054,
+                -0.27414682507514954,
+                0.35027655959129333
+              ]
+            },
+            {
+              "frame": 8,
+              "xyz": [
+                0.17000006139278412,
+                -0.27401652932167053,
+                0.350358247756958
+              ]
+            },
+            {
+              "frame": 9,
+              "xyz": [
+                0.17000000178813934,
+                -0.27401652932167053,
+                0.35044199228286743
+              ]
+            },
+            {
+              "frame": 10,
+              "xyz": [
+                0.1700000762939453,
+                -0.2741468548774719,
+                0.35052376985549927
+              ]
+            },
+            {
+              "frame": 11,
+              "xyz": [
+                0.16999991238117218,
+                -0.274401992559433,
+                0.35060015320777893
+              ]
+            },
+            {
+              "frame": 12,
+              "xyz": [
+                0.17000006139278412,
+                -0.2747706174850464,
+                0.3506677448749542
+              ]
+            },
+            {
+              "frame": 13,
+              "xyz": [
+                0.17000003159046173,
+                -0.27523669600486755,
+                0.3507237434387207
+              ]
+            },
+            {
+              "frame": 14,
+              "xyz": [
+                0.1699998378753662,
+                -0.27577975392341614,
+                0.3507654368877411
+              ]
+            },
+            {
+              "frame": 15,
+              "xyz": [
+                0.1700000911951065,
+                -0.27637627720832825,
+                0.35079142451286316
+              ]
+            },
+            {
+              "frame": 16,
+              "xyz": [
+                0.17000006139278412,
+                -0.27699995040893555,
+                0.35080012679100037
+              ]
+            },
+            {
+              "frame": 17,
+              "xyz": [
+                0.17000000178813934,
+                -0.27762383222579956,
+                0.35079139471054077
+              ]
+            },
+            {
+              "frame": 18,
+              "xyz": [
+                0.17000000178813934,
+                -0.27822020649909973,
+                0.35076549649238586
+              ]
+            },
+            {
+              "frame": 19,
+              "xyz": [
+                0.16999997198581696,
+                -0.2787633538246155,
+                0.3507237434387207
+              ]
+            },
+            {
+              "frame": 20,
+              "xyz": [
+                0.17000001668930054,
+                -0.2792294919490814,
+                0.3506678640842438
+              ]
+            },
+            {
+              "frame": 21,
+              "xyz": [
+                0.16999991238117218,
+                -0.27959808707237244,
+                0.3506001830101013
+              ]
+            },
+            {
+              "frame": 22,
+              "xyz": [
+                0.17000003159046173,
+                -0.2798531949520111,
+                0.35052379965782166
+              ]
+            },
+            {
+              "frame": 23,
+              "xyz": [
+                0.1700000911951065,
+                -0.27998360991477966,
+                0.35044190287590027
+              ]
+            },
+            {
+              "frame": 24,
+              "xyz": [
+                0.1700001209974289,
+                -0.27998360991477966,
+                0.35035839676856995
+              ]
+            },
+            {
+              "frame": 25,
+              "xyz": [
+                0.16999998688697815,
+                -0.2798531949520111,
+                0.3502764105796814
+              ]
+            },
+            {
+              "frame": 26,
+              "xyz": [
+                0.16999992728233337,
+                -0.27959808707237244,
+                0.3502000570297241
+              ]
+            },
+            {
+              "frame": 27,
+              "xyz": [
+                0.17000001668930054,
+                -0.2792295217514038,
+                0.35013240575790405
+              ]
+            },
+            {
+              "frame": 28,
+              "xyz": [
+                0.16999998688697815,
+                -0.2787633538246155,
+                0.3500765264034271
+              ]
+            },
+            {
+              "frame": 29,
+              "xyz": [
+                0.1700000762939453,
+                -0.2782202363014221,
+                0.35003462433815
+              ]
+            },
+            {
+              "frame": 30,
+              "xyz": [
+                0.16999992728233337,
+                -0.27762371301651,
+                0.35000884532928467
+              ]
+            },
+            {
+              "frame": 31,
+              "xyz": [
+                0.17000006139278412,
+                -0.27699998021125793,
+                0.35000014305114746
+              ]
+            }
+          ]
+        },
+        "6144": {
+          "vertex_id": 6144,
+          "rest_xyz": [
+            -0.24513185024261475,
+            -0.07596030831336975,
+            0.16665011644363403
+          ],
+          "side": "R",
+          "samples": [
+            {
+              "frame": 1,
+              "xyz": [
+                -0.1700000762939453,
+                -0.2770000398159027,
+                0.3500000536441803
+              ]
+            },
+            {
+              "frame": 2,
+              "xyz": [
+                -0.16999998688697815,
+                -0.27637627720832825,
+                0.35000884532928467
+              ]
+            },
+            {
+              "frame": 3,
+              "xyz": [
+                -0.17000004649162292,
+                -0.2757798433303833,
+                0.3500346839427948
+              ]
+            },
+            {
+              "frame": 4,
+              "xyz": [
+                -0.16999995708465576,
+                -0.27523666620254517,
+                0.3500765264034271
+              ]
+            },
+            {
+              "frame": 5,
+              "xyz": [
+                -0.1700000762939453,
+                -0.2747706472873688,
+                0.3501324951648712
+              ]
+            },
+            {
+              "frame": 6,
+              "xyz": [
+                -0.16999994218349457,
+                -0.2744019627571106,
+                0.3502000570297241
+              ]
+            },
+            {
+              "frame": 7,
+              "xyz": [
+                -0.17000000178813934,
+                -0.27414682507514954,
+                0.35027649998664856
+              ]
+            },
+            {
+              "frame": 8,
+              "xyz": [
+                -0.1700000911951065,
+                -0.27401643991470337,
+                0.3503582775592804
+              ]
+            },
+            {
+              "frame": 9,
+              "xyz": [
+                -0.17000003159046173,
+                -0.2740165591239929,
+                0.35044196248054504
+              ]
+            },
+            {
+              "frame": 10,
+              "xyz": [
+                -0.17000004649162292,
+                -0.2741468846797943,
+                0.35052376985549927
+              ]
+            },
+            {
+              "frame": 11,
+              "xyz": [
+                -0.16999995708465576,
+                -0.2744019627571106,
+                0.35060012340545654
+              ]
+            },
+            {
+              "frame": 12,
+              "xyz": [
+                -0.1700000911951065,
+                -0.274770587682724,
+                0.350667804479599
+              ]
+            },
+            {
+              "frame": 13,
+              "xyz": [
+                -0.17000001668930054,
+                -0.2752366065979004,
+                0.3507237136363983
+              ]
+            },
+            {
+              "frame": 14,
+              "xyz": [
+                -0.16999992728233337,
+                -0.2757798433303833,
+                0.35076552629470825
+              ]
+            },
+            {
+              "frame": 15,
+              "xyz": [
+                -0.1700000911951065,
+                -0.27637624740600586,
+                0.350791335105896
+              ]
+            },
+            {
+              "frame": 16,
+              "xyz": [
+                -0.1700000762939453,
+                -0.2770000100135803,
+                0.350800096988678
+              ]
+            },
+            {
+              "frame": 17,
+              "xyz": [
+                -0.1700001209974289,
+                -0.2776238024234772,
+                0.35079139471054077
+              ]
+            },
+            {
+              "frame": 18,
+              "xyz": [
+                -0.16999997198581696,
+                -0.2782202661037445,
+                0.35076549649238586
+              ]
+            },
+            {
+              "frame": 19,
+              "xyz": [
+                -0.17000000178813934,
+                -0.2787633538246155,
+                0.3507237136363983
+              ]
+            },
+            {
+              "frame": 20,
+              "xyz": [
+                -0.1700000762939453,
+                -0.27922943234443665,
+                0.3506678640842438
+              ]
+            },
+            {
+              "frame": 21,
+              "xyz": [
+                -0.16999995708465576,
+                -0.27959802746772766,
+                0.35060015320777893
+              ]
+            },
+            {
+              "frame": 22,
+              "xyz": [
+                -0.17000000178813934,
+                -0.2798531651496887,
+                0.3505236804485321
+              ]
+            },
+            {
+              "frame": 23,
+              "xyz": [
+                -0.1700001060962677,
+                -0.27998363971710205,
+                0.35044190287590027
+              ]
+            },
+            {
+              "frame": 24,
+              "xyz": [
+                -0.1700000911951065,
+                -0.27998360991477966,
+                0.3503582775592804
+              ]
+            },
+            {
+              "frame": 25,
+              "xyz": [
+                -0.17000006139278412,
+                -0.2798531949520111,
+                0.35027649998664856
+              ]
+            },
+            {
+              "frame": 26,
+              "xyz": [
+                -0.16999997198581696,
+                -0.27959808707237244,
+                0.3502000868320465
+              ]
+            },
+            {
+              "frame": 27,
+              "xyz": [
+                -0.16999998688697815,
+                -0.2792295217514038,
+                0.35013240575790405
+              ]
+            },
+            {
+              "frame": 28,
+              "xyz": [
+                -0.16999998688697815,
+                -0.2787632942199707,
+                0.35007649660110474
+              ]
+            },
+            {
+              "frame": 29,
+              "xyz": [
+                -0.17000004649162292,
+                -0.2782202363014221,
+                0.35003477334976196
+              ]
+            },
+            {
+              "frame": 30,
+              "xyz": [
+                -0.17000001668930054,
+                -0.27762371301651,
+                0.35000887513160706
+              ]
+            },
+            {
+              "frame": 31,
+              "xyz": [
+                -0.17000003159046173,
+                -0.2770000696182251,
+                0.35000014305114746
+              ]
+            }
+          ]
+        }
+      },
+      "hands": {
+        "L": {
+          "vertices": 297,
+          "faces": 324,
+          "euler": 2
+        },
+        "R": {
+          "vertices": 297,
+          "faces": 324,
+          "euler": 2
+        }
+      }
+    },
+    {
+      "character_id": "yintao",
+      "actions": [
+        {
+          "name": "yintao_CarryIdle",
+          "frames": [
+            1,
+            61
+          ],
+          "loop_error": 2.980232238769531e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.0009999837493523955,
+            0.000999986776150763
+          ]
+        },
+        {
+          "name": "yintao_CarryWalk",
+          "frames": [
+            1,
+            65
+          ],
+          "loop_error": 2.980232238769531e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.0009999817702919245,
+            0.0010000377660617232
+          ]
+        },
+        {
+          "name": "yintao_Idle",
+          "frames": [
+            1,
+            61
+          ],
+          "loop_error": 5.960464477539063e-08,
+          "root_drift": 0.0,
+          "ground": [
+            0.0010000087786465883,
+            0.0010000087786465883
+          ]
+        },
+        {
+          "name": "yintao_Walk",
+          "frames": [
+            1,
+            33
+          ],
+          "loop_error": 1.1920928955078125e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.000999986194074154,
+            0.0010000149486586452
+          ]
+        },
+        {
+          "name": "yintao_Work",
+          "frames": [
+            1,
+            31
+          ],
+          "loop_error": 2.0116567611694336e-07,
+          "root_drift": 0.0,
+          "ground": [
+            0.0010000087786465883,
+            0.0010000087786465883
+          ]
+        }
+      ],
+      "contact_probes": {
+        "5103": {
+          "vertex_id": 5103,
+          "rest_xyz": [
+            0.3454360067844391,
+            -0.0802706927061081,
+            0.21489807963371277
+          ],
+          "side": "L",
+          "samples": [
+            {
+              "frame": 1,
+              "xyz": [
+                0.16999992728233337,
+                -0.2770000100135803,
+                0.34999993443489075
+              ]
+            },
+            {
+              "frame": 2,
+              "xyz": [
+                0.16999998688697815,
+                -0.27637627720832825,
+                0.3500087857246399
+              ]
+            },
+            {
+              "frame": 3,
+              "xyz": [
+                0.16999998688697815,
+                -0.27577972412109375,
+                0.35003459453582764
+              ]
+            },
+            {
+              "frame": 4,
+              "xyz": [
+                0.16999994218349457,
+                -0.2752366364002228,
+                0.35007646679878235
+              ]
+            },
+            {
+              "frame": 5,
+              "xyz": [
+                0.16999998688697815,
+                -0.2747705578804016,
+                0.35013246536254883
+              ]
+            },
+            {
+              "frame": 6,
+              "xyz": [
+                0.16999991238117218,
+                -0.2744019329547882,
+                0.35019996762275696
+              ]
+            },
+            {
+              "frame": 7,
+              "xyz": [
+                0.16999995708465576,
+                -0.2741468548774719,
+                0.35027647018432617
+              ]
+            },
+            {
+              "frame": 8,
+              "xyz": [
+                0.16999998688697815,
+                -0.27401652932167053,
+                0.3503582775592804
+              ]
+            },
+            {
+              "frame": 9,
+              "xyz": [
+                0.16999995708465576,
+                -0.27401643991470337,
+                0.3504417836666107
+              ]
+            },
+            {
+              "frame": 10,
+              "xyz": [
+                0.17000004649162292,
+                -0.27414676547050476,
+                0.35052359104156494
+              ]
+            },
+            {
+              "frame": 11,
+              "xyz": [
+                0.16999997198581696,
+                -0.2744019329547882,
+                0.3506002128124237
+              ]
+            },
+            {
+              "frame": 12,
+              "xyz": [
+                0.17000000178813934,
+                -0.27477049827575684,
+                0.350667804479599
+              ]
+            },
+            {
+              "frame": 13,
+              "xyz": [
+                0.16999998688697815,
+                -0.27523666620254517,
+                0.35072362422943115
+              ]
+            },
+            {
+              "frame": 14,
+              "xyz": [
+                0.16999998688697815,
+                -0.2757798433303833,
+                0.3507654070854187
+              ]
+            },
+            {
+              "frame": 15,
+              "xyz": [
+                0.16999997198581696,
+                -0.27637624740600586,
+                0.35079124569892883
+              ]
+            },
+            {
+              "frame": 16,
+              "xyz": [
+                0.16999998688697815,
+                -0.2770000696182251,
+                0.350800096988678
+              ]
+            },
+            {
+              "frame": 17,
+              "xyz": [
+                0.16999994218349457,
+                -0.27762362360954285,
+                0.3507912755012512
+              ]
+            },
+            {
+              "frame": 18,
+              "xyz": [
+                0.17000001668930054,
+                -0.2782202959060669,
+                0.3507654368877411
+              ]
+            },
+            {
+              "frame": 19,
+              "xyz": [
+                0.17000003159046173,
+                -0.2787633538246155,
+                0.3507235646247864
+              ]
+            },
+            {
+              "frame": 20,
+              "xyz": [
+                0.16999997198581696,
+                -0.27922943234443665,
+                0.35066768527030945
+              ]
+            },
+            {
+              "frame": 21,
+              "xyz": [
+                0.1700000762939453,
+                -0.27959805727005005,
+                0.350600004196167
+              ]
+            },
+            {
+              "frame": 22,
+              "xyz": [
+                0.17000001668930054,
+                -0.2798532247543335,
+                0.35052362084388733
+              ]
+            },
+            {
+              "frame": 23,
+              "xyz": [
+                0.1700001060962677,
+                -0.2799835503101349,
+                0.3504418134689331
+              ]
+            },
+            {
+              "frame": 24,
+              "xyz": [
+                0.16999998688697815,
+                -0.27998360991477966,
+                0.35035815834999084
+              ]
+            },
+            {
+              "frame": 25,
+              "xyz": [
+                0.17000004649162292,
+                -0.27985310554504395,
+                0.3502763509750366
+              ]
+            },
+            {
+              "frame": 26,
+              "xyz": [
+                0.17000001668930054,
+                -0.2795981168746948,
+                0.35019996762275696
+              ]
+            },
+            {
+              "frame": 27,
+              "xyz": [
+                0.17000001668930054,
+                -0.27922943234443665,
+                0.35013237595558167
+              ]
+            },
+            {
+              "frame": 28,
+              "xyz": [
+                0.16999997198581696,
+                -0.27876338362693787,
+                0.3500764071941376
+              ]
+            },
+            {
+              "frame": 29,
+              "xyz": [
+                0.16999997198581696,
+                -0.27822020649909973,
+                0.35003459453582764
+              ]
+            },
+            {
+              "frame": 30,
+              "xyz": [
+                0.16999998688697815,
+                -0.2776237428188324,
+                0.35000869631767273
+              ]
+            },
+            {
+              "frame": 31,
+              "xyz": [
+                0.17000000178813934,
+                -0.2770000100135803,
+                0.3499999940395355
+              ]
+            }
+          ]
+        },
+        "5544": {
+          "vertex_id": 5544,
+          "rest_xyz": [
+            -0.3454360067844391,
+            -0.0802706927061081,
+            0.21489807963371277
+          ],
+          "side": "R",
+          "samples": [
+            {
+              "frame": 1,
+              "xyz": [
+                -0.16999991238117218,
+                -0.27699995040893555,
+                0.34999987483024597
+              ]
+            },
+            {
+              "frame": 2,
+              "xyz": [
+                -0.16999997198581696,
+                -0.27637621760368347,
+                0.3500088155269623
+              ]
+            },
+            {
+              "frame": 3,
+              "xyz": [
+                -0.17000000178813934,
+                -0.27577972412109375,
+                0.35003462433815
+              ]
+            },
+            {
+              "frame": 4,
+              "xyz": [
+                -0.16999997198581696,
+                -0.27523666620254517,
+                0.35007646679878235
+              ]
+            },
+            {
+              "frame": 5,
+              "xyz": [
+                -0.1700000911951065,
+                -0.274770587682724,
+                0.35013243556022644
+              ]
+            },
+            {
+              "frame": 6,
+              "xyz": [
+                -0.16999998688697815,
+                -0.2744019031524658,
+                0.35019996762275696
+              ]
+            },
+            {
+              "frame": 7,
+              "xyz": [
+                -0.17000001668930054,
+                -0.2741468548774719,
+                0.35027647018432617
+              ]
+            },
+            {
+              "frame": 8,
+              "xyz": [
+                -0.17000004649162292,
+                -0.27401649951934814,
+                0.3503583073616028
+              ]
+            },
+            {
+              "frame": 9,
+              "xyz": [
+                -0.1699998527765274,
+                -0.274016410112381,
+                0.35044172406196594
+              ]
+            },
+            {
+              "frame": 10,
+              "xyz": [
+                -0.17000001668930054,
+                -0.2741467356681824,
+                0.3505236506462097
+              ]
+            },
+            {
+              "frame": 11,
+              "xyz": [
+                -0.17000003159046173,
+                -0.2744019627571106,
+                0.35060012340545654
+              ]
+            },
+            {
+              "frame": 12,
+              "xyz": [
+                -0.17000003159046173,
+                -0.2747705578804016,
+                0.35066771507263184
+              ]
+            },
+            {
+              "frame": 13,
+              "xyz": [
+                -0.16999994218349457,
+                -0.275236576795578,
+                0.350723534822464
+              ]
+            },
+            {
+              "frame": 14,
+              "xyz": [
+                -0.16999998688697815,
+                -0.2757798135280609,
+                0.3507654368877411
+              ]
+            },
+            {
+              "frame": 15,
+              "xyz": [
+                -0.17000001668930054,
+                -0.27637630701065063,
+                0.35079124569892883
+              ]
+            },
+            {
+              "frame": 16,
+              "xyz": [
+                -0.17000001668930054,
+                -0.2770001292228699,
+                0.3508000373840332
+              ]
+            },
+            {
+              "frame": 17,
+              "xyz": [
+                -0.16999997198581696,
+                -0.27762365341186523,
+                0.3507912755012512
+              ]
+            },
+            {
+              "frame": 18,
+              "xyz": [
+                -0.17000001668930054,
+                -0.2782202363014221,
+                0.3507654368877411
+              ]
+            },
+            {
+              "frame": 19,
+              "xyz": [
+                -0.1700000911951065,
+                -0.2787633538246155,
+                0.3507235646247864
+              ]
+            },
+            {
+              "frame": 20,
+              "xyz": [
+                -0.16999998688697815,
+                -0.27922940254211426,
+                0.35066768527030945
+              ]
+            },
+            {
+              "frame": 21,
+              "xyz": [
+                -0.17000000178813934,
+                -0.27959805727005005,
+                0.35060009360313416
+              ]
+            },
+            {
+              "frame": 22,
+              "xyz": [
+                -0.16999998688697815,
+                -0.2798531651496887,
+                0.35052359104156494
+              ]
+            },
+            {
+              "frame": 23,
+              "xyz": [
+                -0.16999997198581696,
+                -0.2799835503101349,
+                0.3504417836666107
+              ]
+            },
+            {
+              "frame": 24,
+              "xyz": [
+                -0.17000004649162292,
+                -0.27998360991477966,
+                0.35035818815231323
+              ]
+            },
+            {
+              "frame": 25,
+              "xyz": [
+                -0.16999995708465576,
+                -0.27985304594039917,
+                0.3502764105796814
+              ]
+            },
+            {
+              "frame": 26,
+              "xyz": [
+                -0.16999998688697815,
+                -0.27959805727005005,
+                0.35019996762275696
+              ]
+            },
+            {
+              "frame": 27,
+              "xyz": [
+                -0.17000001668930054,
+                -0.27922946214675903,
+                0.3501323461532593
+              ]
+            },
+            {
+              "frame": 28,
+              "xyz": [
+                -0.16999995708465576,
+                -0.27876338362693787,
+                0.3500764071941376
+              ]
+            },
+            {
+              "frame": 29,
+              "xyz": [
+                -0.16999997198581696,
+                -0.2782202363014221,
+                0.35003462433815
+              ]
+            },
+            {
+              "frame": 30,
+              "xyz": [
+                -0.17000003159046173,
+                -0.2776237726211548,
+                0.3500087261199951
+              ]
+            },
+            {
+              "frame": 31,
+              "xyz": [
+                -0.16999998688697815,
+                -0.2770000100135803,
+                0.3500000238418579
+              ]
+            }
+          ]
+        }
+      },
+      "hands": {
+        "L": {
+          "vertices": 297,
+          "faces": 324,
+          "euler": 2
+        },
+        "R": {
+          "vertices": 297,
+          "faces": 324,
+          "euler": 2
+        }
+      }
+    }
+  ],
+  "passed": 94,
+  "total": 94,
+  "all_passed": true
+}
