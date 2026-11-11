@@ -1,0 +1,1982 @@
+{
+  "version": "v05_20261111",
+  "blender": "5.3.0",
+  "objects": 1043,
+  "mesh_objects": 903,
+  "station_roots": [
+    "station_pulp",
+    "station_dry",
+    "station_print",
+    "station_stamp",
+    "station_delivery",
+    "station_shared"
+  ],
+  "station_geometry_bounds": {
+    "station_pulp": [
+      [
+        1.0,
+        3.0
+      ],
+      [
+        1.8,
+        3.0
+      ],
+      [
+        0.0,
+        0.65
+      ]
+    ],
+    "station_dry": [
+      [
+        1.3,
+        3.3
+      ],
+      [
+        6.3,
+        7.1
+      ],
+      [
+        0.0,
+        1.6
+      ]
+    ],
+    "station_print": [
+      [
+        7.3,
+        8.9
+      ],
+      [
+        5.7,
+        6.7
+      ],
+      [
+        0.0,
+        0.774
+      ]
+    ],
+    "station_stamp": [
+      [
+        9.5,
+        11.1
+      ],
+      [
+        2.3,
+        3.3
+      ],
+      [
+        0.0,
+        0.96
+      ]
+    ],
+    "station_delivery": [
+      [
+        9.6,
+        11.6
+      ],
+      [
+        7.3,
+        7.9066
+      ],
+      [
+        0.0,
+        2.4
+      ]
+    ],
+    "station_shared": [
+      [
+        7.3,
+        8.3
+      ],
+      [
+        0.7,
+        1.7
+      ],
+      [
+        0.0,
+        0.66
+      ]
+    ]
+  },
+  "anchors": [
+    {
+      "name": "station_delivery__interaction_main",
+      "parent": "station_delivery",
+      "local": [
+        0.0,
+        -0.3499999940395355,
+        0.47999998927116394
+      ],
+      "role": "interaction_target"
+    },
+    {
+      "name": "station_delivery__receipt_anchor",
+      "parent": "station_delivery",
+      "local": [
+        0.5400000214576721,
+        0.03999999910593033,
+        0.7799999713897705
+      ],
+      "role": "receipt_feedback_anchor"
+    },
+    {
+      "name": "station_delivery__receiving_slot",
+      "parent": "station_delivery",
+      "local": [
+        -0.15000000596046448,
+        -0.06499999761581421,
+        0.699999988079071
+      ],
+      "role": "paper_anchor"
+    },
+    {
+      "name": "station_delivery__scroll_sign_pivot",
+      "parent": "station_delivery",
+      "local": [
+        0.0,
+        -0.23000000417232513,
+        1.8300000429153442
+      ],
+      "role": "non_interactive_sign_pivot"
+    },
+    {
+      "name": "station_delivery__standing_main",
+      "parent": "station_delivery",
+      "local": [
+        0.0,
+        -0.7250000238418579,
+        0.0
+      ],
+      "role": "player_standing_point"
+    },
+    {
+      "name": "station_dry__clip_pivot_A",
+      "parent": "station_dry",
+      "local": [
+        -0.6399999856948853,
+        -0.08500000089406967,
+        1.3250000476837158
+      ],
+      "role": "paper_clip_tool_pivot"
+    },
+    {
+      "name": "station_dry__clip_pivot_A.001",
+      "parent": "station_dry",
+      "local": [
+        -0.36000001430511475,
+        -0.08500000089406967,
+        1.3250000476837158
+      ],
+      "role": "paper_clip_tool_pivot"
+    },
+    {
+      "name": "station_dry__clip_pivot_B",
+      "parent": "station_dry",
+      "local": [
+        0.36000001430511475,
+        -0.08500000089406967,
+        1.3250000476837158
+      ],
+      "role": "paper_clip_tool_pivot"
+    },
+    {
+      "name": "station_dry__clip_pivot_B.001",
+      "parent": "station_dry",
+      "local": [
+        0.6399999856948853,
+        -0.08500000089406967,
+        1.3250000476837158
+      ],
+      "role": "paper_clip_tool_pivot"
+    },
+    {
+      "name": "station_dry__interaction_A",
+      "parent": "station_dry",
+      "local": [
+        -0.5,
+        -0.44999998807907104,
+        0.47999998927116394
+      ],
+      "role": "interaction_target"
+    },
+    {
+      "name": "station_dry__interaction_B",
+      "parent": "station_dry",
+      "local": [
+        0.5,
+        -0.44999998807907104,
+        0.47999998927116394
+      ],
+      "role": "interaction_target"
+    },
+    {
+      "name": "station_dry__slot_A",
+      "parent": "station_dry",
+      "local": [
+        -0.5,
+        -0.08500000089406967,
+        1.0
+      ],
+      "role": "paper_anchor"
+    },
+    {
+      "name": "station_dry__slot_B",
+      "parent": "station_dry",
+      "local": [
+        0.5,
+        -0.08500000089406967,
+        1.0
+      ],
+      "role": "paper_anchor"
+    },
+    {
+      "name": "station_dry__standing_A",
+      "parent": "station_dry",
+      "local": [
+        -0.5,
+        -0.824999988079071,
+        0.0
+      ],
+      "role": "player_standing_point"
+    },
+    {
+      "name": "station_dry__standing_B",
+      "parent": "station_dry",
+      "local": [
+        0.5,
+        -0.824999988079071,
+        0.0
+      ],
+      "role": "player_standing_point"
+    },
+    {
+      "name": "station_print__ink_dish_pivot",
+      "parent": "station_print",
+      "local": [
+        0.5199999809265137,
+        0.23000000417232513,
+        0.6819999814033508
+      ],
+      "role": "movable_ink_dish_pivot"
+    },
+    {
+      "name": "station_print__interaction_main",
+      "parent": "station_print",
+      "local": [
+        0.0,
+        -0.550000011920929,
+        0.47999998927116394
+      ],
+      "role": "interaction_target"
+    },
+    {
+      "name": "station_print__printing_brush_pivot",
+      "parent": "station_print",
+      "local": [
+        0.5199999809265137,
+        -0.20999999344348907,
+        0.7049999833106995
+      ],
+      "role": "movable_brush_pivot"
+    },
+    {
+      "name": "station_print__slot_0",
+      "parent": "station_print",
+      "local": [
+        -0.23000000417232513,
+        0.0,
+        0.7250000238418579
+      ],
+      "role": "paper_anchor"
+    },
+    {
+      "name": "station_print__standing_main",
+      "parent": "station_print",
+      "local": [
+        0.0,
+        -0.925000011920929,
+        0.0
+      ],
+      "role": "player_standing_point"
+    },
+    {
+      "name": "station_pulp__interaction_main",
+      "parent": "station_pulp",
+      "local": [
+        0.0,
+        0.6499999761581421,
+        0.47999998927116394
+      ],
+      "role": "interaction_target"
+    },
+    {
+      "name": "station_pulp__screen_pivot",
+      "parent": "station_pulp",
+      "local": [
+        0.27000001072883606,
+        0.0,
+        0.5360000133514404
+      ],
+      "role": "movable_screen_pivot"
+    },
+    {
+      "name": "station_pulp__slot_0",
+      "parent": "station_pulp",
+      "local": [
+        0.27000001072883606,
+        0.0,
+        0.5600000023841858
+      ],
+      "role": "paper_anchor"
+    },
+    {
+      "name": "station_pulp__standing_main",
+      "parent": "station_pulp",
+      "local": [
+        0.0,
+        1.024999976158142,
+        0.0
+      ],
+      "role": "player_standing_point"
+    },
+    {
+      "name": "station_shared__interaction_main",
+      "parent": "station_shared",
+      "local": [
+        0.0,
+        0.550000011920929,
+        0.47999998927116394
+      ],
+      "role": "interaction_target"
+    },
+    {
+      "name": "station_shared__slot_0",
+      "parent": "station_shared",
+      "local": [
+        0.0,
+        0.0,
+        0.6620000004768372
+      ],
+      "role": "paper_anchor"
+    },
+    {
+      "name": "station_shared__standing_main",
+      "parent": "station_shared",
+      "local": [
+        0.0,
+        0.925000011920929,
+        0.0
+      ],
+      "role": "player_standing_point"
+    },
+    {
+      "name": "station_stamp__interaction_main",
+      "parent": "station_stamp",
+      "local": [
+        0.0,
+        0.550000011920929,
+        0.47999998927116394
+      ],
+      "role": "interaction_target"
+    },
+    {
+      "name": "station_stamp__seal_contact",
+      "parent": "station_stamp",
+      "local": [
+        -0.10000000149011612,
+        -0.18000000715255737,
+        0.6779999732971191
+      ],
+      "role": "stamp_contact_point"
+    },
+    {
+      "name": "station_stamp__seal_pivot",
+      "parent": "station_stamp",
+      "local": [
+        0.5299999713897705,
+        0.1599999964237213,
+        0.6700000166893005
+      ],
+      "role": "movable_stamp_pivot"
+    },
+    {
+      "name": "station_stamp__slot_0",
+      "parent": "station_stamp",
+      "local": [
+        -0.20999999344348907,
+        0.0,
+        0.6740000247955322
+      ],
+      "role": "paper_anchor"
+    },
+    {
+      "name": "station_stamp__standing_main",
+      "parent": "station_stamp",
+      "local": [
+        0.0,
+        0.925000011920929,
+        0.0
+      ],
+      "role": "player_standing_point"
+    }
+  ],
+  "static_navigation": {
+    "method": "0.1m 4-neighbor flood fill on nominal station and actual decoration AABBs, radius .325 + .05 clearance",
+    "targets": {
+      "station_pulp": {
+        "xy": [
+          2,
+          3.425
+        ],
+        "reachable": true
+      },
+      "station_dryA": {
+        "xy": [
+          1.8,
+          5.875
+        ],
+        "reachable": true
+      },
+      "station_dryB": {
+        "xy": [
+          2.8,
+          5.875
+        ],
+        "reachable": true
+      },
+      "station_print": {
+        "xy": [
+          8.1,
+          5.275
+        ],
+        "reachable": true
+      },
+      "station_stamp": {
+        "xy": [
+          10.3,
+          3.725
+        ],
+        "reachable": true
+      },
+      "station_delivery": {
+        "xy": [
+          10.6,
+          6.875
+        ],
+        "reachable": true
+      },
+      "station_shared": {
+        "xy": [
+          7.8,
+          2.125
+        ],
+        "reachable": true
+      }
+    },
+    "all_reachable": true,
+    "limitation": "Not Unity physics, no player-player simulation; wall perimeter simplified."
+  },
+  "decoration_roots": [
+    "decor_rear_storage_cabinet",
+    "decor_right_low_cabinet",
+    "decor_woven_paper_basket",
+    "decor_wall_notice",
+    "decor_wall_tool_rack"
+  ],
+  "decoration_geometry_bounds": {
+    "decor_rear_storage_cabinet": [
+      [
+        3.35,
+        4.55
+      ],
+      [
+        7.0725,
+        7.625
+      ],
+      [
+        0.0,
+        0.7785
+      ]
+    ],
+    "decor_right_low_cabinet": [
+      [
+        11.125,
+        11.6775
+      ],
+      [
+        0.35,
+        1.65
+      ],
+      [
+        0.0,
+        0.925
+      ]
+    ],
+    "decor_woven_paper_basket": [
+      [
+        0.367,
+        0.9527
+      ],
+      [
+        0.707,
+        1.293
+      ],
+      [
+        0.025,
+        0.365
+      ]
+    ],
+    "decor_wall_notice": [
+      [
+        0.54,
+        1.18
+      ],
+      [
+        7.732,
+        7.87
+      ],
+      [
+        1.48,
+        1.96
+      ]
+    ],
+    "decor_wall_tool_rack": [
+      [
+        3.57,
+        4.39
+      ],
+      [
+        7.662,
+        7.86
+      ],
+      [
+        1.195,
+        1.635
+      ]
+    ]
+  },
+  "exterior_roots": [
+    "exterior_paper_ground",
+    "exterior_path_front_entry",
+    "exterior_path_rear_entry",
+    "exterior_path_perimeter",
+    "exterior_stone_lamp_front_left",
+    "exterior_stone_lamp_front_right",
+    "exterior_front_left_bench",
+    "exterior_water_jar_and_broom",
+    "exterior_small_paper_stones",
+    "env_ginkgo_west",
+    "env_ginkgo_east",
+    "env_ginkgo_north",
+    "env_fallen_ginkgo_leaves",
+    "exterior_rounded_paper_bed_01",
+    "exterior_rounded_paper_bed_02",
+    "exterior_rounded_paper_bed_03",
+    "exterior_rounded_paper_bed_04",
+    "exterior_rounded_paper_bed_05",
+    "exterior_rounded_paper_bed_06",
+    "exterior_rounded_paper_bed_07",
+    "exterior_rounded_paper_bed_08",
+    "exterior_rounded_paper_bed_09"
+  ],
+  "exterior_inventory": [
+    {
+      "name": "exterior_paper_ground",
+      "asset_id": "exterior_paper_ground",
+      "role": "exterior_ground",
+      "bounds": [
+        [
+          -4.0,
+          16.0
+        ],
+        [
+          -3.5,
+          11.5
+        ],
+        [
+          -0.4,
+          -0.14
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {}
+    },
+    {
+      "name": "exterior_path_front_entry",
+      "asset_id": "exterior_path_front_entry",
+      "role": "exterior_path",
+      "bounds": [
+        [
+          4.8,
+          7.2
+        ],
+        [
+          -3.5,
+          0.0
+        ],
+        [
+          -0.14,
+          0.0
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {
+        "tile_count": 20
+      }
+    },
+    {
+      "name": "exterior_path_rear_entry",
+      "asset_id": "exterior_path_rear_entry",
+      "role": "exterior_path",
+      "bounds": [
+        [
+          4.8,
+          7.2
+        ],
+        [
+          8.0,
+          11.5
+        ],
+        [
+          -0.14,
+          0.0
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {
+        "tile_count": 20
+      }
+    },
+    {
+      "name": "exterior_path_perimeter",
+      "asset_id": "exterior_path_perimeter",
+      "role": "exterior_path",
+      "bounds": [
+        [
+          -0.9,
+          12.9
+        ],
+        [
+          -0.9,
+          8.9
+        ],
+        [
+          -0.14,
+          0.0
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {
+        "tile_count": 56
+      }
+    },
+    {
+      "name": "exterior_stone_lamp_front_left",
+      "asset_id": "exterior_stone_lamp_front_left",
+      "role": "exterior_dressing",
+      "bounds": [
+        [
+          -2.88,
+          -2.32
+        ],
+        [
+          -2.03,
+          -1.47
+        ],
+        [
+          -0.14,
+          0.7175
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {}
+    },
+    {
+      "name": "exterior_stone_lamp_front_right",
+      "asset_id": "exterior_stone_lamp_front_right",
+      "role": "exterior_dressing",
+      "bounds": [
+        [
+          14.17,
+          14.73
+        ],
+        [
+          -1.88,
+          -1.32
+        ],
+        [
+          -0.14,
+          0.7175
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {}
+    },
+    {
+      "name": "exterior_front_left_bench",
+      "asset_id": "exterior_front_left_bench",
+      "role": "exterior_dressing",
+      "bounds": [
+        [
+          0.5,
+          2.4
+        ],
+        [
+          -2.45,
+          -1.85
+        ],
+        [
+          -0.14,
+          0.74
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {}
+    },
+    {
+      "name": "exterior_water_jar_and_broom",
+      "asset_id": "exterior_water_jar_and_broom",
+      "role": "exterior_dressing",
+      "bounds": [
+        [
+          -2.74,
+          -1.77
+        ],
+        [
+          1.0283,
+          1.6717
+        ],
+        [
+          -0.14,
+          0.9635
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {}
+    },
+    {
+      "name": "exterior_small_paper_stones",
+      "asset_id": "exterior_small_paper_stones",
+      "role": "exterior_dressing",
+      "bounds": [
+        [
+          -3.4265,
+          14.851
+        ],
+        [
+          -3.1257,
+          10.2989
+        ],
+        [
+          -0.14,
+          -0.078
+        ]
+      ],
+      "foliage_style": "",
+      "placement": "",
+      "crown_style": "",
+      "counts": {
+        "stone_count": 8
+      }
+    },
+    {
+      "name": "env_ginkgo_west",
+      "asset_id": "env_ginkgo",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          -3.594,
+          -1.1065
+        ],
+        [
+          5.7056,
+          7.6301
+        ],
+        [
+          -0.2733,
+          3.3461
+        ]
+      ],
+      "foliage_style": "large_rounded_ginkgo_fans",
+      "placement": "",
+      "crown_style": "overlapping_staggered_fan_canopy",
+      "counts": {
+        "leaf_count": 55,
+        "tree_count": 1,
+        "crown_cluster_count": 4,
+        "bark_fold_count": 4,
+        "mesh_batch_count": 4,
+        "major_fork_count": 4
+      }
+    },
+    {
+      "name": "env_ginkgo_east",
+      "asset_id": "env_ginkgo",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          13.0069,
+          15.6924
+        ],
+        [
+          7.3525,
+          9.3882
+        ],
+        [
+          -0.2811,
+          3.8029
+        ]
+      ],
+      "foliage_style": "large_rounded_ginkgo_fans",
+      "placement": "",
+      "crown_style": "overlapping_staggered_fan_canopy",
+      "counts": {
+        "leaf_count": 62,
+        "tree_count": 1,
+        "crown_cluster_count": 4,
+        "bark_fold_count": 4,
+        "mesh_batch_count": 4,
+        "major_fork_count": 4
+      }
+    },
+    {
+      "name": "env_ginkgo_north",
+      "asset_id": "env_ginkgo",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          0.556,
+          2.4428
+        ],
+        [
+          9.343,
+          10.755
+        ],
+        [
+          -0.2423,
+          2.554
+        ]
+      ],
+      "foliage_style": "large_rounded_ginkgo_fans",
+      "placement": "",
+      "crown_style": "overlapping_staggered_fan_canopy",
+      "counts": {
+        "leaf_count": 48,
+        "tree_count": 1,
+        "crown_cluster_count": 4,
+        "bark_fold_count": 4,
+        "mesh_batch_count": 4,
+        "major_fork_count": 4
+      }
+    },
+    {
+      "name": "env_fallen_ginkgo_leaves",
+      "asset_id": "env_fallen_leaves",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          -2.7241,
+          15.1338
+        ],
+        [
+          5.6888,
+          10.8604
+        ],
+        [
+          -0.13,
+          -0.1227
+        ]
+      ],
+      "foliage_style": "large_rounded_ginkgo_fans",
+      "placement": "",
+      "crown_style": "",
+      "counts": {
+        "leaf_count": 18,
+        "cluster_count": 3,
+        "mesh_batch_count": 2
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_01",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          -0.4786,
+          -0.025
+        ],
+        [
+          -0.4822,
+          -0.04
+        ],
+        [
+          0.0,
+          0.2315
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "wall_corner",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 13
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_02",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          12.025,
+          12.4656
+        ],
+        [
+          -0.5121,
+          -0.04
+        ],
+        [
+          0.0,
+          0.2277
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "wall_corner",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 13
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_03",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          -0.4512,
+          -0.025
+        ],
+        [
+          8.04,
+          8.5154
+        ],
+        [
+          0.0,
+          0.2378
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "wall_corner",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 13
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_04",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          12.025,
+          12.4748
+        ],
+        [
+          8.04,
+          8.478
+        ],
+        [
+          0.0,
+          0.2259
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "wall_corner",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 13
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_05",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          -0.338,
+          -0.0338
+        ],
+        [
+          6.0809,
+          6.7126
+        ],
+        [
+          0.0,
+          0.2358
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "wall_base",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 11
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_06",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          12.02,
+          12.3295
+        ],
+        [
+          6.1196,
+          6.6715
+        ],
+        [
+          0.0,
+          0.2539
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "wall_base",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 11
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_07",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          -3.1161,
+          -2.6624
+        ],
+        [
+          6.1511,
+          6.55
+        ],
+        [
+          -0.136,
+          0.0935
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "tree_base",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 12
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_08",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          14.6547,
+          15.1067
+        ],
+        [
+          7.804,
+          8.23
+        ],
+        [
+          -0.136,
+          0.1043
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "tree_base",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 12
+      }
+    },
+    {
+      "name": "exterior_rounded_paper_bed_09",
+      "asset_id": "env_planting_bed",
+      "role": "exterior_vegetation",
+      "bounds": [
+        [
+          1.6898,
+          2.1375
+        ],
+        [
+          10.35,
+          10.7439
+        ],
+        [
+          -0.136,
+          0.0929
+        ]
+      ],
+      "foliage_style": "rounded_folded_paper",
+      "placement": "tree_base",
+      "crown_style": "",
+      "counts": {
+        "cluster_count": 1,
+        "bed_count": 1,
+        "grass_strip_count": 0,
+        "blade_count": 0,
+        "leaf_count": 12
+      }
+    }
+  ],
+  "play_area_xy": [
+    [
+      0,
+      12
+    ],
+    [
+      0,
+      8
+    ]
+  ],
+  "exterior_ground_xy": [
+    [
+      -4,
+      16
+    ],
+    [
+      -3.5,
+      11.5
+    ]
+  ],
+  "packed_material_images": 24,
+  "paper_materials": {
+    "size": 1024,
+    "seed": 20261111,
+    "uv_tile_m": 1.0,
+    "uv_source": "active render UV; repeat; shared physical scale",
+    "texture_style": "readable_sparse_xuan_fibres_and_soft_pressed_pulp",
+    "short_fibres_per_tile": 1080,
+    "height_range_mm": [
+      -0.45785272121429443,
+      0.5869892239570618
+    ],
+    "packed_images": [
+      "TEX_JiaoziPaper_v05_Normal",
+      "TEX_JiaoziPaper_v05_paper_BaseColor",
+      "TEX_JiaoziPaper_v05_paper_edge_BaseColor",
+      "TEX_JiaoziPaper_v05_wood_BaseColor",
+      "TEX_JiaoziPaper_v05_wood_light_BaseColor",
+      "TEX_JiaoziPaper_v05_wood_dark_BaseColor",
+      "TEX_JiaoziPaper_v05_roof_BaseColor",
+      "TEX_JiaoziPaper_v05_stone_BaseColor",
+      "TEX_JiaoziPaper_v05_wet_BaseColor",
+      "TEX_JiaoziPaper_v05_red_BaseColor",
+      "TEX_JiaoziPaper_v05_teal_BaseColor",
+      "TEX_JiaoziPaper_v05_floor_workshop_BaseColor",
+      "TEX_JiaoziPaper_v05_floor_courtyard_BaseColor",
+      "TEX_JiaoziPaper_v05_garden_soil_BaseColor",
+      "TEX_JiaoziPaper_v05_garden_edge_BaseColor",
+      "TEX_JiaoziPaper_v05_paving_BaseColor",
+      "TEX_JiaoziPaper_v05_paving_light_BaseColor",
+      "TEX_JiaoziPaper_v05_moss_BaseColor",
+      "TEX_JiaoziPaper_v05_grass_BaseColor",
+      "TEX_JiaoziPaper_v05_sage_BaseColor",
+      "TEX_JiaoziPaper_v05_ginkgo_gold_BaseColor",
+      "TEX_JiaoziPaper_v05_ginkgo_light_BaseColor",
+      "TEX_JiaoziPaper_v05_ginkgo_ochre_BaseColor",
+      "TEX_JiaoziPaper_v05_bark_BaseColor"
+    ],
+    "materials": [
+      {
+        "key": "paper",
+        "name": "MAT_paper",
+        "roughness": 0.91,
+        "normal_strength": 0.92
+      },
+      {
+        "key": "paper_edge",
+        "name": "MAT_paper_edge",
+        "roughness": 0.94,
+        "normal_strength": 1.0
+      },
+      {
+        "key": "wood",
+        "name": "MAT_wood",
+        "roughness": 0.84,
+        "normal_strength": 0.38
+      },
+      {
+        "key": "wood_light",
+        "name": "MAT_wood_light",
+        "roughness": 0.87,
+        "normal_strength": 0.46
+      },
+      {
+        "key": "wood_dark",
+        "name": "MAT_wood_dark",
+        "roughness": 0.83,
+        "normal_strength": 0.29
+      },
+      {
+        "key": "roof",
+        "name": "MAT_roof",
+        "roughness": 0.87,
+        "normal_strength": 0.47
+      },
+      {
+        "key": "stone",
+        "name": "MAT_stone",
+        "roughness": 0.91,
+        "normal_strength": 0.45
+      },
+      {
+        "key": "wet",
+        "name": "MAT_wet",
+        "roughness": 0.73,
+        "normal_strength": 0.28
+      },
+      {
+        "key": "red",
+        "name": "MAT_red",
+        "roughness": 0.84,
+        "normal_strength": 0.28
+      },
+      {
+        "key": "teal",
+        "name": "MAT_teal",
+        "roughness": 0.84,
+        "normal_strength": 0.27
+      },
+      {
+        "key": "floor_workshop",
+        "name": "MAT_floor_workshop",
+        "roughness": 0.92,
+        "normal_strength": 0.66
+      },
+      {
+        "key": "floor_courtyard",
+        "name": "MAT_floor_courtyard",
+        "roughness": 0.94,
+        "normal_strength": 0.78
+      },
+      {
+        "key": "garden_soil",
+        "name": "MAT_garden_soil",
+        "roughness": 0.93,
+        "normal_strength": 0.49
+      },
+      {
+        "key": "garden_edge",
+        "name": "MAT_garden_edge",
+        "roughness": 0.94,
+        "normal_strength": 0.57
+      },
+      {
+        "key": "paving",
+        "name": "MAT_paving",
+        "roughness": 0.92,
+        "normal_strength": 0.5
+      },
+      {
+        "key": "paving_light",
+        "name": "MAT_paving_light",
+        "roughness": 0.92,
+        "normal_strength": 0.48
+      },
+      {
+        "key": "moss",
+        "name": "MAT_moss",
+        "roughness": 0.88,
+        "normal_strength": 0.27
+      },
+      {
+        "key": "grass",
+        "name": "MAT_grass",
+        "roughness": 0.82,
+        "normal_strength": 0.24
+      },
+      {
+        "key": "sage",
+        "name": "MAT_sage",
+        "roughness": 0.82,
+        "normal_strength": 0.24
+      },
+      {
+        "key": "ginkgo_gold",
+        "name": "MAT_ginkgo_gold",
+        "roughness": 0.8,
+        "normal_strength": 0.24
+      },
+      {
+        "key": "ginkgo_light",
+        "name": "MAT_ginkgo_light",
+        "roughness": 0.8,
+        "normal_strength": 0.22
+      },
+      {
+        "key": "ginkgo_ochre",
+        "name": "MAT_ginkgo_ochre",
+        "roughness": 0.82,
+        "normal_strength": 0.25
+      },
+      {
+        "key": "bark",
+        "name": "MAT_bark",
+        "roughness": 0.86,
+        "normal_strength": 0.36
+      }
+    ],
+    "unchanged": [
+      "ink",
+      "water",
+      "metal"
+    ],
+    "normal_convention": "tangent OpenGL/glTF +Y"
+  },
+  "unity_runtime_tested": false,
+  "export_axis_note": "glTF +Y up. Front/back signs require target-engine inspection.",
+  "glb_bytes": 22075820,
+  "rendering": {
+    "engine": "CYCLES",
+    "device": "GPU",
+    "samples": 40,
+    "view_transform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "compute_backend": "CUDA",
+    "palette_note": "Restore vivid gold, blue tiles and warm wood using Standard color management; packed albedo colors export with GLB.",
+    "denoiser": "OPENIMAGEDENOISE",
+    "use_denoising": true,
+    "resolution": [
+      1920,
+      1440
+    ]
+  },
+  "preview_images": {
+    "预览_俯视_v05_20261111.png": [
+      1920,
+      1440
+    ],
+    "预览_外景总览_v05_20261111.png": [
+      1920,
+      1440
+    ],
+    "预览_游戏机位_v05_20261111.png": [
+      1920,
+      1440
+    ],
+    "预览_纸坊主效果_v05_20261111.png": [
+      1920,
+      1440
+    ],
+    "预览_纸感细节_v05_20261111.png": [
+      1920,
+      1440
+    ],
+    "预览_纸片草丛_v05_20261111.png": [
+      1920,
+      1440
+    ],
+    "预览_银杏庭院_v05_20261111.png": [
+      1920,
+      1440
+    ]
+  },
+  "verification": {
+    "checks": [
+      {
+        "name": "six_station_roots",
+        "passed": true,
+        "detail": [
+          "station_pulp",
+          "station_dry",
+          "station_print",
+          "station_stamp",
+          "station_delivery",
+          "station_shared"
+        ]
+      },
+      {
+        "name": "meters_Z_up",
+        "passed": true,
+        "detail": "Blender Z up; glTF Y up conversion enabled"
+      },
+      {
+        "name": "24_floor_tiles_and_12x8m",
+        "passed": true,
+        "detail": [
+          [
+            0.0,
+            12.0
+          ],
+          [
+            0.0,
+            8.0
+          ],
+          [
+            -0.10000000149011612,
+            0.0
+          ]
+        ]
+      },
+      {
+        "name": "floor_top_at_zero",
+        "passed": true,
+        "detail": [
+          -0.10000000149011612,
+          0.0
+        ]
+      },
+      {
+        "name": "seven_slots_targets_stands",
+        "passed": true,
+        "detail": {
+          "slots": 7,
+          "targets": 7,
+          "stands": 7
+        }
+      },
+      {
+        "name": "dry_AB_1m_centers",
+        "passed": true,
+        "detail": [
+          {
+            "name": "station_dry__slot_A",
+            "slot": "A",
+            "world": [
+              1.7999999523162842,
+              6.614999771118164,
+              1.0
+            ]
+          },
+          {
+            "name": "station_dry__slot_B",
+            "slot": "B",
+            "world": [
+              2.799999952316284,
+              6.614999771118164,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "station_pulp_footprint",
+        "passed": true,
+        "detail": {
+          "actual": [
+            2.0000000596046448,
+            1.1999999284744263
+          ],
+          "expected": [
+            2,
+            1.2
+          ],
+          "tolerance_m": 0.01
+        }
+      },
+      {
+        "name": "station_pulp_grounded",
+        "passed": true,
+        "detail": 0.0
+      },
+      {
+        "name": "station_dry_footprint",
+        "passed": true,
+        "detail": {
+          "actual": [
+            1.999999761581421,
+            0.8000001907348633
+          ],
+          "expected": [
+            2,
+            0.8
+          ],
+          "tolerance_m": 0.01
+        }
+      },
+      {
+        "name": "station_dry_grounded",
+        "passed": true,
+        "detail": 0.0
+      },
+      {
+        "name": "station_print_footprint",
+        "passed": true,
+        "detail": {
+          "actual": [
+            1.6000003814697266,
+            1.0
+          ],
+          "expected": [
+            1.6,
+            1
+          ],
+          "tolerance_m": 0.01
+        }
+      },
+      {
+        "name": "station_print_grounded",
+        "passed": true,
+        "detail": 0.0
+      },
+      {
+        "name": "station_stamp_footprint",
+        "passed": true,
+        "detail": {
+          "actual": [
+            1.6000003814697266,
+            1.0
+          ],
+          "expected": [
+            1.6,
+            1
+          ],
+          "tolerance_m": 0.01
+        }
+      },
+      {
+        "name": "station_stamp_grounded",
+        "passed": true,
+        "detail": 0.0
+      },
+      {
+        "name": "station_delivery_footprint",
+        "passed": true,
+        "detail": {
+          "actual": [
+            2.0,
+            0.6065645217895508
+          ],
+          "expected": [
+            2,
+            0.6
+          ],
+          "tolerance_m": 0.01
+        }
+      },
+      {
+        "name": "station_delivery_grounded",
+        "passed": true,
+        "detail": 0.0
+      },
+      {
+        "name": "station_shared_footprint",
+        "passed": true,
+        "detail": {
+          "actual": [
+            1.0,
+            1.0
+          ],
+          "expected": [
+            1,
+            1
+          ],
+          "tolerance_m": 0.01
+        }
+      },
+      {
+        "name": "station_shared_grounded",
+        "passed": true,
+        "detail": 0.0
+      },
+      {
+        "name": "station_print_table_height",
+        "passed": true,
+        "detail": 0.6500000357627869
+      },
+      {
+        "name": "station_stamp_table_height",
+        "passed": true,
+        "detail": 0.6500000357627869
+      },
+      {
+        "name": "station_shared_table_height",
+        "passed": true,
+        "detail": 0.6500000357627869
+      },
+      {
+        "name": "station_delivery_table_height",
+        "passed": true,
+        "detail": 0.6500000357627869
+      },
+      {
+        "name": "2_4m_lane_free_of_station_geometry",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "portal_clear_opening",
+        "passed": true,
+        "detail": {
+          "width": 2.40000057220459,
+          "height": 2.0999999046325684
+        }
+      },
+      {
+        "name": "portal_ornaments_keep_clear_opening",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "static_nominal_paths",
+        "passed": true,
+        "detail": "0.1m 4-neighbor flood fill on nominal station and actual decoration AABBs, radius .325 + .05 clearance"
+      },
+      {
+        "name": "decor_leaves_main_lane_clear",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "decor_clear_of_operating_stands",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "decor_does_not_overlap_workstations",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "decor_marked_noninteractive",
+        "passed": true,
+        "detail": [
+          "decor_rear_storage_cabinet",
+          "decor_right_low_cabinet",
+          "decor_woven_paper_basket",
+          "decor_wall_notice",
+          "decor_wall_tool_rack"
+        ]
+      },
+      {
+        "name": "three_ginkgo_trees",
+        "passed": true,
+        "detail": [
+          "env_ginkgo_west",
+          "env_ginkgo_east",
+          "env_ginkgo_north"
+        ]
+      },
+      {
+        "name": "nine_compact_paper_grass_groups",
+        "passed": true,
+        "detail": [
+          "exterior_rounded_paper_bed_01",
+          "exterior_rounded_paper_bed_02",
+          "exterior_rounded_paper_bed_03",
+          "exterior_rounded_paper_bed_04",
+          "exterior_rounded_paper_bed_05",
+          "exterior_rounded_paper_bed_06",
+          "exterior_rounded_paper_bed_07",
+          "exterior_rounded_paper_bed_08",
+          "exterior_rounded_paper_bed_09"
+        ]
+      },
+      {
+        "name": "all_grass_uses_rounded_paper_style",
+        "passed": true,
+        "detail": {
+          "groups": 9,
+          "styles": [
+            "rounded_folded_paper"
+          ]
+        }
+      },
+      {
+        "name": "grass_reduced_by_at_least_60_percent",
+        "passed": true,
+        "detail": {
+          "v04_leaves": 630,
+          "v05_leaves": 110,
+          "reduction_percent": 82.54
+        }
+      },
+      {
+        "name": "grass_at_corners_wall_bases_and_tree_bases",
+        "passed": true,
+        "detail": {
+          "wall_corner": 4,
+          "wall_base": 2,
+          "tree_base": 3
+        }
+      },
+      {
+        "name": "grass_sits_above_surface_and_remains_low",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "exterior_marked_noninteractive",
+        "passed": true,
+        "detail": 22
+      },
+      {
+        "name": "exterior_ground_20x15m",
+        "passed": true,
+        "detail": [
+          [
+            -4.0,
+            16.0
+          ],
+          [
+            -3.5,
+            11.5
+          ],
+          [
+            -0.4000000059604645,
+            -0.14000000059604645
+          ]
+        ]
+      },
+      {
+        "name": "exterior_stays_outside_work_area",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "front_and_rear_approaches_clear",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "station_xy_bounds_preserved_from_v04",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "station_root_centers_match_dimensions",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "all_gameplay_anchor_interfaces_preserved_from_v04",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "game_camera_preserved",
+        "passed": true,
+        "detail": {
+          "location": [
+            6.300000190734863,
+            -13.0,
+            18.299999237060547
+          ],
+          "ortho_scale": 14.399999618530273
+        }
+      },
+      {
+        "name": "overview_contains_full_scene",
+        "passed": true,
+        "detail": [
+          [
+            0.04644894599914551,
+            0.9535509943962097
+          ],
+          [
+            0.12152423709630966,
+            0.8808793425559998
+          ]
+        ]
+      },
+      {
+        "name": "packed_paper_materials",
+        "passed": true,
+        "detail": {
+          "packed_images": 24
+        }
+      },
+      {
+        "name": "no_external_images",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "no_external_font_dependency",
+        "passed": true,
+        "detail": {
+          "fonts": 0
+        }
+      },
+      {
+        "name": "seven_previews_at_1920x1440",
+        "passed": true,
+        "detail": {
+          "预览_俯视_v05_20261111.png": [
+            1920,
+            1440
+          ],
+          "预览_外景总览_v05_20261111.png": [
+            1920,
+            1440
+          ],
+          "预览_游戏机位_v05_20261111.png": [
+            1920,
+            1440
+          ],
+          "预览_纸坊主效果_v05_20261111.png": [
+            1920,
+            1440
+          ],
+          "预览_纸感细节_v05_20261111.png": [
+            1920,
+            1440
+          ],
+          "预览_纸片草丛_v05_20261111.png": [
+            1920,
+            1440
+          ],
+          "预览_银杏庭院_v05_20261111.png": [
+            1920,
+            1440
+          ]
+        }
+      },
+      {
+        "name": "glb_meshes_roundtrip",
+        "passed": true,
+        "detail": {
+          "expected": 896,
+          "imported": 896,
+          "missing": []
+        }
+      },
+      {
+        "name": "glb_paper_textures_and_normals",
+        "passed": true,
+        "detail": {
+          "images": 24,
+          "normal_map_nodes": 23
+        }
+      },
+      {
+        "name": "glb_root_and_anchor_coordinates",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "passed": true,
+    "native_objects": 1043,
+    "asset_kinds": [
+      "decor_lantern",
+      "decor_rear_storage_cabinet",
+      "decor_right_low_cabinet",
+      "decor_wall_notice",
+      "decor_wall_tool_rack",
+      "decor_woven_paper_basket",
+      "env_eave",
+      "env_fallen_leaves",
+      "env_floor_courtyard",
+      "env_floor_workshop",
+      "env_foundation",
+      "env_ginkgo",
+      "env_planting_bed",
+      "env_portal",
+      "env_wall_corner",
+      "env_wall_low",
+      "env_wall_plain",
+      "env_wall_window",
+      "exterior_front_left_bench",
+      "exterior_paper_ground",
+      "exterior_path_front_entry",
+      "exterior_path_perimeter",
+      "exterior_path_rear_entry",
+      "exterior_small_paper_stones",
+      "exterior_stone_lamp_front_left",
+      "exterior_stone_lamp_front_right",
+      "exterior_water_jar_and_broom",
+      "station_delivery",
+      "station_dry",
+      "station_print",
+      "station_pulp",
+      "station_shared",
+      "station_stamp"
+    ],
+    "unity_tested": false,
+    "render_review": "See production notes for visual review; automated checks validate geometry and export, not artistic quality."
+  },
+  "files": {
+    "预览_俯视_v05_20261111.png": {
+      "bytes": 3051366,
+      "sha256": "6489cbcceed1a31c270f19953debc0a0cb618be3212caf58d4097241e60e15bd"
+    },
+    "预览_外景总览_v05_20261111.png": {
+      "bytes": 2932160,
+      "sha256": "0f0fc4331f9325f0adfb413af76e6aa759eef0d11eb4cbbc390d4ee0eb8fda2a"
+    },
+    "预览_游戏机位_v05_20261111.png": {
+      "bytes": 3276395,
+      "sha256": "919b2041272a1031cf908fa6294730535ee3cc507fe5dbdde40c923aef213148"
+    },
+    "预览_纸坊主效果_v05_20261111.png": {
+      "bytes": 3432033,
+      "sha256": "ac31c5906f716cdd09f8da73de69bde865e39f72d241a429764aecf6d1eb92c5"
+    },
+    "预览_纸感细节_v05_20261111.png": {
+      "bytes": 2976381,
+      "sha256": "426a565f8607425af10e9b2201aa33b98820b198560b679a45c52d9934641d2e"
+    },
+    "预览_纸片草丛_v05_20261111.png": {
+      "bytes": 2946380,
+      "sha256": "bc805756572500d902c81595c48ffbd86d352bada664573dd1431390b7e570ee"
+    },
+    "预览_银杏庭院_v05_20261111.png": {
+      "bytes": 2993029,
+      "sha256": "38077373675a6680d42f34afe208d5c677f460eaad16a96f0df7f82bfcab24bd"
+    },
+    "首关_开张第一单_v05_20261111.blend": {
+      "bytes": 16334942,
+      "sha256": "40cebe8cc226918723839e656f9d3a276eca20cfdde60261a8fe192724a132f5"
+    },
+    "首关_开张第一单_v05_20261111.glb": {
+      "bytes": 22075820,
+      "sha256": "9c4bafd65738ea4ea775ef7df1a2e2b2a36c18f258eda9f577428f104e6eb62c"
+    }
+  }
+}
