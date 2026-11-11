@@ -1,0 +1,6252 @@
+{
+  "blender": "5.3.0",
+  "source_commit": "86562a37fb6cf75f0ea41419b072b4129f207538",
+  "files": [
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\卡通人物_已绑骨.blend",
+      "sha256": "8c3d90ced24c55da7374c95ea3bd51fd1c876ae062c1e3b255efcf8ecd55e606",
+      "fps": 30.0,
+      "frame_range": [
+        1,
+        96
+      ],
+      "unit_system": "METRIC",
+      "unit_scale": 1.0,
+      "objects": [
+        {
+          "name": "Rig_卡通人物",
+          "type": "ARMATURE",
+          "parent": null
+        },
+        {
+          "name": "卡通人物",
+          "type": "MESH",
+          "parent": "Rig_卡通人物"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "卡通人物",
+          "skinned": true,
+          "vertices": 5466,
+          "polygons": 10419,
+          "triangles": 10419,
+          "uv_layers": [
+            "c74950b3_bf94_4494_8366_3222a13380f8_NewUVMap"
+          ],
+          "vertex_groups": [
+            "hips",
+            "spine",
+            "chest",
+            "neck",
+            "head",
+            "upper_arm_L",
+            "forearm_L",
+            "hand_L",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "ribbon_L",
+            "ribbon_tail_L",
+            "upper_arm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_R",
+            "shin_R",
+            "foot_R",
+            "ribbon_R",
+            "ribbon_tail_R"
+          ],
+          "max_influences": 4,
+          "unweighted_vertices": 0,
+          "non_normalized_vertices": 0,
+          "shape_keys": [],
+          "modifiers": [
+            {
+              "type": "ARMATURE",
+              "name": "骨骼蒙皮"
+            }
+          ],
+          "materials": [
+            "卡通人物 · 主贴图"
+          ],
+          "raw_world_bounds": {
+            "min": [
+              -0.4406738,
+              -0.3430176,
+              1e-07
+            ],
+            "max": [
+              0.4406739,
+              0.3430176,
+              0.9995118
+            ],
+            "size": [
+              0.8813477,
+              0.6860352,
+              0.9995118
+            ]
+          },
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "rigs": [
+        {
+          "name": "Rig_卡通人物",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bone_count": 22,
+          "bones": [
+            {
+              "name": "root",
+              "parent": null,
+              "head": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.1
+              ],
+              "deform": true
+            },
+            {
+              "name": "hips",
+              "parent": "root",
+              "head": [
+                0.0,
+                0.0,
+                0.16
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.24
+              ],
+              "deform": true
+            },
+            {
+              "name": "spine",
+              "parent": "hips",
+              "head": [
+                0.0,
+                0.0,
+                0.24
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.33
+              ],
+              "deform": true
+            },
+            {
+              "name": "chest",
+              "parent": "spine",
+              "head": [
+                0.0,
+                0.0,
+                0.33
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.4
+              ],
+              "deform": true
+            },
+            {
+              "name": "neck",
+              "parent": "chest",
+              "head": [
+                0.0,
+                0.0,
+                0.4
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.45
+              ],
+              "deform": true
+            },
+            {
+              "name": "head",
+              "parent": "neck",
+              "head": [
+                0.0,
+                -0.015,
+                0.45
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.82
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_L",
+              "parent": "head",
+              "head": [
+                0.03,
+                0.19,
+                0.46
+              ],
+              "tail": [
+                0.28,
+                0.22,
+                0.43
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_L",
+              "parent": "head",
+              "head": [
+                0.035,
+                0.2,
+                0.43
+              ],
+              "tail": [
+                0.13,
+                0.24,
+                0.29
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_R",
+              "parent": "head",
+              "head": [
+                -0.03,
+                0.19,
+                0.46
+              ],
+              "tail": [
+                -0.28,
+                0.22,
+                0.43
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_R",
+              "parent": "head",
+              "head": [
+                -0.035,
+                0.2,
+                0.43
+              ],
+              "tail": [
+                -0.13,
+                0.24,
+                0.29
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_L",
+              "parent": "chest",
+              "head": [
+                0.075,
+                0.0,
+                0.34
+              ],
+              "tail": [
+                0.175,
+                -0.015,
+                0.265
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_L",
+              "parent": "upper_arm_L",
+              "head": [
+                0.175,
+                -0.015,
+                0.265
+              ],
+              "tail": [
+                0.225,
+                -0.04,
+                0.19
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_L",
+              "parent": "forearm_L",
+              "head": [
+                0.225,
+                -0.04,
+                0.19
+              ],
+              "tail": [
+                0.225,
+                -0.065,
+                0.135
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_R",
+              "parent": "chest",
+              "head": [
+                -0.075,
+                0.0,
+                0.34
+              ],
+              "tail": [
+                -0.175,
+                -0.015,
+                0.265
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_R",
+              "parent": "upper_arm_R",
+              "head": [
+                -0.175,
+                -0.015,
+                0.265
+              ],
+              "tail": [
+                -0.225,
+                -0.04,
+                0.19
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_R",
+              "parent": "forearm_R",
+              "head": [
+                -0.225,
+                -0.04,
+                0.19
+              ],
+              "tail": [
+                -0.225,
+                -0.065,
+                0.135
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_L",
+              "parent": "hips",
+              "head": [
+                0.075,
+                0.0,
+                0.19
+              ],
+              "tail": [
+                0.09,
+                -0.005,
+                0.11
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_L",
+              "parent": "thigh_L",
+              "head": [
+                0.09,
+                -0.005,
+                0.11
+              ],
+              "tail": [
+                0.1,
+                -0.025,
+                0.05
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_L",
+              "parent": "shin_L",
+              "head": [
+                0.1,
+                -0.025,
+                0.05
+              ],
+              "tail": [
+                0.1,
+                -0.15,
+                0.025
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_R",
+              "parent": "hips",
+              "head": [
+                -0.075,
+                0.0,
+                0.19
+              ],
+              "tail": [
+                -0.09,
+                -0.005,
+                0.11
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_R",
+              "parent": "thigh_R",
+              "head": [
+                -0.09,
+                -0.005,
+                0.11
+              ],
+              "tail": [
+                -0.1,
+                -0.025,
+                0.05
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_R",
+              "parent": "shin_R",
+              "head": [
+                -0.1,
+                -0.025,
+                0.05
+              ],
+              "tail": [
+                -0.1,
+                -0.15,
+                0.025
+              ],
+              "deform": true
+            }
+          ],
+          "constraints": [],
+          "active_action": "绑定测试_挥手与步伐",
+          "nla_tracks": []
+        }
+      ],
+      "actions": [
+        {
+          "name": "绑定测试_挥手与步伐",
+          "frame_range": [
+            1.0,
+            96.0
+          ],
+          "curves": 220,
+          "key_count": 1540,
+          "slots": [
+            "OBRig_卡通人物"
+          ],
+          "channels": [
+            "pose.bones[\"chest\"].location",
+            "pose.bones[\"chest\"].rotation_quaternion",
+            "pose.bones[\"chest\"].scale",
+            "pose.bones[\"foot_L\"].location",
+            "pose.bones[\"foot_L\"].rotation_quaternion",
+            "pose.bones[\"foot_L\"].scale",
+            "pose.bones[\"foot_R\"].location",
+            "pose.bones[\"foot_R\"].rotation_quaternion",
+            "pose.bones[\"foot_R\"].scale",
+            "pose.bones[\"forearm_L\"].location",
+            "pose.bones[\"forearm_L\"].rotation_quaternion",
+            "pose.bones[\"forearm_L\"].scale",
+            "pose.bones[\"forearm_R\"].location",
+            "pose.bones[\"forearm_R\"].rotation_quaternion",
+            "pose.bones[\"forearm_R\"].scale",
+            "pose.bones[\"hand_L\"].location",
+            "pose.bones[\"hand_L\"].rotation_quaternion",
+            "pose.bones[\"hand_L\"].scale",
+            "pose.bones[\"hand_R\"].location",
+            "pose.bones[\"hand_R\"].rotation_quaternion",
+            "pose.bones[\"hand_R\"].scale",
+            "pose.bones[\"head\"].location",
+            "pose.bones[\"head\"].rotation_quaternion",
+            "pose.bones[\"head\"].scale",
+            "pose.bones[\"hips\"].location",
+            "pose.bones[\"hips\"].rotation_quaternion",
+            "pose.bones[\"hips\"].scale",
+            "pose.bones[\"neck\"].location",
+            "pose.bones[\"neck\"].rotation_quaternion",
+            "pose.bones[\"neck\"].scale",
+            "pose.bones[\"ribbon_L\"].location",
+            "pose.bones[\"ribbon_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_L\"].scale",
+            "pose.bones[\"ribbon_R\"].location",
+            "pose.bones[\"ribbon_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_R\"].scale",
+            "pose.bones[\"ribbon_tail_L\"].location",
+            "pose.bones[\"ribbon_tail_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_L\"].scale",
+            "pose.bones[\"ribbon_tail_R\"].location",
+            "pose.bones[\"ribbon_tail_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_R\"].scale",
+            "pose.bones[\"root\"].location",
+            "pose.bones[\"root\"].rotation_quaternion",
+            "pose.bones[\"root\"].scale",
+            "pose.bones[\"shin_L\"].location",
+            "pose.bones[\"shin_L\"].rotation_quaternion",
+            "pose.bones[\"shin_L\"].scale",
+            "pose.bones[\"shin_R\"].location",
+            "pose.bones[\"shin_R\"].rotation_quaternion",
+            "pose.bones[\"shin_R\"].scale",
+            "pose.bones[\"spine\"].location",
+            "pose.bones[\"spine\"].rotation_quaternion",
+            "pose.bones[\"spine\"].scale",
+            "pose.bones[\"thigh_L\"].location",
+            "pose.bones[\"thigh_L\"].rotation_quaternion",
+            "pose.bones[\"thigh_L\"].scale",
+            "pose.bones[\"thigh_R\"].location",
+            "pose.bones[\"thigh_R\"].rotation_quaternion",
+            "pose.bones[\"thigh_R\"].scale",
+            "pose.bones[\"upper_arm_L\"].location",
+            "pose.bones[\"upper_arm_L\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_L\"].scale",
+            "pose.bones[\"upper_arm_R\"].location",
+            "pose.bones[\"upper_arm_R\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_R\"].scale"
+          ],
+          "samples": [
+            {
+              "frame": 1,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 25,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0437987,
+                    0.0,
+                    0.8173985
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2894222,
+                    -0.0401887,
+                    0.3403744
+                  ],
+                  "tail": [
+                    0.3264089,
+                    -0.0732071,
+                    0.3058524
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 48,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2220067,
+                    -0.0177317,
+                    0.1829185
+                  ],
+                  "tail": [
+                    0.2211736,
+                    -0.0358865,
+                    0.1253016
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.0547752,
+                    0.1947427
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.0851411,
+                    0.1425133
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.0376275,
+                    0.0516274
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.1607396,
+                    0.018561
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0099651,
+                    0.0492265
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1335593,
+                    0.0180104
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 72,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.0690031,
+                    0.2009367
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.1044316,
+                    0.1519998
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.0094023,
+                    0.1850432
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.0229771,
+                    0.1261728
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    0.0004461,
+                    0.058013
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.12674,
+                    0.0494282
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0543084,
+                    0.0573471
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1811797,
+                    0.0449512
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 96,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            }
+          ],
+          "loop_max_bone_matrix_delta": 0.0
+        }
+      ],
+      "skin_rest_bounds": {
+        "min": [
+          -0.4406738,
+          -0.3430176,
+          1e-07
+        ],
+        "max": [
+          0.4406739,
+          0.3430176,
+          0.9995118
+        ],
+        "size": [
+          0.8813477,
+          0.6860352,
+          0.9995118
+        ]
+      },
+      "images": [
+        {
+          "name": "tripo_image_32b70fc4_0",
+          "size": [
+            4096,
+            4096
+          ],
+          "filepath": "//..\\source_model\\fbx_version\\tripo_convert_32b70fc4-da7d-4934-88d9-d7d9b5a1acab.fbm\\tripo_rgb_232de126-1cd8-4a89-85f3-0b72585022ed.jpg",
+          "packed": true,
+          "source": "FILE",
+          "colorspace": "sRGB"
+        },
+        {
+          "name": "Viewer Node",
+          "size": [
+            256,
+            256
+          ],
+          "filepath": "",
+          "packed": false,
+          "source": "VIEWER",
+          "colorspace": ""
+        }
+      ],
+      "materials": [
+        {
+          "name": "卡通人物 · 主贴图",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL",
+            "NORMAL_MAP",
+            "TEX_IMAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\卡通人物_已绑骨_优化.blend",
+      "sha256": "a08da0f2cd5f4449b5acdb176c0752ff9a5fe27b909da901f317752b15b822b4",
+      "fps": 30.0,
+      "frame_range": [
+        1,
+        96
+      ],
+      "unit_system": "METRIC",
+      "unit_scale": 1.0,
+      "objects": [
+        {
+          "name": "Rig_卡通人物",
+          "type": "ARMATURE",
+          "parent": null
+        },
+        {
+          "name": "卡通人物",
+          "type": "MESH",
+          "parent": "Rig_卡通人物"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "卡通人物",
+          "skinned": true,
+          "vertices": 5911,
+          "polygons": 11031,
+          "triangles": 11287,
+          "uv_layers": [
+            "c74950b3_bf94_4494_8366_3222a13380f8_NewUVMap"
+          ],
+          "vertex_groups": [
+            "hips",
+            "spine",
+            "chest",
+            "neck",
+            "head",
+            "upper_arm_L",
+            "forearm_L",
+            "hand_L",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "ribbon_L",
+            "ribbon_tail_L",
+            "upper_arm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_R",
+            "shin_R",
+            "foot_R",
+            "ribbon_R",
+            "ribbon_tail_R"
+          ],
+          "max_influences": 4,
+          "unweighted_vertices": 0,
+          "non_normalized_vertices": 0,
+          "shape_keys": [],
+          "modifiers": [
+            {
+              "type": "ARMATURE",
+              "name": "骨骼蒙皮"
+            }
+          ],
+          "materials": [
+            "卡通人物 · 主贴图",
+            "卡通人物 · 平整口腔",
+            "卡通人物 · 深藏蓝裤子"
+          ],
+          "raw_world_bounds": {
+            "min": [
+              -0.4406738,
+              -0.3430176,
+              1e-07
+            ],
+            "max": [
+              0.4406739,
+              0.3430176,
+              0.9995118
+            ],
+            "size": [
+              0.8813477,
+              0.6860352,
+              0.9995118
+            ]
+          },
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "rigs": [
+        {
+          "name": "Rig_卡通人物",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bone_count": 22,
+          "bones": [
+            {
+              "name": "root",
+              "parent": null,
+              "head": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.1
+              ],
+              "deform": true
+            },
+            {
+              "name": "hips",
+              "parent": "root",
+              "head": [
+                0.0,
+                0.0,
+                0.16
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.24
+              ],
+              "deform": true
+            },
+            {
+              "name": "spine",
+              "parent": "hips",
+              "head": [
+                0.0,
+                0.0,
+                0.24
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.33
+              ],
+              "deform": true
+            },
+            {
+              "name": "chest",
+              "parent": "spine",
+              "head": [
+                0.0,
+                0.0,
+                0.33
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.4
+              ],
+              "deform": true
+            },
+            {
+              "name": "neck",
+              "parent": "chest",
+              "head": [
+                0.0,
+                0.0,
+                0.4
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.45
+              ],
+              "deform": true
+            },
+            {
+              "name": "head",
+              "parent": "neck",
+              "head": [
+                0.0,
+                -0.015,
+                0.45
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.82
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_L",
+              "parent": "head",
+              "head": [
+                0.03,
+                0.19,
+                0.46
+              ],
+              "tail": [
+                0.28,
+                0.22,
+                0.43
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_L",
+              "parent": "head",
+              "head": [
+                0.035,
+                0.2,
+                0.43
+              ],
+              "tail": [
+                0.13,
+                0.24,
+                0.29
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_R",
+              "parent": "head",
+              "head": [
+                -0.03,
+                0.19,
+                0.46
+              ],
+              "tail": [
+                -0.28,
+                0.22,
+                0.43
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_R",
+              "parent": "head",
+              "head": [
+                -0.035,
+                0.2,
+                0.43
+              ],
+              "tail": [
+                -0.13,
+                0.24,
+                0.29
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_L",
+              "parent": "chest",
+              "head": [
+                0.075,
+                0.0,
+                0.34
+              ],
+              "tail": [
+                0.175,
+                -0.015,
+                0.265
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_L",
+              "parent": "upper_arm_L",
+              "head": [
+                0.175,
+                -0.015,
+                0.265
+              ],
+              "tail": [
+                0.225,
+                -0.04,
+                0.19
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_L",
+              "parent": "forearm_L",
+              "head": [
+                0.225,
+                -0.04,
+                0.19
+              ],
+              "tail": [
+                0.225,
+                -0.065,
+                0.135
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_R",
+              "parent": "chest",
+              "head": [
+                -0.075,
+                0.0,
+                0.34
+              ],
+              "tail": [
+                -0.175,
+                -0.015,
+                0.265
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_R",
+              "parent": "upper_arm_R",
+              "head": [
+                -0.175,
+                -0.015,
+                0.265
+              ],
+              "tail": [
+                -0.225,
+                -0.04,
+                0.19
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_R",
+              "parent": "forearm_R",
+              "head": [
+                -0.225,
+                -0.04,
+                0.19
+              ],
+              "tail": [
+                -0.225,
+                -0.065,
+                0.135
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_L",
+              "parent": "hips",
+              "head": [
+                0.075,
+                0.0,
+                0.19
+              ],
+              "tail": [
+                0.09,
+                -0.005,
+                0.11
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_L",
+              "parent": "thigh_L",
+              "head": [
+                0.09,
+                -0.005,
+                0.11
+              ],
+              "tail": [
+                0.1,
+                -0.025,
+                0.05
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_L",
+              "parent": "shin_L",
+              "head": [
+                0.1,
+                -0.025,
+                0.05
+              ],
+              "tail": [
+                0.1,
+                -0.15,
+                0.025
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_R",
+              "parent": "hips",
+              "head": [
+                -0.075,
+                0.0,
+                0.19
+              ],
+              "tail": [
+                -0.09,
+                -0.005,
+                0.11
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_R",
+              "parent": "thigh_R",
+              "head": [
+                -0.09,
+                -0.005,
+                0.11
+              ],
+              "tail": [
+                -0.1,
+                -0.025,
+                0.05
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_R",
+              "parent": "shin_R",
+              "head": [
+                -0.1,
+                -0.025,
+                0.05
+              ],
+              "tail": [
+                -0.1,
+                -0.15,
+                0.025
+              ],
+              "deform": true
+            }
+          ],
+          "constraints": [],
+          "active_action": "绑定测试_挥手与步伐",
+          "nla_tracks": []
+        }
+      ],
+      "actions": [
+        {
+          "name": "绑定测试_挥手与步伐",
+          "frame_range": [
+            1.0,
+            96.0
+          ],
+          "curves": 220,
+          "key_count": 1540,
+          "slots": [
+            "OBRig_卡通人物"
+          ],
+          "channels": [
+            "pose.bones[\"chest\"].location",
+            "pose.bones[\"chest\"].rotation_quaternion",
+            "pose.bones[\"chest\"].scale",
+            "pose.bones[\"foot_L\"].location",
+            "pose.bones[\"foot_L\"].rotation_quaternion",
+            "pose.bones[\"foot_L\"].scale",
+            "pose.bones[\"foot_R\"].location",
+            "pose.bones[\"foot_R\"].rotation_quaternion",
+            "pose.bones[\"foot_R\"].scale",
+            "pose.bones[\"forearm_L\"].location",
+            "pose.bones[\"forearm_L\"].rotation_quaternion",
+            "pose.bones[\"forearm_L\"].scale",
+            "pose.bones[\"forearm_R\"].location",
+            "pose.bones[\"forearm_R\"].rotation_quaternion",
+            "pose.bones[\"forearm_R\"].scale",
+            "pose.bones[\"hand_L\"].location",
+            "pose.bones[\"hand_L\"].rotation_quaternion",
+            "pose.bones[\"hand_L\"].scale",
+            "pose.bones[\"hand_R\"].location",
+            "pose.bones[\"hand_R\"].rotation_quaternion",
+            "pose.bones[\"hand_R\"].scale",
+            "pose.bones[\"head\"].location",
+            "pose.bones[\"head\"].rotation_quaternion",
+            "pose.bones[\"head\"].scale",
+            "pose.bones[\"hips\"].location",
+            "pose.bones[\"hips\"].rotation_quaternion",
+            "pose.bones[\"hips\"].scale",
+            "pose.bones[\"neck\"].location",
+            "pose.bones[\"neck\"].rotation_quaternion",
+            "pose.bones[\"neck\"].scale",
+            "pose.bones[\"ribbon_L\"].location",
+            "pose.bones[\"ribbon_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_L\"].scale",
+            "pose.bones[\"ribbon_R\"].location",
+            "pose.bones[\"ribbon_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_R\"].scale",
+            "pose.bones[\"ribbon_tail_L\"].location",
+            "pose.bones[\"ribbon_tail_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_L\"].scale",
+            "pose.bones[\"ribbon_tail_R\"].location",
+            "pose.bones[\"ribbon_tail_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_R\"].scale",
+            "pose.bones[\"root\"].location",
+            "pose.bones[\"root\"].rotation_quaternion",
+            "pose.bones[\"root\"].scale",
+            "pose.bones[\"shin_L\"].location",
+            "pose.bones[\"shin_L\"].rotation_quaternion",
+            "pose.bones[\"shin_L\"].scale",
+            "pose.bones[\"shin_R\"].location",
+            "pose.bones[\"shin_R\"].rotation_quaternion",
+            "pose.bones[\"shin_R\"].scale",
+            "pose.bones[\"spine\"].location",
+            "pose.bones[\"spine\"].rotation_quaternion",
+            "pose.bones[\"spine\"].scale",
+            "pose.bones[\"thigh_L\"].location",
+            "pose.bones[\"thigh_L\"].rotation_quaternion",
+            "pose.bones[\"thigh_L\"].scale",
+            "pose.bones[\"thigh_R\"].location",
+            "pose.bones[\"thigh_R\"].rotation_quaternion",
+            "pose.bones[\"thigh_R\"].scale",
+            "pose.bones[\"upper_arm_L\"].location",
+            "pose.bones[\"upper_arm_L\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_L\"].scale",
+            "pose.bones[\"upper_arm_R\"].location",
+            "pose.bones[\"upper_arm_R\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_R\"].scale"
+          ],
+          "samples": [
+            {
+              "frame": 1,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 25,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0437987,
+                    0.0,
+                    0.8173985
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2894069,
+                    -0.0402692,
+                    0.3404406
+                  ],
+                  "tail": [
+                    0.3263909,
+                    -0.0733066,
+                    0.3059339
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 48,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2203942,
+                    -0.0021537,
+                    0.180451
+                  ],
+                  "tail": [
+                    0.2190857,
+                    -0.015118,
+                    0.1214577
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.0662082,
+                    0.1995846
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.1006509,
+                    0.149949
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.0476674,
+                    0.0547702
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.1726674,
+                    0.0297702
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0003668,
+                    0.0495497
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1226139,
+                    0.0134161
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 72,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.090277,
+                    0.2137064
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.1330495,
+                    0.1710389
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    0.0154052,
+                    0.1855245
+                  ],
+                  "tail": [
+                    -0.225,
+                    0.0113829,
+                    0.1252433
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    0.0196596,
+                    0.0603428
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.1053404,
+                    0.0353429
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0717959,
+                    0.0658993
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1992521,
+                    0.0636819
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 96,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            }
+          ],
+          "loop_max_bone_matrix_delta": 0.0
+        }
+      ],
+      "skin_rest_bounds": {
+        "min": [
+          -0.4406738,
+          -0.3430176,
+          1e-07
+        ],
+        "max": [
+          0.4406739,
+          0.3430176,
+          0.9995118
+        ],
+        "size": [
+          0.8813477,
+          0.6860352,
+          0.9995118
+        ]
+      },
+      "images": [
+        {
+          "name": "tripo_image_32b70fc4_0",
+          "size": [
+            4096,
+            4096
+          ],
+          "filepath": "//..\\source_model\\fbx_version\\tripo_convert_32b70fc4-da7d-4934-88d9-d7d9b5a1acab.fbm\\tripo_rgb_232de126-1cd8-4a89-85f3-0b72585022ed.jpg",
+          "packed": true,
+          "source": "FILE",
+          "colorspace": "sRGB"
+        },
+        {
+          "name": "Viewer Node",
+          "size": [
+            256,
+            256
+          ],
+          "filepath": "",
+          "packed": false,
+          "source": "VIEWER",
+          "colorspace": ""
+        }
+      ],
+      "materials": [
+        {
+          "name": "卡通人物 · 主贴图",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL",
+            "NORMAL_MAP",
+            "TEX_IMAGE"
+          ]
+        },
+        {
+          "name": "卡通人物 · 平整口腔",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL"
+          ]
+        },
+        {
+          "name": "卡通人物 · 深藏蓝裤子",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\卡通人物_搬运走路.blend",
+      "sha256": "02e893d27fd748293bb0b0d81ac806bf3775c6bb54a276fa5f75c9ebe5028db5",
+      "fps": 30.0,
+      "frame_range": [
+        1,
+        65
+      ],
+      "unit_system": "METRIC",
+      "unit_scale": 1.0,
+      "objects": [
+        {
+          "name": "Rig_卡通人物",
+          "type": "ARMATURE",
+          "parent": null
+        },
+        {
+          "name": "卡通人物",
+          "type": "MESH",
+          "parent": "Rig_卡通人物"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "卡通人物",
+          "skinned": true,
+          "vertices": 5911,
+          "polygons": 11031,
+          "triangles": 11287,
+          "uv_layers": [
+            "c74950b3_bf94_4494_8366_3222a13380f8_NewUVMap"
+          ],
+          "vertex_groups": [
+            "hips",
+            "spine",
+            "chest",
+            "neck",
+            "head",
+            "upper_arm_L",
+            "forearm_L",
+            "hand_L",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "ribbon_L",
+            "ribbon_tail_L",
+            "upper_arm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_R",
+            "shin_R",
+            "foot_R",
+            "ribbon_R",
+            "ribbon_tail_R"
+          ],
+          "max_influences": 4,
+          "unweighted_vertices": 0,
+          "non_normalized_vertices": 0,
+          "shape_keys": [],
+          "modifiers": [
+            {
+              "type": "ARMATURE",
+              "name": "骨骼蒙皮"
+            }
+          ],
+          "materials": [
+            "卡通人物 · 主贴图",
+            "卡通人物 · 平整口腔",
+            "卡通人物 · 深藏蓝裤子"
+          ],
+          "raw_world_bounds": {
+            "min": [
+              -0.4406738,
+              -0.3430176,
+              1e-07
+            ],
+            "max": [
+              0.4406739,
+              0.3430176,
+              0.9995118
+            ],
+            "size": [
+              0.8813477,
+              0.6860352,
+              0.9995118
+            ]
+          },
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "rigs": [
+        {
+          "name": "Rig_卡通人物",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bone_count": 22,
+          "bones": [
+            {
+              "name": "root",
+              "parent": null,
+              "head": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.1
+              ],
+              "deform": true
+            },
+            {
+              "name": "hips",
+              "parent": "root",
+              "head": [
+                0.0,
+                0.0,
+                0.16
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.24
+              ],
+              "deform": true
+            },
+            {
+              "name": "spine",
+              "parent": "hips",
+              "head": [
+                0.0,
+                0.0,
+                0.24
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.33
+              ],
+              "deform": true
+            },
+            {
+              "name": "chest",
+              "parent": "spine",
+              "head": [
+                0.0,
+                0.0,
+                0.33
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.4
+              ],
+              "deform": true
+            },
+            {
+              "name": "neck",
+              "parent": "chest",
+              "head": [
+                0.0,
+                0.0,
+                0.4
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.45
+              ],
+              "deform": true
+            },
+            {
+              "name": "head",
+              "parent": "neck",
+              "head": [
+                0.0,
+                -0.015,
+                0.45
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.82
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_L",
+              "parent": "head",
+              "head": [
+                0.03,
+                0.19,
+                0.46
+              ],
+              "tail": [
+                0.28,
+                0.22,
+                0.43
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_L",
+              "parent": "head",
+              "head": [
+                0.035,
+                0.2,
+                0.43
+              ],
+              "tail": [
+                0.13,
+                0.24,
+                0.29
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_R",
+              "parent": "head",
+              "head": [
+                -0.03,
+                0.19,
+                0.46
+              ],
+              "tail": [
+                -0.28,
+                0.22,
+                0.43
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_R",
+              "parent": "head",
+              "head": [
+                -0.035,
+                0.2,
+                0.43
+              ],
+              "tail": [
+                -0.13,
+                0.24,
+                0.29
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_L",
+              "parent": "chest",
+              "head": [
+                0.075,
+                0.0,
+                0.34
+              ],
+              "tail": [
+                0.175,
+                -0.015,
+                0.265
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_L",
+              "parent": "upper_arm_L",
+              "head": [
+                0.175,
+                -0.015,
+                0.265
+              ],
+              "tail": [
+                0.225,
+                -0.04,
+                0.19
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_L",
+              "parent": "forearm_L",
+              "head": [
+                0.225,
+                -0.04,
+                0.19
+              ],
+              "tail": [
+                0.225,
+                -0.065,
+                0.135
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_R",
+              "parent": "chest",
+              "head": [
+                -0.075,
+                0.0,
+                0.34
+              ],
+              "tail": [
+                -0.175,
+                -0.015,
+                0.265
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_R",
+              "parent": "upper_arm_R",
+              "head": [
+                -0.175,
+                -0.015,
+                0.265
+              ],
+              "tail": [
+                -0.225,
+                -0.04,
+                0.19
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_R",
+              "parent": "forearm_R",
+              "head": [
+                -0.225,
+                -0.04,
+                0.19
+              ],
+              "tail": [
+                -0.225,
+                -0.065,
+                0.135
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_L",
+              "parent": "hips",
+              "head": [
+                0.075,
+                0.0,
+                0.19
+              ],
+              "tail": [
+                0.09,
+                -0.005,
+                0.11
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_L",
+              "parent": "thigh_L",
+              "head": [
+                0.09,
+                -0.005,
+                0.11
+              ],
+              "tail": [
+                0.1,
+                -0.025,
+                0.05
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_L",
+              "parent": "shin_L",
+              "head": [
+                0.1,
+                -0.025,
+                0.05
+              ],
+              "tail": [
+                0.1,
+                -0.15,
+                0.025
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_R",
+              "parent": "hips",
+              "head": [
+                -0.075,
+                0.0,
+                0.19
+              ],
+              "tail": [
+                -0.09,
+                -0.005,
+                0.11
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_R",
+              "parent": "thigh_R",
+              "head": [
+                -0.09,
+                -0.005,
+                0.11
+              ],
+              "tail": [
+                -0.1,
+                -0.025,
+                0.05
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_R",
+              "parent": "shin_R",
+              "head": [
+                -0.1,
+                -0.025,
+                0.05
+              ],
+              "tail": [
+                -0.1,
+                -0.15,
+                0.025
+              ],
+              "deform": true
+            }
+          ],
+          "constraints": [],
+          "active_action": "搬运走路_双手前举",
+          "nla_tracks": []
+        }
+      ],
+      "actions": [
+        {
+          "name": "搬运走路_双手前举",
+          "frame_range": [
+            1.0,
+            65.0
+          ],
+          "curves": 220,
+          "key_count": 3740,
+          "slots": [
+            "OBRig_卡通人物"
+          ],
+          "channels": [
+            "pose.bones[\"chest\"].location",
+            "pose.bones[\"chest\"].rotation_quaternion",
+            "pose.bones[\"chest\"].scale",
+            "pose.bones[\"foot_L\"].location",
+            "pose.bones[\"foot_L\"].rotation_quaternion",
+            "pose.bones[\"foot_L\"].scale",
+            "pose.bones[\"foot_R\"].location",
+            "pose.bones[\"foot_R\"].rotation_quaternion",
+            "pose.bones[\"foot_R\"].scale",
+            "pose.bones[\"forearm_L\"].location",
+            "pose.bones[\"forearm_L\"].rotation_quaternion",
+            "pose.bones[\"forearm_L\"].scale",
+            "pose.bones[\"forearm_R\"].location",
+            "pose.bones[\"forearm_R\"].rotation_quaternion",
+            "pose.bones[\"forearm_R\"].scale",
+            "pose.bones[\"hand_L\"].location",
+            "pose.bones[\"hand_L\"].rotation_quaternion",
+            "pose.bones[\"hand_L\"].scale",
+            "pose.bones[\"hand_R\"].location",
+            "pose.bones[\"hand_R\"].rotation_quaternion",
+            "pose.bones[\"hand_R\"].scale",
+            "pose.bones[\"head\"].location",
+            "pose.bones[\"head\"].rotation_quaternion",
+            "pose.bones[\"head\"].scale",
+            "pose.bones[\"hips\"].location",
+            "pose.bones[\"hips\"].rotation_quaternion",
+            "pose.bones[\"hips\"].scale",
+            "pose.bones[\"neck\"].location",
+            "pose.bones[\"neck\"].rotation_quaternion",
+            "pose.bones[\"neck\"].scale",
+            "pose.bones[\"ribbon_L\"].location",
+            "pose.bones[\"ribbon_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_L\"].scale",
+            "pose.bones[\"ribbon_R\"].location",
+            "pose.bones[\"ribbon_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_R\"].scale",
+            "pose.bones[\"ribbon_tail_L\"].location",
+            "pose.bones[\"ribbon_tail_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_L\"].scale",
+            "pose.bones[\"ribbon_tail_R\"].location",
+            "pose.bones[\"ribbon_tail_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_R\"].scale",
+            "pose.bones[\"root\"].location",
+            "pose.bones[\"root\"].rotation_quaternion",
+            "pose.bones[\"root\"].scale",
+            "pose.bones[\"shin_L\"].location",
+            "pose.bones[\"shin_L\"].rotation_quaternion",
+            "pose.bones[\"shin_L\"].scale",
+            "pose.bones[\"shin_R\"].location",
+            "pose.bones[\"shin_R\"].rotation_quaternion",
+            "pose.bones[\"shin_R\"].scale",
+            "pose.bones[\"spine\"].location",
+            "pose.bones[\"spine\"].rotation_quaternion",
+            "pose.bones[\"spine\"].scale",
+            "pose.bones[\"thigh_L\"].location",
+            "pose.bones[\"thigh_L\"].rotation_quaternion",
+            "pose.bones[\"thigh_L\"].scale",
+            "pose.bones[\"thigh_R\"].location",
+            "pose.bones[\"thigh_R\"].rotation_quaternion",
+            "pose.bones[\"thigh_R\"].scale",
+            "pose.bones[\"upper_arm_L\"].location",
+            "pose.bones[\"upper_arm_L\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_L\"].scale",
+            "pose.bones[\"upper_arm_R\"].location",
+            "pose.bones[\"upper_arm_R\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_R\"].scale"
+          ],
+          "samples": [
+            {
+              "frame": 1,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.1594991
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.2394991
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.0223393,
+                    0.4488455
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.0147253,
+                    0.8190711
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2096431,
+                    -0.1311437,
+                    0.2531317
+                  ],
+                  "tail": [
+                    0.2058966,
+                    -0.1914023,
+                    0.2553375
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2096431,
+                    -0.1311437,
+                    0.2531317
+                  ],
+                  "tail": [
+                    -0.2058966,
+                    -0.1914023,
+                    0.2553375
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.0756335,
+                    0.0684211
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.2006335,
+                    0.0434211
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    0.0311319,
+                    0.053
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.0938681,
+                    0.028
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 17,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.1672401
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.2472401
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0003454,
+                    -0.0223362,
+                    0.4565865
+                  ],
+                  "tail": [
+                    0.0003086,
+                    -0.0125345,
+                    0.8267606
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2119128,
+                    -0.1273497,
+                    0.2608727
+                  ],
+                  "tail": [
+                    0.2092516,
+                    -0.1876659,
+                    0.2630785
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2073053,
+                    -0.1348964,
+                    0.2608727
+                  ],
+                  "tail": [
+                    -0.2024749,
+                    -0.1950778,
+                    0.2630785
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.0201412,
+                    0.0558337
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.1435778,
+                    0.024
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0201412,
+                    0.0558337
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1463265,
+                    0.0377431
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 33,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.1594991
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.2394991
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.0223393,
+                    0.4488455
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.0147253,
+                    0.8190711
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2096431,
+                    -0.1311437,
+                    0.2531317
+                  ],
+                  "tail": [
+                    0.2058966,
+                    -0.1914023,
+                    0.2553375
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2096431,
+                    -0.1311437,
+                    0.2531317
+                  ],
+                  "tail": [
+                    -0.2058966,
+                    -0.1914023,
+                    0.2553375
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    0.0311319,
+                    0.053
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.0938681,
+                    0.028
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0756335,
+                    0.0684211
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.2006335,
+                    0.0434211
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 49,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.1672401
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.2472401
+                  ]
+                },
+                "head": {
+                  "head": [
+                    -0.0003454,
+                    -0.0223362,
+                    0.4565865
+                  ],
+                  "tail": [
+                    -0.0003086,
+                    -0.0125345,
+                    0.8267606
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2073053,
+                    -0.1348964,
+                    0.2608727
+                  ],
+                  "tail": [
+                    0.2024749,
+                    -0.1950778,
+                    0.2630785
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2119128,
+                    -0.1273497,
+                    0.2608727
+                  ],
+                  "tail": [
+                    -0.2092516,
+                    -0.1876659,
+                    0.2630785
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.0201412,
+                    0.0558337
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.1463265,
+                    0.0377431
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0201412,
+                    0.0558337
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1435778,
+                    0.024
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 65,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.1594991
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.2394991
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.0223393,
+                    0.4488455
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.0147253,
+                    0.8190711
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2096431,
+                    -0.1311437,
+                    0.2531317
+                  ],
+                  "tail": [
+                    0.2058966,
+                    -0.1914023,
+                    0.2553375
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2096431,
+                    -0.1311437,
+                    0.2531317
+                  ],
+                  "tail": [
+                    -0.2058966,
+                    -0.1914023,
+                    0.2553375
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.0756335,
+                    0.0684211
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.2006335,
+                    0.0434211
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    0.0311319,
+                    0.053
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.0938681,
+                    0.028
+                  ]
+                }
+              }
+            }
+          ],
+          "loop_max_bone_matrix_delta": 0.0
+        },
+        {
+          "name": "绑定测试_挥手与步伐",
+          "frame_range": [
+            1.0,
+            96.0
+          ],
+          "curves": 220,
+          "key_count": 1540,
+          "slots": [
+            "OBRig_卡通人物"
+          ],
+          "channels": [
+            "pose.bones[\"chest\"].location",
+            "pose.bones[\"chest\"].rotation_quaternion",
+            "pose.bones[\"chest\"].scale",
+            "pose.bones[\"foot_L\"].location",
+            "pose.bones[\"foot_L\"].rotation_quaternion",
+            "pose.bones[\"foot_L\"].scale",
+            "pose.bones[\"foot_R\"].location",
+            "pose.bones[\"foot_R\"].rotation_quaternion",
+            "pose.bones[\"foot_R\"].scale",
+            "pose.bones[\"forearm_L\"].location",
+            "pose.bones[\"forearm_L\"].rotation_quaternion",
+            "pose.bones[\"forearm_L\"].scale",
+            "pose.bones[\"forearm_R\"].location",
+            "pose.bones[\"forearm_R\"].rotation_quaternion",
+            "pose.bones[\"forearm_R\"].scale",
+            "pose.bones[\"hand_L\"].location",
+            "pose.bones[\"hand_L\"].rotation_quaternion",
+            "pose.bones[\"hand_L\"].scale",
+            "pose.bones[\"hand_R\"].location",
+            "pose.bones[\"hand_R\"].rotation_quaternion",
+            "pose.bones[\"hand_R\"].scale",
+            "pose.bones[\"head\"].location",
+            "pose.bones[\"head\"].rotation_quaternion",
+            "pose.bones[\"head\"].scale",
+            "pose.bones[\"hips\"].location",
+            "pose.bones[\"hips\"].rotation_quaternion",
+            "pose.bones[\"hips\"].scale",
+            "pose.bones[\"neck\"].location",
+            "pose.bones[\"neck\"].rotation_quaternion",
+            "pose.bones[\"neck\"].scale",
+            "pose.bones[\"ribbon_L\"].location",
+            "pose.bones[\"ribbon_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_L\"].scale",
+            "pose.bones[\"ribbon_R\"].location",
+            "pose.bones[\"ribbon_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_R\"].scale",
+            "pose.bones[\"ribbon_tail_L\"].location",
+            "pose.bones[\"ribbon_tail_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_L\"].scale",
+            "pose.bones[\"ribbon_tail_R\"].location",
+            "pose.bones[\"ribbon_tail_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_R\"].scale",
+            "pose.bones[\"root\"].location",
+            "pose.bones[\"root\"].rotation_quaternion",
+            "pose.bones[\"root\"].scale",
+            "pose.bones[\"shin_L\"].location",
+            "pose.bones[\"shin_L\"].rotation_quaternion",
+            "pose.bones[\"shin_L\"].scale",
+            "pose.bones[\"shin_R\"].location",
+            "pose.bones[\"shin_R\"].rotation_quaternion",
+            "pose.bones[\"shin_R\"].scale",
+            "pose.bones[\"spine\"].location",
+            "pose.bones[\"spine\"].rotation_quaternion",
+            "pose.bones[\"spine\"].scale",
+            "pose.bones[\"thigh_L\"].location",
+            "pose.bones[\"thigh_L\"].rotation_quaternion",
+            "pose.bones[\"thigh_L\"].scale",
+            "pose.bones[\"thigh_R\"].location",
+            "pose.bones[\"thigh_R\"].rotation_quaternion",
+            "pose.bones[\"thigh_R\"].scale",
+            "pose.bones[\"upper_arm_L\"].location",
+            "pose.bones[\"upper_arm_L\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_L\"].scale",
+            "pose.bones[\"upper_arm_R\"].location",
+            "pose.bones[\"upper_arm_R\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_R\"].scale"
+          ],
+          "samples": [
+            {
+              "frame": 1,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 25,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0437987,
+                    0.0,
+                    0.8173985
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2894069,
+                    -0.0402692,
+                    0.3404406
+                  ],
+                  "tail": [
+                    0.3263909,
+                    -0.0733066,
+                    0.3059339
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 48,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2203942,
+                    -0.0021537,
+                    0.180451
+                  ],
+                  "tail": [
+                    0.2190857,
+                    -0.015118,
+                    0.1214577
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.0662082,
+                    0.1995846
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.1006509,
+                    0.149949
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.0476674,
+                    0.0547702
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.1726674,
+                    0.0297702
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0003668,
+                    0.0495497
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1226139,
+                    0.0134161
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 72,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.090277,
+                    0.2137064
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.1330495,
+                    0.1710389
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    0.0154052,
+                    0.1855245
+                  ],
+                  "tail": [
+                    -0.225,
+                    0.0113829,
+                    0.1252433
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    0.0196596,
+                    0.0603428
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.1053404,
+                    0.0353429
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.0717959,
+                    0.0658993
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.1992521,
+                    0.0636819
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 96,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.1
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.16
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.24
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.45
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.82
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.225,
+                    -0.04,
+                    0.19
+                  ],
+                  "tail": [
+                    -0.225,
+                    -0.065,
+                    0.135
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    0.1,
+                    -0.15,
+                    0.025
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1,
+                    -0.025,
+                    0.05
+                  ],
+                  "tail": [
+                    -0.1,
+                    -0.15,
+                    0.025
+                  ]
+                }
+              }
+            }
+          ],
+          "loop_max_bone_matrix_delta": 0.0
+        }
+      ],
+      "skin_rest_bounds": {
+        "min": [
+          -0.4406738,
+          -0.3430176,
+          1e-07
+        ],
+        "max": [
+          0.4406739,
+          0.3430176,
+          0.9995118
+        ],
+        "size": [
+          0.8813477,
+          0.6860352,
+          0.9995118
+        ]
+      },
+      "images": [
+        {
+          "name": "tripo_image_32b70fc4_0",
+          "size": [
+            4096,
+            4096
+          ],
+          "filepath": "//..\\source_model\\fbx_version\\tripo_convert_32b70fc4-da7d-4934-88d9-d7d9b5a1acab.fbm\\tripo_rgb_232de126-1cd8-4a89-85f3-0b72585022ed.jpg",
+          "packed": true,
+          "source": "FILE",
+          "colorspace": "sRGB"
+        },
+        {
+          "name": "Viewer Node",
+          "size": [
+            256,
+            256
+          ],
+          "filepath": "",
+          "packed": false,
+          "source": "VIEWER",
+          "colorspace": ""
+        }
+      ],
+      "materials": [
+        {
+          "name": "卡通人物 · 主贴图",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL",
+            "NORMAL_MAP",
+            "TEX_IMAGE"
+          ]
+        },
+        {
+          "name": "卡通人物 · 平整口腔",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL"
+          ]
+        },
+        {
+          "name": "卡通人物 · 深藏蓝裤子",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\红衣卡通女孩_已绑骨.blend",
+      "sha256": "b660fad38cd426c9abe1bc3308d8126bbe00d5b75089f8523f8a2802b135972d",
+      "fps": 30.0,
+      "frame_range": [
+        1,
+        65
+      ],
+      "unit_system": "METRIC",
+      "unit_scale": 1.0,
+      "objects": [
+        {
+          "name": "红衣卡通女孩",
+          "type": "MESH",
+          "parent": "Rig_红衣卡通女孩"
+        },
+        {
+          "name": "Rig_红衣卡通女孩",
+          "type": "ARMATURE",
+          "parent": null
+        }
+      ],
+      "meshes": [
+        {
+          "name": "红衣卡通女孩",
+          "skinned": true,
+          "vertices": 5183,
+          "polygons": 5631,
+          "triangles": 9771,
+          "uv_layers": [
+            "c18a061f_fe87_4f22_b38c_0d0f9fa8178e_NewUVMap"
+          ],
+          "vertex_groups": [
+            "hips",
+            "spine",
+            "chest",
+            "neck",
+            "head",
+            "upper_arm_L",
+            "forearm_L",
+            "hand_L",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "pigtail_L",
+            "ribbon_tail_L",
+            "upper_arm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_R",
+            "shin_R",
+            "foot_R",
+            "pigtail_R",
+            "ribbon_tail_R"
+          ],
+          "max_influences": 4,
+          "unweighted_vertices": 0,
+          "non_normalized_vertices": 0,
+          "shape_keys": [],
+          "modifiers": [
+            {
+              "type": "ARMATURE",
+              "name": "骨骼蒙皮"
+            }
+          ],
+          "materials": [
+            "红衣卡通女孩 · 主贴图"
+          ],
+          "raw_world_bounds": {
+            "min": [
+              -0.4992675,
+              -0.3083496,
+              -0.0
+            ],
+            "max": [
+              0.4992676,
+              0.3083496,
+              0.9995117
+            ],
+            "size": [
+              0.9985352,
+              0.6166992,
+              0.9995117
+            ]
+          },
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "rigs": [
+        {
+          "name": "Rig_红衣卡通女孩",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bone_count": 22,
+          "bones": [
+            {
+              "name": "root",
+              "parent": null,
+              "head": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.08
+              ],
+              "deform": true
+            },
+            {
+              "name": "hips",
+              "parent": "root",
+              "head": [
+                0.0,
+                -0.015,
+                0.22
+              ],
+              "tail": [
+                0.0,
+                -0.015,
+                0.3
+              ],
+              "deform": true
+            },
+            {
+              "name": "spine",
+              "parent": "hips",
+              "head": [
+                0.0,
+                -0.015,
+                0.3
+              ],
+              "tail": [
+                0.0,
+                -0.02,
+                0.39
+              ],
+              "deform": true
+            },
+            {
+              "name": "chest",
+              "parent": "spine",
+              "head": [
+                0.0,
+                -0.02,
+                0.39
+              ],
+              "tail": [
+                0.0,
+                -0.02,
+                0.47
+              ],
+              "deform": true
+            },
+            {
+              "name": "neck",
+              "parent": "chest",
+              "head": [
+                0.0,
+                -0.02,
+                0.47
+              ],
+              "tail": [
+                0.0,
+                -0.02,
+                0.52
+              ],
+              "deform": true
+            },
+            {
+              "name": "head",
+              "parent": "neck",
+              "head": [
+                0.0,
+                -0.02,
+                0.5
+              ],
+              "tail": [
+                0.0,
+                -0.01,
+                0.94
+              ],
+              "deform": true
+            },
+            {
+              "name": "pigtail_L",
+              "parent": "head",
+              "head": [
+                0.275,
+                0.105,
+                0.62
+              ],
+              "tail": [
+                0.435,
+                0.145,
+                0.535
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_L",
+              "parent": "head",
+              "head": [
+                0.29,
+                0.055,
+                0.62
+              ],
+              "tail": [
+                0.315,
+                0.04,
+                0.425
+              ],
+              "deform": true
+            },
+            {
+              "name": "pigtail_R",
+              "parent": "head",
+              "head": [
+                -0.275,
+                0.105,
+                0.62
+              ],
+              "tail": [
+                -0.435,
+                0.145,
+                0.535
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_R",
+              "parent": "head",
+              "head": [
+                -0.29,
+                0.055,
+                0.62
+              ],
+              "tail": [
+                -0.315,
+                0.04,
+                0.425
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_L",
+              "parent": "chest",
+              "head": [
+                0.125,
+                -0.025,
+                0.415
+              ],
+              "tail": [
+                0.205,
+                -0.04,
+                0.315
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_L",
+              "parent": "upper_arm_L",
+              "head": [
+                0.205,
+                -0.04,
+                0.315
+              ],
+              "tail": [
+                0.265,
+                -0.045,
+                0.23
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_L",
+              "parent": "forearm_L",
+              "head": [
+                0.265,
+                -0.045,
+                0.23
+              ],
+              "tail": [
+                0.3,
+                -0.06,
+                0.195
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_R",
+              "parent": "chest",
+              "head": [
+                -0.125,
+                -0.025,
+                0.415
+              ],
+              "tail": [
+                -0.205,
+                -0.04,
+                0.315
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_R",
+              "parent": "upper_arm_R",
+              "head": [
+                -0.205,
+                -0.04,
+                0.315
+              ],
+              "tail": [
+                -0.265,
+                -0.045,
+                0.23
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_R",
+              "parent": "forearm_R",
+              "head": [
+                -0.265,
+                -0.045,
+                0.23
+              ],
+              "tail": [
+                -0.3,
+                -0.06,
+                0.195
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_L",
+              "parent": "hips",
+              "head": [
+                0.098,
+                -0.016,
+                0.245
+              ],
+              "tail": [
+                0.103,
+                -0.02,
+                0.15
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_L",
+              "parent": "thigh_L",
+              "head": [
+                0.103,
+                -0.02,
+                0.15
+              ],
+              "tail": [
+                0.105,
+                -0.03,
+                0.065
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_L",
+              "parent": "shin_L",
+              "head": [
+                0.105,
+                -0.03,
+                0.065
+              ],
+              "tail": [
+                0.105,
+                -0.13,
+                0.035
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_R",
+              "parent": "hips",
+              "head": [
+                -0.098,
+                -0.016,
+                0.245
+              ],
+              "tail": [
+                -0.103,
+                -0.02,
+                0.15
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_R",
+              "parent": "thigh_R",
+              "head": [
+                -0.103,
+                -0.02,
+                0.15
+              ],
+              "tail": [
+                -0.105,
+                -0.03,
+                0.065
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_R",
+              "parent": "shin_R",
+              "head": [
+                -0.105,
+                -0.03,
+                0.065
+              ],
+              "tail": [
+                -0.105,
+                -0.13,
+                0.035
+              ],
+              "deform": true
+            }
+          ],
+          "constraints": [],
+          "active_action": "绑定测试_挥手与步伐",
+          "nla_tracks": []
+        }
+      ],
+      "actions": [
+        {
+          "name": "绑定测试_挥手与步伐",
+          "frame_range": [
+            1.0,
+            65.0
+          ],
+          "curves": 220,
+          "key_count": 1100,
+          "slots": [
+            "OBRig_红衣卡通女孩"
+          ],
+          "channels": [
+            "pose.bones[\"chest\"].location",
+            "pose.bones[\"chest\"].rotation_quaternion",
+            "pose.bones[\"chest\"].scale",
+            "pose.bones[\"foot_L\"].location",
+            "pose.bones[\"foot_L\"].rotation_quaternion",
+            "pose.bones[\"foot_L\"].scale",
+            "pose.bones[\"foot_R\"].location",
+            "pose.bones[\"foot_R\"].rotation_quaternion",
+            "pose.bones[\"foot_R\"].scale",
+            "pose.bones[\"forearm_L\"].location",
+            "pose.bones[\"forearm_L\"].rotation_quaternion",
+            "pose.bones[\"forearm_L\"].scale",
+            "pose.bones[\"forearm_R\"].location",
+            "pose.bones[\"forearm_R\"].rotation_quaternion",
+            "pose.bones[\"forearm_R\"].scale",
+            "pose.bones[\"hand_L\"].location",
+            "pose.bones[\"hand_L\"].rotation_quaternion",
+            "pose.bones[\"hand_L\"].scale",
+            "pose.bones[\"hand_R\"].location",
+            "pose.bones[\"hand_R\"].rotation_quaternion",
+            "pose.bones[\"hand_R\"].scale",
+            "pose.bones[\"head\"].location",
+            "pose.bones[\"head\"].rotation_quaternion",
+            "pose.bones[\"head\"].scale",
+            "pose.bones[\"hips\"].location",
+            "pose.bones[\"hips\"].rotation_quaternion",
+            "pose.bones[\"hips\"].scale",
+            "pose.bones[\"neck\"].location",
+            "pose.bones[\"neck\"].rotation_quaternion",
+            "pose.bones[\"neck\"].scale",
+            "pose.bones[\"pigtail_L\"].location",
+            "pose.bones[\"pigtail_L\"].rotation_quaternion",
+            "pose.bones[\"pigtail_L\"].scale",
+            "pose.bones[\"pigtail_R\"].location",
+            "pose.bones[\"pigtail_R\"].rotation_quaternion",
+            "pose.bones[\"pigtail_R\"].scale",
+            "pose.bones[\"ribbon_tail_L\"].location",
+            "pose.bones[\"ribbon_tail_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_L\"].scale",
+            "pose.bones[\"ribbon_tail_R\"].location",
+            "pose.bones[\"ribbon_tail_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_R\"].scale",
+            "pose.bones[\"root\"].location",
+            "pose.bones[\"root\"].rotation_quaternion",
+            "pose.bones[\"root\"].scale",
+            "pose.bones[\"shin_L\"].location",
+            "pose.bones[\"shin_L\"].rotation_quaternion",
+            "pose.bones[\"shin_L\"].scale",
+            "pose.bones[\"shin_R\"].location",
+            "pose.bones[\"shin_R\"].rotation_quaternion",
+            "pose.bones[\"shin_R\"].scale",
+            "pose.bones[\"spine\"].location",
+            "pose.bones[\"spine\"].rotation_quaternion",
+            "pose.bones[\"spine\"].scale",
+            "pose.bones[\"thigh_L\"].location",
+            "pose.bones[\"thigh_L\"].rotation_quaternion",
+            "pose.bones[\"thigh_L\"].scale",
+            "pose.bones[\"thigh_R\"].location",
+            "pose.bones[\"thigh_R\"].rotation_quaternion",
+            "pose.bones[\"thigh_R\"].scale",
+            "pose.bones[\"upper_arm_L\"].location",
+            "pose.bones[\"upper_arm_L\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_L\"].scale",
+            "pose.bones[\"upper_arm_R\"].location",
+            "pose.bones[\"upper_arm_R\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_R\"].scale"
+          ],
+          "samples": [
+            {
+              "frame": 1,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.01,
+                    0.9400001
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 17,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0439267,
+                    -0.01,
+                    0.9378018
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.351983,
+                    -0.045,
+                    0.3676278
+                  ],
+                  "tail": [
+                    0.4014752,
+                    -0.06,
+                    0.3683505
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 33,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0439267,
+                    -0.01,
+                    0.9378018
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.351983,
+                    -0.045,
+                    0.3676278
+                  ],
+                  "tail": [
+                    0.4014752,
+                    -0.06,
+                    0.3683505
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 49,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.01,
+                    0.9400001
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1049999,
+                    -0.0682535,
+                    0.0730388
+                  ],
+                  "tail": [
+                    0.1049999,
+                    -0.1701069,
+                    0.0501065
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1050001,
+                    0.0136322,
+                    0.067644
+                  ],
+                  "tail": [
+                    -0.1050001,
+                    -0.0793812,
+                    0.0202257
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 65,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.01,
+                    0.9400001
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            }
+          ],
+          "loop_max_bone_matrix_delta": 0.0
+        }
+      ],
+      "skin_rest_bounds": {
+        "min": [
+          -0.4992675,
+          -0.3083496,
+          -0.0
+        ],
+        "max": [
+          0.4992676,
+          0.3083496,
+          0.9995117
+        ],
+        "size": [
+          0.9985352,
+          0.6166992,
+          0.9995117
+        ]
+      },
+      "images": [
+        {
+          "name": "tripo_image_69800d4e_0",
+          "size": [
+            4096,
+            4096
+          ],
+          "filepath": "//..\\working\\character_02\\tripo_convert_69800d4e-d7f7-4292-93ed-7c168cbf15c4.fbm\\tripo_rgb_5b1017f6-6f83-4960-9ae3-c3ed536c30ab.jpg",
+          "packed": true,
+          "source": "FILE",
+          "colorspace": "sRGB"
+        }
+      ],
+      "materials": [
+        {
+          "name": "红衣卡通女孩 · 主贴图",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL",
+            "NORMAL_MAP",
+            "TEX_IMAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\红衣卡通女孩_搬运走路.blend",
+      "sha256": "ff6166e81fe08e8e7ea20e0ee745735917b2cb8bd5da720919f1daccd2e278b5",
+      "fps": 30.0,
+      "frame_range": [
+        1,
+        65
+      ],
+      "unit_system": "METRIC",
+      "unit_scale": 1.0,
+      "objects": [
+        {
+          "name": "红衣卡通女孩",
+          "type": "MESH",
+          "parent": "Rig_红衣卡通女孩"
+        },
+        {
+          "name": "Rig_红衣卡通女孩",
+          "type": "ARMATURE",
+          "parent": null
+        }
+      ],
+      "meshes": [
+        {
+          "name": "红衣卡通女孩",
+          "skinned": true,
+          "vertices": 5183,
+          "polygons": 5631,
+          "triangles": 9771,
+          "uv_layers": [
+            "c18a061f_fe87_4f22_b38c_0d0f9fa8178e_NewUVMap"
+          ],
+          "vertex_groups": [
+            "hips",
+            "spine",
+            "chest",
+            "neck",
+            "head",
+            "upper_arm_L",
+            "forearm_L",
+            "hand_L",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "pigtail_L",
+            "ribbon_tail_L",
+            "upper_arm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_R",
+            "shin_R",
+            "foot_R",
+            "pigtail_R",
+            "ribbon_tail_R"
+          ],
+          "max_influences": 4,
+          "unweighted_vertices": 0,
+          "non_normalized_vertices": 0,
+          "shape_keys": [],
+          "modifiers": [
+            {
+              "type": "ARMATURE",
+              "name": "骨骼蒙皮"
+            }
+          ],
+          "materials": [
+            "红衣卡通女孩 · 主贴图"
+          ],
+          "raw_world_bounds": {
+            "min": [
+              -0.4992675,
+              -0.3083496,
+              -0.0
+            ],
+            "max": [
+              0.4992676,
+              0.3083496,
+              0.9995117
+            ],
+            "size": [
+              0.9985352,
+              0.6166992,
+              0.9995117
+            ]
+          },
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "rigs": [
+        {
+          "name": "Rig_红衣卡通女孩",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "bone_count": 22,
+          "bones": [
+            {
+              "name": "root",
+              "parent": null,
+              "head": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.08
+              ],
+              "deform": true
+            },
+            {
+              "name": "hips",
+              "parent": "root",
+              "head": [
+                0.0,
+                -0.015,
+                0.22
+              ],
+              "tail": [
+                0.0,
+                -0.015,
+                0.3
+              ],
+              "deform": true
+            },
+            {
+              "name": "spine",
+              "parent": "hips",
+              "head": [
+                0.0,
+                -0.015,
+                0.3
+              ],
+              "tail": [
+                0.0,
+                -0.02,
+                0.39
+              ],
+              "deform": true
+            },
+            {
+              "name": "chest",
+              "parent": "spine",
+              "head": [
+                0.0,
+                -0.02,
+                0.39
+              ],
+              "tail": [
+                0.0,
+                -0.02,
+                0.47
+              ],
+              "deform": true
+            },
+            {
+              "name": "neck",
+              "parent": "chest",
+              "head": [
+                0.0,
+                -0.02,
+                0.47
+              ],
+              "tail": [
+                0.0,
+                -0.02,
+                0.52
+              ],
+              "deform": true
+            },
+            {
+              "name": "head",
+              "parent": "neck",
+              "head": [
+                0.0,
+                -0.02,
+                0.5
+              ],
+              "tail": [
+                0.0,
+                -0.01,
+                0.94
+              ],
+              "deform": true
+            },
+            {
+              "name": "pigtail_L",
+              "parent": "head",
+              "head": [
+                0.275,
+                0.105,
+                0.62
+              ],
+              "tail": [
+                0.435,
+                0.145,
+                0.535
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_L",
+              "parent": "head",
+              "head": [
+                0.29,
+                0.055,
+                0.62
+              ],
+              "tail": [
+                0.315,
+                0.04,
+                0.425
+              ],
+              "deform": true
+            },
+            {
+              "name": "pigtail_R",
+              "parent": "head",
+              "head": [
+                -0.275,
+                0.105,
+                0.62
+              ],
+              "tail": [
+                -0.435,
+                0.145,
+                0.535
+              ],
+              "deform": true
+            },
+            {
+              "name": "ribbon_tail_R",
+              "parent": "head",
+              "head": [
+                -0.29,
+                0.055,
+                0.62
+              ],
+              "tail": [
+                -0.315,
+                0.04,
+                0.425
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_L",
+              "parent": "chest",
+              "head": [
+                0.125,
+                -0.025,
+                0.415
+              ],
+              "tail": [
+                0.205,
+                -0.04,
+                0.315
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_L",
+              "parent": "upper_arm_L",
+              "head": [
+                0.205,
+                -0.04,
+                0.315
+              ],
+              "tail": [
+                0.265,
+                -0.045,
+                0.23
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_L",
+              "parent": "forearm_L",
+              "head": [
+                0.265,
+                -0.045,
+                0.23
+              ],
+              "tail": [
+                0.3,
+                -0.06,
+                0.195
+              ],
+              "deform": true
+            },
+            {
+              "name": "upper_arm_R",
+              "parent": "chest",
+              "head": [
+                -0.125,
+                -0.025,
+                0.415
+              ],
+              "tail": [
+                -0.205,
+                -0.04,
+                0.315
+              ],
+              "deform": true
+            },
+            {
+              "name": "forearm_R",
+              "parent": "upper_arm_R",
+              "head": [
+                -0.205,
+                -0.04,
+                0.315
+              ],
+              "tail": [
+                -0.265,
+                -0.045,
+                0.23
+              ],
+              "deform": true
+            },
+            {
+              "name": "hand_R",
+              "parent": "forearm_R",
+              "head": [
+                -0.265,
+                -0.045,
+                0.23
+              ],
+              "tail": [
+                -0.3,
+                -0.06,
+                0.195
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_L",
+              "parent": "hips",
+              "head": [
+                0.098,
+                -0.016,
+                0.245
+              ],
+              "tail": [
+                0.103,
+                -0.02,
+                0.15
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_L",
+              "parent": "thigh_L",
+              "head": [
+                0.103,
+                -0.02,
+                0.15
+              ],
+              "tail": [
+                0.105,
+                -0.03,
+                0.065
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_L",
+              "parent": "shin_L",
+              "head": [
+                0.105,
+                -0.03,
+                0.065
+              ],
+              "tail": [
+                0.105,
+                -0.13,
+                0.035
+              ],
+              "deform": true
+            },
+            {
+              "name": "thigh_R",
+              "parent": "hips",
+              "head": [
+                -0.098,
+                -0.016,
+                0.245
+              ],
+              "tail": [
+                -0.103,
+                -0.02,
+                0.15
+              ],
+              "deform": true
+            },
+            {
+              "name": "shin_R",
+              "parent": "thigh_R",
+              "head": [
+                -0.103,
+                -0.02,
+                0.15
+              ],
+              "tail": [
+                -0.105,
+                -0.03,
+                0.065
+              ],
+              "deform": true
+            },
+            {
+              "name": "foot_R",
+              "parent": "shin_R",
+              "head": [
+                -0.105,
+                -0.03,
+                0.065
+              ],
+              "tail": [
+                -0.105,
+                -0.13,
+                0.035
+              ],
+              "deform": true
+            }
+          ],
+          "constraints": [],
+          "active_action": "搬运走路_双手前举",
+          "nla_tracks": []
+        }
+      ],
+      "actions": [
+        {
+          "name": "搬运走路_双手前举",
+          "frame_range": [
+            1.0,
+            65.0
+          ],
+          "curves": 220,
+          "key_count": 3740,
+          "slots": [
+            "OBRig_红衣卡通女孩"
+          ],
+          "channels": [
+            "pose.bones[\"chest\"].location",
+            "pose.bones[\"chest\"].rotation_quaternion",
+            "pose.bones[\"chest\"].scale",
+            "pose.bones[\"foot_L\"].location",
+            "pose.bones[\"foot_L\"].rotation_quaternion",
+            "pose.bones[\"foot_L\"].scale",
+            "pose.bones[\"foot_R\"].location",
+            "pose.bones[\"foot_R\"].rotation_quaternion",
+            "pose.bones[\"foot_R\"].scale",
+            "pose.bones[\"forearm_L\"].location",
+            "pose.bones[\"forearm_L\"].rotation_quaternion",
+            "pose.bones[\"forearm_L\"].scale",
+            "pose.bones[\"forearm_R\"].location",
+            "pose.bones[\"forearm_R\"].rotation_quaternion",
+            "pose.bones[\"forearm_R\"].scale",
+            "pose.bones[\"hand_L\"].location",
+            "pose.bones[\"hand_L\"].rotation_quaternion",
+            "pose.bones[\"hand_L\"].scale",
+            "pose.bones[\"hand_R\"].location",
+            "pose.bones[\"hand_R\"].rotation_quaternion",
+            "pose.bones[\"hand_R\"].scale",
+            "pose.bones[\"head\"].location",
+            "pose.bones[\"head\"].rotation_quaternion",
+            "pose.bones[\"head\"].scale",
+            "pose.bones[\"hips\"].location",
+            "pose.bones[\"hips\"].rotation_quaternion",
+            "pose.bones[\"hips\"].scale",
+            "pose.bones[\"neck\"].location",
+            "pose.bones[\"neck\"].rotation_quaternion",
+            "pose.bones[\"neck\"].scale",
+            "pose.bones[\"pigtail_L\"].location",
+            "pose.bones[\"pigtail_L\"].rotation_quaternion",
+            "pose.bones[\"pigtail_L\"].scale",
+            "pose.bones[\"pigtail_R\"].location",
+            "pose.bones[\"pigtail_R\"].rotation_quaternion",
+            "pose.bones[\"pigtail_R\"].scale",
+            "pose.bones[\"ribbon_tail_L\"].location",
+            "pose.bones[\"ribbon_tail_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_L\"].scale",
+            "pose.bones[\"ribbon_tail_R\"].location",
+            "pose.bones[\"ribbon_tail_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_R\"].scale",
+            "pose.bones[\"root\"].location",
+            "pose.bones[\"root\"].rotation_quaternion",
+            "pose.bones[\"root\"].scale",
+            "pose.bones[\"shin_L\"].location",
+            "pose.bones[\"shin_L\"].rotation_quaternion",
+            "pose.bones[\"shin_L\"].scale",
+            "pose.bones[\"shin_R\"].location",
+            "pose.bones[\"shin_R\"].rotation_quaternion",
+            "pose.bones[\"shin_R\"].scale",
+            "pose.bones[\"spine\"].location",
+            "pose.bones[\"spine\"].rotation_quaternion",
+            "pose.bones[\"spine\"].scale",
+            "pose.bones[\"thigh_L\"].location",
+            "pose.bones[\"thigh_L\"].rotation_quaternion",
+            "pose.bones[\"thigh_L\"].scale",
+            "pose.bones[\"thigh_R\"].location",
+            "pose.bones[\"thigh_R\"].rotation_quaternion",
+            "pose.bones[\"thigh_R\"].scale",
+            "pose.bones[\"upper_arm_L\"].location",
+            "pose.bones[\"upper_arm_L\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_L\"].scale",
+            "pose.bones[\"upper_arm_R\"].location",
+            "pose.bones[\"upper_arm_R\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_R\"].scale"
+          ],
+          "samples": [
+            {
+              "frame": 1,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.2139084
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.2939084
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.0259968,
+                    0.4936684
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.0236381,
+                    0.9337758
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2120804,
+                    -0.1834329,
+                    0.2712913
+                  ],
+                  "tail": [
+                    0.2378241,
+                    -0.2269486,
+                    0.2603985
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2120804,
+                    -0.1834329,
+                    0.2712913
+                  ],
+                  "tail": [
+                    -0.2378241,
+                    -0.2269486,
+                    0.2603985
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1049998,
+                    -0.0867786,
+                    0.0752615
+                  ],
+                  "tail": [
+                    0.1049998,
+                    -0.1867786,
+                    0.0452615
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1050001,
+                    0.034725,
+                    0.0668
+                  ],
+                  "tail": [
+                    -0.1050001,
+                    -0.0652749,
+                    0.0368
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 17,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.2231594
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3031594
+                  ]
+                },
+                "head": {
+                  "head": [
+                    4.95e-05,
+                    -0.0259965,
+                    0.5029194
+                  ],
+                  "tail": [
+                    9.75e-05,
+                    -0.0215565,
+                    0.9430107
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2144675,
+                    -0.1802337,
+                    0.2805423
+                  ],
+                  "tail": [
+                    0.240861,
+                    -0.2233584,
+                    0.2696496
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2096456,
+                    -0.1865959,
+                    0.2805423
+                  ],
+                  "tail": [
+                    -0.2347337,
+                    -0.2304929,
+                    0.2696496
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.0240304,
+                    0.0676681
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.1225796,
+                    0.0332
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.0240304,
+                    0.0676681
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.1252787,
+                    0.042197
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 33,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.2139084
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.2939084
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.0259968,
+                    0.4936684
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.0236381,
+                    0.9337758
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2120804,
+                    -0.1834329,
+                    0.2712913
+                  ],
+                  "tail": [
+                    0.2378241,
+                    -0.2269486,
+                    0.2603985
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2120804,
+                    -0.1834329,
+                    0.2712913
+                  ],
+                  "tail": [
+                    -0.2378241,
+                    -0.2269486,
+                    0.2603985
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1050001,
+                    0.034725,
+                    0.0668
+                  ],
+                  "tail": [
+                    0.1050001,
+                    -0.0652749,
+                    0.0368
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1049998,
+                    -0.0867786,
+                    0.0752615
+                  ],
+                  "tail": [
+                    -0.1049998,
+                    -0.1867786,
+                    0.0452615
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 49,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.2231594
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3031594
+                  ]
+                },
+                "head": {
+                  "head": [
+                    -4.95e-05,
+                    -0.0259965,
+                    0.5029194
+                  ],
+                  "tail": [
+                    -9.75e-05,
+                    -0.0215565,
+                    0.9430107
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2096456,
+                    -0.1865959,
+                    0.2805423
+                  ],
+                  "tail": [
+                    0.2347337,
+                    -0.2304929,
+                    0.2696496
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2144675,
+                    -0.1802337,
+                    0.2805423
+                  ],
+                  "tail": [
+                    -0.240861,
+                    -0.2233584,
+                    0.2696496
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.0240304,
+                    0.0676681
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.1252787,
+                    0.042197
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.0240304,
+                    0.0676681
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.1225796,
+                    0.0332
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 65,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.2139084
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.2939084
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.0259968,
+                    0.4936684
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.0236381,
+                    0.9337758
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.2120804,
+                    -0.1834329,
+                    0.2712913
+                  ],
+                  "tail": [
+                    0.2378241,
+                    -0.2269486,
+                    0.2603985
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.2120804,
+                    -0.1834329,
+                    0.2712913
+                  ],
+                  "tail": [
+                    -0.2378241,
+                    -0.2269486,
+                    0.2603985
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1049998,
+                    -0.0867786,
+                    0.0752615
+                  ],
+                  "tail": [
+                    0.1049998,
+                    -0.1867786,
+                    0.0452615
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1050001,
+                    0.034725,
+                    0.0668
+                  ],
+                  "tail": [
+                    -0.1050001,
+                    -0.0652749,
+                    0.0368
+                  ]
+                }
+              }
+            }
+          ],
+          "loop_max_bone_matrix_delta": 0.0
+        },
+        {
+          "name": "绑定测试_挥手与步伐",
+          "frame_range": [
+            1.0,
+            65.0
+          ],
+          "curves": 220,
+          "key_count": 1100,
+          "slots": [
+            "OBRig_红衣卡通女孩"
+          ],
+          "channels": [
+            "pose.bones[\"chest\"].location",
+            "pose.bones[\"chest\"].rotation_quaternion",
+            "pose.bones[\"chest\"].scale",
+            "pose.bones[\"foot_L\"].location",
+            "pose.bones[\"foot_L\"].rotation_quaternion",
+            "pose.bones[\"foot_L\"].scale",
+            "pose.bones[\"foot_R\"].location",
+            "pose.bones[\"foot_R\"].rotation_quaternion",
+            "pose.bones[\"foot_R\"].scale",
+            "pose.bones[\"forearm_L\"].location",
+            "pose.bones[\"forearm_L\"].rotation_quaternion",
+            "pose.bones[\"forearm_L\"].scale",
+            "pose.bones[\"forearm_R\"].location",
+            "pose.bones[\"forearm_R\"].rotation_quaternion",
+            "pose.bones[\"forearm_R\"].scale",
+            "pose.bones[\"hand_L\"].location",
+            "pose.bones[\"hand_L\"].rotation_quaternion",
+            "pose.bones[\"hand_L\"].scale",
+            "pose.bones[\"hand_R\"].location",
+            "pose.bones[\"hand_R\"].rotation_quaternion",
+            "pose.bones[\"hand_R\"].scale",
+            "pose.bones[\"head\"].location",
+            "pose.bones[\"head\"].rotation_quaternion",
+            "pose.bones[\"head\"].scale",
+            "pose.bones[\"hips\"].location",
+            "pose.bones[\"hips\"].rotation_quaternion",
+            "pose.bones[\"hips\"].scale",
+            "pose.bones[\"neck\"].location",
+            "pose.bones[\"neck\"].rotation_quaternion",
+            "pose.bones[\"neck\"].scale",
+            "pose.bones[\"pigtail_L\"].location",
+            "pose.bones[\"pigtail_L\"].rotation_quaternion",
+            "pose.bones[\"pigtail_L\"].scale",
+            "pose.bones[\"pigtail_R\"].location",
+            "pose.bones[\"pigtail_R\"].rotation_quaternion",
+            "pose.bones[\"pigtail_R\"].scale",
+            "pose.bones[\"ribbon_tail_L\"].location",
+            "pose.bones[\"ribbon_tail_L\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_L\"].scale",
+            "pose.bones[\"ribbon_tail_R\"].location",
+            "pose.bones[\"ribbon_tail_R\"].rotation_quaternion",
+            "pose.bones[\"ribbon_tail_R\"].scale",
+            "pose.bones[\"root\"].location",
+            "pose.bones[\"root\"].rotation_quaternion",
+            "pose.bones[\"root\"].scale",
+            "pose.bones[\"shin_L\"].location",
+            "pose.bones[\"shin_L\"].rotation_quaternion",
+            "pose.bones[\"shin_L\"].scale",
+            "pose.bones[\"shin_R\"].location",
+            "pose.bones[\"shin_R\"].rotation_quaternion",
+            "pose.bones[\"shin_R\"].scale",
+            "pose.bones[\"spine\"].location",
+            "pose.bones[\"spine\"].rotation_quaternion",
+            "pose.bones[\"spine\"].scale",
+            "pose.bones[\"thigh_L\"].location",
+            "pose.bones[\"thigh_L\"].rotation_quaternion",
+            "pose.bones[\"thigh_L\"].scale",
+            "pose.bones[\"thigh_R\"].location",
+            "pose.bones[\"thigh_R\"].rotation_quaternion",
+            "pose.bones[\"thigh_R\"].scale",
+            "pose.bones[\"upper_arm_L\"].location",
+            "pose.bones[\"upper_arm_L\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_L\"].scale",
+            "pose.bones[\"upper_arm_R\"].location",
+            "pose.bones[\"upper_arm_R\"].rotation_quaternion",
+            "pose.bones[\"upper_arm_R\"].scale"
+          ],
+          "samples": [
+            {
+              "frame": 1,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.01,
+                    0.9400001
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 17,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0439267,
+                    -0.01,
+                    0.9378018
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.351983,
+                    -0.045,
+                    0.3676278
+                  ],
+                  "tail": [
+                    0.4014752,
+                    -0.06,
+                    0.3683505
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 33,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0439267,
+                    -0.01,
+                    0.9378018
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.351983,
+                    -0.045,
+                    0.3676278
+                  ],
+                  "tail": [
+                    0.4014752,
+                    -0.06,
+                    0.3683505
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 49,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.01,
+                    0.9400001
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.1049999,
+                    -0.0682535,
+                    0.0730388
+                  ],
+                  "tail": [
+                    0.1049999,
+                    -0.1701069,
+                    0.0501065
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.1050001,
+                    0.0136322,
+                    0.067644
+                  ],
+                  "tail": [
+                    -0.1050001,
+                    -0.0793812,
+                    0.0202257
+                  ]
+                }
+              }
+            },
+            {
+              "frame": 65,
+              "bones": {
+                "root": {
+                  "head": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "tail": [
+                    0.0,
+                    0.0,
+                    0.08
+                  ]
+                },
+                "hips": {
+                  "head": [
+                    0.0,
+                    -0.015,
+                    0.22
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.015,
+                    0.3
+                  ]
+                },
+                "head": {
+                  "head": [
+                    0.0,
+                    -0.02,
+                    0.5
+                  ],
+                  "tail": [
+                    0.0,
+                    -0.01,
+                    0.9400001
+                  ]
+                },
+                "hand_L": {
+                  "head": [
+                    0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "hand_R": {
+                  "head": [
+                    -0.265,
+                    -0.045,
+                    0.23
+                  ],
+                  "tail": [
+                    -0.3,
+                    -0.06,
+                    0.195
+                  ]
+                },
+                "foot_L": {
+                  "head": [
+                    0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    0.105,
+                    -0.13,
+                    0.035
+                  ]
+                },
+                "foot_R": {
+                  "head": [
+                    -0.105,
+                    -0.03,
+                    0.065
+                  ],
+                  "tail": [
+                    -0.105,
+                    -0.13,
+                    0.035
+                  ]
+                }
+              }
+            }
+          ],
+          "loop_max_bone_matrix_delta": 0.0
+        }
+      ],
+      "skin_rest_bounds": {
+        "min": [
+          -0.4992675,
+          -0.3083496,
+          -0.0
+        ],
+        "max": [
+          0.4992676,
+          0.3083496,
+          0.9995117
+        ],
+        "size": [
+          0.9985352,
+          0.6166992,
+          0.9995117
+        ]
+      },
+      "images": [
+        {
+          "name": "tripo_image_69800d4e_0",
+          "size": [
+            4096,
+            4096
+          ],
+          "filepath": "//..\\working\\character_02\\tripo_convert_69800d4e-d7f7-4292-93ed-7c168cbf15c4.fbm\\tripo_rgb_5b1017f6-6f83-4960-9ae3-c3ed536c30ab.jpg",
+          "packed": true,
+          "source": "FILE",
+          "colorspace": "sRGB"
+        }
+      ],
+      "materials": [
+        {
+          "name": "红衣卡通女孩 · 主贴图",
+          "nodes": [
+            "BSDF_PRINCIPLED",
+            "OUTPUT_MATERIAL",
+            "NORMAL_MAP",
+            "TEX_IMAGE"
+          ]
+        }
+      ]
+    }
+  ]
+}

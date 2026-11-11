@@ -1,0 +1,1581 @@
+{
+  "version": "v01_20261111",
+  "blender": "5.3.0",
+  "units": "metres",
+  "asset_count": 15,
+  "paper_size_m": [
+    0.42,
+    0.6
+  ],
+  "character_reference_height_m": 1.2,
+  "table_reference_height_m": 0.65,
+  "pair_ids": [
+    "yintao",
+    "zhituan"
+  ],
+  "pair_key": "yintao|zhituan",
+  "task_contracts": {
+    "F04": {
+      "player": "单件拿放、递交、共享台暂存",
+      "program": "原子转移单件所有权；满手拒收；失败保留源物件",
+      "acceptance": "同帧争抢仅一人得到纸；共享台始终只占一格"
+    },
+    "F05": {
+      "player": "空手按住抄纸",
+      "program": "2秒工作量与可中断进度；唯一操作者；湿纸待取",
+      "acceptance": "松手续做；未取湿纸不能产第二张"
+    },
+    "F06": {
+      "player": "湿纸入指定挂位，等待后取干纸",
+      "program": "双槽独立4秒计时；单张状态wet->dry",
+      "acceptance": "A完成不影响B；第三张拒收；暂停冻结"
+    },
+    "F07": {
+      "player": "干纸放印台并按住印刷",
+      "program": "2秒工作量；绑定排序组合键；只在成功后切black",
+      "acceptance": "湿纸拒收；黑票可见纸团和印桃、钱纹与票文，红印不可见"
+    },
+    "F08": {
+      "player": "黑票放盖印台按住盖章",
+      "program": "1秒工作量；成功一次启用red层；禁重复盖印",
+      "acceptance": "同一朱印组只启用一次；black/red底纸与黑墨层不重复叠纸"
+    },
+    "F09": {
+      "player": "手持朱票在窗口交付",
+      "program": "立即消耗票、单次计分并更新订单；固定回执反馈",
+      "acceptance": "黑票拒收；连续按键不重复消耗/计分；回执不是新物料"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "paper_wet",
+      "display_name": "湿纸",
+      "task_ids": [
+        "F04",
+        "F05",
+        "F06"
+      ],
+      "version": "v01_20261111",
+      "role": "paper_material",
+      "carryable": true,
+      "inventory_units": 1,
+      "art_asset_quantity": 1,
+      "material_state": "wet",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      },
+      "mesh_count": 5,
+      "triangles": 68,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "physical_grip_center"
+        },
+        "hang_pivot": {
+          "position_local": [
+            0.0,
+            0.27000001072883606,
+            0.006000000052154064
+          ],
+          "role": "rack_clip_line"
+        },
+        "palm_contact_L": {
+          "position_local": [
+            -0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "left_palm_contact"
+        },
+        "palm_contact_R": {
+          "position_local": [
+            0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "right_palm_contact"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        },
+        "surface_anchor": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.006000000052154064
+          ],
+          "role": "ticket_art_surface"
+        }
+      },
+      "placement": {
+        "station": "station_dry",
+        "slot": "A",
+        "local_xyz": [
+          -0.5,
+          -0.085,
+          1.0
+        ],
+        "rotation_xyz_degrees": [
+          90,
+          0,
+          0
+        ],
+        "preview_only": true
+      },
+      "glb": "GLB/paper_wet.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 3052648,
+      "sha256": "68d1b8a3215c1e2b5083d7e15c0e425cc4f81d34a48944a3730ee2211283d390"
+    },
+    {
+      "asset_id": "paper_dry",
+      "display_name": "干纸",
+      "task_ids": [
+        "F04",
+        "F06",
+        "F07"
+      ],
+      "version": "v01_20261111",
+      "role": "paper_material",
+      "carryable": true,
+      "inventory_units": 1,
+      "art_asset_quantity": 1,
+      "material_state": "dry",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      },
+      "mesh_count": 3,
+      "triangles": 60,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "physical_grip_center"
+        },
+        "hang_pivot": {
+          "position_local": [
+            0.0,
+            0.27000001072883606,
+            0.006000000052154064
+          ],
+          "role": "rack_clip_line"
+        },
+        "palm_contact_L": {
+          "position_local": [
+            -0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "left_palm_contact"
+        },
+        "palm_contact_R": {
+          "position_local": [
+            0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "right_palm_contact"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        },
+        "surface_anchor": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.006000000052154064
+          ],
+          "role": "ticket_art_surface"
+        }
+      },
+      "placement": {
+        "station": "station_dry",
+        "slot": "B",
+        "local_xyz": [
+          0.5,
+          -0.085,
+          1.0
+        ],
+        "rotation_xyz_degrees": [
+          90,
+          0,
+          0
+        ],
+        "preview_only": true
+      },
+      "glb": "GLB/paper_dry.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 3094328,
+      "sha256": "e1eb1450457fce96587d61cc385693a9380dcede53ede2b92b4533726360da1a"
+    },
+    {
+      "asset_id": "paper_black",
+      "display_name": "黑墨交子",
+      "task_ids": [
+        "F04",
+        "F07",
+        "F08"
+      ],
+      "version": "v01_20261111",
+      "role": "paper_material",
+      "carryable": true,
+      "inventory_units": 1,
+      "art_asset_quantity": 1,
+      "material_state": "black",
+      "pair_key": "yintao|zhituan",
+      "bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      },
+      "mesh_count": 4,
+      "triangles": 106,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "physical_grip_center"
+        },
+        "hang_pivot": {
+          "position_local": [
+            0.0,
+            0.27000001072883606,
+            0.006000000052154064
+          ],
+          "role": "rack_clip_line"
+        },
+        "palm_contact_L": {
+          "position_local": [
+            -0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "left_palm_contact"
+        },
+        "palm_contact_R": {
+          "position_local": [
+            0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "right_palm_contact"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        },
+        "surface_anchor": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.006000000052154064
+          ],
+          "role": "ticket_art_surface"
+        }
+      },
+      "placement": {
+        "station": "station_print",
+        "local_xyz": [
+          -0.23,
+          0,
+          0.725
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ],
+        "preview_only": true
+      },
+      "glb": "GLB/paper_black.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "formal_first_pair_reference_uv_separated; not a 15-pair compositor",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 6594496,
+      "sha256": "2386dd5737080fa07019ead566918eb50cc50cef2dd47ec4de9090a90e2649c3"
+    },
+    {
+      "asset_id": "paper_red",
+      "display_name": "朱印交子",
+      "task_ids": [
+        "F04",
+        "F08",
+        "F09"
+      ],
+      "version": "v01_20261111",
+      "role": "paper_material",
+      "carryable": true,
+      "inventory_units": 1,
+      "art_asset_quantity": 1,
+      "material_state": "red",
+      "pair_key": "yintao|zhituan",
+      "bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      },
+      "mesh_count": 5,
+      "triangles": 110,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "physical_grip_center"
+        },
+        "hang_pivot": {
+          "position_local": [
+            0.0,
+            0.27000001072883606,
+            0.006000000052154064
+          ],
+          "role": "rack_clip_line"
+        },
+        "palm_contact_L": {
+          "position_local": [
+            -0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "left_palm_contact"
+        },
+        "palm_contact_R": {
+          "position_local": [
+            0.1899999976158142,
+            0.20999999344348907,
+            0.006000000052154064
+          ],
+          "role": "right_palm_contact"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        },
+        "surface_anchor": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.006000000052154064
+          ],
+          "role": "ticket_art_surface"
+        }
+      },
+      "placement": {
+        "station": "station_stamp",
+        "local_xyz": [
+          -0.21,
+          0,
+          0.669
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ],
+        "preview_only": true
+      },
+      "glb": "GLB/paper_red.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "formal_first_pair_reference_uv_separated; not a 15-pair compositor",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 6595776,
+      "sha256": "4aa56795d8bb9baff23eb8a248473e2695d403e42bdf6cca77c63d2642641efa"
+    },
+    {
+      "asset_id": "tool_papermaking_screen",
+      "display_name": "抄纸帘框",
+      "task_ids": [
+        "F05"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_station_tool",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.25999999046325684,
+          -0.3500000238418579,
+          0.0
+        ],
+        "max": [
+          0.25999999046325684,
+          0.3500000238418579,
+          0.09114514291286469
+        ],
+        "size": [
+          0.5199999809265137,
+          0.7000000476837158,
+          0.09114514291286469
+        ]
+      },
+      "mesh_count": 28,
+      "triangles": 1040,
+      "anchors": {
+        "animation_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.019999999552965164
+          ],
+          "role": "screen_lift_pivot"
+        },
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.054999999701976776
+          ],
+          "role": "physical_grip_center"
+        },
+        "paper_output_anchor": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.041999999433755875
+          ],
+          "role": "single_wet_paper_output"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_pulp",
+        "local_xyz": [
+          0.27,
+          0,
+          0.5185
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/tool_papermaking_screen.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 3858572,
+      "sha256": "d8ed27a3031f4022f1f346c423bf572db45367279ed061a56dcf60fa53caf0bb"
+    },
+    {
+      "asset_id": "tool_print_brush",
+      "display_name": "印刷刷帚",
+      "task_ids": [
+        "F07"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_station_tool",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.13500000536441803,
+          -0.11500000208616257,
+          0.0
+        ],
+        "max": [
+          0.13500000536441803,
+          0.2199999988079071,
+          0.07400000095367432
+        ],
+        "size": [
+          0.27000001072883606,
+          0.33500000089406967,
+          0.07400000095367432
+        ]
+      },
+      "mesh_count": 15,
+      "triangles": 244,
+      "anchors": {
+        "animation_pivot": {
+          "position_local": [
+            0.0,
+            0.12999999523162842,
+            0.04399999976158142
+          ],
+          "role": "brush_stroke_pivot"
+        },
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "contact_point": {
+          "position_local": [
+            0.0,
+            -0.07000000029802322,
+            0.0
+          ],
+          "role": "paper_contact"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.12999999523162842,
+            0.04399999976158142
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_print",
+        "local_xyz": [
+          0.52,
+          -0.21,
+          0.682
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/tool_print_brush.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 3794336,
+      "sha256": "03260c08188960b6bd99377f0d2c7719676c28a1ab19a3e00a6ccab3e2d35e6f"
+    },
+    {
+      "asset_id": "tool_ink_dish",
+      "display_name": "浅墨碟",
+      "task_ids": [
+        "F07"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_station_tool",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.12999999523162842,
+          -0.12999999523162842,
+          0.0
+        ],
+        "max": [
+          0.12999999523162842,
+          0.12999999523162842,
+          0.052000001072883606
+        ],
+        "size": [
+          0.25999999046325684,
+          0.25999999046325684,
+          0.052000001072883606
+        ]
+      },
+      "mesh_count": 3,
+      "triangles": 380,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "contact_point": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.032999999821186066
+          ],
+          "role": "brush_ink_contact"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.02500000037252903
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_print",
+        "local_xyz": [
+          0.52,
+          0.23,
+          0.682
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/tool_ink_dish.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 2782888,
+      "sha256": "abb8514473fcabc43e1781d7c6001a6491eca1cad81404a7853bb1907634cb2c"
+    },
+    {
+      "asset_id": "tool_rubbing_pad",
+      "display_name": "擦印包",
+      "task_ids": [
+        "F07"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_station_tool",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.11599999666213989,
+          -0.11599999666213989,
+          0.0
+        ],
+        "max": [
+          0.11599999666213989,
+          0.11599999666213989,
+          0.16249999403953552
+        ],
+        "size": [
+          0.23199999332427979,
+          0.23199999332427979,
+          0.16249999403953552
+        ]
+      },
+      "mesh_count": 16,
+      "triangles": 448,
+      "anchors": {
+        "animation_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.125
+          ],
+          "role": "rubbing_pivot"
+        },
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "contact_point": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "paper_contact"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.13300000131130219
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_print",
+        "local_xyz": [
+          -0.64,
+          0.25,
+          0.65
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/tool_rubbing_pad.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 4293676,
+      "sha256": "aa6bc88b6dd2b498cdb2a0da448250b9a7837646b4b5e02b250a68b8b111beb0"
+    },
+    {
+      "asset_id": "tool_stamp",
+      "display_name": "云钮朱印章",
+      "task_ids": [
+        "F08"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_station_tool",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.11749999970197678,
+          -0.11749999970197678,
+          0.0
+        ],
+        "max": [
+          0.11749999970197678,
+          0.11749999970197678,
+          0.28999999165534973
+        ],
+        "size": [
+          0.23499999940395355,
+          0.23499999940395355,
+          0.28999999165534973
+        ]
+      },
+      "mesh_count": 9,
+      "triangles": 412,
+      "anchors": {
+        "animation_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.23499999940395355
+          ],
+          "role": "stamp_handle_pivot"
+        },
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "contact_point": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "stamp_sole_contact"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.23499999940395355
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_stamp",
+        "local_xyz": [
+          0.53,
+          0.16,
+          0.67
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/tool_stamp.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 4010716,
+      "sha256": "a82006dbe6d9147bd1acfc87db8d103f3799a65020f020b6b06a2056c18fd9ab"
+    },
+    {
+      "asset_id": "tool_ink_pad",
+      "display_name": "朱砂印泥",
+      "task_ids": [
+        "F08"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_station_tool",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.14499999582767487,
+          -0.12999999523162842,
+          0.0
+        ],
+        "max": [
+          0.14499999582767487,
+          0.12999999523162842,
+          0.06000000238418579
+        ],
+        "size": [
+          0.28999999165534973,
+          0.25999999046325684,
+          0.06000000238418579
+        ]
+      },
+      "mesh_count": 3,
+      "triangles": 124,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "contact_point": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          "role": "stamp_ink_contact"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.02500000037252903
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_stamp",
+        "local_xyz": [
+          0.52,
+          -0.22,
+          0.65
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/tool_ink_pad.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 2512212,
+      "sha256": "9b58469edbe68fc79be84d7fc06dea92901bf89e93c5143ddf85f0461120dea2"
+    },
+    {
+      "asset_id": "tool_print_block",
+      "display_name": "首款双人工坊雕版",
+      "task_ids": [
+        "F07"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_station_tool",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "yintao|zhituan",
+      "bounds_m": {
+        "min": [
+          -0.2549999952316284,
+          -0.3449999988079071,
+          0.0
+        ],
+        "max": [
+          0.2549999952316284,
+          0.3449999988079071,
+          0.07519999891519547
+        ],
+        "size": [
+          0.5099999904632568,
+          0.6899999976158142,
+          0.07519999891519547
+        ]
+      },
+      "mesh_count": 8,
+      "triangles": 346,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.03500000014901161
+          ],
+          "role": "physical_grip_center"
+        },
+        "paper_anchor": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.07500000298023224
+          ],
+          "role": "single_dry_paper_mount"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_print",
+        "local_xyz": [
+          -0.23,
+          0,
+          0.65
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/tool_print_block.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "formal reference image mapped onto independent carved board; not sculpted glyph relief",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 6623504,
+      "sha256": "79e2dc3cab5da99c0e1842ccfb9f6c7507427d706599ae27f3d6a9f31e931ad0"
+    },
+    {
+      "asset_id": "woodcut_zhituan",
+      "display_name": "纸团木刻",
+      "task_ids": [
+        "F07"
+      ],
+      "version": "v01_20261111",
+      "role": "replaceable_engraving_layer",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.08500000089406967,
+          -0.08500000089406967,
+          0.0
+        ],
+        "max": [
+          0.08500000089406967,
+          0.08500000089406967,
+          0.024000000208616257
+        ],
+        "size": [
+          0.17000000178813934,
+          0.17000000178813934,
+          0.024000000208616257
+        ]
+      },
+      "mesh_count": 3,
+      "triangles": 272,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": null,
+        "usage": "排版层源件；雕版已有完整首款图，不在台面再摆一件"
+      },
+      "glb": "GLB/woodcut_zhituan.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 5565780,
+      "sha256": "38a0b0fe167b6511d4ecac8e67481be19205b2e59bebbd13939f73d8c93be95d"
+    },
+    {
+      "asset_id": "woodcut_yintao",
+      "display_name": "印桃木刻",
+      "task_ids": [
+        "F07"
+      ],
+      "version": "v01_20261111",
+      "role": "replaceable_engraving_layer",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.08500000089406967,
+          -0.08500000089406967,
+          0.0
+        ],
+        "max": [
+          0.08500000089406967,
+          0.08500000089406967,
+          0.024000000208616257
+        ],
+        "size": [
+          0.17000000178813934,
+          0.17000000178813934,
+          0.024000000208616257
+        ]
+      },
+      "mesh_count": 3,
+      "triangles": 272,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": null,
+        "usage": "排版层源件；雕版已有完整首款图，不在台面再摆一件"
+      },
+      "glb": "GLB/woodcut_yintao.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 5565768,
+      "sha256": "9a9a8b9909fc8fd17752e8c9569ee630c33a36afe9d743916a25fdf99d1e3a8f"
+    },
+    {
+      "asset_id": "layer_red_seal",
+      "display_name": "首款朱印覆盖层",
+      "task_ids": [
+        "F08"
+      ],
+      "version": "v01_20261111",
+      "role": "ticket_overlay_layer",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "yintao|zhituan",
+      "bounds_m": {
+        "min": [
+          -0.1676953136920929,
+          -0.26402342319488525,
+          0.0
+        ],
+        "max": [
+          0.1567968726158142,
+          0.11707030981779099,
+          0.0
+        ],
+        "size": [
+          0.3244921863079071,
+          0.38109373301267624,
+          0.0
+        ]
+      },
+      "mesh_count": 1,
+      "triangles": 4,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "parent": "paper_black",
+        "local_xyz": [
+          0,
+          0,
+          0.0073
+        ],
+        "usage": "替代paper_red状态整件的可选叠层方法；两种切换方法不能同时使用"
+      },
+      "glb": "GLB/layer_red_seal.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 3498444,
+      "sha256": "f79dcd48c849c070b9dbec1ceec8b689e6b7888548e31f1f175358a4a1bf2401"
+    },
+    {
+      "asset_id": "marker_delivery_receipt",
+      "display_name": "交付回执标记",
+      "task_ids": [
+        "F09"
+      ],
+      "version": "v01_20261111",
+      "role": "fixed_feedback_marker",
+      "carryable": false,
+      "inventory_units": 0,
+      "art_asset_quantity": 1,
+      "material_state": "",
+      "pair_key": "",
+      "bounds_m": {
+        "min": [
+          -0.08500000089406967,
+          -0.06499999761581421,
+          0.0
+        ],
+        "max": [
+          0.08500000089406967,
+          0.06499999761581421,
+          0.27000001072883606
+        ],
+        "size": [
+          0.17000000178813934,
+          0.12999999523162842,
+          0.27000001072883606
+        ]
+      },
+      "mesh_count": 4,
+      "triangles": 612,
+      "anchors": {
+        "attach_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "HoldPoint_attachment_pivot"
+        },
+        "feedback_anchor": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.2800000011920929
+          ],
+          "role": "success_feedback_origin"
+        },
+        "grip_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "physical_grip_center"
+        },
+        "placement_pivot": {
+          "position_local": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "role": "station_placement_pivot"
+        }
+      },
+      "placement": {
+        "station": "station_delivery",
+        "local_xyz": [
+          0.54,
+          0.04,
+          0.65
+        ],
+        "rotation_xyz_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "glb": "GLB/marker_delivery_receipt.glb",
+      "shared_blend": "首关纸艺道具包_v01_20261111.blend",
+      "paper_state_interface": "纸张状态接口_v01_20261111.json",
+      "artwork_status": "modeled_papercraft",
+      "validation_status": "passed actual GLB reimport",
+      "glb_bytes": 3687720,
+      "sha256": "f4097fc212f434d7daba3ec814f58f8bfdcdd15f26d85e93c9fafab23d86ed6d"
+    }
+  ],
+  "replace_v05_objects": {
+    "station_pulp": {
+      "remove_subtrees": [
+        "station_pulp__screen_pivot"
+      ],
+      "keep": [
+        "slot_0",
+        "water",
+        "vat"
+      ]
+    },
+    "station_print": {
+      "remove_subtrees": [
+        "station_print__ink_dish_pivot",
+        "station_print__printing_brush_pivot"
+      ],
+      "remove_prefixes": [
+        "station_print__print_block_",
+        "station_print__print_ink_surface",
+        "station_print__block_",
+        "station_print__engraved_"
+      ],
+      "keep": [
+        "tool_tray",
+        "slot_0",
+        "interaction_main",
+        "standing_main"
+      ]
+    },
+    "station_stamp": {
+      "remove_subtrees": [
+        "station_stamp__seal_pivot"
+      ],
+      "remove_prefixes": [
+        "station_stamp__inkpad_tray",
+        "station_stamp__red_inkpad",
+        "station_stamp__inkpad_scroll",
+        "station_stamp__sample_ticket",
+        "station_stamp__note_"
+      ],
+      "keep": [
+        "seal_contact",
+        "slot_0",
+        "interaction_main",
+        "standing_main"
+      ]
+    },
+    "station_dry": {
+      "remove_prefixes": [
+        "station_dry__preview_A",
+        "station_dry__preview_B",
+        "station_dry__wet_drop",
+        "station_dry__dry_corner_crease"
+      ],
+      "keep": [
+        "slot_A",
+        "slot_B",
+        "clip_pivot_A",
+        "clip_pivot_B"
+      ]
+    },
+    "station_delivery": {
+      "remove_exact": [
+        "station_delivery__receipt_tag",
+        "station_delivery__receipt_text"
+      ],
+      "keep": [
+        "receipt_anchor",
+        "receiving_slot",
+        "tray_base",
+        "scroll_sign_pivot"
+      ]
+    }
+  },
+  "artwork_source": {
+    "path": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\03_历史成果\\原工作区\\output\\jiaozi-production-assets-20261103\\08_组合交子_纸团印桃.png",
+    "sha256": "d456659f9d62fbe27f01efd6def017c7ca5fc318dfcfa46ee17c86939154e1c2",
+    "copy": "Textures/首款组合交子_原图副本_v01_20261111.png",
+    "original_pixels_unchanged": true,
+    "red_rectangles_source_pixels": [
+      [
+        832,
+        435,
+        958,
+        553
+      ],
+      [
+        35,
+        1357,
+        160,
+        1519
+      ]
+    ],
+    "layer_method": "UV-region geometry masks; no baked RGB replacement",
+    "scope": "first pair only; no claim of reusable 15-pair source layers"
+  },
+  "code_repository_commit": null,
+  "unity_runtime_tested": false,
+  "validation_report": "道具实测验证_v01_20261111.json",
+  "headless_validation_passed": true,
+  "headless_check_count": 229,
+  "previews": [
+    "预览_首关道具总览_v01_20261111.png",
+    "预览_黑票与朱票分层_v01_20261111.png"
+  ],
+  "render": {
+    "engine": "Cycles",
+    "device": "GPU",
+    "samples": 48,
+    "view_transform": "Standard",
+    "exposure": 0,
+    "key_energy": 240,
+    "fill_energy": 126,
+    "world_strength": 0.32,
+    "backdrop_linear_rgb": [
+      0.45,
+      0.4,
+      0.32
+    ]
+  },
+  "primary_artifact_sha256": {
+    "首关纸艺道具包_v01_20261111.blend": "c8bab331eb8f451a309733aa0bdde75810859a067efb6c937b9d0242b885fad0",
+    "预览_首关道具总览_v01_20261111.png": "021f96dcf1b25262df51e25ff424f4ddedcd41baa218a2986dbb206ee6908fd6",
+    "预览_黑票与朱票分层_v01_20261111.png": "e7c8de07d1a75112ad896baa252afa31aebbe32dc00576d451ed2f3703b7c126"
+  },
+  "interface_document_sha256": {
+    "纸张状态接口_v01_20261111.json": "faf2597967c5d7e173c81bf6c56f6650652bd0eafbcd494b661ebbe607d0ee16",
+    "道具制作与接入说明_v01_20261111.md": "c19fa296250f8f115a68d242479843381054cc0518d737f06d801827f6d605d1"
+  }
+}

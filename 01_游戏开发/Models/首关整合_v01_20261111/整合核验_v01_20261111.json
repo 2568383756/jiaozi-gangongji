@@ -1,0 +1,1477 @@
+{
+  "version": "v01_20261111",
+  "blender": "5.3.0",
+  "source_scene": "01_游戏开发\\Models\\首关场景_v05_20261111\\首关_开张第一单_v05_20261111.blend",
+  "source_scene_sha256": "40cebe8cc226918723839e656f9d3a276eca20cfdde60261a8fe192724a132f5",
+  "characters": [
+    {
+      "id": "zhituan",
+      "player": "P1",
+      "blend_pattern": "角色_纸团_整合_v01_20261111.blend",
+      "location": [
+        4.4,
+        4.2,
+        0
+      ],
+      "rotation_deg": 0,
+      "carried_asset": "paper_wet",
+      "source": "01_游戏开发\\Models\\首批角色_v01_20261111\\角色_纸团_整合_v01_20261111.blend",
+      "source_sha256": "5d9734acea01acf61231f1c8fba05156af860989385cd574aab401bbf30b5ea3",
+      "socket": "zhituan_HoldPoint_adapter",
+      "action": "zhituan_CarryIdle",
+      "carried_root": "zhituan_held_single_sheet"
+    },
+    {
+      "id": "yintao",
+      "player": "P2",
+      "blend_pattern": "角色_印桃_整合_v01_20261111.blend",
+      "location": [
+        6.0,
+        4.2,
+        0
+      ],
+      "rotation_deg": 0,
+      "carried_asset": "paper_red",
+      "source": "01_游戏开发\\Models\\首批角色_v01_20261111\\角色_印桃_整合_v01_20261111.blend",
+      "source_sha256": "26cd8b7a8ea0beab4b0bb1eeb5d8954059707bf4aa00a7124431fd83b707a808",
+      "socket": "yintao_HoldPoint_adapter",
+      "action": "yintao_CarryIdle",
+      "carried_root": "yintao_held_single_sheet"
+    }
+  ],
+  "station_prop_instances": [
+    {
+      "asset_id": "tool_papermaking_screen",
+      "instance": "v01_pulp_screen",
+      "parent": "station_pulp",
+      "location": [
+        0.27,
+        0,
+        0.5185
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_papermaking_screen.glb",
+      "source_sha256": "d8ed27a3031f4022f1f346c423bf572db45367279ed061a56dcf60fa53caf0bb"
+    },
+    {
+      "asset_id": "tool_print_block",
+      "instance": "v01_print_block",
+      "parent": "station_print",
+      "location": [
+        -0.23,
+        0,
+        0.65
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_print_block.glb",
+      "source_sha256": "79e2dc3cab5da99c0e1842ccfb9f6c7507427d706599ae27f3d6a9f31e931ad0"
+    },
+    {
+      "asset_id": "tool_print_brush",
+      "instance": "v01_print_brush",
+      "parent": "station_print",
+      "location": [
+        0.52,
+        -0.21,
+        0.682
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_print_brush.glb",
+      "source_sha256": "03260c08188960b6bd99377f0d2c7719676c28a1ab19a3e00a6ccab3e2d35e6f"
+    },
+    {
+      "asset_id": "tool_ink_dish",
+      "instance": "v01_print_ink_dish",
+      "parent": "station_print",
+      "location": [
+        0.52,
+        0.23,
+        0.682
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_ink_dish.glb",
+      "source_sha256": "abb8514473fcabc43e1781d7c6001a6491eca1cad81404a7853bb1907634cb2c"
+    },
+    {
+      "asset_id": "tool_rubbing_pad",
+      "instance": "v01_print_rubbing_pad",
+      "parent": "station_print",
+      "location": [
+        -0.64,
+        0.25,
+        0.65
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_rubbing_pad.glb",
+      "source_sha256": "aa6bc88b6dd2b498cdb2a0da448250b9a7837646b4b5e02b250a68b8b111beb0"
+    },
+    {
+      "asset_id": "tool_stamp",
+      "instance": "v01_stamp",
+      "parent": "station_stamp",
+      "location": [
+        0.53,
+        0.16,
+        0.67
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_stamp.glb",
+      "source_sha256": "a82006dbe6d9147bd1acfc87db8d103f3799a65020f020b6b06a2056c18fd9ab"
+    },
+    {
+      "asset_id": "tool_ink_pad",
+      "instance": "v01_stamp_ink_pad",
+      "parent": "station_stamp",
+      "location": [
+        0.52,
+        -0.22,
+        0.65
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_ink_pad.glb",
+      "source_sha256": "9b58469edbe68fc79be84d7fc06dea92901bf89e93c5143ddf85f0461120dea2"
+    },
+    {
+      "asset_id": "marker_delivery_receipt",
+      "instance": "v01_delivery_receipt",
+      "parent": "station_delivery",
+      "location": [
+        0.54,
+        0.04,
+        0.65
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\marker_delivery_receipt.glb",
+      "source_sha256": "f4097fc212f434d7daba3ec814f58f8bfdcdd15f26d85e93c9fafab23d86ed6d"
+    },
+    {
+      "asset_id": "paper_wet",
+      "instance": "v01_dry_A_wet",
+      "parent": "station_dry__slot_A",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\paper_wet.glb",
+      "source_sha256": "68d1b8a3215c1e2b5083d7e15c0e425cc4f81d34a48944a3730ee2211283d390"
+    },
+    {
+      "asset_id": "paper_dry",
+      "instance": "v01_dry_B_dry",
+      "parent": "station_dry__slot_B",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\paper_dry.glb",
+      "source_sha256": "e1eb1450457fce96587d61cc385693a9380dcede53ede2b92b4533726360da1a"
+    },
+    {
+      "asset_id": "paper_red",
+      "instance": "v01_stamp_red_ticket",
+      "parent": "station_stamp__slot_0",
+      "location": [
+        0,
+        0,
+        -0.005
+      ],
+      "source": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\paper_red.glb",
+      "source_sha256": "4aa56795d8bb9baff23eb8a248473e2695d403e42bdf6cca77c63d2642641efa"
+    }
+  ],
+  "disabled_v05_visual_objects": [
+    "station_pulp__screen_pivot",
+    "station_pulp__screen_side",
+    "station_pulp__screen_side.001",
+    "station_pulp__screen_end",
+    "station_pulp__screen_end.001",
+    "station_pulp__screen_mesh",
+    "station_pulp__screen_bamboo",
+    "station_pulp__screen_bamboo.001",
+    "station_pulp__screen_bamboo.002",
+    "station_pulp__screen_bamboo.003",
+    "station_pulp__screen_bamboo.004",
+    "station_pulp__screen_bamboo.005",
+    "station_pulp__screen_bamboo.006",
+    "station_pulp__screen_bamboo.007",
+    "station_pulp__screen_bamboo.008",
+    "station_pulp__screen_tie",
+    "station_pulp__screen_tie.001",
+    "station_pulp__screen_lift_handle",
+    "station_pulp__screen_tie.002",
+    "station_pulp__screen_tie.003",
+    "station_pulp__screen_lift_handle.001",
+    "station_dry__preview_A",
+    "station_dry__preview_A__fold",
+    "station_dry__preview_A__deckled_fibre_edge",
+    "station_dry__wet_drop",
+    "station_dry__wet_drop.001",
+    "station_dry__preview_B",
+    "station_dry__preview_B__fold",
+    "station_dry__preview_B__deckled_fibre_edge",
+    "station_dry__dry_corner_crease",
+    "station_print__print_block_base",
+    "station_print__print_block_paper_layer",
+    "station_print__print_block_paper_layer.001",
+    "station_print__print_ink_surface",
+    "station_print__block_border",
+    "station_print__block_outer_hairline",
+    "station_print__block_square_scroll",
+    "station_print__block_square_scroll.001",
+    "station_print__block_square_scroll.002",
+    "station_print__block_square_scroll.003",
+    "station_print__engraved_register",
+    "station_print__engraved_register.001",
+    "station_print__engraved_coin__outer",
+    "station_print__engraved_coin__square_hole",
+    "station_print__engraved_coin__outer.001",
+    "station_print__engraved_coin__square_hole.001",
+    "station_print__engraved_coin__outer.002",
+    "station_print__engraved_coin__square_hole.002",
+    "station_print__engraved_coin__outer.003",
+    "station_print__engraved_coin__square_hole.003",
+    "station_print__engraved_coin__outer.004",
+    "station_print__engraved_coin__square_hole.004",
+    "station_print__engraved_coin__outer.005",
+    "station_print__engraved_coin__square_hole.005",
+    "station_print__engraved_coin__outer.006",
+    "station_print__engraved_coin__square_hole.006",
+    "station_print__engraved_coin__outer.007",
+    "station_print__engraved_coin__square_hole.007",
+    "station_print__engraved_coin__outer.008",
+    "station_print__engraved_coin__square_hole.008",
+    "station_print__engraved_coin__outer.009",
+    "station_print__engraved_coin__square_hole.009",
+    "station_print__engraved_zhituan__face",
+    "station_print__engraved_zhituan__eye",
+    "station_print__engraved_zhituan__eye.001",
+    "station_print__engraved_zhituan__smile",
+    "station_print__engraved_zhituan__folded_hat",
+    "station_print__engraved_zhituan__hat_fold",
+    "station_print__engraved_yintao__face",
+    "station_print__engraved_yintao__eye",
+    "station_print__engraved_yintao__eye.001",
+    "station_print__engraved_yintao__smile",
+    "station_print__engraved_yintao__bun",
+    "station_print__engraved_yintao__bun.001",
+    "station_print__engraved_yintao__hair",
+    "station_print__engraved_rule",
+    "station_print__engraved_rule.001",
+    "station_print__engraved_rule.002",
+    "station_print__engraved_rule.003",
+    "station_print__engraved_rule.004",
+    "station_print__ink_dish_pivot",
+    "station_print__ink__hollow_bowl",
+    "station_print__ink__liquid",
+    "station_print__ink__rim",
+    "station_print__printing_brush_pivot",
+    "station_print__printing_brush_fan",
+    "station_print__brush_fibre",
+    "station_print__brush_fibre.001",
+    "station_print__brush_fibre.002",
+    "station_print__brush_fibre.003",
+    "station_print__brush_fibre.004",
+    "station_print__brush_fibre.005",
+    "station_print__brush_fibre.006",
+    "station_print__brush_fibre.007",
+    "station_print__brush_fibre.008",
+    "station_print__brush_binding",
+    "station_print__brush_bamboo_handle",
+    "station_print__brush_handle_node",
+    "station_stamp__sample_ticket",
+    "station_stamp__sample_ticket__fold",
+    "station_stamp__sample_ticket__deckled_fibre_edge",
+    "station_stamp__note_border",
+    "station_stamp__note_coin__outer",
+    "station_stamp__note_coin__square_hole",
+    "station_stamp__note_coin__outer.001",
+    "station_stamp__note_coin__square_hole.001",
+    "station_stamp__note_coin__outer.002",
+    "station_stamp__note_coin__square_hole.002",
+    "station_stamp__note_zhituan__face",
+    "station_stamp__note_zhituan__eye",
+    "station_stamp__note_zhituan__eye.001",
+    "station_stamp__note_zhituan__smile",
+    "station_stamp__note_zhituan__folded_hat",
+    "station_stamp__note_zhituan__hat_fold",
+    "station_stamp__note_yintao__face",
+    "station_stamp__note_yintao__eye",
+    "station_stamp__note_yintao__eye.001",
+    "station_stamp__note_yintao__smile",
+    "station_stamp__note_yintao__bun",
+    "station_stamp__note_yintao__bun.001",
+    "station_stamp__note_yintao__hair",
+    "station_stamp__note_script",
+    "station_stamp__note_script.001",
+    "station_stamp__note_script.002",
+    "station_stamp__note_script.003",
+    "station_stamp__note_redseal",
+    "station_stamp__seal_pivot",
+    "station_stamp__seal_body",
+    "station_stamp__seal_sole",
+    "station_stamp__seal_carved_shoulder",
+    "station_stamp__cloud_seal_button",
+    "station_stamp__button_carving",
+    "station_stamp__seal_front_frame",
+    "station_stamp__seal_square_scroll",
+    "station_stamp__seal_square_scroll.001",
+    "station_stamp__seal_shoulder_hairline",
+    "station_stamp__seal_silk_loop",
+    "station_stamp__inkpad_tray",
+    "station_stamp__red_inkpad",
+    "station_stamp__inkpad_scroll",
+    "station_stamp__inkpad_scroll.001",
+    "station_stamp__inkpad_scroll.002",
+    "station_stamp__inkpad_scroll.003",
+    "station_delivery__receipt_tag",
+    "station_delivery__receipt_text"
+  ],
+  "interfaces": {
+    "station_pulp__slot_0": [
+      1.0,
+      0.0,
+      0.0,
+      2.27,
+      0.0,
+      1.0,
+      0.0,
+      2.4000001,
+      0.0,
+      0.0,
+      1.0,
+      0.56,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_pulp__interaction_main": [
+      1.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      1.0,
+      0.0,
+      3.0500002,
+      0.0,
+      0.0,
+      1.0,
+      0.48,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_pulp__standing_main": [
+      1.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      1.0,
+      0.0,
+      3.4250002,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_dry__slot_A": [
+      1.0,
+      0.0,
+      0.0,
+      1.8,
+      0.0,
+      1.0,
+      0.0,
+      6.6149998,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_dry__interaction_A": [
+      1.0,
+      0.0,
+      0.0,
+      1.8,
+      0.0,
+      1.0,
+      0.0,
+      6.25,
+      0.0,
+      0.0,
+      1.0,
+      0.48,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_dry__standing_A": [
+      1.0,
+      0.0,
+      0.0,
+      1.8,
+      0.0,
+      1.0,
+      0.0,
+      5.875,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_dry__slot_B": [
+      1.0,
+      0.0,
+      0.0,
+      2.8,
+      0.0,
+      1.0,
+      0.0,
+      6.6149998,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_dry__interaction_B": [
+      1.0,
+      0.0,
+      0.0,
+      2.8,
+      0.0,
+      1.0,
+      0.0,
+      6.25,
+      0.0,
+      0.0,
+      1.0,
+      0.48,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_dry__standing_B": [
+      1.0,
+      0.0,
+      0.0,
+      2.8,
+      0.0,
+      1.0,
+      0.0,
+      5.875,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_print__slot_0": [
+      1.0,
+      0.0,
+      0.0,
+      7.8700004,
+      0.0,
+      1.0,
+      0.0,
+      6.1999998,
+      0.0,
+      0.0,
+      1.0,
+      0.725,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_print__interaction_main": [
+      1.0,
+      0.0,
+      0.0,
+      8.1000004,
+      0.0,
+      1.0,
+      0.0,
+      5.6499996,
+      0.0,
+      0.0,
+      1.0,
+      0.48,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_print__standing_main": [
+      1.0,
+      0.0,
+      0.0,
+      8.1000004,
+      0.0,
+      1.0,
+      0.0,
+      5.2749996,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_stamp__slot_0": [
+      1.0,
+      0.0,
+      0.0,
+      10.0900002,
+      0.0,
+      1.0,
+      0.0,
+      2.8,
+      0.0,
+      0.0,
+      1.0,
+      0.674,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_stamp__interaction_main": [
+      1.0,
+      0.0,
+      0.0,
+      10.3000002,
+      0.0,
+      1.0,
+      0.0,
+      3.3499999,
+      0.0,
+      0.0,
+      1.0,
+      0.48,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_stamp__standing_main": [
+      1.0,
+      0.0,
+      0.0,
+      10.3000002,
+      0.0,
+      1.0,
+      0.0,
+      3.7249999,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_delivery__receiving_slot": [
+      1.0,
+      0.0,
+      0.0,
+      10.4500008,
+      0.0,
+      1.0,
+      0.0,
+      7.5349998,
+      0.0,
+      0.0,
+      1.0,
+      0.7,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_delivery__interaction_main": [
+      1.0,
+      0.0,
+      0.0,
+      10.6000004,
+      0.0,
+      1.0,
+      0.0,
+      7.25,
+      0.0,
+      0.0,
+      1.0,
+      0.48,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_delivery__standing_main": [
+      1.0,
+      0.0,
+      0.0,
+      10.6000004,
+      0.0,
+      1.0,
+      0.0,
+      6.875,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_shared__slot_0": [
+      1.0,
+      0.0,
+      0.0,
+      7.8000002,
+      0.0,
+      1.0,
+      0.0,
+      1.2,
+      0.0,
+      0.0,
+      1.0,
+      0.662,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_shared__interaction_main": [
+      1.0,
+      0.0,
+      0.0,
+      7.8000002,
+      0.0,
+      1.0,
+      0.0,
+      1.75,
+      0.0,
+      0.0,
+      1.0,
+      0.48,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "station_shared__standing_main": [
+      1.0,
+      0.0,
+      0.0,
+      7.8000002,
+      0.0,
+      1.0,
+      0.0,
+      2.125,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "build_checks": [
+    {
+      "name": "all_21_station_interfaces_unchanged",
+      "pass": true
+    },
+    {
+      "name": "two_character_roots",
+      "pass": true
+    },
+    {
+      "name": "single_carried_item_each",
+      "pass": true
+    },
+    {
+      "name": "six_station_roots_preserved",
+      "pass": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "all_21_station_interfaces_unchanged",
+      "pass": true
+    },
+    {
+      "name": "two_character_roots",
+      "pass": true
+    },
+    {
+      "name": "single_carried_item_each",
+      "pass": true
+    },
+    {
+      "name": "six_station_roots_preserved",
+      "pass": true
+    },
+    {
+      "name": "saved_file_reopened",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "saved_21_interfaces_unchanged",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "metric_units",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "two_armatures",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "packed_file_images",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "zhituan_identity_scale",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "zhituan_five_game_actions",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "zhituan_one_sheet",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "zhituan_paper_tracks_hold_bone",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "zhituan_sampled_sheets_above_floor",
+      "detail": [
+        {
+          "clip": "CarryIdle",
+          "frame": 1,
+          "z": [
+            0.40239813923835754,
+            0.42539817094802856
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 9,
+          "z": [
+            0.4030598998069763,
+            0.42605993151664734
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 17,
+          "z": [
+            0.4046073853969574,
+            0.4276074171066284
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 25,
+          "z": [
+            0.40601620078086853,
+            0.42901623249053955
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 33,
+          "z": [
+            0.4063545763492584,
+            0.42935460805892944
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 41,
+          "z": [
+            0.4053982198238373,
+            0.4283982515335083
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 49,
+          "z": [
+            0.4037802517414093,
+            0.4267802834510803
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 57,
+          "z": [
+            0.4025711119174957,
+            0.42557114362716675
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 65,
+          "z": [
+            0.40239813923835754,
+            0.42539817094802856
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 1,
+          "z": [
+            0.40239813923835754,
+            0.42539817094802856
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 9,
+          "z": [
+            0.42155012488365173,
+            0.44455015659332275
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 17,
+          "z": [
+            0.4245826303958893,
+            0.4475826621055603
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 25,
+          "z": [
+            0.41378647089004517,
+            0.4367865025997162
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 33,
+          "z": [
+            0.4023981988430023,
+            0.42539823055267334
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 41,
+          "z": [
+            0.42155012488365173,
+            0.44455015659332275
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 49,
+          "z": [
+            0.4245826303958893,
+            0.4475826621055603
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 57,
+          "z": [
+            0.41378647089004517,
+            0.4367865025997162
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 65,
+          "z": [
+            0.40239813923835754,
+            0.42539817094802856
+          ],
+          "hold_bone_matrix_error": 4.76837158203125e-07
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "zhituan_sampled_sheets_in_low_carry_band",
+      "detail": "Art height envelope only, not a full triangle-intersection or face-occlusion test.",
+      "pass": true
+    },
+    {
+      "name": "yintao_identity_scale",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "yintao_five_game_actions",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "yintao_one_sheet",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "yintao_paper_tracks_hold_bone",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "yintao_sampled_sheets_above_floor",
+      "detail": [
+        {
+          "clip": "CarryIdle",
+          "frame": 1,
+          "z": [
+            0.40383896231651306,
+            0.4268389642238617
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 9,
+          "z": [
+            0.40450069308280945,
+            0.4275006949901581
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 17,
+          "z": [
+            0.40604808926582336,
+            0.429048091173172
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 25,
+          "z": [
+            0.40745699405670166,
+            0.4304569959640503
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 33,
+          "z": [
+            0.407795250415802,
+            0.43079525232315063
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 41,
+          "z": [
+            0.40683889389038086,
+            0.4298388957977295
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 49,
+          "z": [
+            0.4052208960056305,
+            0.4282208979129791
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 57,
+          "z": [
+            0.40401187539100647,
+            0.4270118772983551
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryIdle",
+          "frame": 65,
+          "z": [
+            0.40383899211883545,
+            0.4268389940261841
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 1,
+          "z": [
+            0.40383896231651306,
+            0.4268389642238617
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 9,
+          "z": [
+            0.42035409808158875,
+            0.4433540999889374
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 17,
+          "z": [
+            0.4252329170703888,
+            0.4482329189777374
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 25,
+          "z": [
+            0.4147668778896332,
+            0.4377668797969818
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 33,
+          "z": [
+            0.40383896231651306,
+            0.4268389642238617
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 41,
+          "z": [
+            0.42035409808158875,
+            0.4433540999889374
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 49,
+          "z": [
+            0.4252329170703888,
+            0.4482329189777374
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 57,
+          "z": [
+            0.4147668778896332,
+            0.4377668797969818
+          ],
+          "hold_bone_matrix_error": 0.0
+        },
+        {
+          "clip": "CarryWalk",
+          "frame": 65,
+          "z": [
+            0.40383899211883545,
+            0.4268389940261841
+          ],
+          "hold_bone_matrix_error": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "yintao_sampled_sheets_in_low_carry_band",
+      "detail": "Art height envelope only, not a full triangle-intersection or face-occlusion test.",
+      "pass": true
+    },
+    {
+      "name": "three_rendered_previews",
+      "detail": null,
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "unity_tested": false,
+  "scope": "Art assembly; displayed materials and carried sheets do not encode actual initial inventory.",
+  "texture_optimization": {
+    "before": 84,
+    "after": 37,
+    "byte_identical_remaps": [
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.002",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.003",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.004",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.005",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.006",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.007",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.008",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.009",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.010",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.011",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.012",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_Normal.013",
+        "retained": "TEX_JiaoziPaper_v05_Normal.001",
+        "sha256": "f936b1f00d161b165caca8c0d28072413673330e31c20854bfc5d7fdc0334004"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_paper_BaseColor.001",
+        "sha256": "222f13a5124bf059307f04fd9d0c2aea50bbae7591c7f823a92cf3d2a4c48295"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_paper_BaseColor.001",
+        "sha256": "222f13a5124bf059307f04fd9d0c2aea50bbae7591c7f823a92cf3d2a4c48295"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_BaseColor.004",
+        "retained": "TEX_JiaoziPaper_v05_paper_BaseColor.001",
+        "sha256": "222f13a5124bf059307f04fd9d0c2aea50bbae7591c7f823a92cf3d2a4c48295"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_BaseColor.005",
+        "retained": "TEX_JiaoziPaper_v05_paper_BaseColor.001",
+        "sha256": "222f13a5124bf059307f04fd9d0c2aea50bbae7591c7f823a92cf3d2a4c48295"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.004",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.005",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.006",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.007",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.008",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.009",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.010",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.011",
+        "retained": "TEX_JiaoziPaper_v05_paper_edge_BaseColor.001",
+        "sha256": "c79c1d1e347ce126bac2ea55721d26b4e2132d0de515fb9cfa1b1e76eb8a248d"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_red_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_red_BaseColor.001",
+        "sha256": "ed31595f84df9f253ed90cc5ffbdfb63317bdf52c7dd59bee858827b3ee87a2f"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_red_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_red_BaseColor.001",
+        "sha256": "ed31595f84df9f253ed90cc5ffbdfb63317bdf52c7dd59bee858827b3ee87a2f"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_teal_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_teal_BaseColor.001",
+        "sha256": "b03cb38d123d0c064bd2256bb01fab35e80da51464550b4b7f8b497222b35279"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_teal_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_teal_BaseColor.001",
+        "sha256": "b03cb38d123d0c064bd2256bb01fab35e80da51464550b4b7f8b497222b35279"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_teal_BaseColor.004",
+        "retained": "TEX_JiaoziPaper_v05_teal_BaseColor.001",
+        "sha256": "b03cb38d123d0c064bd2256bb01fab35e80da51464550b4b7f8b497222b35279"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_teal_BaseColor.005",
+        "retained": "TEX_JiaoziPaper_v05_teal_BaseColor.001",
+        "sha256": "b03cb38d123d0c064bd2256bb01fab35e80da51464550b4b7f8b497222b35279"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_teal_BaseColor.006",
+        "retained": "TEX_JiaoziPaper_v05_teal_BaseColor.001",
+        "sha256": "b03cb38d123d0c064bd2256bb01fab35e80da51464550b4b7f8b497222b35279"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_teal_BaseColor.007",
+        "retained": "TEX_JiaoziPaper_v05_teal_BaseColor.001",
+        "sha256": "b03cb38d123d0c064bd2256bb01fab35e80da51464550b4b7f8b497222b35279"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wet_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_wet_BaseColor.001",
+        "sha256": "728aea469977098609f82e84ab01786d84933163bada20be2774b2b2f82bf592"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_wood_BaseColor.001",
+        "sha256": "f833fc2aac22a985ca08b3cd0058696b71980be904e4367d22a7057b94bc84a8"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_dark_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_wood_dark_BaseColor.001",
+        "sha256": "3f50aa5a10e373503d1d4026d4201ae7264b8ac5a072839197b5f04309e6d25a"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_dark_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_wood_dark_BaseColor.001",
+        "sha256": "3f50aa5a10e373503d1d4026d4201ae7264b8ac5a072839197b5f04309e6d25a"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_light_BaseColor.002",
+        "retained": "TEX_JiaoziPaper_v05_wood_light_BaseColor.001",
+        "sha256": "20d6acd59717918290e2c04146751a807b94979c4beb6331a52577fc71aebbf4"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_light_BaseColor.003",
+        "retained": "TEX_JiaoziPaper_v05_wood_light_BaseColor.001",
+        "sha256": "20d6acd59717918290e2c04146751a807b94979c4beb6331a52577fc71aebbf4"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_light_BaseColor.004",
+        "retained": "TEX_JiaoziPaper_v05_wood_light_BaseColor.001",
+        "sha256": "20d6acd59717918290e2c04146751a807b94979c4beb6331a52577fc71aebbf4"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_light_BaseColor.005",
+        "retained": "TEX_JiaoziPaper_v05_wood_light_BaseColor.001",
+        "sha256": "20d6acd59717918290e2c04146751a807b94979c4beb6331a52577fc71aebbf4"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_light_BaseColor.006",
+        "retained": "TEX_JiaoziPaper_v05_wood_light_BaseColor.001",
+        "sha256": "20d6acd59717918290e2c04146751a807b94979c4beb6331a52577fc71aebbf4"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_light_BaseColor.007",
+        "retained": "TEX_JiaoziPaper_v05_wood_light_BaseColor.001",
+        "sha256": "20d6acd59717918290e2c04146751a807b94979c4beb6331a52577fc71aebbf4"
+      },
+      {
+        "duplicate": "TEX_JiaoziPaper_v05_wood_light_BaseColor.008",
+        "retained": "TEX_JiaoziPaper_v05_wood_light_BaseColor.001",
+        "sha256": "20d6acd59717918290e2c04146751a807b94979c4beb6331a52577fc71aebbf4"
+      },
+      {
+        "duplicate": "首款组合交子_原图副本_v01_20261111.001",
+        "retained": "首款组合交子_原图副本_v01_20261111",
+        "sha256": "d456659f9d62fbe27f01efd6def017c7ca5fc318dfcfa46ee17c86939154e1c2"
+      },
+      {
+        "duplicate": "首款组合交子_原图副本_v01_20261111.002",
+        "retained": "首款组合交子_原图副本_v01_20261111",
+        "sha256": "d456659f9d62fbe27f01efd6def017c7ca5fc318dfcfa46ee17c86939154e1c2"
+      }
+    ]
+  },
+  "blend": "01_游戏开发\\Models\\首关整合_v01_20261111\\首关_角色道具整合_v01_20261111.blend",
+  "blend_sha256": "ce426ab659db9495e901e0df6e19d3c20058968a065b3163611ed4b58bbfa790",
+  "reopen_measurements": [
+    {
+      "character": "zhituan",
+      "root_world": [
+        4.400000095367432,
+        4.199999809265137,
+        0.0
+      ],
+      "carried_bounds": [
+        [
+          4.190000534057617,
+          4.6100006103515625
+        ],
+        [
+          3.4449996948242188,
+          4.044999599456787
+        ],
+        [
+          0.40239813923835754,
+          0.42539817094802856
+        ]
+      ],
+      "hold_world": [
+        4.40000057220459,
+        3.744999647140503,
+        0.40239816904067993
+      ]
+    },
+    {
+      "character": "yintao",
+      "root_world": [
+        6.0,
+        4.199999809265137,
+        0.0
+      ],
+      "carried_bounds": [
+        [
+          5.789999961853027,
+          6.210000038146973
+        ],
+        [
+          3.4449996948242188,
+          4.044999599456787
+        ],
+        [
+          0.40383896231651306,
+          0.4268389642238617
+        ]
+      ],
+      "hold_world": [
+        6.0,
+        3.744999647140503,
+        0.40383896231651306
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "file": "预览_双人单张持物_v01_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "789c7240548a6f9f7dcc9b0236b17b3f68c6bb8b85e1f9a576561257636cad9a"
+    },
+    {
+      "file": "预览_工位道具整合_v01_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "173c0c572f8a0024933fb1867dfe96716e4fc50b60c6d6fbc7d4b6990e5fb1e1"
+    },
+    {
+      "file": "预览_首关双人整合_v01_20261111.png",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "0de167677c8a815e03f97eb2da20f4442af9be448990c9ce81d878ddeca623cf"
+    }
+  ]
+}

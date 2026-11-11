@@ -1,0 +1,1331 @@
+{
+  "version": "v01_20261111",
+  "blender": "5.3.0",
+  "method": "Fresh Blender scene, actual glTF import for each individual GLB; measured vertices and helpers",
+  "checks": [
+    {
+      "asset_id": "paper_wet",
+      "glb_bytes": 3052648,
+      "embedded_images": 4,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 3,
+            "negative_volume": []
+          }
+        },
+        "paper_xy_size": {
+          "pass": true,
+          "detail": null
+        },
+        "one_sheet_body": {
+          "pass": true,
+          "detail": null
+        },
+        "red_layer_rule": {
+          "pass": true,
+          "detail": 0
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      }
+    },
+    {
+      "asset_id": "paper_dry",
+      "glb_bytes": 3094328,
+      "embedded_images": 3,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 3,
+            "negative_volume": []
+          }
+        },
+        "paper_xy_size": {
+          "pass": true,
+          "detail": null
+        },
+        "one_sheet_body": {
+          "pass": true,
+          "detail": null
+        },
+        "red_layer_rule": {
+          "pass": true,
+          "detail": 0
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      }
+    },
+    {
+      "asset_id": "paper_black",
+      "glb_bytes": 6594496,
+      "embedded_images": 4,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 3,
+            "negative_volume": []
+          }
+        },
+        "paper_xy_size": {
+          "pass": true,
+          "detail": null
+        },
+        "one_sheet_body": {
+          "pass": true,
+          "detail": null
+        },
+        "red_layer_rule": {
+          "pass": true,
+          "detail": 0
+        },
+        "formal_first_pair_art": {
+          "pass": true,
+          "detail": null
+        },
+        "black_ink_omits_both_red_regions": {
+          "pass": true,
+          "detail": 2.425319209353738e-09
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      }
+    },
+    {
+      "asset_id": "paper_red",
+      "glb_bytes": 6595776,
+      "embedded_images": 4,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 3,
+            "negative_volume": []
+          }
+        },
+        "paper_xy_size": {
+          "pass": true,
+          "detail": null
+        },
+        "one_sheet_body": {
+          "pass": true,
+          "detail": null
+        },
+        "red_layer_rule": {
+          "pass": true,
+          "detail": 1
+        },
+        "formal_first_pair_art": {
+          "pass": true,
+          "detail": null
+        },
+        "black_ink_omits_both_red_regions": {
+          "pass": true,
+          "detail": 2.425319209353738e-09
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.20999999344348907,
+          -0.30000001192092896,
+          0.0
+        ],
+        "max": [
+          0.20999999344348907,
+          0.30000001192092896,
+          0.023000000044703484
+        ],
+        "size": [
+          0.41999998688697815,
+          0.6000000238418579,
+          0.023000000044703484
+        ]
+      }
+    },
+    {
+      "asset_id": "tool_papermaking_screen",
+      "glb_bytes": 3858572,
+      "embedded_images": 5,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 28,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.25999999046325684,
+          -0.3500000238418579,
+          0.0
+        ],
+        "max": [
+          0.25999999046325684,
+          0.3500000238418579,
+          0.09114514291286469
+        ],
+        "size": [
+          0.5199999809265137,
+          0.7000000476837158,
+          0.09114514291286469
+        ]
+      }
+    },
+    {
+      "asset_id": "tool_print_brush",
+      "glb_bytes": 3794336,
+      "embedded_images": 5,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 1.4901161193847656e-08
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 15,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.13500000536441803,
+          -0.11500000208616257,
+          0.0
+        ],
+        "max": [
+          0.13500000536441803,
+          0.2200000137090683,
+          0.07400000840425491
+        ],
+        "size": [
+          0.27000001072883606,
+          0.33500001579523087,
+          0.07400000840425491
+        ]
+      }
+    },
+    {
+      "asset_id": "tool_ink_dish",
+      "glb_bytes": 2782888,
+      "embedded_images": 3,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 3,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.12999999523162842,
+          -0.12999999523162842,
+          0.0
+        ],
+        "max": [
+          0.12999999523162842,
+          0.12999999523162842,
+          0.052000001072883606
+        ],
+        "size": [
+          0.25999999046325684,
+          0.25999999046325684,
+          0.052000001072883606
+        ]
+      }
+    },
+    {
+      "asset_id": "tool_rubbing_pad",
+      "glb_bytes": 4293676,
+      "embedded_images": 5,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 16,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.11599999666213989,
+          -0.11599999666213989,
+          0.0
+        ],
+        "max": [
+          0.11599999666213989,
+          0.11599999666213989,
+          0.16249999403953552
+        ],
+        "size": [
+          0.23199999332427979,
+          0.23199999332427979,
+          0.16249999403953552
+        ]
+      }
+    },
+    {
+      "asset_id": "tool_stamp",
+      "glb_bytes": 4010716,
+      "embedded_images": 6,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 9,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.11749999970197678,
+          -0.11749999970197678,
+          0.0
+        ],
+        "max": [
+          0.11749999970197678,
+          0.11749999970197678,
+          0.28999999165534973
+        ],
+        "size": [
+          0.23499999940395355,
+          0.23499999940395355,
+          0.28999999165534973
+        ]
+      }
+    },
+    {
+      "asset_id": "tool_ink_pad",
+      "glb_bytes": 2512212,
+      "embedded_images": 4,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 3,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.14499999582767487,
+          -0.12999999523162842,
+          0.0
+        ],
+        "max": [
+          0.14499999582767487,
+          0.12999999523162842,
+          0.06000000238418579
+        ],
+        "size": [
+          0.28999999165534973,
+          0.25999999046325684,
+          0.06000000238418579
+        ]
+      }
+    },
+    {
+      "asset_id": "tool_print_block",
+      "glb_bytes": 6623504,
+      "embedded_images": 5,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 7,
+            "negative_volume": []
+          }
+        },
+        "formal_first_pair_art": {
+          "pass": true,
+          "detail": null
+        },
+        "black_ink_omits_both_red_regions": {
+          "pass": true,
+          "detail": 2.425319209353738e-09
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.2549999952316284,
+          -0.3449999988079071,
+          0.0
+        ],
+        "max": [
+          0.2549999952316284,
+          0.3449999988079071,
+          0.07519999891519547
+        ],
+        "size": [
+          0.5099999904632568,
+          0.6899999976158142,
+          0.07519999891519547
+        ]
+      }
+    },
+    {
+      "asset_id": "woodcut_zhituan",
+      "glb_bytes": 5565780,
+      "embedded_images": 4,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 2,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.08500000089406967,
+          -0.08500000089406967,
+          0.0
+        ],
+        "max": [
+          0.08500000089406967,
+          0.08500000089406967,
+          0.024000000208616257
+        ],
+        "size": [
+          0.17000000178813934,
+          0.17000000178813934,
+          0.024000000208616257
+        ]
+      }
+    },
+    {
+      "asset_id": "woodcut_yintao",
+      "glb_bytes": 5565768,
+      "embedded_images": 4,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 2,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.08500000089406967,
+          -0.08500000089406967,
+          0.0
+        ],
+        "max": [
+          0.08500000089406967,
+          0.08500000089406967,
+          0.024000000208616257
+        ],
+        "size": [
+          0.17000000178813934,
+          0.17000000178813934,
+          0.024000000208616257
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_red_seal",
+      "glb_bytes": 3498444,
+      "embedded_images": 1,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 0,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.1676953136920929,
+          -0.26402342319488525,
+          0.0
+        ],
+        "max": [
+          0.1567968726158142,
+          0.11707030981779099,
+          0.0
+        ],
+        "size": [
+          0.3244921863079071,
+          0.38109373301267624,
+          0.0
+        ]
+      }
+    },
+    {
+      "asset_id": "marker_delivery_receipt",
+      "glb_bytes": 3687720,
+      "embedded_images": 5,
+      "checks": {
+        "self_contained_images": {
+          "pass": true,
+          "detail": null
+        },
+        "sha256_matches": {
+          "pass": true,
+          "detail": null
+        },
+        "one_asset_root": {
+          "pass": true,
+          "detail": null
+        },
+        "roundtrip_bounds": {
+          "pass": true,
+          "detail": 0.0
+        },
+        "asset_origin": {
+          "pass": true,
+          "detail": null
+        },
+        "placement_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "grip_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "attach_anchor": {
+          "pass": true,
+          "detail": null
+        },
+        "all_anchor_positions": {
+          "pass": true,
+          "detail": []
+        },
+        "carry_rule": {
+          "pass": true,
+          "detail": null
+        },
+        "finite_vertices": {
+          "pass": true,
+          "detail": null
+        },
+        "mesh_uvs": {
+          "pass": true,
+          "detail": null
+        },
+        "material_assignments": {
+          "pass": true,
+          "detail": null
+        },
+        "closed_mesh_outward_normals": {
+          "pass": true,
+          "detail": {
+            "closed_meshes": 4,
+            "negative_volume": []
+          }
+        }
+      },
+      "measured_bounds_m": {
+        "min": [
+          -0.08500000089406967,
+          -0.06499999761581421,
+          0.0
+        ],
+        "max": [
+          0.08500000089406967,
+          0.06499999761581421,
+          0.27000001072883606
+        ],
+        "size": [
+          0.17000000178813934,
+          0.12999999523162842,
+          0.27000001072883606
+        ]
+      }
+    }
+  ],
+  "failures": [],
+  "unity_runtime_tested": false,
+  "live_character_hand_test": "parent integration task; not certified by this asset validation",
+  "four_states_share_body_geometry": true,
+  "asset_count": 15,
+  "all_passed": true,
+  "check_count": 229
+}

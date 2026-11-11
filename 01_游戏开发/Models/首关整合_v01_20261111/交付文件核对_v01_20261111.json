@@ -1,0 +1,100 @@
+{
+  "version": "v01_20261111",
+  "reports": {
+    "characters": {
+      "file": "01_游戏开发\\Models\\首批角色_v01_20261111\\角色复导核验_v01_20261111.json",
+      "total": 138,
+      "all_passed": true
+    },
+    "props": {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\道具实测验证_v01_20261111.json",
+      "total": 229,
+      "all_passed": true
+    },
+    "assembly": {
+      "file": "01_游戏开发\\Models\\首关整合_v01_20261111\\整合核验_v01_20261111.json",
+      "total": 22,
+      "all_passed": true
+    }
+  },
+  "local_link_count": 207,
+  "missing_links": [],
+  "hash_checks": [
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Models\\首关整合_v01_20261111\\首关_角色道具整合_v01_20261111.blend",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关场景_v05_20261111\\首关_开张第一单_v05_20261111.blend",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首批角色_v01_20261111\\角色_纸团_整合_v01_20261111.blend",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首批角色_v01_20261111\\角色_印桃_整合_v01_20261111.blend",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_papermaking_screen.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_print_block.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_print_brush.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_ink_dish.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_rubbing_pad.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_stamp.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\tool_ink_pad.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\marker_delivery_receipt.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\paper_wet.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\paper_dry.glb",
+      "matches": true
+    },
+    {
+      "file": "01_游戏开发\\Models\\首关道具_v01_20261111\\GLB\\paper_red.glb",
+      "matches": true
+    },
+    {
+      "file": "预览_双人单张持物_v01_20261111.png",
+      "matches": true
+    },
+    {
+      "file": "预览_工位道具整合_v01_20261111.png",
+      "matches": true
+    },
+    {
+      "file": "预览_首关双人整合_v01_20261111.png",
+      "matches": true
+    }
+  ],
+  "preview_count": 9,
+  "asset_check_total": 389,
+  "unity_tested": false,
+  "all_passed": true
+}

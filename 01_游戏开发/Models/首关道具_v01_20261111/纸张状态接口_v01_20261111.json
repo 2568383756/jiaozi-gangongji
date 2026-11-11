@@ -1,0 +1,70 @@
+{
+  "version": "v01_20261111",
+  "pair_key_rule": "lexical sort stable IDs then join with |; map to code repository if it differs",
+  "pair_key": "yintao|zhituan",
+  "states": [
+    "wet",
+    "dry",
+    "black",
+    "red"
+  ],
+  "states_to_asset": {
+    "wet": "paper_wet",
+    "dry": "paper_dry",
+    "black": "paper_black",
+    "red": "paper_red"
+  },
+  "ownership": "one player hand OR one station slot OR consumed; exactly one item",
+  "replace_visual": "replace the state root, preserve gameplay paper ID, owner and pair key",
+  "optional_red_layer": "keep paper_black and add layer_red_seal at (0,0,.0073) once instead of replacing with paper_red; never both",
+  "attach_to_HoldPoint": "asset.attach_pivot=(0,0,0); character HoldPoint is already at paper centre",
+  "attach_to_PalmCenter": "先校准掌面 contact 坐标系（骨中心不是表面），再 asset_world = calibrated_palm_contact_world @ inverse(grip_local)。不能直接使用骨中心 PalmCenter_world 宣称与 HoldPoint 零偏移挂接等价。主方案优先使用已经校准的 HoldPoint。",
+  "physical_grip_local_m": [
+    0,
+    0.21,
+    0.006
+  ],
+  "palm_contacts_local_m": [
+    [
+      -0.19,
+      0.21,
+      0.006
+    ],
+    [
+      0.19,
+      0.21,
+      0.006
+    ]
+  ],
+  "table_place": "match placement_pivot with station paper anchor",
+  "rack_place": "rotate X +90 degrees, then align paper centre root to slot A/B centre; +Z paper normal becomes -Y",
+  "fixed_tools": "inventory_units=0, carryable=false; only animation_pivot/contact_point are driven by station animation",
+  "work_events": "rule success drives visuals; models never award score, consume paper or add workflow steps",
+  "coordinates": "Blender XY plane Z up -> glTF X,Z,-Y (Y up); target Unity importer still needs live verification",
+  "current_two_character_calibration": {
+    "character_height_m": 1.2,
+    "palm_span_m": 0.38,
+    "PalmCenter_approx_m": [
+      0,
+      -0.245,
+      0.378
+    ],
+    "HoldPoint_approx_m": [
+      0,
+      -0.455,
+      0.403
+    ],
+    "source": "角色代理本轮实测，角色包与主整合场景负责最终持纸画面核验",
+    "contact_offset_from_PalmCenter_m": [
+      0,
+      0,
+      0.031
+    ],
+    "HoldPoint_offset_from_PalmCenter_m": [
+      0,
+      -0.21,
+      0.025
+    ]
+  },
+  "palm_surface_calibration": "本轮局部坐标约定下：calibrated_palm_contact_world = PalmCenter_world @ Translation(0,0,0.031)。再乘 inverse(grip_local)，得到相对 PalmCenter 的 Translation(0,-0.21,0.025)，与当前 HoldPoint 严格等价；不能重复叠加 HoldPoint 偏移。"
+}

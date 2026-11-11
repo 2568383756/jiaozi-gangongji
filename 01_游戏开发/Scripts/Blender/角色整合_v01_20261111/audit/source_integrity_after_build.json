@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\卡通人物_已绑骨.blend",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\卡通人物_已绑骨_优化.blend",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\卡通人物_搬运走路.blend",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\红衣卡通女孩_已绑骨.blend",
+      "sha256_unchanged": true
+    },
+    {
+      "file": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Imports\\角色源仓_20261111\\source_checkout\\deliverables\\红衣卡通女孩_搬运走路.blend",
+      "sha256_unchanged": true
+    }
+  ],
+  "all_passed": true
+}

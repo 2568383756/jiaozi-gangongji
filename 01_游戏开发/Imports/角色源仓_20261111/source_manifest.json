@@ -1,0 +1,63 @@
+{
+  "repository": "https://github.com/2568383756/cartoon-character-assets",
+  "source_commit": "86562a37fb6cf75f0ea41419b072b4129f207538",
+  "imported_on": "2026-11-11",
+  "source_files_preserved": true,
+  "checkout_ignored": true,
+  "selected_sources": [
+    "deliverables/卡通人物_搬运走路.blend",
+    "deliverables/红衣卡通女孩_搬运走路.blend"
+  ],
+  "files": [
+    {
+      "path": "deliverables/红衣卡通女孩_搬运走路.blend",
+      "bytes": 3348967,
+      "sha256": "ff6166e81fe08e8e7ea20e0ee745735917b2cb8bd5da720919f1daccd2e278b5"
+    },
+    {
+      "path": "deliverables/红衣卡通女孩_搬运走路.glb",
+      "bytes": 3550984,
+      "sha256": "f2b16d5af4557f69a162bf6f6f1acec0bfcbdbb00cc185af0928db358b90256a"
+    },
+    {
+      "path": "deliverables/红衣卡通女孩_已绑骨.blend",
+      "bytes": 3317375,
+      "sha256": "b660fad38cd426c9abe1bc3308d8126bbe00d5b75089f8523f8a2802b135972d"
+    },
+    {
+      "path": "deliverables/红衣卡通女孩_已绑骨.glb",
+      "bytes": 3516804,
+      "sha256": "5e481896c0034968bad46bbd11e0fdf33b442eed18a71e307ac848206b6d8c82"
+    },
+    {
+      "path": "deliverables/卡通人物_搬运走路.blend",
+      "bytes": 3722919,
+      "sha256": "02e893d27fd748293bb0b0d81ac806bf3775c6bb54a276fa5f75c9ebe5028db5"
+    },
+    {
+      "path": "deliverables/卡通人物_搬运走路.glb",
+      "bytes": 3825620,
+      "sha256": "4b03f7254953b96408f341af8a251ad90250108bf573043e759725ebe5a81e74"
+    },
+    {
+      "path": "deliverables/卡通人物_已绑骨_优化.blend",
+      "bytes": 3695357,
+      "sha256": "a08da0f2cd5f4449b5acdb176c0752ff9a5fe27b909da901f317752b15b822b4"
+    },
+    {
+      "path": "deliverables/卡通人物_已绑骨_优化.glb",
+      "bytes": 3793072,
+      "sha256": "014903fd81ce3635db4c39c6a72ebfa76487089662936604c3557c38ec1a25d3"
+    },
+    {
+      "path": "deliverables/卡通人物_已绑骨.blend",
+      "bytes": 3678506,
+      "sha256": "8c3d90ced24c55da7374c95ea3bd51fd1c876ae062c1e3b255efcf8ecd55e606"
+    },
+    {
+      "path": "deliverables/卡通人物_已绑骨.glb",
+      "bytes": 3760208,
+      "sha256": "0ac739bdf0c44ce28a44e3e2e05bed62d58317bcd2a529e2c0ff82dff2828500"
+    }
+  ]
+}
