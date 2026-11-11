@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>交子赶工记 · 翻页机关书 v05</title>
+<style>
+/* ── 色彩令牌 ───────────────────────────────────────── */
+:root{
+  --paper:#fdf4e3;--paper2:#f5e6c8;--paper3:#ecdbb5;
+  --ink:#3d2b1a;--ink2:#6b4c30;--muted:#9a7a56;
+  --red:#b03a2b;--gold:#a0722a;--jade:#3a7a6a;
+  --spine:#7a4f2a;--edge:#c9a86c;
+  --ch1:#8b6914;--ch2:#7a3a1a;--ch3:#2a5a4a;
+  --ch4:#5a3a7a;--ch5:#3a5a7a;--ch6:#8b2a2a;
+  --serif:"STSong","Songti SC","SimSun",serif;
+  --sans:"Microsoft YaHei","PingFang SC",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:radial-gradient(ellipse 80% 60% at 50% 30%,#e8d8b0 0,#c9a86c 60%,#8b6914 100%);
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  justify-content:flex-start;padding:28px 16px 48px;font-family:var(--sans);
+  overflow-x:hidden;
+}
+
+/* ── 顶部标题栏 ─────────────────────────────────────── */
+.header{
+  display:flex;align-items:center;gap:14px;margin-bottom:24px;
+  color:var(--ink);text-align:center;
+}
+.seal{
+  width:46px;height:56px;border:2px solid var(--red);background:var(--paper);
+  display:grid;place-content:center;font:18px/1 var(--serif);
+  writing-mode:vertical-rl;letter-spacing:3px;color:var(--red);
+  box-shadow:2px 2px 0 rgba(0,0,0,.18);
+}
+.title-block strong{display:block;font:28px/1.2 var(--serif);letter-spacing:.18em;color:var(--ink)}
+.title-block small{font:11px/2 var(--serif);color:var(--muted);letter-spacing:.3em}
+
+/* ── 书体容器 ───────────────────────────────────────── */
+.book-wrap{
+  position:relative;
+  perspective:1600px;
+  width:min(900px,96vw);
+  margin:0 auto;
+}
+
+/* 书本主体 */
+.book{
+  position:relative;
+  width:100%;
+  padding-bottom:66%;   /* 3:2 比例双页 */
+  transform-style:preserve-3d;
+  filter:drop-shadow(0 18px 40px rgba(60,30,10,.35));
+}
+
+/* 封面/封底（书体厚度感） */
+.book-cover{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,#4a2e10 0,#2a1a08 100%);
+  border-radius:4px 10px 10px 4px;
+  box-shadow:inset -4px 0 8px rgba(0,0,0,.4);
+}
+.book-cover::before{ /* 书脊左侧浮雕 */
+  content:"";position:absolute;left:0;top:0;bottom:0;width:38px;
+  background:linear-gradient(90deg,#6b3c10,#3d2008 60%,#1a0d04);
+  border-radius:4px 0 0 4px;
+  box-shadow:inset -3px 0 6px rgba(0,0,0,.5),2px 0 4px rgba(0,0,0,.3);
+}
+.book-cover::after{ /* 书脊文字区 */
+  content:"交子赶工记";
+  position:absolute;left:0;top:50%;transform:translateY(-50%) rotate(180deg);
+  width:38px;writing-mode:vertical-rl;letter-spacing:4px;
+  font:13px/38px var(--serif);color:#d4a856;text-align:center;
+}
+
+/* 页叠厚度（右侧可见的页边） */
+.page-stack{
+  position:absolute;right:-8px;top:4px;bottom:4px;width:10px;
+  background:repeating-linear-gradient(
+    90deg,
+    #f0deb5 0px,#f0deb5 1.2px,
+    #d4b880 1.2px,#d4b880 2px
+  );
+  border-radius:0 2px 2px 0;
+  box-shadow:2px 0 6px rgba(0,0,0,.2);
+}
+
+/* 双页区域 */
+.spread{
+  position:absolute;
+  left:38px;right:0;top:0;bottom:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  overflow:hidden;
+  border-radius:0 8px 8px 0;
+}
+
+/* 左页 */
+.page-left{
+  position:relative;
+  background:var(--paper);
+  border-right:2px solid rgba(100,60,20,.15);
+  overflow:hidden;
+}
+/* 中缝阴影 */
+.page-left::after{
+  content:"";position:absolute;right:0;top:0;bottom:0;width:16px;
+  background:linear-gradient(90deg,transparent,rgba(80,40,10,.12));
+  pointer-events:none;z-index:10;
+}
+
+/* 右页 */
+.page-right{
+  position:relative;
+  background:var(--paper2);
+  overflow:visible; /* 允许纸签溢出 */
+}
+/* 中缝阴影（右页左边） */
+.page-right::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:16px;
+  background:linear-gradient(90deg,rgba(80,40,10,.12),transparent);
+  pointer-events:none;z-index:10;
+}
+
+/* 页码 */
+.page-num{
+  position:absolute;bottom:10px;font:10px/1 var(--serif);
+  color:var(--muted);letter-spacing:.2em;
+}
+.page-left .page-num{right:14px}
+.page-right .page-num{left:14px}
+
+/* 折痕线 */
+.crease{
+  position:absolute;pointer-events:none;
+  background:rgba(120,70,20,.08);
+}
+
+/* ── 章节切换器（封面下方） ───────────────────────────── */
+.chapters{
+  display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;justify-content:center;
+}
+.ch-btn{
+  padding:7px 14px;border:1px solid rgba(160,100,40,.4);
+  background:rgba(255,250,235,.55);cursor:pointer;
+  font:12px/1.5 var(--serif);letter-spacing:.18em;color:var(--ink2);
+  transition:background .2s,border-color .2s,transform .15s;
+  border-radius:1px;
+  box-shadow:0 2px 4px rgba(0,0,0,.12),inset 0 -1px 0 rgba(160,100,40,.2);
+}
+.ch-btn:hover{background:#f0dfa8;border-color:var(--gold);transform:translateY(-1px)}
+.ch-btn.active{background:#edd27a;border-color:var(--gold);color:var(--ink);
+  box-shadow:0 2px 8px rgba(160,100,40,.3),inset 0 -1px 0 rgba(140,80,20,.3)}
+.ch-btn .num{color:var(--gold);font-size:10px;margin-right:4px}
+
+/* ── 纸签（Pull Tab） ────────────────────────────────── */
+.pull-tab{
+  position:absolute;
+  right:-18px; /* 初始露出约 40px，让用户能看见纸签 */
+  top:50%;
+  transform:translateY(-50%);
+  width:70px;height:46px;
+  cursor:grab;
+  z-index:20;
+  user-select:none;
+  touch-action:none;
+  transition:right .05s linear;
+  animation:tab-pulse 2.2s ease-in-out 1.2s 3; /* 入场后脉冲提示 */
+}
+.pull-tab.dragging{transition:none;cursor:grabbing;animation:none}
+.pull-tab.triggered{transition:right .3s cubic-bezier(.25,1.4,.5,1);animation:none}
+@keyframes tab-pulse{
+  0%,100%{transform:translateY(-50%) translateX(0)}
+  40%{transform:translateY(-50%) translateX(-10px)}
+  60%{transform:translateY(-50%) translateX(-6px)}
+}
+
+/* 纸签形体 */
+.pull-tab .tab-body{
+  position:absolute;right:0;top:0;width:100%;height:100%;
+  display:flex;align-items:center;justify-content:flex-end;padding-right:6px;
+}
+.pull-tab .tab-shape{
+  width:62px;height:40px;
+  border-radius:4px 20px 20px 4px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:2px 2px 6px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.25);
+  position:relative;overflow:hidden;
+}
+/* 纸签上的刻线纹理 */
+.pull-tab .tab-shape::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(
+    135deg,transparent,transparent 4px,rgba(255,255,255,.07) 4px,rgba(255,255,255,.07) 5px
+  );
+}
+.pull-tab .tab-label{
+  font:11px/1 var(--serif);letter-spacing:.15em;
+  color:rgba(255,255,255,.92);text-shadow:0 1px 2px rgba(0,0,0,.3);
+  writing-mode:horizontal-tb;position:relative;z-index:1;
+}
+/* 纸签左侧连接条（进入页面内的"纸舌"） */
+.pull-tab .tab-tongue{
+  position:absolute;right:58px;top:50%;transform:translateY(-50%);
+  height:14px;width:60px;
+  background:inherit;
+  opacity:.7;
+}
+
+/* 拉签箭头 */
+.pull-tab .arrow{
+  position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  width:0;height:0;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-right:7px solid rgba(255,255,255,.7);
+  transition:transform .2s;
+}
+.pull-tab.triggered .arrow{transform:translateY(-50%) scaleX(-1)}
+
+/* ── 页内场景层 ──────────────────────────────────────── */
+.scene{
+  position:absolute;inset:0;overflow:hidden;
+}
+
+/* 通用图片件 */
+.sc-img{
+  position:absolute;
+  image-rendering:crisp-edges;
+  transition:transform .6s cubic-bezier(.25,1,.5,1),opacity .5s ease;
+}
+
+/* 文字标注 */
+.sc-text{
+  position:absolute;
+  font-family:var(--serif);
+  color:var(--ink);
+  line-height:1.65;
+  letter-spacing:.12em;
+}
+.sc-label{
+  position:absolute;
+  font:11px/1.6 var(--serif);
+  color:var(--muted);
+  letter-spacing:.15em;
+  border-left:2px solid var(--gold);
+  padding-left:6px;
+}
+
+/* 字幕区域 */
+.caption-box{
+  position:absolute;bottom:28px;left:14px;right:14px;
+  padding:10px 14px;
+  background:rgba(253,244,227,.88);
+  border:1px solid rgba(160,110,40,.25);
+  border-radius:1px;
+  font:13px/1.8 var(--serif);
+  color:var(--ink);
+  letter-spacing:.1em;
+  backdrop-filter:blur(2px);
+  transition:opacity .4s ease;
+  box-shadow:0 2px 8px rgba(80,40,10,.1);
+}
+.caption-box::before{
+  content:attr(data-ch);
+  display:block;font-size:10px;color:var(--gold);
+  letter-spacing:.3em;margin-bottom:4px;
+}
+
+/* 页题印章 */
+.page-title{
+  position:absolute;top:12px;left:50%;transform:translateX(-50%);
+  font:16px/1 var(--serif);letter-spacing:.35em;color:var(--red);
+  padding:4px 10px;border:1px solid var(--red);
+  background:rgba(255,250,240,.6);
+  white-space:nowrap;
+}
+
+/* ── 章节特定元素 ────────────────────────────────────── */
+
+/* 铁钱圆形 */
+.coin{
+  position:absolute;
+  width:36px;height:36px;border-radius:50%;
+  background:radial-gradient(circle,#6b6b6b,#3d3d3d);
+  border:3px solid #888;
+  display:flex;align-items:center;justify-content:center;
+  font:9px/1 var(--serif);color:#ccc;letter-spacing:.05em;
+  box-shadow:1px 2px 4px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.1);
+  transition:transform .5s cubic-bezier(.25,1,.5,1);
+}
+.coin::after{
+  content:"";position:absolute;width:10px;height:10px;border-radius:50%;
+  background:#2a2a2a;border:1px solid #555;
+}
+
+/* 钱串 */
+.coin-string{
+  position:absolute;
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  transition:transform .6s cubic-bezier(.25,1.4,.5,1);
+}
+.coin-string::before{
+  content:"";width:3px;background:var(--ink2);
+  flex:1;min-height:12px;border-radius:2px;
+}
+
+/* 纸券 */
+.voucher{
+  position:absolute;
+  background:linear-gradient(160deg,#f8f0d8,#ecd8a8);
+  border:1px solid #c8a040;
+  border-radius:3px;
+  padding:8px 10px;
+  font:10px/1.6 var(--serif);color:var(--ink);letter-spacing:.1em;
+  box-shadow:2px 3px 8px rgba(0,0,0,.18),inset 0 0 0 1px rgba(200,160,60,.3);
+  transition:transform .6s cubic-bezier(.25,1,.5,1),opacity .5s;
+}
+.voucher::before{
+  content:"";display:block;width:100%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin-bottom:4px;
+}
+.voucher::after{
+  content:"";display:block;width:100%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin-top:4px;
+}
+
+/* 官府题签 */
+.official-sign{
+  position:absolute;
+  background:linear-gradient(180deg,#e8c860,#c89820);
+  border:2px solid #8b6010;
+  border-radius:3px;
+  padding:10px 12px;
+  writing-mode:vertical-rl;
+  font:15px/1.4 var(--serif);color:#3a1a08;letter-spacing:.2em;
+  box-shadow:3px 3px 10px rgba(0,0,0,.25);
+  transform-origin:50% 0;
+  transition:transform .6s cubic-bezier(.25,1.4,.5,1);
+}
+
+/* 工位标注 */
+.station{
+  position:absolute;
+  display:flex;flex-direction:column;align-items:center;gap:3px;
+}
+.station .st-icon{
+  width:36px;height:36px;border-radius:4px;
+  background:var(--paper);border:1px solid rgba(160,100,40,.4);
+  display:flex;align-items:center;justify-content:center;
+  font:18px/1 serif;
+  box-shadow:0 2px 4px rgba(0,0,0,.12);
+  transition:transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s;
+}
+.station .st-label{
+  font:9px/1.4 var(--serif);color:var(--muted);letter-spacing:.1em;text-align:center;
+}
+.station.lit .st-icon{
+  background:#edd27a;border-color:var(--gold);
+  transform:scale(1.15) translateY(-3px);
+  box-shadow:0 4px 12px rgba(160,100,20,.3);
+}
+
+/* 箭头连接线 */
+.flow-arrow{
+  position:absolute;
+  display:flex;align-items:center;
+  font:10px/1 var(--serif);color:var(--muted);letter-spacing:.05em;
+  transition:opacity .4s;
+}
+.flow-arrow::after{
+  content:"→";margin-left:3px;color:var(--gold);font-size:12px;
+}
+
+/* ── 翻页过渡 ────────────────────────────────────────── */
+.spread.turning{
+  animation:page-turn .55s cubic-bezier(.6,0,.4,1) forwards;
+}
+@keyframes page-turn{
+  0%{clip-path:inset(0 0 0 0);opacity:1}
+  50%{clip-path:inset(0 50% 0 0);opacity:.7}
+  100%{clip-path:inset(0 0 0 0);opacity:1}
+}
+
+/* ── 触发后动画 ─────────────────────────────────────── */
+.scene.activated .do-rise{transform:translateY(-18px) !important}
+.scene.activated .do-sway{animation:sway .8s ease-in-out forwards}
+.scene.activated .do-slide-r{transform:translateX(28px) !important}
+.scene.activated .do-slide-l{transform:translateX(-28px) !important}
+.scene.activated .do-appear{opacity:1 !important;transform:scale(1) !important}
+.scene.activated .do-drop{transform:translateY(24px) !important;opacity:.6 !important}
+.scene.activated .do-reveal{
+  clip-path:inset(0 0 0 0) !important;
+  opacity:1 !important;
+}
+
+@keyframes sway{
+  0%{transform:rotate(0deg)}
+  25%{transform:rotate(-3deg)}
+  75%{transform:rotate(3deg)}
+  100%{transform:rotate(0deg)}
+}
+
+/* 票面揭开动画 */
+.ticket-reveal{
+  clip-path:inset(100% 0 0 0);
+  opacity:0;
+  transition:clip-path .8s cubic-bezier(.25,1,.5,1) .1s,opacity .6s .1s;
+}
+
+/* 标题落款 */
+.game-title{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  text-align:center;
+  opacity:0;
+  transition:opacity .8s .3s, transform .8s .3s;
+  transform:translate(-50%,-40%);
+}
+.game-title .gt-main{
+  display:block;font:clamp(18px,3.5vw,38px)/1.2 var(--serif);
+  letter-spacing:.3em;color:var(--red);padding-left:.3em;
+  text-shadow:1px 1px 0 rgba(255,255,255,.5);
+}
+.game-title .gt-sub{
+  display:block;font:11px/2.2 var(--serif);letter-spacing:.4em;color:var(--gold);
+}
+.scene.activated .game-title{opacity:1;transform:translate(-50%,-50%)}
+
+/* ── 底部说明 ──────────────────────────────────────────*/
+.hint{
+  margin-top:16px;
+  font:11px/1.9 var(--serif);color:rgba(60,30,10,.55);
+  letter-spacing:.15em;text-align:center;
+}
+.hint kbd{
+  font:inherit;border:1px solid rgba(160,100,40,.35);
+  border-radius:2px;padding:1px 5px;
+  background:rgba(255,250,235,.6);color:var(--ink2);
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="seal">交子</div>
+  <div class="title-block">
+    <strong>交子赶工记</strong>
+    <small>翻页机关书 · v05 · 2026.11.11</small>
+  </div>
+</header>
+
+<div class="book-wrap">
+  <div class="book" id="book">
+    <div class="book-cover"></div>
+    <div class="page-stack"></div>
+
+    <div class="spread" id="spread">
+
+      <!-- ════════════════════ 左页 ════════════════════ -->
+      <div class="page-left" id="page-left">
+        <div class="scene" id="scene-left">
+          <!-- 内容由 JS 注入 -->
+        </div>
+        <span class="page-num" id="pn-left">01</span>
+      </div>
+
+      <!-- ════════════════════ 右页 ════════════════════ -->
+      <div class="page-right" id="page-right">
+        <div class="scene" id="scene-right">
+          <!-- 内容由 JS 注入 -->
+        </div>
+        <span class="page-num" id="pn-right">02</span>
+
+        <!-- 可拖拽纸签 -->
+        <div class="pull-tab" id="pull-tab" role="button" aria-label="拉出纸签">
+          <div class="tab-tongue"></div>
+          <div class="tab-body">
+            <div class="tab-shape">
+              <span class="tab-label" id="tab-label">拉→</span>
+            </div>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+
+    </div><!-- /spread -->
+  </div><!-- /book -->
+
+  <!-- 章节导航 -->
+  <nav class="chapters" id="chapters" aria-label="章节选择"></nav>
+
+  <p class="hint">
+    拖拽右侧纸签解锁场景 &nbsp;·&nbsp; <kbd>←</kbd><kbd>→</kbd> 翻页 &nbsp;·&nbsp; <kbd>空格</kbd> 拉签
+  </p>
+</div>
+
+<script>
+'use strict';
+
+/* ═══════════════════════════════════════════════════════
+   章节数据
+═══════════════════════════════════════════════════════ */
+const PARTS = 'parts/';
+
+const CHAPTERS = [
+  {
+    id: 1, title: '铁钱难行', pages: '01–02',
+    tabColor: '#7a4a1a', tabLabel: '钱担',
+    caption: ['北宋蜀地，街市买卖日渐兴旺。', '沉重的铁钱，却让往来多有不便。'],
+    left: `
+      <div class="page-title">铁钱难行</div>
+      <img class="sc-img" src="${PARTS}build_01.png"
+        style="bottom:30px;left:-8%;width:60%;opacity:.85;transform:translateY(0)"
+        data-trigger="do-rise" alt="街市建筑">
+      <img class="sc-img" src="${PARTS}plant_01.png"
+        style="bottom:20px;right:-5%;width:38%;opacity:.6" alt="植物">
+      <div class="coin-string do-sway" style="left:38%;bottom:34%;gap:3px">
+        <div class="coin">宝</div>
+        <div class="coin">宝</div>
+        <div class="coin">宝</div>
+        <div class="coin">宝</div>
+        <div class="coin">宝</div>
+      </div>
+      <div class="sc-label" style="left:52%;bottom:36%;width:70px">沉重铁钱<br>难以搬运</div>`,
+    right: `
+      <img class="sc-img" src="${PARTS}build_00.png"
+        style="bottom:30px;right:-5%;width:55%;opacity:.8;transform:translateX(0)"
+        data-trigger="do-slide-r" alt="铺户">
+      <img class="sc-img" src="${PARTS}plant_00.png"
+        style="bottom:20px;left:5%;width:35%;opacity:.55" alt="植物">
+      <div class="coin-string" style="right:36%;bottom:52%;transform:translateY(0)" data-trigger="do-drop">
+        <div class="coin">元</div>
+        <div class="coin">元</div>
+        <div class="coin">元</div>
+      </div>
+      <div class="sc-label" style="right:46%;bottom:54%;width:80px;text-align:right;border-left:0;border-right:2px solid var(--gold);padding-right:6px;padding-left:0">往来行商<br>苦于重担</div>`
+  },
+  {
+    id: 2, title: '纸券初生', pages: '03–04',
+    tabColor: '#6a2a18', tabLabel: '纸券',
+    caption: ['商人把钱存进铺户，取回一纸凭券。', '凭券取钱，也渐渐凭券做起了买卖。'],
+    left: `
+      <div class="page-title">纸券初生</div>
+      <img class="sc-img" src="${PARTS}build_01.png"
+        style="bottom:30px;left:-5%;width:68%;opacity:.9" alt="铺户柜台">
+      <img class="sc-img" src="${PARTS}plant_02.png"
+        style="bottom:18px;right:5%;width:28%;opacity:.5" alt="云纹">
+      <div class="coin" style="left:30%;bottom:48%;font-size:8px">宝</div>
+      <div class="coin" style="left:38%;bottom:46%;font-size:8px">宝</div>
+      <div class="coin" style="left:34%;bottom:44%;font-size:8px">宝</div>
+      <div class="sc-label" style="left:46%;bottom:49%;width:80px">存入铺户<br>铁钱入柜</div>`,
+    right: `
+      <img class="sc-img" src="${PARTS}build_02.png"
+        style="bottom:30px;right:-5%;width:58%;opacity:.85" alt="铺户">
+      <div class="voucher do-appear"
+        style="left:12%;top:28%;width:120px;opacity:0;transform:scale(.85)">
+        <div style="font-size:11px;text-align:center;letter-spacing:.2em;margin-bottom:3px">存钱凭券</div>
+        <div style="font-size:9px;color:var(--muted);border-top:1px dashed var(--gold);padding-top:3px;margin-top:2px">
+          见券兑铁钱一贯<br>铺户认押
+        </div>
+      </div>
+      <div class="sc-label do-appear"
+        style="left:12%;top:60%;opacity:0;transform:scale(.85)">凭此券<br>可取回原钱</div>`
+  },
+  {
+    id: 3, title: '交子成币', pages: '05–06',
+    tabColor: '#2a4a3a', tabLabel: '官印',
+    caption: ['民间的交子，后来有了官府管理。', '益州交子务设立，官办纸币由此发行。'],
+    left: `
+      <div class="page-title">交子成币</div>
+      <img class="sc-img" src="${PARTS}build_01.png"
+        style="bottom:28px;left:-5%;width:65%;opacity:.85" alt="官府建筑">
+      <img class="sc-img" src="${PARTS}plant_01.png"
+        style="bottom:16px;right:3%;width:32%;opacity:.5" alt="植物">
+      <div class="official-sign do-appear"
+        style="left:62%;top:20%;transform:scale(.8) translateY(20px);opacity:0">
+        益州<br>交子务
+      </div>`,
+    right: `
+      <img class="sc-img" src="${PARTS}build_02.png"
+        style="bottom:28px;right:-5%;width:60%;opacity:.85" alt="官府建筑">
+      <div class="voucher do-appear"
+        style="right:14%;top:26%;width:130px;opacity:0;transform:scale(.8);
+               background:linear-gradient(160deg,#f0e8c0,#d8c068);
+               border-color:#8b6a10;border-width:2px">
+        <div style="font-size:12px;text-align:center;letter-spacing:.25em;color:#3a1a08;margin-bottom:3px">
+          官印交子
+        </div>
+        <div style="font-size:9px;color:#5a3a10;border-top:1px solid #c8a040;padding-top:3px;margin-top:2px">
+          益州交子务发行<br>官府管理 · 凭券兑现
+        </div>
+      </div>
+      <div class="sc-label do-appear"
+        style="right:14%;top:62%;opacity:0;transform:scale(.8);text-align:right;
+               border-left:0;border-right:2px solid var(--gold);padding-right:6px;padding-left:0">
+        由民间凭券<br>发展为官办纸币
+      </div>`
+  },
+  {
+    id: 4, title: '一纸通市', pages: '07–08',
+    tabColor: '#4a3a7a', tabLabel: '通市',
+    caption: ['一纸交子，让买卖少了搬钱的辛劳。', '而在纸艺世界里，故事正等你们接续。'],
+    left: `
+      <div class="page-title">一纸通市</div>
+      <img class="sc-img" src="${PARTS}build_01.png"
+        style="bottom:28px;left:-5%;width:65%;opacity:.8" alt="街市">
+      <img class="sc-img" src="${PARTS}plant_01.png"
+        style="bottom:16px;right:3%;width:30%;opacity:.45" alt="植物">
+      <div class="voucher"
+        style="left:40%;top:28%;width:100px;transform:rotate(-8deg)
+               translateX(0)" data-trigger="do-slide-r">
+        <div style="font-size:10px;text-align:center;letter-spacing:.2em">交·子</div>
+        <div style="font-size:8px;color:var(--muted);padding-top:2px">一贯</div>
+      </div>`,
+    right: `
+      <img class="sc-img do-appear" src="${PARTS}build_00.png"
+        style="bottom:28px;right:-5%;width:62%;opacity:0;transform:scale(.92)" alt="纸艺作坊">
+      <img class="sc-img do-appear" src="${PARTS}plant_00.png"
+        style="bottom:14px;left:5%;width:32%;opacity:0;transform:scale(.92)" alt="植物">
+      <div class="sc-label do-appear"
+        style="left:12%;top:28%;opacity:0;transform:scale(.9)">
+        纸艺世界<br>正等你们接续
+      </div>`
+  },
+  {
+    id: 5, title: '纸艺开工', pages: '09–10',
+    tabColor: '#2a4a6a', tabLabel: '开工',
+    caption: ['抄出的纸等风晾干，再印上墨纹与朱印。', '你们接力，赶出作坊的开张第一单。'],
+    left: `
+      <div class="page-title">纸艺开工</div>
+      <img class="sc-img" src="${PARTS}build_01.png"
+        style="bottom:30px;left:-5%;width:60%;opacity:.75" alt="作坊场景">
+      <img class="sc-img" src="${PARTS}plant_02.png"
+        style="bottom:16px;right:4%;width:26%;opacity:.45" alt="云纹">
+      <img class="sc-img do-appear" src="${PARTS}chars_01.png"
+        style="bottom:30px;left:38%;width:28%;opacity:0;transform:scale(.9)" alt="印桃">
+      <!-- 五工位流程 -->
+      <div class="station do-appear" style="left:5%;bottom:60%;opacity:0;transform:scale(.8)">
+        <div class="st-icon">💧</div>
+        <div class="st-label">抄纸槽</div>
+      </div>
+      <div class="flow-arrow do-appear" style="left:19%;bottom:66%;opacity:0">2s</div>`,
+    right: `
+      <img class="sc-img" src="${PARTS}build_02.png"
+        style="bottom:30px;right:-5%;width:62%;opacity:.75" alt="作坊">
+      <img class="sc-img do-appear" src="${PARTS}chars_00.png"
+        style="bottom:30px;right:36%;width:28%;opacity:0;transform:scale(.9)" alt="纸团">
+      <div class="station do-appear" style="right:52%;bottom:60%;opacity:0;transform:scale(.8)">
+        <div class="st-icon">🌬</div>
+        <div class="st-label">晾纸架</div>
+      </div>
+      <div class="station do-appear" style="right:28%;bottom:60%;opacity:0;transform:scale(.8)">
+        <div class="st-icon">🖨</div>
+        <div class="st-label">印刷台</div>
+      </div>
+      <div class="station do-appear" style="right:5%;bottom:60%;opacity:0;transform:scale(.8)">
+        <div class="st-icon">🔴</div>
+        <div class="st-label">盖印台</div>
+      </div>`
+  },
+  {
+    id: 6, title: '合做交子', pages: '11–12',
+    tabColor: '#7a2a2a', tabLabel: '首票',
+    caption: ['你们的模样，随第一张交子送进街巷。', '交个纸友，一起开工，故事才刚开始。'],
+    left: `
+      <div class="page-title">合做交子</div>
+      <img class="sc-img" src="${PARTS}build_01.png"
+        style="bottom:30px;left:-5%;width:58%;opacity:.7" alt="作坊">
+      <img class="sc-img" src="${PARTS}plant_01.png"
+        style="bottom:16px;right:5%;width:30%;opacity:.45" alt="植物">
+      <img class="sc-img do-appear" src="${PARTS}chars_00.png"
+        style="bottom:30px;left:28%;width:26%;opacity:0;transform:scale(.88)" alt="纸团">
+      <img class="sc-img do-appear" src="${PARTS}chars_01.png"
+        style="bottom:30px;left:52%;width:26%;opacity:0;transform:scale(.88)" alt="印桃">`,
+    right: `
+      <img class="sc-img" src="${PARTS}build_02.png"
+        style="bottom:28px;right:-5%;width:60%;opacity:.65" alt="背景">
+      <img class="sc-img ticket-reveal do-reveal" src="${PARTS}note.png"
+        style="left:50%;top:14%;transform:translateX(-50%);width:52%;
+               clip-path:inset(100% 0 0 0);opacity:0" alt="首款组合交子">
+      <div class="game-title">
+        <span class="gt-main">交子赶工记</span>
+        <span class="gt-sub">交个纸友 · 一起开工</span>
+      </div>`
+  }
+];
+
+/* ═══════════════════════════════════════════════════════
+   状态
+═══════════════════════════════════════════════════════ */
+let currentChapter = 0;
+let tabTriggered = false;
+let isDragging = false;
+let dragStartX = 0;
+let tabCurrentX = 0;
+const TAB_THRESHOLD = 72; // px，触发阈值
+const TAB_MAX = 110;      // 最大拉出距离
+
+/* DOM refs */
+const sceneLeft  = document.getElementById('scene-left');
+const sceneRight = document.getElementById('scene-right');
+const pullTab    = document.getElementById('pull-tab');
+const tabLabel   = document.getElementById('tab-label');
+const pnLeft     = document.getElementById('pn-left');
+const pnRight    = document.getElementById('pn-right');
+const spread     = document.getElementById('spread');
+const chapNav    = document.getElementById('chapters');
+
+/* ═══════════════════════════════════════════════════════
+   渲染章节
+═══════════════════════════════════════════════════════ */
+function renderChapter(idx, animate){
+  const ch = CHAPTERS[idx];
+
+  // 翻页动画
+  if(animate){
+    spread.classList.add('turning');
+    setTimeout(()=>spread.classList.remove('turning'), 560);
+  }
+
+  // 重置纸签
+  tabTriggered = false;
+  pullTab.classList.remove('triggered');
+  pullTab.style.right = '-18px';
+  tabCurrentX = 0;
+  pullTab.querySelector('.tab-shape').style.background = ch.tabColor;
+  pullTab.querySelector('.tab-tongue').style.background = ch.tabColor;
+  tabLabel.textContent = ch.tabLabel;
+
+  // 注入内容
+  sceneLeft.innerHTML  = ch.left  + makeCaptionLeft(ch);
+  sceneRight.innerHTML = ch.right + makeCaptionRight(ch);
+
+  // 解除 activated
+  sceneLeft.classList.remove('activated');
+  sceneRight.classList.remove('activated');
+
+  // 页码
+  const [a,b] = ch.pages.split('–');
+  pnLeft.textContent  = a.padStart(2,'0');
+  pnRight.textContent = b.padStart(2,'0');
+
+  // 更新导航按钮
+  document.querySelectorAll('.ch-btn').forEach((btn,i)=>{
+    btn.classList.toggle('active', i === idx);
+    btn.setAttribute('aria-current', i === idx ? 'page' : 'false');
+  });
+}
+
+function makeCaptionLeft(ch){
+  return `<div class="caption-box" data-ch="${ch.title}">
+    ${ch.caption[0]}
+  </div>`;
+}
+function makeCaptionRight(ch){
+  return `<div class="caption-box" style="bottom:28px" data-ch="&nbsp;">
+    ${ch.caption[1]}
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════════════════
+   触发场景动画
+═══════════════════════════════════════════════════════ */
+function triggerScene(){
+  if(tabTriggered) return;
+  tabTriggered = true;
+  pullTab.classList.add('triggered');
+  pullTab.style.right = '-18px'; // 弹回
+  sceneLeft.classList.add('activated');
+  sceneRight.classList.add('activated');
+  // 随工位逐个点亮
+  const stations = sceneRight.querySelectorAll('.station');
+  stations.forEach((s, i)=>{
+    setTimeout(()=>s.classList.add('lit'), 200 + i * 220);
+  });
+}
+
+/* ═══════════════════════════════════════════════════════
+   拖拽纸签
+═══════════════════════════════════════════════════════ */
+function getClientX(e){ return e.touches ? e.touches[0].clientX : e.clientX; }
+
+pullTab.addEventListener('pointerdown', e=>{
+  if(tabTriggered) return;
+  isDragging = true;
+  dragStartX = getClientX(e);
+  tabCurrentX = 0;
+  pullTab.classList.add('dragging');
+  pullTab.setPointerCapture(e.pointerId);
+  e.preventDefault();
+});
+
+pullTab.addEventListener('pointermove', e=>{
+  if(!isDragging) return;
+  const dx = dragStartX - getClientX(e); // 向左拉 → dx 正
+  const clamped = Math.max(0, Math.min(dx, TAB_MAX));
+  tabCurrentX = clamped;
+  pullTab.style.right = (-58 + clamped) + 'px';
+  if(clamped >= TAB_THRESHOLD) triggerScene();
+});
+
+pullTab.addEventListener('pointerup', e=>{
+  if(!isDragging) return;
+  isDragging = false;
+  pullTab.classList.remove('dragging');
+  if(!tabTriggered){
+    pullTab.style.right = '-18px'; // 弹回
+    tabCurrentX = 0;
+  }
+});
+
+/* ═══════════════════════════════════════════════════════
+   键盘控制
+═══════════════════════════════════════════════════════ */
+document.addEventListener('keydown', e=>{
+  if(e.key === 'ArrowRight' || e.key === 'ArrowLeft'){
+    e.preventDefault();
+    const dir = e.key === 'ArrowRight' ? 1 : -1;
+    const next = (currentChapter + dir + CHAPTERS.length) % CHAPTERS.length;
+    currentChapter = next;
+    renderChapter(currentChapter, true);
+  }
+});
+window.addEventListener('keydown', e=>{
+  if(e.key === ' '){
+    e.preventDefault();
+    if(!tabTriggered) triggerScene();
+    else { currentChapter = (currentChapter + 1) % CHAPTERS.length; renderChapter(currentChapter, true); }
+  }
+});
+
+/* ═══════════════════════════════════════════════════════
+   构建导航
+═══════════════════════════════════════════════════════ */
+CHAPTERS.forEach((ch, i)=>{
+  const btn = document.createElement('button');
+  btn.className = 'ch-btn';
+  btn.setAttribute('type','button');
+  btn.setAttribute('aria-current','false');
+  btn.innerHTML = `<span class="num">${['壹','贰','叁','肆','伍','陆'][i]}</span>${ch.title}`;
+  btn.addEventListener('click', ()=>{
+    if(i === currentChapter) return;
+    currentChapter = i;
+    renderChapter(currentChapter, true);
+  });
+  chapNav.appendChild(btn);
+});
+
+/* ═══════════════════════════════════════════════════════
+   初始化
+═══════════════════════════════════════════════════════ */
+renderChapter(0, false);
+</script>
+</body>
+</html>
