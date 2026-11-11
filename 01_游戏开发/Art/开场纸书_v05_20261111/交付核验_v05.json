@@ -1,0 +1,150 @@
+{
+  "version": "v05_20261111",
+  "frame_sequence_count": 1152,
+  "source_frame_fingerprint_verified": true,
+  "full_decode_passed": true,
+  "decoded_frames": 1152,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "duration_seconds": 48,
+  "container_duration_seconds": 48.02,
+  "video_codec": "H.264",
+  "pixel_format": "yuv420p",
+  "audio_codec": "AAC",
+  "sample_rate": 44100,
+  "channels": 2,
+  "audio_cues_verified": true,
+  "browser_playback_checked": true,
+  "browser_check_scope": "Independent headless browser: actual media playback, pause, seek, replay, skip and media-ended event.",
+  "source_validation_passed": true,
+  "visual_review_completed": false,
+  "unity_integration_tested": false,
+  "files": [
+    {
+      "file": "开场纸书_v05_20261111.blend",
+      "bytes": 23905054,
+      "sha256": "892f43e293f38354926c86d13df3915ea3a882166fea8f46cda72799feb4b719"
+    },
+    {
+      "file": "开场纸书_v05_20261111.mp4",
+      "bytes": 13839750,
+      "sha256": "cfe2b5c053d49a85ba4f2add5e1db86f9624396bc793d490cc4835649704cb77"
+    },
+    {
+      "file": "播放开场.html",
+      "bytes": 19798,
+      "sha256": "ace916ecc7142303250483eecadcf5aaadfed0be7a6ab858b44d6169b6381de6"
+    },
+    {
+      "file": "分镜总览_v05_20261111.jpg",
+      "bytes": 219272,
+      "sha256": "173374be00286617419d70798ce87f9f8af3d65025b24d0faab7bf79ebfc5042"
+    },
+    {
+      "file": "制作核验_v05.json",
+      "bytes": 1494,
+      "sha256": "5ddd8fae161d80979d0eb21c7036805f7ea8a15f4ec7aff682fdd9fafa540068"
+    },
+    {
+      "file": "工程核验_v05.json",
+      "bytes": 128156,
+      "sha256": "501b1991e16639f42d71f06c74ab7462ba881fcbe2fe36e0d40bc1b816f091e0"
+    },
+    {
+      "file": "播放器核验_v05.json",
+      "bytes": 6274,
+      "sha256": "15c4578eab8e51761b2a099d326a1789f903dd680ff10c08a57c4ab7be3c40e1"
+    },
+    {
+      "file": "从这里开始.md",
+      "bytes": 1578,
+      "sha256": "c94c28bc9afd527ede8296b3e019c4798a01f4602aed3efa7818a1037932ebec"
+    },
+    {
+      "file": "assets/开场配乐与纸声_v05.wav",
+      "bytes": 8467244,
+      "sha256": "2ce53be1852d4b803c25a973c0b54d6e7b6e6208135cb9698939aa7d3abfd2a8"
+    },
+    {
+      "file": "assets/开场音轨来源_v05.json",
+      "bytes": 971,
+      "sha256": "02f4f3baabebf1c3d0e299578b2c894687f307b6fdca1b90aca8efd3c05fe725"
+    },
+    {
+      "file": "assets/扁平纸团印桃_v02.png",
+      "bytes": 1632619,
+      "sha256": "c18e145b6a03e6a464af23ea91339ab05b3c4c9927c3e9d69d38e3fedfc4c4c0"
+    },
+    {
+      "file": "assets/扁平纸艺建筑_v02.png",
+      "bytes": 2510643,
+      "sha256": "bc50dea7e5ff46668878c99d3b66419b809f54237eb3267b2abb1aad081fee51"
+    },
+    {
+      "file": "assets/扁平纸艺植物云纹_v02.png",
+      "bytes": 2052164,
+      "sha256": "b9e2ef4e52a34d2d0432095385e81b05a830f3d7d395703c3d133b4afce3a1bc"
+    },
+    {
+      "file": "assets/扁平纸艺植物云纹_v02_prompt.txt",
+      "bytes": 2627,
+      "sha256": "9310b8b863d96c569dede501c02d2d4b8aa173e4bff47a8e5aae7992928ab8cc"
+    },
+    {
+      "file": "assets/本版素材说明_v05.md",
+      "bytes": 4081,
+      "sha256": "0891aedcdbde7a57c5ee29a02b5991508b4e9e21c0b04d8738d07c9f8f8b0fdc"
+    },
+    {
+      "file": "assets/素材来源与提示词_v03.md",
+      "bytes": 11861,
+      "sha256": "177f7908dbef24d71e455b13df42882fa586c5d85fac795389b932bd69cdad9b"
+    },
+    {
+      "file": "assets/组合交子_纸团印桃_引用_v01.png",
+      "bytes": 3495175,
+      "sha256": "d456659f9d62fbe27f01efd6def017c7ca5fc318dfcfa46ee17c86939154e1c2"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/build_book.py",
+      "bytes": 36032,
+      "sha256": "de592042d99ddd9d3cbd960351f317c058edafdbb9b3755061ce1f24712ecfd6"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/create_audio.py",
+      "bytes": 6501,
+      "sha256": "9ab29839d8d56f3b876a8f640e5eebb78accd1f144637c8e649b549c2e253df1"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/render_frames.py",
+      "bytes": 16415,
+      "sha256": "edc20ead7c2f503d39c42277775cd1a743edc2b93a3039a4e54b35d03c5490a1"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/encode_video.ps1",
+      "bytes": 2906,
+      "sha256": "aa6963adc665bdbf4a34b7988af4f14a8f819902d1332ef95997ab8797afddbd"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/verify_delivery.mjs",
+      "bytes": 6656,
+      "sha256": "14855f508f3deb2bb6bba1cc328ae031c2a13f625389a9d3679b5221e6b9c539"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/validate_source.py",
+      "bytes": 17408,
+      "sha256": "6792a7620a256bf6c4409ff5ad8c71a49dc29ea83352e6062fec2f0bf2444a5e"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/verify_player.mjs",
+      "bytes": 16062,
+      "sha256": "1fbda804ab5fb510129dbe3144eaeefc9d123677906db1f0e451224330f9552d"
+    },
+    {
+      "file": "../../Scripts/开场纸书_v05_20261111/README.md",
+      "bytes": 5087,
+      "sha256": "dd8c5cb298cca960712328ce2e18c3663d5e07d5ead083e74ee421694e1d1f90"
+    }
+  ]
+}

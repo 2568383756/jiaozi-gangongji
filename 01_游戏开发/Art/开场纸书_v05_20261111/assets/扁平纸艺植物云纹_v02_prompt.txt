@@ -1,0 +1,16 @@
+交子赶工记 · 扁平纸艺植物云纹 v02
+生成方式：内置 image_gen，全新生成，不使用参考图，非 CLI。
+日期：2026-11-11
+参数：transparent_background: true
+原始生成文件：C:/Users/wangjingjing/.codex/generated_images/01a1c994-873d-7a22-b8f0-695fce0f7e19/exec-4db03b05-518d-40f7-9118-71c920804159.png
+交付：复制原始 PNG，未抠图、未改图；保留既有院落图不动。
+
+最终生成提示词（原文）：
+Use case: stylized-concept.
+Asset type: a transparent PNG production asset sheet for a Chinese papercraft storybook animation.
+Make ONE landscape 3:2 image containing exactly THREE COMPLETE SEPARATE OBJECTS arranged left to right with generous transparent gaps and no overlap: LEFT a golden ginkgo tree, CENTER a blue-green bamboo sprig, RIGHT an ivory Chinese ruyi-shaped curled cloud ornament.
+This must be true TWO-DIMENSIONAL handmade colored-paper collage, viewed exactly straight on, flat silhouettes with crisp craft-knife-cut edges. Emphasize delicate cardstock fibers, fine scored fold lines, cut-paper negative space, and only two or three thin layers of flat paper with extremely subtle contact shadows. The visual language is elegant traditional Chinese paper craft, warm and refined, beautifully detailed but uncluttered.
+The ginkgo tree has a flat angular warm-brown cut-paper trunk and branches, a golden yellow canopy made from distinct fan-shaped leaves with fine fan-shaped engraved/scored lines. Do not give the trunk cylindrical volume. The bamboo sprig is muted blue-green, with flat slender segmented stems and sharply pointed diamond-like paper leaves, clean vein scoring. The ivory ruyi cloud is a decorative curled cloud silhouette, with carefully carved internal cut-out curves and open negative-space contours. Cloud remains flat; it is not a white fluffy volume.
+Each of the three objects is fully visible including the whole tree trunk base, bamboo stem ends and entire cloud contour. They are independent cutouts, not part of one scene. Transparent alpha all around each object AND between all three objects. No paper backing rectangle, no scenery ground, no border, no checkerboard printed in the artwork.
+ABSOLUTE STYLE EXCLUSIONS: no thick 3D rounded trunk, no sculpted round forms, no clay, no toy-like plastic, no realistic lighting, no volumetric rendering, no realistic shading, no glossy highlights, no bevelled thick edges, no photorealism, no depth-of-field blur. No text, letters, symbols, labels, watermark, numbers, people or animals. Keep the overall objects deliberately planar and preserve refined paper material quality.
+

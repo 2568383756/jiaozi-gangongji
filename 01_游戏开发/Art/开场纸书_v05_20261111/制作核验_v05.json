@@ -1,0 +1,45 @@
+{
+  "version": "v05_20261111",
+  "blender": "5.3.0",
+  "fps": 24,
+  "frames": 1152,
+  "seconds": 48,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "engine": "BLENDER_EEVEE",
+  "objects": 1508,
+  "turning_leaves": 5,
+  "pull_tabs": 6,
+  "popup_hinges": 185,
+  "chapters": 6,
+  "packed_images": [
+    [
+      "扁平纸团印桃_v02.png",
+      true
+    ],
+    [
+      "扁平纸艺建筑_v02.png",
+      true
+    ],
+    [
+      "扁平纸艺植物云纹_v02.png",
+      true
+    ],
+    [
+      "组合交子_纸团印桃_引用_v01.png",
+      true
+    ]
+  ],
+  "form": "horizontal open two-page book on wooden table; upright folding paper scenery; five leaf turns and six automatic mechanisms",
+  "captions": [
+    "北宋蜀地，街市买卖日渐兴旺。\n沉重的铁钱，却让往来多有不便。",
+    "商人把钱存进铺户，取回一纸凭券。\n凭券取钱，也渐渐凭券做起了买卖。",
+    "从民间的凭券，到官府发行的纸币。\n益州交子务，开启了交子的新篇。",
+    "一纸交子，让买卖少了搬钱的辛劳。\n而在纸艺世界里，故事正等你们接续。",
+    "抄出的纸等风晾干，再印上墨纹与朱印。\n你们接力，赶出作坊的开张第一单。",
+    "你们的模样，随第一张交子送进街巷。\n交个纸友，一起开工，故事才刚开始。"
+  ],
+  "character_medium": "flat textured cut-paper silhouette meshes, not skeletal character models"
+}

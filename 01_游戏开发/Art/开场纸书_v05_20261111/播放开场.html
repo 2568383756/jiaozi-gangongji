@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>交子赶工记 · 桌上立体纸书 v05</title>
+  <style>
+    :root{--ink:#573d2c;--deep:#765139;--paper:#fff8e9;--muted:#8b7056;--line:rgba(135,90,42,.22);--red:#ac4934;--gold:#a9762d;--serif:"STSong","Songti SC","SimSun",serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:radial-gradient(ellipse at 50% 0,#fffaf1 0,#f8edda 55%,#f1e1c7 100%);font-family:var(--sans);min-height:100vh}button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}button:disabled{opacity:.38;cursor:not-allowed}button:focus-visible,a:focus-visible,video:focus-visible{outline:2px solid var(--red);outline-offset:4px}a{color:var(--deep);text-decoration-color:var(--line);text-underline-offset:4px}a:hover{text-decoration-color:var(--gold)}[hidden]{display:none!important}
+    .shell{width:96vw;max-width:1600px;margin:auto;padding:14px 0 22px}.masthead{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px}.wordmark{display:flex;align-items:center;gap:11px}.seal{display:grid;place-content:center;width:28px;height:34px;border:1px solid var(--red);color:var(--red);background:#f5e4cd;font:15px/1 var(--serif);writing-mode:vertical-rl;letter-spacing:2px}.wordmark strong{display:block;font:22px/1.25 var(--serif);letter-spacing:3px}.wordmark small{display:block;margin-top:3px;color:var(--muted);font-size:9px;letter-spacing:2px}.edition{color:var(--muted);font-size:10px;letter-spacing:1px;text-align:right;line-height:1.6}.edition span{color:var(--red)}
+    .intro-line{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 8px}.intro-line h1{margin:0;font:14px/1.5 var(--serif);font-weight:400;letter-spacing:2px}.intro-line p{margin:0;font-size:10px;color:var(--muted);letter-spacing:1px}.stage{position:relative;aspect-ratio:16/9;background:#f4e2c2;border:1px solid rgba(164,112,50,.3);box-shadow:0 12px 38px rgba(102,66,30,.13);isolation:isolate}.stage::after{content:"";position:absolute;inset:5px;border:1px solid rgba(173,119,53,.12);pointer-events:none;z-index:3}.stage video{display:block;width:100%;height:100%;object-fit:contain;background:#f4e2c2}.stage:fullscreen{width:100vw;height:100vh;aspect-ratio:auto;border:0;background:#f3e2c6}.stage:fullscreen::after{display:none}
+    .title-card{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;background:radial-gradient(ellipse at 50% 36%,#fffaf0 0,#f7ead1 56%,#ecd5b0 100%)}.title-card::before,.title-card::after{content:"";position:absolute;width:34%;height:1px;background:linear-gradient(90deg,transparent,rgba(156,102,43,.32),transparent);left:33%;top:17%}.title-card::after{top:auto;bottom:17%}.card-eyebrow{color:var(--gold);font:12px/1.8 var(--serif);letter-spacing:5px;margin-bottom:18px}.title-card h2{font:clamp(28px,5.3vw,76px)/1.35 var(--serif);letter-spacing:.14em;margin:0 0 12px;padding-left:.14em;font-weight:400;color:#68412b;outline:none}.tagline{font:clamp(12px,1.4vw,18px)/1.9 var(--serif);letter-spacing:.3em;color:#916444;margin:0 0 24px}.primary{border:1px solid #b78238;background:var(--red);color:#fff7e7;padding:12px 30px;font-size:12px;letter-spacing:3px;min-height:43px;box-shadow:0 3px 0 rgba(129,72,30,.13);transition:background .2s,transform .2s}.primary:hover{background:#943b2b;transform:translateY(-1px)}.title-note{max-width:530px;color:var(--muted);font-size:11px;line-height:1.8;margin:16px 0 0}.title-note:empty{display:none}
+    .transport{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding:12px 0}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.quiet-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;border:1px solid rgba(165,111,42,.35);background:rgba(255,250,238,.65);padding:7px 12px;font-size:11px;letter-spacing:1px;transition:border-color .2s,background .2s}.quiet-btn:hover{border-color:var(--gold);background:#f1dfbd}.quiet-btn svg{width:13px;height:13px;stroke:currentColor;stroke-width:1.5;fill:none}#play-pause{background:var(--red);border-color:#b78238;color:#fff7e7}#play-pause:hover{background:#943b2b}#fullscreen{background:#dfbb78;color:#593b24;border-color:#bc8c43}#fullscreen:hover{background:#d3aa63}.skip{border-color:transparent;color:var(--muted);background:transparent}.skip:hover{color:var(--red)}.time{font-variant-numeric:tabular-nums;color:var(--muted);font-size:11px;letter-spacing:1px;white-space:nowrap}.time b{color:var(--ink);font-weight:400}.chapter-heading{display:flex;justify-content:space-between;gap:18px;margin:18px 0 10px;color:var(--muted);font-size:10px;letter-spacing:2px}.chapters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}.chapter{position:relative;text-align:left;border:1px solid var(--line);background:rgba(255,250,239,.45);padding:11px 13px 10px;min-height:74px;transition:background .2s,border-color .2s}.chapter:hover{background:#f3e2c4;border-color:var(--gold)}.chapter[aria-current="true"]{border-color:var(--gold);background:#eed6a7}.chapter[aria-current="true"]::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:3px;background:var(--red)}.chapter .number{color:var(--gold);font-size:10px;letter-spacing:1px}.chapter .chapter-time{float:right;font-size:10px;color:var(--muted);font-variant-numeric:tabular-nums}.chapter strong{display:block;font:15px/1.5 var(--serif);font-weight:400;letter-spacing:2px;margin-top:8px}.status-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px;margin-top:15px;font-size:11px;color:var(--muted);line-height:1.8}.status-row p{margin:0}.status-row a{white-space:nowrap}.footer{border-top:1px solid var(--line);margin-top:20px;padding-top:12px;display:flex;justify-content:space-between;gap:18px;font-size:10px;color:#977d64;letter-spacing:1px;line-height:1.8}.footer p{margin:0}.footer .keys{white-space:nowrap}kbd{font:inherit;color:#7b5836;border:1px solid var(--line);border-radius:2px;padding:2px 4px;margin:0 3px;background:rgba(255,250,236,.6)}
+    @media(max-width:760px){.shell{width:96vw;padding-top:10px}.masthead{margin-bottom:8px}.wordmark strong{font-size:19px}.wordmark small{display:none}.seal{height:29px;width:24px;font-size:13px}.edition{font-size:9px;letter-spacing:.5px}.intro-line h1{font-size:12px;letter-spacing:1px}.intro-line p{font-size:9px;letter-spacing:0}.chapters{grid-template-columns:repeat(3,1fr)}.chapter{min-height:66px;padding:10px}.chapter strong{font-size:14px}.transport{gap:10px;align-items:start}.quiet-btn{padding:7px 9px;font-size:10px}.controls{gap:5px}.time{padding-top:10px;font-size:10px}.title-card{padding:16px}.card-eyebrow{margin-bottom:8px;font-size:10px}.tagline{margin-bottom:12px;letter-spacing:2px}.primary{min-height:33px;padding:8px 18px;font-size:10px}.title-note{font-size:10px;margin-top:10px}.title-card::before,.title-card::after{display:none}.status-row,.footer{align-items:start}.footer{flex-direction:column;gap:7px}.chapter-heading{margin-top:16px}}@media(max-width:420px){.edition{font-size:8px}.intro-line p{display:none}.transport{flex-direction:column}.time{padding-top:0;align-self:flex-end}.title-card h2{font-size:27px}.title-note{max-width:260px;font-size:9px;line-height:1.5}.card-eyebrow{display:none}.tagline{font-size:11px;margin-bottom:9px}.title-card{padding:10px}.status-row{flex-direction:column;gap:8px}.chapter-heading{font-size:9px;letter-spacing:0}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div class="wordmark"><span class="seal" aria-hidden="true">交子</span><div><strong>交子赶工记</strong><small>纸间有城 · 携手开工</small></div></div>
+      <div class="edition">开场纸书 <span>序</span><br>v05 · 2026.11.11</div>
+    </header>
+    <div class="intro-line"><h1>一纸交子的故事，翻到我们这一页。</h1><p>交子的来路 · 纸艺开工</p></div>
+    <section class="stage" id="stage" aria-label="开场动画播放器">
+      <video id="intro" controls preload="metadata" playsinline aria-label="交子赶工记开场纸书，中文字幕故事预览" src="开场纸书_v05_20261111.mp4">当前浏览器不支持视频播放，请使用支持 MP4 的浏览器打开此文件。</video>
+      <div class="title-card" id="title-card">
+        <div class="card-eyebrow" id="card-eyebrow">从铁钱，到一纸交子</div>
+        <h2 id="card-title" tabindex="-1">交子赶工记</h2>
+        <p class="tagline">交个纸友，一起开工。</p>
+        <button type="button" class="primary" id="card-play">播放开场</button>
+        <p class="title-note" id="title-note">翻开这一册，看看交子怎样来到我们手中。</p>
+      </div>
+    </section>
+    <div class="transport">
+      <div class="controls" aria-label="播放操作">
+        <button type="button" class="quiet-btn" id="play-pause"><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5 3l7 5-7 5z"/></svg><span id="play-label">播放</span></button>
+        <button type="button" class="quiet-btn" id="replay"><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M3 5a5 5 0 1 1-1 4M3 1v4h4"/></svg>重播</button>
+        <button type="button" class="quiet-btn" id="fullscreen"><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M6 2H2v4m8-4h4v4M2 10v4h4m8-4v4h-4"/></svg><span id="fullscreen-label">全屏</span></button>
+        <button type="button" class="quiet-btn skip" id="skip">跳过 · 回标题</button>
+      </div>
+      <div class="time" aria-label="当前播放时间"><b id="current-time">00:00</b><span aria-hidden="true"> / </span><span id="duration">00:48</span></div>
+    </div>
+    <nav aria-label="开场章节">
+      <div class="chapter-heading"><span>纸书六章</span><span>点按选章 · 保留当前播放或暂停状态</span></div>
+      <div class="chapters">
+        <button type="button" class="chapter" data-time="0" aria-current="true"><span class="number">壹</span><span class="chapter-time">00:00</span><strong>铁钱难行</strong></button>
+        <button type="button" class="chapter" data-time="8" aria-current="false"><span class="number">贰</span><span class="chapter-time">00:08</span><strong>纸券初生</strong></button>
+        <button type="button" class="chapter" data-time="16" aria-current="false"><span class="number">叁</span><span class="chapter-time">00:16</span><strong>官办交子</strong></button>
+        <button type="button" class="chapter" data-time="24" aria-current="false"><span class="number">肆</span><span class="chapter-time">00:24</span><strong>一纸通市</strong></button>
+        <button type="button" class="chapter" data-time="32" aria-current="false"><span class="number">伍</span><span class="chapter-time">00:32</span><strong>纸艺开工</strong></button>
+        <button type="button" class="chapter" data-time="40" aria-current="false"><span class="number">陆</span><span class="chapter-time">00:40</span><strong>合做交子</strong></button>
+      </div>
+    </nav>
+    <div class="status-row"><p id="status" role="status" aria-live="polite">点按播放，纸间故事将自动向前。</p><a href="分镜总览_v05_20261111.jpg" target="_blank" rel="noopener">查看分镜总览 ↗</a></div>
+    <footer class="footer"><p>桌上立体纸书 · 开场预览<br>从铁钱的重量，到一纸交子的故事。</p><p class="keys"><kbd>空格</kbd> 播放 / 暂停 <span aria-hidden="true">·</span> <kbd>Esc</kbd> 跳过</p></footer>
+  </main>
+  <script>
+    'use strict';
+    // No network calls or dependencies. Only one <video> owns picture and sound.
+    // Integration event: window.addEventListener('intro-finished', ({detail}) => ...).
+    // One event per viewing session; replay or chapter selection starts a new session
+    // when the previous session has already finished.
+    const video = document.getElementById('intro');
+    const stage = document.getElementById('stage');
+    const card = document.getElementById('title-card');
+    const cardPlay = document.getElementById('card-play');
+    const titleNote = document.getElementById('title-note');
+    const eyebrow = document.getElementById('card-eyebrow');
+    const status = document.getElementById('status');
+    const playLabel = document.getElementById('play-label');
+    const chapters = Array.from(document.querySelectorAll('.chapter'));
+    let finished = false;
+    let failed = false;
+    let pendingSeek = null;
+    let pendingPlay = false;
+
+    function formatTime(value) {
+      const seconds = Number.isFinite(value) ? Math.max(0, Math.floor(value)) : 0;
+      return String(Math.floor(seconds / 60)).padStart(2, '0') + ':' + String(seconds % 60).padStart(2, '0');
+    }
+    function syncTime() {
+      const time = video.currentTime || 0;
+      document.getElementById('current-time').textContent = formatTime(time);
+      if (Number.isFinite(video.duration)) document.getElementById('duration').textContent = formatTime(video.duration);
+      const active = Math.min(chapters.length - 1, Math.floor(time / 8));
+      chapters.forEach((chapter, index) => chapter.setAttribute('aria-current', String(index === active)));
+    }
+    function syncPlayback() {
+      playLabel.textContent = video.paused || video.ended ? '播放' : '暂停';
+      document.getElementById('play-pause').setAttribute('aria-label', video.paused || video.ended ? '播放开场' : '暂停开场');
+    }
+    function finish(reason) {
+      if (finished) return;
+      finished = true;
+      failed = reason === 'failed';
+      pendingSeek = null;
+      pendingPlay = false;
+      video.pause();
+      card.hidden = false;
+      eyebrow.textContent = failed ? '视频暂时无法播放' : '故事停在这一页';
+      cardPlay.textContent = failed ? '重新载入' : '重看这一册';
+      titleNote.textContent = failed
+        ? '请确认同目录存在“开场纸书_v05_20261111.mp4”，并使用支持该视频格式的浏览器。'
+        : '故事还在纸间，随时可以从头翻阅。';
+      status.textContent = reason === 'completed' ? '开场播放完毕。' : reason === 'skipped' ? '已跳过开场，返回预览标题。' : '视频加载或解码失败；可重新载入，也可查看分镜总览。';
+      syncPlayback();
+      window.dispatchEvent(new CustomEvent('intro-finished', { detail: { reason } }));
+    }
+    function beginSession() {
+      finished = false;
+      failed = false;
+      card.hidden = true;
+      eyebrow.textContent = '从铁钱，到一纸交子';
+      titleNote.textContent = '翻开这一册，看看交子怎样来到我们手中。';
+    }
+    function playVideo() {
+      const promise = video.play();
+      if (promise && typeof promise.catch === 'function') {
+        promise.catch(error => {
+          // User gesture restrictions and interruption are not decode failures.
+          if (error.name === 'NotAllowedError') status.textContent = '浏览器需要播放操作，请再点一次播放。';
+          else if (error.name !== 'AbortError' && video.error) finish('failed');
+        });
+      }
+    }
+    function seekTo(seconds, shouldPlay) {
+      pendingPlay = shouldPlay;
+      if (video.readyState < 1 || !Number.isFinite(video.duration)) {
+        pendingSeek = seconds;
+        status.textContent = '正在读取视频…';
+        if (video.error) video.load();
+        return;
+      }
+      pendingSeek = null;
+      video.currentTime = Math.min(Math.max(0, seconds), Math.max(0, video.duration - .05));
+      if (shouldPlay) playVideo();
+      else video.pause();
+      syncTime();
+      syncPlayback();
+    }
+    function replay() {
+      const reload = failed || Boolean(video.error);
+      beginSession();
+      status.textContent = '从第一页开始。';
+      if (reload) {
+        pendingSeek = 0;
+        pendingPlay = true;
+        video.load();
+      } else seekTo(0, true);
+    }
+    function togglePlayback() {
+      if (finished || video.ended || !card.hidden) { replay(); return; }
+      if (video.paused) playVideo();
+      else video.pause();
+    }
+    function selectChapter(button) {
+      const shouldPlay = !video.paused && !video.ended && !finished;
+      const reload = failed || Boolean(video.error);
+      beginSession();
+      status.textContent = '已选“' + button.querySelector('strong').textContent + '”' + (shouldPlay ? '，继续播放。' : '，点按播放继续。');
+      if (reload) {
+        pendingSeek = Number(button.dataset.time);
+        pendingPlay = shouldPlay;
+        video.load();
+      } else seekTo(Number(button.dataset.time), shouldPlay);
+    }
+    video.addEventListener('loadedmetadata', () => {
+      syncTime();
+      chapters.forEach(button => { button.disabled = Number(button.dataset.time) >= video.duration; });
+      if (pendingSeek !== null) {
+        const target = pendingSeek;
+        const shouldPlay = pendingPlay;
+        seekTo(target, shouldPlay);
+      }
+    });
+    video.addEventListener('timeupdate', syncTime);
+    video.addEventListener('seeked', syncTime);
+    video.addEventListener('play', () => { if (!finished) card.hidden = true; syncPlayback(); status.textContent = '开场播放中。'; });
+    video.addEventListener('pause', () => { syncPlayback(); if (!finished && !video.ended) status.textContent = '已暂停，可以选章或继续播放。'; });
+    video.addEventListener('ended', () => finish('completed'));
+    video.addEventListener('error', () => finish('failed'));
+    document.getElementById('play-pause').addEventListener('click', togglePlayback);
+    document.getElementById('replay').addEventListener('click', replay);
+    cardPlay.addEventListener('click', replay);
+    document.getElementById('skip').addEventListener('click', () => finish('skipped'));
+    chapters.forEach(button => button.addEventListener('click', () => selectChapter(button)));
+    document.getElementById('fullscreen').addEventListener('click', async () => {
+      try {
+        if (document.fullscreenElement) await document.exitFullscreen();
+        else if (stage.requestFullscreen) await stage.requestFullscreen();
+        else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
+        else status.textContent = '此浏览器请使用视频原生控件进入全屏。';
+      } catch (_) { status.textContent = '无法切换全屏，请使用视频原生控件或浏览器全屏功能。'; }
+    });
+    document.addEventListener('fullscreenchange', () => {
+      document.getElementById('fullscreen-label').textContent = document.fullscreenElement ? '退出全屏' : '全屏';
+    });
+    document.addEventListener('keydown', event => {
+      if (event.defaultPrevented || event.repeat || event.ctrlKey || event.altKey || event.metaKey) return;
+      const target = event.target;
+      if (target instanceof Element && target.closest('input,textarea,select,[contenteditable="true"],[role="textbox"]')) return;
+      if (event.code === 'Space') {
+        // Native buttons, links and video controls keep their own keyboard behavior.
+        if (target instanceof Element && target.closest('button,a,video')) return;
+        event.preventDefault();
+        togglePlayback();
+      } else if (event.key === 'Escape' && !document.fullscreenElement && !finished) {
+        event.preventDefault();
+        finish('skipped');
+      }
+    });
+    syncPlayback();
+  </script>
+</body>
+</html>
