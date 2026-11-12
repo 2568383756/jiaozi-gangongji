@@ -1,0 +1,23 @@
+Use case: style-transfer / illustration-story.
+Create ONE finished 16:9 Chapter 04 image for the same Chinese papercraft game opening.
+
+REFERENCE PRIORITY:
+Image 1 is the approved GAME-STYLE MASTER. Its book shape, camera, warm lighting, clean folded-paper color language, blue roof tiles, golden wood and chibi NPC proportions are authoritative.
+Image 2 supplies ONLY Chapter 04's tea-purchase action and tea-stall/fabric-shop composition. Repaint this chapter completely in Image 1's game style. Do not retain Image 2's realistic adult anatomy, dark ink outlines, fine hatching, sepia grey roofs or aged gritty textures.
+
+KEEP THE CHAPTER 04 EVENT:
+Left/center foreground, a tea seller in a warm ochre robe leans across a low tea counter and passes ONE small tied tea parcel directly into the open receiving hands of a grey-blue-robed customer. The parcel visibly touches their hands, heads turn naturally toward one another, and all feet/counter legs contact the same page-ground. The seller has ALREADY received payment: ONE palm-sized cream paper note with simple non-letter decorative marks is lying in a shallow receiving tray on the counter. The customer holds no note, coin, basket or second item. This is a natural purchase, not characters posing beside a currency sign.
+Farther back on the right, a quieter cloth-shop keeper is rolling a single turquoise/coral patterned cloth bolt on a small table; a few cloth stacks and hanging fabric panels complete the shop. Main tea trade large and clear, cloth activity secondary. Only three main standing people. A few tiny distant figures may be flat printed details in the rear street layer as in Image 1.
+
+CHANGE ALL FIGURES TO THE GAME STYLE:
+Broad large heads, short bodies and short limbs, about two-heads-tall proportions, big warm dark eyes, simple folded paper cheeks with a little blush, small expressive hands, geometric Song-inspired clothes. The seller is a friendly anonymous adult merchant with a small topknot and restrained tiny beard; the customer has a simple cloth headwrap, grey-blue travel robe and relaxed happy posture; the cloth keeper has a simple single bun and muted coral clothing. They are historical NPCs, NOT the game's two protagonists: no signature folded paper hat, no blue hair ribbons, no red twin hair bows, no protagonist costumes. Faces and paper proportions must look like they inhabit Image 1's world, not a separate historical painting.
+
+MATCH IMAGE 1'S ART:
+Honey-gold timber, creamy paper walls, clean muted indigo-blue curved roof silhouettes, sage and moss-green foliage, a golden ginkgo, small vermilion lanterns, warm apricot light and unobtrusive ivory background. Rich clear color blocks, a few delicate paper creases, smooth confident illustrative shapes, shallow layered-paper shading, extremely restrained paper grain. Shelf goods are simple pleasing paper silhouettes, roofs are illustrated flat paper panels with subtle fold lines, no photoreal modeled tiles or timber. Remove dense ink hatching and coarse aged-paper texture. No plastic, clay, felt, glossy render or generic vector clipart.
+
+PRESERVE THE APPROVED TRUE POP-UP BOOK STRUCTURE:
+One normal rust-red cloth hardcover lies almost flat on the table, cream page block and all cover corners visible. Clear central spine/gutter continues from front binding toward rear. Horizontal illustrated stone-lane ground fills the two pages. About 85–90% frame occupancy with narrow unobstructed margins; same long-lens mildly elevated frontal three-quarter framing as Image 1.
+Five independently contour-cut THIN card layers: a low basket/leaf foreground strip; the trading figures and folded tea counter; hollow tea-stall silhouette with cut-through window gaps and a simple thin folded awning; the offset rear-right cloth shop and cloth keeper; a lower rear shop/bridge silhouette with sparse ginkgo/cloud shapes. Show open air and warm ivory background between uneven silhouette groups, subtle cream paper reverse edges, small integral folded feet/V-fold tabs and natural cast shadows between the layers. Scenery must look foldable, hollow and thin, not a solid miniature village or architectural model. Awning and table tops are small real folded paper surfaces in the same perspective as the page.
+
+NO writing anywhere: no title, captions, letters, Chinese characters, labels, shop sign text, note inscription, numbers, watermark or UI. No giant paper note, oversized money, game portrait currency, floating objects, full rectangular backdrop, compartment walls or separate plinth.
+Deliver one polished complete Chapter 04 effect image, faithful to Image 1's game art and Image 2's clear tea-for-paper-note transaction.

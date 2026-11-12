@@ -1,0 +1,42 @@
+{
+  "version": "v06_20261112_revision03",
+  "note": "02/03/04的完整输入和源输出记录位于各自prompt.txt；本文件补充01/05/06。",
+  "records": [
+    {
+      "chapter": "01_铁钱难行",
+      "tool": "built-in image_gen",
+      "output": "效果图/游戏画风_修订03/01_铁钱难行_v06.png",
+      "exact_prompt": "效果图/游戏画风_修订03/01_铁钱难行_prompt.txt",
+      "original_output": "C:/Users/wangjingjing/.codex/generated_images/01a1c992-030b-7030-aa79-d008229e17ca/exec-25881e1d-7d8a-42c3-a3fc-a0aa7e6a68c8.png",
+      "references": [
+        "参考/薄片立体书结构样张_修订02.png",
+        "游戏概念图_敞口修正版",
+        "扁平纸团印桃_v02"
+      ]
+    },
+    {
+      "chapter": "05_纸艺开工",
+      "tool": "built-in image_gen",
+      "output": "效果图/游戏画风_修订03/05_纸艺开工_v06.png",
+      "exact_prompt": "效果图/游戏画风_修订03/05_纸艺开工_prompt.txt",
+      "original_output": "C:/Users/wangjingjing/.codex/generated_images/01a1c992-030b-7030-aa79-d008229e17ca/exec-e00b0b19-d930-4f63-9612-466c0eb2d7cc.png",
+      "references": [
+        "效果图/游戏画风_修订03/01_铁钱难行_v06.png",
+        "扁平纸团印桃_v02",
+        "游戏概念图_敞口修正版"
+      ]
+    },
+    {
+      "chapter": "06_合做交子",
+      "tool": "built-in image_gen",
+      "output": "效果图/游戏画风_修订03/06_合做交子_v06.png",
+      "exact_prompt": "效果图/游戏画风_修订03/06_合做交子_prompt.txt",
+      "original_output": "C:/Users/wangjingjing/.codex/generated_images/01a1c992-030b-7030-aa79-d008229e17ca/exec-64b81cee-b82b-4ae9-b396-2403849a33b1.png",
+      "references": [
+        "效果图/游戏画风_修订03/05_纸艺开工_v06.png",
+        "扁平纸团印桃_v02",
+        "08_组合交子_纸团印桃"
+      ]
+    }
+  ]
+}

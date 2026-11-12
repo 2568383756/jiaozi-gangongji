@@ -1,0 +1,23 @@
+{
+  "version": "v06_20261112_revision03",
+  "scope": "静态六章效果图与本地预览；不包含Blender、动画或Unity验证",
+  "browser": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "method": "独立临时配置目录启动headless Chrome，加载真实file页面，保存截图与浏览器执行后的DOM",
+  "viewport": [
+    1440,
+    1150
+  ],
+  "checks": {
+    "loaded_chapter_elements": 6,
+    "prompt_links": 6,
+    "displayed_status": "六章效果图已全部载入。",
+    "screenshot_visually_inspected": true
+  },
+  "screenshot_local": "../../Scripts/开场纸书_v06_20261112/work/gallery-review.png",
+  "dom_local": "../../Scripts/开场纸书_v06_20261112/work/gallery-dom.html",
+  "visual_review": "六张原图已逐张查看。保留同一双页书型、暖色、蓝瓦金木和纸艺比例；故事动作各章区分；预览首屏无溢出，图外字幕与跳转入口可见。",
+  "limitations": [
+    "效果图中透视和阴影是图像生成结果，不能当作三维机关正确性证据。",
+    "拆件素材、折叠结构、接触锚点及新版动画尚未制作。"
+  ]
+}
