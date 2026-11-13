@@ -1,0 +1,18 @@
+{
+  "version": "v10_20261113",
+  "media": "开场机关书_v10.mp4",
+  "bytes": 28843504,
+  "sha256": "c7ed488e1045827bb6d726cb360187da59814d1e8dfc0526906658a4014d084b",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "duration_seconds": 56,
+  "rendered_frames": 1344,
+  "full_decode_exit_code": 0,
+  "stream_evidence": "  Duration: 00:00:56.02, start: 0.000000, bitrate: 4118 kb/s\r\n    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 3931 kb/s, 24 fps, 24 tbr, 12288 tbn, 48 tbc (default)\r\n    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 182 kb/s (default)\r\n  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))\r\n  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))\r\n    Stream #0:0(und): Video: wrapped_avframe, yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 24 fps, 24 tbn, 24 tbc (default)\r\n    Stream #0:1(und): Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s (default)\r\nframe=  702 fps=0.0 q=-0.0 size=N/A time=00:00:29.83 bitrate=N/A speed=59.6x    \rframe= 1344 fps=0.0 q=-0.0 Lsize=N/A time=00:00:56.00 bitrate=N/A speed=65.4x    \r",
+  "visual_review": "Six chapter samples plus printing approach, printing, sealing, return, buyer retreat and page turn samples inspected. Corrected premature desk occlusion at 38s and moved distant street walker onto pavement. Layers tested independently. Artistic approval remains with user.",
+  "unity_tested": false,
+  "human_audio_review": false
+}

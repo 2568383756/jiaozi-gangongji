@@ -1,0 +1,648 @@
+{
+  "version": "v10_20261113",
+  "fontLoaded": true,
+  "fontCheck": true,
+  "characterAssets": {
+    "spriteCount": 12,
+    "partCount": 56,
+    "adoptedPaths": [
+      "assets/heroes_adopted.png",
+      "assets/npcs_adopted.png",
+      "assets/props_adopted.png"
+    ],
+    "stampTimes": [
+      42
+    ],
+    "chapterActions": [
+      "负重行走、扁担与钱筐摆动、推车滚轮",
+      "掌柜与商人抬臂递券、点头",
+      "官吏递券、商人伸手与点头",
+      "包裹交接、买家接物退步",
+      "单纸传递、女孩走向印台与盖印台、印章抬起压落",
+      "女孩递票、买家接票后退、男孩招手"
+    ],
+    "movementRanges": {
+      "chapter1_travel_px": 108,
+      "previous_chapter1_px": 38,
+      "chapter2_approach_px": 65,
+      "chapter3_approach_px": 54,
+      "chapter4_retreat_px": 68,
+      "chapter5_boy_follow_px": 120,
+      "chapter6_retreat_px": 80,
+      "foot_swing_radians": 0.22,
+      "body_bounce_px": 5.5
+    }
+  },
+  "pageGeometry": {
+    "samples": 101,
+    "spineError": 0,
+    "minX": 23.999999999999204,
+    "maxX": 1630.000000000001,
+    "minY": 132.80846857015985,
+    "maxY": 861,
+    "passed": true
+  },
+  "checks": [
+    {
+      "chapter": 1,
+      "changedPixels": 221435,
+      "changedFraction": 0.41025626773976004,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 2,
+      "changedPixels": 57893,
+      "changedFraction": 0.14271592399396527,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 3,
+      "changedPixels": 67713,
+      "changedFraction": 0.20974946411091974,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 4,
+      "changedPixels": 78536,
+      "changedFraction": 0.1731744533723771,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 5,
+      "changedPixels": 111947,
+      "changedFraction": 0.2735752688172043,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 6,
+      "changedPixels": 72614,
+      "changedFraction": 0.15076123899354094,
+      "magentaPixels": 0,
+      "passed": true
+    }
+  ],
+  "layerChecks": {
+    "environment": {
+      "method": "Localized continuous UV displacement of original paper artwork; atlas walkers composited separately",
+      "cloudChapters": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "cloudDisplacementAmplitude_px": 18,
+      "branchAmplitude_px": 3.5,
+      "lanternAmplitude_px": 4,
+      "walkersPerChapter": [
+        3,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "walkDistance_px": [
+        90,
+        0,
+        0,
+        82,
+        0,
+        70
+      ],
+      "cloudRegions": {
+        "0": [
+          960,
+          65,
+          1515,
+          260
+        ],
+        "3": [
+          955,
+          55,
+          1480,
+          250
+        ],
+        "4": [
+          834,
+          35,
+          1210,
+          158
+        ],
+        "5": [
+          816,
+          25,
+          1140,
+          123
+        ]
+      }
+    },
+    "ambience": {
+      "leafSource": "assets/clean01.png, top ginkgo fan; runtime polygon cutout",
+      "leafCounts": [
+        6,
+        2,
+        2,
+        6,
+        7,
+        6
+      ],
+      "waterRegions": {
+        "0": [
+          [
+            [
+              1070,
+              805
+            ],
+            [
+              1134,
+              779
+            ],
+            [
+              1238,
+              776
+            ],
+            [
+              1209,
+              796
+            ],
+            [
+              1286,
+              830
+            ],
+            [
+              1319,
+              848
+            ],
+            [
+              1170,
+              847
+            ],
+            [
+              1157,
+              834
+            ]
+          ],
+          [
+            [
+              843,
+              594
+            ],
+            [
+              899,
+              596
+            ],
+            [
+              917,
+              616
+            ],
+            [
+              965,
+              628
+            ],
+            [
+              944,
+              647
+            ],
+            [
+              848,
+              668
+            ],
+            [
+              829,
+              666
+            ],
+            [
+              894,
+              641
+            ],
+            [
+              931,
+              632
+            ],
+            [
+              897,
+              621
+            ],
+            [
+              850,
+              613
+            ]
+          ],
+          [
+            [
+              936,
+              454
+            ],
+            [
+              967,
+              453
+            ],
+            [
+              1003,
+              467
+            ],
+            [
+              997,
+              486
+            ],
+            [
+              1029,
+              497
+            ],
+            [
+              1074,
+              518
+            ],
+            [
+              1082,
+              532
+            ],
+            [
+              1049,
+              549
+            ],
+            [
+              1022,
+              548
+            ],
+            [
+              1058,
+              528
+            ],
+            [
+              1024,
+              511
+            ],
+            [
+              991,
+              498
+            ],
+            [
+              975,
+              478
+            ]
+          ]
+        ],
+        "3": [
+          [
+            [
+              967,
+              397
+            ],
+            [
+              1023,
+              397
+            ],
+            [
+              1068,
+              402
+            ],
+            [
+              1099,
+              417
+            ],
+            [
+              1114,
+              435
+            ],
+            [
+              1053,
+              433
+            ],
+            [
+              1009,
+              418
+            ],
+            [
+              968,
+              420
+            ]
+          ]
+        ],
+        "4": [
+          [
+            [
+              171,
+              639
+            ],
+            [
+              425,
+              639
+            ],
+            [
+              436,
+              679
+            ],
+            [
+              160,
+              679
+            ]
+          ],
+          [
+            [
+              271,
+              492
+            ],
+            [
+              313,
+              500
+            ],
+            [
+              343,
+              512
+            ],
+            [
+              340,
+              530
+            ],
+            [
+              310,
+              550
+            ],
+            [
+              260,
+              566
+            ],
+            [
+              218,
+              579
+            ],
+            [
+              190,
+              598
+            ],
+            [
+              154,
+              598
+            ],
+            [
+              175,
+              577
+            ],
+            [
+              214,
+              560
+            ],
+            [
+              261,
+              548
+            ],
+            [
+              302,
+              528
+            ],
+            [
+              294,
+              511
+            ],
+            [
+              268,
+              507
+            ]
+          ],
+          [
+            [
+              995,
+              834
+            ],
+            [
+              1086,
+              805
+            ],
+            [
+              1141,
+              781
+            ],
+            [
+              1203,
+              783
+            ],
+            [
+              1227,
+              804
+            ],
+            [
+              1266,
+              817
+            ],
+            [
+              1390,
+              835
+            ]
+          ]
+        ],
+        "5": []
+      },
+      "waterChapters": [
+        1,
+        4,
+        5
+      ],
+      "waterMethod": "Moving cream paper strokes and widening vat ellipses, clipped to hand-checked river/vat polygons",
+      "leafMotion": "Curved descent, wind drift, rotation, folded foreshortening, then ground settling",
+      "chapterTypes": [
+        [
+          "cloud",
+          "pedestrians",
+          "leaves",
+          "river",
+          "lantern"
+        ],
+        [
+          "leaves",
+          "lantern",
+          "curtain"
+        ],
+        [
+          "leaves",
+          "lantern"
+        ],
+        [
+          "cloud",
+          "pedestrians",
+          "leaves",
+          "river",
+          "lantern"
+        ],
+        [
+          "cloud",
+          "leaves",
+          "river",
+          "vat ripples",
+          "lantern"
+        ],
+        [
+          "cloud",
+          "pedestrian",
+          "leaves",
+          "lantern"
+        ]
+      ]
+    },
+    "results": [
+      {
+        "name": "isolated_character_chapter_1",
+        "changed": 249753,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_leaves_chapter_1",
+        "changed": 5289,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "fixed_book_edges_chapter_1",
+        "changed": 0,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_character_chapter_2",
+        "changed": 47538,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_leaves_chapter_2",
+        "changed": 1234,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "fixed_book_edges_chapter_2",
+        "changed": 0,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_character_chapter_3",
+        "changed": 38558,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_leaves_chapter_3",
+        "changed": 1234,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "fixed_book_edges_chapter_3",
+        "changed": 0,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_character_chapter_4",
+        "changed": 75271,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_leaves_chapter_4",
+        "changed": 5289,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "fixed_book_edges_chapter_4",
+        "changed": 0,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_character_chapter_5",
+        "changed": 195133,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_leaves_chapter_5",
+        "changed": 2716,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "fixed_book_edges_chapter_5",
+        "changed": 0,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_character_chapter_6",
+        "changed": 70416,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "isolated_leaves_chapter_6",
+        "changed": 4817,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "fixed_book_edges_chapter_6",
+        "changed": 0,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "cloud_motion_chapter_1",
+        "changed": 16113,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "cloud_motion_chapter_4",
+        "changed": 18257,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "cloud_motion_chapter_5",
+        "changed": 7607,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "cloud_motion_chapter_6",
+        "changed": 4634,
+        "magenta": 0,
+        "passed": true
+      },
+      {
+        "name": "clipped_water_chapter_1",
+        "changed": 2480,
+        "magenta": 0,
+        "leaked": 0,
+        "passed": true
+      },
+      {
+        "name": "clipped_water_chapter_4",
+        "changed": 1389,
+        "magenta": 0,
+        "leaked": 0,
+        "passed": true
+      },
+      {
+        "name": "clipped_water_chapter_5",
+        "changed": 6719,
+        "magenta": 0,
+        "leaked": 0,
+        "passed": true
+      },
+      {
+        "name": "deterministic_scrubbing",
+        "differentBytes": 0,
+        "passed": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "asset": "开场配乐与纸声_v10.wav",
+  "version": "v10_20261113",
+  "duration_seconds": 56,
+  "sample_rate": 44100,
+  "channels": 2,
+  "bits_per_sample": 16,
+  "sample_count_per_channel": 2469600,
+  "peak_dbfs": -9.113487350017252,
+  "rms_dbfs": -24.999999999845542,
+  "music": "Original additive pentatonic plucked-string synthesis; D E F# A B",
+  "foley": "Original filtered-noise page turns and card pulls, synthesized wood-seal impacts",
+  "paper_turn_seconds": [
+    6.3,
+    14.3,
+    22.3,
+    30.3,
+    44.3
+  ],
+  "paper_turn_duration_seconds": 1.65,
+  "card_pull_seconds": [
+    0.15,
+    8.15,
+    16.15,
+    24.15,
+    32.15,
+    46.15
+  ],
+  "card_pull_duration_seconds": 0.85,
+  "seal_seconds": [
+    42.0
+  ],
+  "voice_over": false,
+  "external_audio_sources": [],
+  "random_seed": 20261111,
+  "timeline": "Six double-page book sections (8,8,8,8,14,10 seconds): history 1-3, transition 4, workshop 5, delivery 6"
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v10_20261113",
+  "checks": [
+    {
+      "name": "video_metadata",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "playback_advances",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "pause_freezes",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "skip_fires_once",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "natural_end_after_replay",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "ended_stops_playback",
+      "value": true,
+      "passed": true
+    }
+  ],
+  "unity_integration_tested": false,
+  "audio_listened": false
+}
