@@ -1,0 +1,78 @@
+{
+  "version": "v09_20261113",
+  "fontLoaded": true,
+  "fontCheck": true,
+  "characterAssets": {
+    "spriteCount": 12,
+    "partCount": 56,
+    "adoptedPaths": [
+      "assets/heroes_adopted.png",
+      "assets/npcs_adopted.png",
+      "assets/props_adopted.png"
+    ],
+    "stampTimes": [
+      42
+    ],
+    "chapterActions": [
+      "负重行走、扁担与钱筐摆动、推车滚轮",
+      "掌柜与商人抬臂递券、点头",
+      "官吏递券、商人伸手与点头",
+      "包裹交接、买家接物退步",
+      "单纸传递、女孩走向印台与盖印台、印章抬起压落",
+      "女孩递票、买家接票后退、男孩招手"
+    ]
+  },
+  "pageGeometry": {
+    "samples": 101,
+    "spineError": 0,
+    "minX": 23.999999999999204,
+    "maxX": 1630.000000000001,
+    "minY": 132.80846857015985,
+    "maxY": 861,
+    "passed": true
+  },
+  "checks": [
+    {
+      "chapter": 1,
+      "changedPixels": 151596,
+      "changedFraction": 0.28086440338824786,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 2,
+      "changedPixels": 18527,
+      "changedFraction": 0.04567215248538156,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 3,
+      "changedPixels": 17925,
+      "changedFraction": 0.05552492348866889,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 4,
+      "changedPixels": 30732,
+      "changedFraction": 0.06776506698889545,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 5,
+      "changedPixels": 111474,
+      "changedFraction": 0.27241935483870966,
+      "magentaPixels": 0,
+      "passed": true
+    },
+    {
+      "chapter": 6,
+      "changedPixels": 30616,
+      "changedFraction": 0.06356496120618957,
+      "magentaPixels": 0,
+      "passed": true
+    }
+  ]
+}
