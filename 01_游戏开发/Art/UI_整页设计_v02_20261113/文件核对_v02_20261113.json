@@ -1,0 +1,33 @@
+{
+  "version": "v02_20261113",
+  "method": "built-in image_gen",
+  "scope": "Two full-page visual design images, not sprites, not a running Unity UI",
+  "files": [
+    {
+      "file": "01_首关关卡选择_UI整页_v02_20261113.png",
+      "width": 1672,
+      "height": 941,
+      "png_color_type": 2,
+      "bytes": 2881552,
+      "sha256": "fb303a78b1d590a2436e41b2442f751ed9a44a80f9a2b95bb6e7948e4a642125"
+    },
+    {
+      "file": "02_局内合作HUD_UI整页_v02_20261113.png",
+      "width": 1672,
+      "height": 941,
+      "png_color_type": 2,
+      "bytes": 2541024,
+      "sha256": "f2a3e5da1a141224454773ffd56d4da002e70a6107b1ddc80b2d11fde5a209d2"
+    }
+  ],
+  "reference_files_read_only": true,
+  "visual_review": [
+    "Both images show full-page paper diorama UI with saturated gold/blue/jade/vermilion colors",
+    "One first-level entry, two initial characters, no added selectable levels",
+    "HUD shows one active order, two drying slots and one held sheet",
+    "Full scene contains decorative paper stacks; these do not define runtime inventory",
+    "Illustrated banknote ink/seal layers are not production-ready separated assets"
+  ],
+  "unity_runtime_tested": false,
+  "sprite_extraction_completed": false
+}
