@@ -1,0 +1,119 @@
+{
+  "version": "v11_20261113",
+  "method": "480x270 RGB mean absolute difference across consecutive 24 fps frames; only guards against broad flashes/cuts, manual review still required",
+  "pageMechanics": null,
+  "checks": [
+    {
+      "name": "open_chapter_1",
+      "samples": 30,
+      "maxNormalizedMeanPixelDelta": 0.08453085411119181,
+      "worstTime": 0.5416666666666666,
+      "passed": true
+    },
+    {
+      "name": "fold_chapter_1",
+      "samples": 25,
+      "maxNormalizedMeanPixelDelta": 0.09548994391995481,
+      "worstTime": 5.933333333333337,
+      "passed": true
+    },
+    {
+      "name": "turn_chapter_1",
+      "samples": 43,
+      "maxNormalizedMeanPixelDelta": 0.004695079883805374,
+      "worstTime": 7.966666666666678,
+      "passed": true
+    },
+    {
+      "name": "open_chapter_2",
+      "samples": 30,
+      "maxNormalizedMeanPixelDelta": 0.0685047708383765,
+      "worstTime": 8.541666666666659,
+      "passed": true
+    },
+    {
+      "name": "fold_chapter_2",
+      "samples": 25,
+      "maxNormalizedMeanPixelDelta": 0.08199634874525942,
+      "worstTime": 13.933333333333325,
+      "passed": true
+    },
+    {
+      "name": "turn_chapter_2",
+      "samples": 43,
+      "maxNormalizedMeanPixelDelta": 0.004695079883805374,
+      "worstTime": 15.966666666666644,
+      "passed": true
+    },
+    {
+      "name": "open_chapter_3",
+      "samples": 30,
+      "maxNormalizedMeanPixelDelta": 0.08251783264746228,
+      "worstTime": 16.541666666666682,
+      "passed": true
+    },
+    {
+      "name": "fold_chapter_3",
+      "samples": 25,
+      "maxNormalizedMeanPixelDelta": 0.09906032639393206,
+      "worstTime": 21.93333333333335,
+      "passed": true
+    },
+    {
+      "name": "turn_chapter_3",
+      "samples": 43,
+      "maxNormalizedMeanPixelDelta": 0.004695079883805374,
+      "worstTime": 23.966666666666715,
+      "passed": true
+    },
+    {
+      "name": "open_chapter_4",
+      "samples": 30,
+      "maxNormalizedMeanPixelDelta": 0.0817869664326636,
+      "worstTime": 24.58333333333335,
+      "passed": true
+    },
+    {
+      "name": "fold_chapter_4",
+      "samples": 25,
+      "maxNormalizedMeanPixelDelta": 0.09333894133785202,
+      "worstTime": 29.93333333333335,
+      "passed": true
+    },
+    {
+      "name": "turn_chapter_4",
+      "samples": 43,
+      "maxNormalizedMeanPixelDelta": 0.004695079883805374,
+      "worstTime": 31.966666666666715,
+      "passed": true
+    },
+    {
+      "name": "open_chapter_5",
+      "samples": 30,
+      "maxNormalizedMeanPixelDelta": 0.08543576010651174,
+      "worstTime": 32.541666666666636,
+      "passed": true
+    },
+    {
+      "name": "fold_chapter_5",
+      "samples": 25,
+      "maxNormalizedMeanPixelDelta": 0.09934649600580973,
+      "worstTime": 43.9333333333333,
+      "passed": true
+    },
+    {
+      "name": "turn_chapter_5",
+      "samples": 43,
+      "maxNormalizedMeanPixelDelta": 0.004695079883805374,
+      "worstTime": 45.96666666666657,
+      "passed": true
+    },
+    {
+      "name": "open_chapter_6",
+      "samples": 30,
+      "maxNormalizedMeanPixelDelta": 0.0828382756394739,
+      "worstTime": 46.541666666666636,
+      "passed": true
+    }
+  ]
+}

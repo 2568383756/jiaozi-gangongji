@@ -1,0 +1,873 @@
+{
+  "version": "v11_20261113",
+  "png_count": 19,
+  "characterAssets": {
+    "spriteCount": 12,
+    "partCount": 56,
+    "adoptedPaths": [
+      "assets/heroes_adopted.png",
+      "assets/npcs_adopted.png",
+      "assets/props_adopted.png"
+    ],
+    "stampTimes": [
+      42
+    ],
+    "chapterActions": [
+      "负重行走、扁担与钱筐摆动、推车滚轮",
+      "掌柜与商人抬臂递券、点头",
+      "官吏递券、商人伸手与点头",
+      "包裹交接、买家接物退步",
+      "单纸传递、女孩走向印台与盖印台、印章抬起压落",
+      "女孩递票、买家接票后退、男孩招手"
+    ],
+    "movementRanges": {
+      "chapter1_travel_px": 108,
+      "previous_chapter1_px": 38,
+      "chapter2_approach_px": 65,
+      "chapter3_approach_px": 54,
+      "chapter4_retreat_px": 68,
+      "chapter5_boy_follow_px": 120,
+      "chapter6_retreat_px": 80,
+      "foot_swing_radians": 0.14,
+      "body_bounce_source_px": 3.5,
+      "bounce_scales_with_character": true
+    },
+    "polish": {
+      "handAnchoredTransfers": 5,
+      "continuousWorkshopPose": "h1",
+      "stampHeldBySameHand": true,
+      "occlusionOption": true,
+      "gait": "distance-driven phases, gradual start/stop, supporting foot counters torso bounce"
+    }
+  },
+  "environment": {
+    "method": "Localized continuous UV displacement of original paper artwork; atlas walkers composited separately",
+    "cloudChapters": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "cloudDisplacementAmplitude_px": 18,
+    "branchAmplitude_px": 3.5,
+    "lanternAmplitude_px": 4,
+    "walkersPerChapter": [
+      3,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    "walkDistance_px": [
+      90,
+      0,
+      0,
+      82,
+      0,
+      70
+    ],
+    "cloudRegions": {
+      "0": [
+        960,
+        65,
+        1515,
+        260
+      ],
+      "3": [
+        955,
+        55,
+        1480,
+        250
+      ],
+      "4": [
+        834,
+        35,
+        1210,
+        158
+      ],
+      "5": [
+        816,
+        25,
+        1140,
+        123
+      ]
+    },
+    "walkerMotion": "Separate smooth start/stop trajectories; phase follows traveled distance; stationary feet and phase after each arrival"
+  },
+  "ambience": {
+    "leafSource": "assets/clean01.png, top ginkgo fan; runtime polygon cutout",
+    "leafCounts": [
+      6,
+      2,
+      2,
+      6,
+      7,
+      6
+    ],
+    "leafLayers": {
+      "back": [
+        4,
+        1,
+        1,
+        4,
+        5,
+        4
+      ],
+      "front": [
+        2,
+        1,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    "waterRegions": {
+      "0": [
+        [
+          [
+            1070,
+            805
+          ],
+          [
+            1134,
+            779
+          ],
+          [
+            1238,
+            776
+          ],
+          [
+            1209,
+            796
+          ],
+          [
+            1286,
+            830
+          ],
+          [
+            1319,
+            848
+          ],
+          [
+            1170,
+            847
+          ],
+          [
+            1157,
+            834
+          ]
+        ],
+        [
+          [
+            843,
+            594
+          ],
+          [
+            899,
+            596
+          ],
+          [
+            917,
+            616
+          ],
+          [
+            965,
+            628
+          ],
+          [
+            944,
+            647
+          ],
+          [
+            848,
+            668
+          ],
+          [
+            829,
+            666
+          ],
+          [
+            894,
+            641
+          ],
+          [
+            931,
+            632
+          ],
+          [
+            897,
+            621
+          ],
+          [
+            850,
+            613
+          ]
+        ],
+        [
+          [
+            936,
+            454
+          ],
+          [
+            967,
+            453
+          ],
+          [
+            1003,
+            467
+          ],
+          [
+            997,
+            486
+          ],
+          [
+            1029,
+            497
+          ],
+          [
+            1074,
+            518
+          ],
+          [
+            1082,
+            532
+          ],
+          [
+            1049,
+            549
+          ],
+          [
+            1022,
+            548
+          ],
+          [
+            1058,
+            528
+          ],
+          [
+            1024,
+            511
+          ],
+          [
+            991,
+            498
+          ],
+          [
+            975,
+            478
+          ]
+        ]
+      ],
+      "3": [
+        [
+          [
+            967,
+            397
+          ],
+          [
+            1023,
+            397
+          ],
+          [
+            1068,
+            402
+          ],
+          [
+            1099,
+            417
+          ],
+          [
+            1114,
+            435
+          ],
+          [
+            1053,
+            433
+          ],
+          [
+            1009,
+            418
+          ],
+          [
+            968,
+            420
+          ]
+        ]
+      ],
+      "4": [
+        [
+          [
+            171,
+            639
+          ],
+          [
+            425,
+            639
+          ],
+          [
+            436,
+            679
+          ],
+          [
+            160,
+            679
+          ]
+        ],
+        [
+          [
+            271,
+            492
+          ],
+          [
+            313,
+            500
+          ],
+          [
+            343,
+            512
+          ],
+          [
+            340,
+            530
+          ],
+          [
+            310,
+            550
+          ],
+          [
+            260,
+            566
+          ],
+          [
+            218,
+            579
+          ],
+          [
+            190,
+            598
+          ],
+          [
+            154,
+            598
+          ],
+          [
+            175,
+            577
+          ],
+          [
+            214,
+            560
+          ],
+          [
+            261,
+            548
+          ],
+          [
+            302,
+            528
+          ],
+          [
+            294,
+            511
+          ],
+          [
+            268,
+            507
+          ]
+        ],
+        [
+          [
+            995,
+            834
+          ],
+          [
+            1086,
+            805
+          ],
+          [
+            1141,
+            781
+          ],
+          [
+            1203,
+            783
+          ],
+          [
+            1227,
+            804
+          ],
+          [
+            1266,
+            817
+          ],
+          [
+            1390,
+            835
+          ]
+        ]
+      ],
+      "5": []
+    },
+    "waterCenterlines": {
+      "0": [
+        [
+          [
+            1230,
+            782
+          ],
+          [
+            1163,
+            795
+          ],
+          [
+            1116,
+            810
+          ],
+          [
+            1191,
+            832
+          ],
+          [
+            1285,
+            847
+          ]
+        ],
+        [
+          [
+            855,
+            600
+          ],
+          [
+            899,
+            607
+          ],
+          [
+            917,
+            622
+          ],
+          [
+            945,
+            633
+          ],
+          [
+            894,
+            652
+          ],
+          [
+            840,
+            667
+          ]
+        ],
+        [
+          [
+            948,
+            457
+          ],
+          [
+            985,
+            470
+          ],
+          [
+            988,
+            486
+          ],
+          [
+            1031,
+            510
+          ],
+          [
+            1062,
+            528
+          ],
+          [
+            1037,
+            545
+          ]
+        ]
+      ],
+      "3": [
+        [
+          [
+            978,
+            404
+          ],
+          [
+            1014,
+            409
+          ],
+          [
+            1056,
+            420
+          ],
+          [
+            1096,
+            429
+          ]
+        ]
+      ],
+      "4": [
+        null,
+        [
+          [
+            278,
+            499
+          ],
+          [
+            320,
+            516
+          ],
+          [
+            314,
+            534
+          ],
+          [
+            264,
+            557
+          ],
+          [
+            216,
+            574
+          ],
+          [
+            167,
+            594
+          ]
+        ],
+        [
+          [
+            1190,
+            788
+          ],
+          [
+            1140,
+            805
+          ],
+          [
+            1137,
+            819
+          ],
+          [
+            1174,
+            832
+          ],
+          [
+            1264,
+            840
+          ]
+        ]
+      ]
+    },
+    "waterChapters": [
+      1,
+      4,
+      5
+    ],
+    "waterMethod": "Arc-length sampled river paths with moving cream paper streaks; three staggered expanding vat ripples; strict river/vat clipping",
+    "leafMotion": "Depth-separated curved descent, wind drift, softened ground settling; front leaves confined to left/right margins",
+    "chapterTypes": [
+      [
+        "cloud",
+        "pedestrians",
+        "leaves",
+        "river",
+        "lantern"
+      ],
+      [
+        "leaves",
+        "lantern",
+        "curtain"
+      ],
+      [
+        "leaves",
+        "lantern"
+      ],
+      [
+        "cloud",
+        "pedestrians",
+        "leaves",
+        "river",
+        "lantern"
+      ],
+      [
+        "cloud",
+        "leaves",
+        "river",
+        "vat ripples",
+        "lantern"
+      ],
+      [
+        "cloud",
+        "pedestrian",
+        "leaves",
+        "lantern"
+      ]
+    ]
+  },
+  "cart": {
+    "source": "assets/props_adopted.png",
+    "sourceDimensions": [
+      1448,
+      1086
+    ],
+    "cartBox": {
+      "x": 31,
+      "y": 405,
+      "w": 341,
+      "h": 280
+    },
+    "wheelCount": 2,
+    "method": "Keep the sole original outer rims and frame; replace only circular inner spoke discs; fixed original axle caps above the rotors",
+    "noDuplicateWholeWheel": true,
+    "rotation": "Clockwise in screen coordinates for rightward travel; radians = travel / projected ground radius",
+    "sourceWheels": [
+      {
+        "id": "front_screen_left",
+        "cx": 220.5,
+        "cy": 618.5,
+        "r": 51,
+        "rotor": 34.5,
+        "hub": 12.2
+      },
+      {
+        "id": "front_screen_right",
+        "cx": 106.25,
+        "cy": 618.5,
+        "r": 51,
+        "rotor": 34.5,
+        "hub": 12.2
+      }
+    ],
+    "defaultPlacement": {
+      "x": 1295,
+      "y": 625,
+      "w": 320,
+      "h": 263
+    },
+    "shadow": "Two small contact shadows anchored below the original wheels",
+    "note": "The adopted cart is drawn in a side elevation; both visible wheels belong to its near side, not different perspective planes."
+  },
+  "font": {
+    "family": "STKaiti",
+    "displayName": "华文楷体",
+    "loaded": true,
+    "size_px": 34,
+    "redistributed_font_file": false
+  },
+  "provenance": [
+    {
+      "adopted": "assets/heroes_adopted.png",
+      "source": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Art\\开场立体书_v07_20261112\\素材\\heroes.png",
+      "sha256": "6bca579d5a3019ea949779d0773d2b7c927c4ff555d4d7373c83000f7882ca32",
+      "identical": true
+    },
+    {
+      "adopted": "assets/npcs_adopted.png",
+      "source": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Art\\开场立体书_v07_20261112\\素材\\npcs.png",
+      "sha256": "7904a203233db14127454191861f06e1fc154e0e48bdcfc710c4612322a0b7d7",
+      "identical": true
+    },
+    {
+      "adopted": "assets/props_adopted.png",
+      "source": "E:\\codex-jiaozi\\交子赶工记_项目总库_20261104\\01_游戏开发\\Art\\开场立体书_v07_20261112\\素材\\props.png",
+      "sha256": "521b7482421cfd11ca19e3e2cfc1caccace1a1f7c644b5b70183da97a2501c44",
+      "identical": true
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/blank.png",
+      "bytes": 1801084,
+      "sha256": "e0ff21bcaa0f1def53cbd6ce4fa699bd2ba7b27b9ba0f2ceb00c3ebef312d962",
+      "width": 1671,
+      "height": 941
+    },
+    {
+      "file": "assets/blank_prompt.txt",
+      "bytes": 616,
+      "sha256": "2e7aeb7825daa8e49f9ac0ee3ee776c7240a5ce501b1957f442cb46b223043dc"
+    },
+    {
+      "file": "assets/clean01.png",
+      "bytes": 2242700,
+      "sha256": "842343df505f4b47b8902fdbf039ee068ad47a43bb3541b338547b3c162d6f44",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean01_prompt.txt",
+      "bytes": 695,
+      "sha256": "6f8ba6e8e38fa516ab6f5312912b662a300c036e2f614a8549bfa793910997ad"
+    },
+    {
+      "file": "assets/clean02.png",
+      "bytes": 2101858,
+      "sha256": "30ded3f0493eb6a3fccf73baff9617ea140fbacbc3de76ddddbba73ac4481c9a",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean02_prompt.txt",
+      "bytes": 567,
+      "sha256": "94eb255a6d07d7191f62f78a7b2b7c3159abf7496f8ce7194cae7f0f5bae1112"
+    },
+    {
+      "file": "assets/clean03.png",
+      "bytes": 1983614,
+      "sha256": "d82757d1aa5a6bd4f00ca9fa02582c5777b7e647169b5b47f8ec5aea2c585b5d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean03_prompt.txt",
+      "bytes": 682,
+      "sha256": "0c11afdc6834b366c2cab8314679272df8311f18e4a0e5d7dc16ba8f5510645e"
+    },
+    {
+      "file": "assets/clean04.png",
+      "bytes": 2185965,
+      "sha256": "beb9ddde089e7480a602a67ef2fc44a01503146b2f4dfd2d73e9326269947c1b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean04_prompt.txt",
+      "bytes": 774,
+      "sha256": "9d5efb245c2a88c2c6911451250593c5e0b9990dd4388e43c98d60302da463d1"
+    },
+    {
+      "file": "assets/clean05.png",
+      "bytes": 2229021,
+      "sha256": "fff73e7e24dbf1c2d0aab7c12d73dd922cdbc7b150c8ba99c2a258a07a5e9294",
+      "width": 1671,
+      "height": 941
+    },
+    {
+      "file": "assets/clean05_no_stamp_v01.png",
+      "bytes": 2177907,
+      "sha256": "5647c9520d1c4ce1dd31459d6e138218ea272ef7a4c8ec88cfaf7b85068cd0ae",
+      "width": 1671,
+      "height": 941
+    },
+    {
+      "file": "assets/clean05_no_stamp_v01_prompt.txt",
+      "bytes": 650,
+      "sha256": "b13c6bedf972b2ce7264aa2121b731f57595133e1b3997f2010970e4c76edc68"
+    },
+    {
+      "file": "assets/clean05_prompt.txt",
+      "bytes": 839,
+      "sha256": "7a9573b80e69ecf668635d04644608adc2f968e5d69f98d716d203145936f650"
+    },
+    {
+      "file": "assets/clean06.png",
+      "bytes": 2301529,
+      "sha256": "4262160b2d7f3ac2e667f935f6d62d4f4b5e8c43b93253f6178a61fa1dc42744",
+      "width": 1670,
+      "height": 941
+    },
+    {
+      "file": "assets/clean06_perspective_v02.png",
+      "bytes": 2235374,
+      "sha256": "7f656bbf9e4ac685d1f5a136e99b311c120b60634c4ca6d27d7a206257168a46",
+      "width": 1670,
+      "height": 941
+    },
+    {
+      "file": "assets/clean06_perspective_v02_prompt.txt",
+      "bytes": 1156,
+      "sha256": "78eceebaf88272cf50455e6677b0fb72d919638f77ce114e799272816f689826"
+    },
+    {
+      "file": "assets/clean06_prompt.txt",
+      "bytes": 761,
+      "sha256": "903366c8b0c7f2e6f59fbac4d75e6211d938f361f707a90392c59d6729238f94"
+    },
+    {
+      "file": "assets/ground.png",
+      "bytes": 1945551,
+      "sha256": "52c2c1beb7be20084e2c2200993e70ae8e67d68fa71eee4972a219f752b00c46",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/ground_prompt.txt",
+      "bytes": 876,
+      "sha256": "33a77405a18c30748f344eabbda014dd9ad8945ef1e430e41885e81cfcff0603"
+    },
+    {
+      "file": "assets/heroes_adopted.png",
+      "bytes": 1880336,
+      "sha256": "6bca579d5a3019ea949779d0773d2b7c927c4ff555d4d7373c83000f7882ca32",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "assets/npcs_adopted.png",
+      "bytes": 1800977,
+      "sha256": "7904a203233db14127454191861f06e1fc154e0e48bdcfc710c4612322a0b7d7",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "assets/props_adopted.png",
+      "bytes": 1833155,
+      "sha256": "521b7482421cfd11ca19e3e2cfc1caccace1a1f7c644b5b70183da97a2501c44",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "assets/scene01.png",
+      "bytes": 2459722,
+      "sha256": "e76ef681ebaf642162c5951a341d0baf86ac76be3ace61dbcaaab9888e57cf43",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene02.png",
+      "bytes": 2163092,
+      "sha256": "6402cdf2c8a29c963f3a865a0ce9f5934ba77e005bcb52bdfc43d9472a6b09c6",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene03.png",
+      "bytes": 2133006,
+      "sha256": "37a8484b8779be12ffbd1c1862430a3dda4489db8769ae03ced5783a2cc17eeb",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene04.png",
+      "bytes": 2305540,
+      "sha256": "543bf736f5aa968fb2e70351ad6c55e4e5aa3746dd7e3b5d62e671658f964374",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene05.png",
+      "bytes": 2376429,
+      "sha256": "30867caf1854faf5f181841e8c80cd1fcb15b397017c041c0abc51a7d762e61a",
+      "width": 1671,
+      "height": 941
+    },
+    {
+      "file": "assets/scene06.png",
+      "bytes": 2496306,
+      "sha256": "1c329761d417c896e4e13de80515c0e6c2bc1b3ef31357070d4a65dbe436d536",
+      "width": 1670,
+      "height": 941
+    },
+    {
+      "file": "assets/开场配乐与纸声_v11.wav",
+      "bytes": 9878444,
+      "sha256": "166372014af3d8fe33097fa598ba8320574229f0ee3b4ed24e48928b2235b207"
+    },
+    {
+      "file": "assets/开场音轨来源_v11.json",
+      "bytes": 976,
+      "sha256": "ef7492902cf71fd8c7fe781f9a92f228df7fa2324251342ff962c85f3c66d0e2"
+    }
+  ]
+}
