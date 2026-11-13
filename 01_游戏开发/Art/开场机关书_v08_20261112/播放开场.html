@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>交子赶工记 · 开场</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f9dec7;color:#643f2b;font-family:"Microsoft YaHei",sans-serif}main{max-width:1920px;margin:auto}video{display:block;width:100%;max-height:90vh;object-fit:contain}nav{display:flex;align-items:center;justify-content:center;gap:18px;padding:16px}button,a{font:inherit}button{border:1px solid #bd8c65;background:transparent;border-radius:6px;color:#643f2b;padding:9px 22px;cursor:pointer}button:first-child{background:#873e2c;color:#fff1d9;border-color:#873e2c}#status{min-width:140px;text-align:center}a{color:#643f2b}</style>
+<main><video id="video" preload="auto" playsinline poster="预览_修正铺面.jpg" src="开场机关书_v08.mp4"></video><nav><button id="play">播放开场</button><button id="skip">跳过</button><button id="replay">重播</button><button id="mute">静音</button><span id="status">00:00 / 00:56</span></nav></main>
+<script>
+const v=document.querySelector('video'),play=document.querySelector('#play'),status=document.querySelector('#status');let completed=false,run=0;
+function finish(reason){if(completed)return;completed=true;v.pause();play.textContent='重新播放';window.dispatchEvent(new CustomEvent('intro-finished',{detail:{reason,runId:run,version:'v08'}}));}
+async function start(){if(completed||v.ended){v.currentTime=0;completed=false;run++}try{await v.play();play.textContent='暂停'}catch{status.textContent='点击播放开场'}}
+play.onclick=()=>v.paused?start():(v.pause(),play.textContent='继续播放');
+document.querySelector('#replay').onclick=()=>{v.pause();v.currentTime=0;completed=false;run++;start()};
+document.querySelector('#skip').onclick=()=>finish('skipped');
+document.querySelector('#mute').onclick=e=>{v.muted=!v.muted;e.target.textContent=v.muted?'开启声音':'静音'};
+v.addEventListener('ended',()=>finish('ended'));
+v.addEventListener('error',()=>status.textContent='视频未能载入');
+v.addEventListener('timeupdate',()=>{status.textContent='00:'+Math.floor(v.currentTime).toString().padStart(2,'0')+' / 00:56'});
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&e.target.tagName!=='BUTTON'){e.preventDefault();play.click()}if(e.code==='Escape')finish('skipped')});
+// Preview starts on one user gesture to honor browser audio rules; the film then plays automatically.
+// The Unity host owns auto-start and transitions after the once-per-run intro-finished callback.
+</script></html>

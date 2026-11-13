@@ -1,0 +1,155 @@
+{
+  "version": "v08_20261113",
+  "png_count": 14,
+  "compositor_character_masks": 14,
+  "assets": [
+    {
+      "file": "assets/blank.png",
+      "bytes": 1801084,
+      "sha256": "e0ff21bcaa0f1def53cbd6ce4fa699bd2ba7b27b9ba0f2ceb00c3ebef312d962",
+      "width": 1671,
+      "height": 941
+    },
+    {
+      "file": "assets/blank_prompt.txt",
+      "bytes": 616,
+      "sha256": "2e7aeb7825daa8e49f9ac0ee3ee776c7240a5ce501b1957f442cb46b223043dc"
+    },
+    {
+      "file": "assets/clean01.png",
+      "bytes": 2242700,
+      "sha256": "842343df505f4b47b8902fdbf039ee068ad47a43bb3541b338547b3c162d6f44",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean01_prompt.txt",
+      "bytes": 695,
+      "sha256": "6f8ba6e8e38fa516ab6f5312912b662a300c036e2f614a8549bfa793910997ad"
+    },
+    {
+      "file": "assets/clean02.png",
+      "bytes": 2101858,
+      "sha256": "30ded3f0493eb6a3fccf73baff9617ea140fbacbc3de76ddddbba73ac4481c9a",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean02_prompt.txt",
+      "bytes": 567,
+      "sha256": "94eb255a6d07d7191f62f78a7b2b7c3159abf7496f8ce7194cae7f0f5bae1112"
+    },
+    {
+      "file": "assets/clean03.png",
+      "bytes": 1983614,
+      "sha256": "d82757d1aa5a6bd4f00ca9fa02582c5777b7e647169b5b47f8ec5aea2c585b5d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean03_prompt.txt",
+      "bytes": 682,
+      "sha256": "0c11afdc6834b366c2cab8314679272df8311f18e4a0e5d7dc16ba8f5510645e"
+    },
+    {
+      "file": "assets/clean04.png",
+      "bytes": 2185965,
+      "sha256": "beb9ddde089e7480a602a67ef2fc44a01503146b2f4dfd2d73e9326269947c1b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/clean04_prompt.txt",
+      "bytes": 774,
+      "sha256": "9d5efb245c2a88c2c6911451250593c5e0b9990dd4388e43c98d60302da463d1"
+    },
+    {
+      "file": "assets/clean05.png",
+      "bytes": 2229021,
+      "sha256": "fff73e7e24dbf1c2d0aab7c12d73dd922cdbc7b150c8ba99c2a258a07a5e9294",
+      "width": 1671,
+      "height": 941
+    },
+    {
+      "file": "assets/clean05_prompt.txt",
+      "bytes": 839,
+      "sha256": "7a9573b80e69ecf668635d04644608adc2f968e5d69f98d716d203145936f650"
+    },
+    {
+      "file": "assets/clean06.png",
+      "bytes": 2301529,
+      "sha256": "4262160b2d7f3ac2e667f935f6d62d4f4b5e8c43b93253f6178a61fa1dc42744",
+      "width": 1670,
+      "height": 941
+    },
+    {
+      "file": "assets/clean06_perspective_v02.png",
+      "bytes": 2235374,
+      "sha256": "7f656bbf9e4ac685d1f5a136e99b311c120b60634c4ca6d27d7a206257168a46",
+      "width": 1670,
+      "height": 941
+    },
+    {
+      "file": "assets/clean06_perspective_v02_prompt.txt",
+      "bytes": 1156,
+      "sha256": "78eceebaf88272cf50455e6677b0fb72d919638f77ce114e799272816f689826"
+    },
+    {
+      "file": "assets/clean06_prompt.txt",
+      "bytes": 761,
+      "sha256": "903366c8b0c7f2e6f59fbac4d75e6211d938f361f707a90392c59d6729238f94"
+    },
+    {
+      "file": "assets/scene01.png",
+      "bytes": 2459722,
+      "sha256": "e76ef681ebaf642162c5951a341d0baf86ac76be3ace61dbcaaab9888e57cf43",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene02.png",
+      "bytes": 2163092,
+      "sha256": "6402cdf2c8a29c963f3a865a0ce9f5934ba77e005bcb52bdfc43d9472a6b09c6",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene03.png",
+      "bytes": 2133006,
+      "sha256": "37a8484b8779be12ffbd1c1862430a3dda4489db8769ae03ced5783a2cc17eeb",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene04.png",
+      "bytes": 2305540,
+      "sha256": "543bf736f5aa968fb2e70351ad6c55e4e5aa3746dd7e3b5d62e671658f964374",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "assets/scene05.png",
+      "bytes": 2376429,
+      "sha256": "30867caf1854faf5f181841e8c80cd1fcb15b397017c041c0abc51a7d762e61a",
+      "width": 1671,
+      "height": 941
+    },
+    {
+      "file": "assets/scene06.png",
+      "bytes": 2496306,
+      "sha256": "1c329761d417c896e4e13de80515c0e6c2bc1b3ef31357070d4a65dbe436d536",
+      "width": 1670,
+      "height": 941
+    },
+    {
+      "file": "assets/开场配乐与纸声_v08.wav",
+      "bytes": 9878444,
+      "sha256": "d66714a7912a79c00a28a2def748518825ef6df34c6741e4c2e4e4f1cde480c6"
+    },
+    {
+      "file": "assets/开场音轨来源_v08.json",
+      "bytes": 985,
+      "sha256": "33c1352ee2d30b10f0583c38d873b1300e6925483cda9e67e5401fa22665616b"
+    }
+  ]
+}
