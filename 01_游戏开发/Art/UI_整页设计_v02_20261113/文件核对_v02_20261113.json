@@ -1,7 +1,7 @@
 {
   "version": "v02_20261113",
   "method": "built-in image_gen",
-  "scope": "Two full-page visual design images, not sprites, not a running Unity UI",
+  "scope": "Seven full-page visual design images; five added pages extend the original two unchanged. Static artwork, not a running Unity UI.",
   "files": [
     {
       "file": "01_首关关卡选择_UI整页_v02_20261113.png",
@@ -18,16 +18,62 @@
       "png_color_type": 2,
       "bytes": 2541024,
       "sha256": "f2a3e5da1a141224454773ffd56d4da002e70a6107b1ddc80b2d11fde5a209d2"
+    },
+    {
+      "file": "03_标题首页_UI整页_v02_20261113.png",
+      "width": 1672,
+      "height": 941,
+      "png_color_type": 2,
+      "bytes": 2805696,
+      "sha256": "ce45698c7ef88c6e6f6b835d1e9df647223ac5b9bd4be548273a20e508660b07"
+    },
+    {
+      "file": "04_双人选角_UI整页_v02_20261113.png",
+      "width": 1672,
+      "height": 941,
+      "png_color_type": 2,
+      "bytes": 2937834,
+      "sha256": "19c6d2d943a9dba8baa69c24f9be4426e72f6299d76f27685aace314ca59b0ac"
+    },
+    {
+      "file": "05_暂停设置_UI整页_v02_20261113.png",
+      "width": 1672,
+      "height": 941,
+      "png_color_type": 2,
+      "bytes": 2476144,
+      "sha256": "950996c52ac8709d7f0313504b91ae1857a195255445adfe7a6a8a0abb5e7a36"
+    },
+    {
+      "file": "06_首关结算_UI整页_v02_20261113.png",
+      "width": 1672,
+      "height": 941,
+      "png_color_type": 2,
+      "bytes": 2942536,
+      "sha256": "4dedbcd4debc4c613a349de05e8408f581ed3e62e6d181987e53f827c8815ff3"
+    },
+    {
+      "file": "07_交子收藏_UI整页_v02_20261113.png",
+      "width": 1672,
+      "height": 941,
+      "png_color_type": 2,
+      "bytes": 3040729,
+      "sha256": "8b12319fd8db17db1d22b9a05f0927144a025398af25cf847a77b1966a4c6cf4"
     }
   ],
   "reference_files_read_only": true,
   "visual_review": [
-    "Both images show full-page paper diorama UI with saturated gold/blue/jade/vermilion colors",
+    "All seven images show full-page paper diorama UI with saturated gold/blue/jade/vermilion colors",
     "One first-level entry, two initial characters, no added selectable levels",
     "HUD shows one active order, two drying slots and one held sheet",
     "Full scene contains decorative paper stacks; these do not define runtime inventory",
-    "Illustrated banknote ink/seal layers are not production-ready separated assets"
+    "Illustrated banknote ink/seal layers are not production-ready separated assets",
+    "Title, character selection, pause/settings, results and collection were visually reviewed as complete page designs",
+    "Character selection depicts the initial zhituan/yintao pair, both ready; this is not a runtime selection test",
+    "Results artwork shows 4 delivered sheets and 3 completed orders: 4*10+3*10=70 points and 1 star at the 2/4/6 order thresholds",
+    "Collection artwork depicts one initial pair and 1/1 collection progress",
+    "PNG file dimensions are 1672x941; the 1920x1080 display setting drawn in the pause artwork is interface content, not file resolution"
   ],
   "unity_runtime_tested": false,
-  "sprite_extraction_completed": false
+  "sprite_extraction_completed": false,
+  "original_two_images_unchanged": true
 }
