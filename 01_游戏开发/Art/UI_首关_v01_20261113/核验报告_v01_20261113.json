@@ -1,0 +1,2334 @@
+{
+  "version": "v01_20261113",
+  "test": "isolated_local_browser_ui_preview",
+  "started_at": "2026-11-13T08:57:50.066Z",
+  "unity_tested": false,
+  "checks": [
+    {
+      "name": "initial_title_and_local_assets",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "title_to_level",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "selection_start_requires_both",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "conflict_blocks_confirm_and_start",
+      "pass": true,
+      "evidence": {
+        "screen": "select",
+        "modal": null,
+        "selection": [
+          "zhituan",
+          "zhituan"
+        ],
+        "ready": [
+          false,
+          false
+        ],
+        "tutorial": true,
+        "time": 180,
+        "score": 0,
+        "delivered": 0,
+        "orders": 0,
+        "received": 0,
+        "target": 1,
+        "carry": [
+          "empty",
+          "empty"
+        ],
+        "dry": [
+          null,
+          null
+        ],
+        "ended": false,
+        "settlementCount": 0
+      }
+    },
+    {
+      "name": "independent_keyboard_confirm",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "tutorial_stops_clock_and_no_collection",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "skip_tutorial_clears_transient",
+      "pass": true,
+      "evidence": {
+        "screen": "game",
+        "modal": null,
+        "selection": [
+          "zhituan",
+          "yintao"
+        ],
+        "ready": [
+          true,
+          true
+        ],
+        "tutorial": false,
+        "time": 179.91489999999993,
+        "score": 0,
+        "delivered": 0,
+        "orders": 0,
+        "received": 0,
+        "target": 1,
+        "carry": [
+          "empty",
+          "empty"
+        ],
+        "dry": [
+          null,
+          null
+        ],
+        "ended": false,
+        "settlementCount": 0
+      }
+    },
+    {
+      "name": "hud_player_panels_at_bottom_corners",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "navigation_clears_previous_screen_feedback",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "pause_freezes_round_and_both_dry_slots",
+      "pass": true,
+      "evidence": {
+        "before": {
+          "screen": "game",
+          "modal": "pause",
+          "selection": [
+            "zhituan",
+            "yintao"
+          ],
+          "ready": [
+            true,
+            true
+          ],
+          "tutorial": false,
+          "time": 136.53339999999946,
+          "score": 0,
+          "delivered": 0,
+          "orders": 0,
+          "received": 0,
+          "target": 1,
+          "carry": [
+            "dry",
+            "black"
+          ],
+          "dry": [
+            3.166599999999991,
+            4
+          ],
+          "ended": false,
+          "settlementCount": 0
+        },
+        "after": {
+          "screen": "game",
+          "modal": "pause",
+          "selection": [
+            "zhituan",
+            "yintao"
+          ],
+          "ready": [
+            true,
+            true
+          ],
+          "tutorial": false,
+          "time": 136.53339999999946,
+          "score": 0,
+          "delivered": 0,
+          "orders": 0,
+          "received": 0,
+          "target": 1,
+          "carry": [
+            "dry",
+            "black"
+          ],
+          "dry": [
+            3.166599999999991,
+            4
+          ],
+          "ended": false,
+          "settlementCount": 0
+        }
+      }
+    },
+    {
+      "name": "modal_focus_wraps_backward",
+      "pass": true,
+      "evidence": [
+        "resume",
+        "settings",
+        "ask-restart",
+        "ask-exit"
+      ]
+    },
+    {
+      "name": "modal_focus_wraps_forward",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "settings_cancel_restores_saved_and_returns_pause",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "settings_save_persists",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "settings_help_returns_to_settings",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "help_back_preserves_settings_page",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "audio_preview_plays",
+      "pass": true,
+      "evidence": {
+        "paused": false,
+        "volume": 0.224,
+        "ready": 4,
+        "time": 0.195793
+      }
+    },
+    {
+      "name": "browser_fullscreen_enters",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "resume_advances_time_and_drying",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "three_sheets_two_orders_50",
+      "pass": true,
+      "evidence": {
+        "screen": "game",
+        "modal": null,
+        "selection": [
+          "zhituan",
+          "yintao"
+        ],
+        "ready": [
+          true,
+          true
+        ],
+        "tutorial": false,
+        "time": 179.9757,
+        "score": 50,
+        "delivered": 3,
+        "orders": 2,
+        "received": 1,
+        "target": 2,
+        "carry": [
+          "empty",
+          "empty"
+        ],
+        "dry": [
+          null,
+          null
+        ],
+        "ended": false,
+        "settlementCount": 0
+      }
+    },
+    {
+      "name": "single_order_1_1_2_four_sheets_70",
+      "pass": true,
+      "evidence": {
+        "screen": "game",
+        "modal": null,
+        "selection": [
+          "zhituan",
+          "yintao"
+        ],
+        "ready": [
+          true,
+          true
+        ],
+        "tutorial": false,
+        "time": 179.9757,
+        "score": 70,
+        "delivered": 4,
+        "orders": 3,
+        "received": 0,
+        "target": 1,
+        "carry": [
+          "empty",
+          "empty"
+        ],
+        "dry": [
+          null,
+          null
+        ],
+        "ended": false,
+        "settlementCount": 0
+      }
+    },
+    {
+      "name": "time_zero_blocks_new_delivery",
+      "pass": true,
+      "evidence": {
+        "accepted": false,
+        "before": 70,
+        "after": 70
+      }
+    },
+    {
+      "name": "time_zero_settles_once",
+      "pass": true,
+      "evidence": {
+        "screen": "result",
+        "modal": null,
+        "selection": [
+          "zhituan",
+          "yintao"
+        ],
+        "ready": [
+          true,
+          true
+        ],
+        "tutorial": false,
+        "time": 0.1,
+        "score": 70,
+        "delivered": 4,
+        "orders": 3,
+        "received": 0,
+        "target": 1,
+        "carry": [
+          "empty",
+          "empty"
+        ],
+        "dry": [
+          null,
+          null
+        ],
+        "ended": true,
+        "settlementCount": 1
+      }
+    },
+    {
+      "name": "settle_guard_is_idempotent",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "formal_delivery_unlocks_and_records",
+      "pass": true,
+      "evidence": {
+        "version": 1,
+        "bestScore": 70,
+        "bestStars": 1,
+        "unlocked": true,
+        "settings": {
+          "master": 64,
+          "music": 35,
+          "sfx": 65,
+          "resolution": "1920",
+          "reduceMotion": false
+        }
+      }
+    },
+    {
+      "name": "collection_has_one_unordered_pair",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "reload_restores_saved",
+      "pass": true,
+      "evidence": {
+        "version": 1,
+        "bestScore": 70,
+        "bestStars": 1,
+        "unlocked": true,
+        "settings": {
+          "master": 64,
+          "music": 35,
+          "sfx": 65,
+          "resolution": "1920",
+          "reduceMotion": false
+        }
+      }
+    },
+    {
+      "name": "restart_clears_transient_keeps_saved",
+      "pass": true,
+      "evidence": {
+        "screen": "game",
+        "modal": null,
+        "selection": [
+          "zhituan",
+          "yintao"
+        ],
+        "ready": [
+          false,
+          false
+        ],
+        "tutorial": false,
+        "time": 179.92319999997616,
+        "score": 0,
+        "delivered": 0,
+        "orders": 0,
+        "received": 0,
+        "target": 1,
+        "carry": [
+          "empty",
+          "empty"
+        ],
+        "dry": [
+          null,
+          null
+        ],
+        "ended": false,
+        "settlementCount": 0
+      }
+    },
+    {
+      "name": "tutorial_delivery_not_collected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "abort_after_delivery_not_collected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "zero_star_delivery_still_collects",
+      "pass": true,
+      "evidence": {
+        "version": 1,
+        "bestScore": 20,
+        "bestStars": 0,
+        "unlocked": true,
+        "settings": {
+          "master": 70,
+          "music": 35,
+          "sfx": 65,
+          "resolution": "1920",
+          "reduceMotion": false
+        }
+      }
+    },
+    {
+      "name": "six_orders_awards_three_stars",
+      "pass": true,
+      "evidence": {
+        "version": 1,
+        "bestScore": 140,
+        "bestStars": 3,
+        "unlocked": true,
+        "settings": {
+          "master": 70,
+          "music": 35,
+          "sfx": 65,
+          "resolution": "1920",
+          "reduceMotion": false
+        }
+      }
+    },
+    {
+      "name": "storage_failure_is_visible_and_keeps_session",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "1920x1080/title/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "bodyWidth": 1920,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "一起开工　→",
+            "x": 115.1875,
+            "y": 696.921875,
+            "w": 300,
+            "h": 61
+          },
+          {
+            "label": "交子收藏",
+            "x": 115.1875,
+            "y": 777.921875,
+            "w": 300,
+            "h": 61
+          },
+          {
+            "label": "设置与操作",
+            "x": 115.1875,
+            "y": 858.921875,
+            "w": 300,
+            "h": 40
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080/title/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1920x1080/title/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "一起开工　→",
+          "x": 115.1875,
+          "y": 696.921875,
+          "w": 300,
+          "h": 61
+        },
+        {
+          "label": "交子收藏",
+          "x": 115.1875,
+          "y": 777.921875,
+          "w": 300,
+          "h": 61
+        },
+        {
+          "label": "设置与操作",
+          "x": 115.1875,
+          "y": 858.921875,
+          "w": 300,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "name": "1920x1080/level/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "bodyWidth": 1920,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 96,
+            "y": 56,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1772,
+            "y": 50,
+            "w": 52,
+            "h": 52
+          },
+          {
+            "label": "挑选搭档　→",
+            "x": 1197.75,
+            "y": 757.484375,
+            "w": 167.6875,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080/level/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1920x1080/level/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 96,
+          "y": 56,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1772,
+          "y": 50,
+          "w": 52,
+          "h": 52
+        },
+        {
+          "label": "挑选搭档　→",
+          "x": 1197.75,
+          "y": 757.484375,
+          "w": 167.6875,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1920x1080/select/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "bodyWidth": 1920,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 210,
+            "y": 56,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1658,
+            "y": 50,
+            "w": 52,
+            "h": 52
+          },
+          {
+            "label": "交换角色 ⇄",
+            "x": 1621.234375,
+            "y": 188,
+            "w": 88.765625,
+            "h": 43
+          },
+          {
+            "label": "‹",
+            "x": 238,
+            "y": 586.6875,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 804,
+            "y": 586.6875,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 696.875,
+            "y": 797.5,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "‹",
+            "x": 1078,
+            "y": 586.6875,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 1644,
+            "y": 586.6875,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 1536.875,
+            "y": 797.5,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "一起进坊　→",
+            "x": 1470,
+            "y": 960,
+            "w": 240,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080/select/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1920x1080/select/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 210,
+          "y": 56,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1658,
+          "y": 50,
+          "w": 52,
+          "h": 52
+        },
+        {
+          "label": "交换角色 ⇄",
+          "x": 1621.234375,
+          "y": 188,
+          "w": 88.765625,
+          "h": 43
+        },
+        {
+          "label": "‹",
+          "x": 238,
+          "y": 586.6875,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "›",
+          "x": 804,
+          "y": 586.6875,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "确认选择",
+          "x": 696.875,
+          "y": 797.5,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "‹",
+          "x": 1078,
+          "y": 586.6875,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "›",
+          "x": 1644,
+          "y": 586.6875,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "确认选择",
+          "x": 1536.875,
+          "y": 797.5,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "一起进坊　→",
+          "x": 1470,
+          "y": 960,
+          "w": 240,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1920x1080/game/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "bodyWidth": 1920,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "暂停游戏",
+            "x": 1844,
+            "y": 24.1932315826416,
+            "w": 52,
+            "h": 52
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080/game/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1920x1080/game/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "暂停游戏",
+          "x": 1844,
+          "y": 24.1932315826416,
+          "w": 52,
+          "h": 52
+        }
+      ]
+    },
+    {
+      "name": "1920x1080/result/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "bodyWidth": 1920,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 96,
+            "y": 62,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1772,
+            "y": 56,
+            "w": 52,
+            "h": 52
+          },
+          {
+            "label": "再开一局",
+            "x": 745.3125,
+            "y": 861,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "翻看交子",
+            "x": 893.4375,
+            "y": 861,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回舆图",
+            "x": 1041.5625,
+            "y": 861,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080/result/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1920x1080/result/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 96,
+          "y": 62,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1772,
+          "y": 56,
+          "w": 52,
+          "h": 52
+        },
+        {
+          "label": "再开一局",
+          "x": 745.3125,
+          "y": 861,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "翻看交子",
+          "x": 893.4375,
+          "y": 861,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "返回舆图",
+          "x": 1041.5625,
+          "y": 861,
+          "w": 133.125,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1920x1080/collection/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "bodyWidth": 1920,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 96,
+            "y": 56,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1772,
+            "y": 50,
+            "w": 52,
+            "h": 52
+          },
+          {
+            "label": "再去开工",
+            "x": 1021.890625,
+            "y": 676.609375,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回首页",
+            "x": 1173.015625,
+            "y": 676.609375,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080/collection/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1920x1080/collection/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 96,
+          "y": 56,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1772,
+          "y": 50,
+          "w": 52,
+          "h": 52
+        },
+        {
+          "label": "再去开工",
+          "x": 1021.890625,
+          "y": 676.609375,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "返回首页",
+          "x": 1173.015625,
+          "y": 676.609375,
+          "w": 133.125,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1280x720/title/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "一起开工　→",
+            "x": 51.1875,
+            "y": 443.28125,
+            "w": 300,
+            "h": 55
+          },
+          {
+            "label": "交子收藏",
+            "x": 51.1875,
+            "y": 512.28125,
+            "w": 300,
+            "h": 55
+          },
+          {
+            "label": "设置与操作",
+            "x": 51.1875,
+            "y": 581.28125,
+            "w": 300,
+            "h": 40
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x720/title/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x720/title/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "一起开工　→",
+          "x": 51.1875,
+          "y": 443.28125,
+          "w": 300,
+          "h": 55
+        },
+        {
+          "label": "交子收藏",
+          "x": 51.1875,
+          "y": 512.28125,
+          "w": 300,
+          "h": 55
+        },
+        {
+          "label": "设置与操作",
+          "x": 51.1875,
+          "y": 581.28125,
+          "w": 300,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "name": "1280x720/level/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1265,
+        "bodyWidth": 1265,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1169.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "挑选搭档　→",
+            "x": 803.671875,
+            "y": 521.375,
+            "w": 167.6875,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x720/level/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x720/level/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1169.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "挑选搭档　→",
+          "x": 803.671875,
+          "y": 521.375,
+          "w": 167.6875,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1280x720/select/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1184.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "交换角色 ⇄",
+            "x": 1140.046875,
+            "y": 99.5,
+            "w": 88.765625,
+            "h": 43
+          },
+          {
+            "label": "‹",
+            "x": 79.1875,
+            "y": 349.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 484,
+            "y": 349.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 396.875,
+            "y": 439.5,
+            "w": 113.125,
+            "h": 47
+          },
+          {
+            "label": "‹",
+            "x": 758,
+            "y": 349.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 1162.8125,
+            "y": 349.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 1075.6875,
+            "y": 439.5,
+            "w": 113.125,
+            "h": 47
+          },
+          {
+            "label": "一起进坊　→",
+            "x": 988.8125,
+            "y": 571,
+            "w": 240,
+            "h": 49
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x720/select/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x720/select/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1184.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "交换角色 ⇄",
+          "x": 1140.046875,
+          "y": 99.5,
+          "w": 88.765625,
+          "h": 43
+        },
+        {
+          "label": "‹",
+          "x": 79.1875,
+          "y": 349.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "›",
+          "x": 484,
+          "y": 349.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "确认选择",
+          "x": 396.875,
+          "y": 439.5,
+          "w": 113.125,
+          "h": 47
+        },
+        {
+          "label": "‹",
+          "x": 758,
+          "y": 349.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "›",
+          "x": 1162.8125,
+          "y": 349.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "确认选择",
+          "x": 1075.6875,
+          "y": 439.5,
+          "w": 113.125,
+          "h": 47
+        },
+        {
+          "label": "一起进坊　→",
+          "x": 988.8125,
+          "y": 571,
+          "w": 240,
+          "h": 49
+        }
+      ]
+    },
+    {
+      "name": "1280x720/game/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "暂停游戏",
+            "x": 1204,
+            "y": 22,
+            "w": 52,
+            "h": 52
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x720/game/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x720/game/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "暂停游戏",
+          "x": 1204,
+          "y": 22,
+          "w": 52,
+          "h": 52
+        }
+      ]
+    },
+    {
+      "name": "1280x720/result/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1184.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "再开一局",
+            "x": 425.3125,
+            "y": 551,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "翻看交子",
+            "x": 573.4375,
+            "y": 551,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回舆图",
+            "x": 721.5625,
+            "y": 551,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x720/result/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x720/result/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1184.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "再开一局",
+          "x": 425.3125,
+          "y": 551,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "翻看交子",
+          "x": 573.4375,
+          "y": 551,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "返回舆图",
+          "x": 721.5625,
+          "y": 551,
+          "w": 133.125,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1280x720/collection/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1184.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "再去开工",
+            "x": 701.359375,
+            "y": 472.859375,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回首页",
+            "x": 852.484375,
+            "y": 472.859375,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x720/collection/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x720/collection/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1184.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "再去开工",
+          "x": 701.359375,
+          "y": 472.859375,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "返回首页",
+          "x": 852.484375,
+          "y": 472.859375,
+          "w": 133.125,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1280x800/title/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "一起开工　→",
+            "x": 51.1875,
+            "y": 483.28125,
+            "w": 300,
+            "h": 55
+          },
+          {
+            "label": "交子收藏",
+            "x": 51.1875,
+            "y": 552.28125,
+            "w": 300,
+            "h": 55
+          },
+          {
+            "label": "设置与操作",
+            "x": 51.1875,
+            "y": 621.28125,
+            "w": 300,
+            "h": 40
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x800/title/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x800/title/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "一起开工　→",
+          "x": 51.1875,
+          "y": 483.28125,
+          "w": 300,
+          "h": 55
+        },
+        {
+          "label": "交子收藏",
+          "x": 51.1875,
+          "y": 552.28125,
+          "w": 300,
+          "h": 55
+        },
+        {
+          "label": "设置与操作",
+          "x": 51.1875,
+          "y": 621.28125,
+          "w": 300,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "name": "1280x800/level/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1184.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "挑选搭档　→",
+            "x": 812.796875,
+            "y": 521.375,
+            "w": 167.6875,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x800/level/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x800/level/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1184.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "挑选搭档　→",
+          "x": 812.796875,
+          "y": 521.375,
+          "w": 167.6875,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1280x800/select/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1184.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "交换角色 ⇄",
+            "x": 1140.046875,
+            "y": 99.5,
+            "w": 88.765625,
+            "h": 43
+          },
+          {
+            "label": "‹",
+            "x": 79.1875,
+            "y": 385.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 484,
+            "y": 385.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 396.875,
+            "y": 519.5,
+            "w": 113.125,
+            "h": 47
+          },
+          {
+            "label": "‹",
+            "x": 758,
+            "y": 385.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 1162.8125,
+            "y": 385.9375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 1075.6875,
+            "y": 519.5,
+            "w": 113.125,
+            "h": 47
+          },
+          {
+            "label": "一起进坊　→",
+            "x": 988.8125,
+            "y": 651,
+            "w": 240,
+            "h": 49
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x800/select/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x800/select/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1184.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "交换角色 ⇄",
+          "x": 1140.046875,
+          "y": 99.5,
+          "w": 88.765625,
+          "h": 43
+        },
+        {
+          "label": "‹",
+          "x": 79.1875,
+          "y": 385.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "›",
+          "x": 484,
+          "y": 385.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "确认选择",
+          "x": 396.875,
+          "y": 519.5,
+          "w": 113.125,
+          "h": 47
+        },
+        {
+          "label": "‹",
+          "x": 758,
+          "y": 385.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "›",
+          "x": 1162.8125,
+          "y": 385.9375,
+          "w": 38,
+          "h": 46
+        },
+        {
+          "label": "确认选择",
+          "x": 1075.6875,
+          "y": 519.5,
+          "w": 113.125,
+          "h": 47
+        },
+        {
+          "label": "一起进坊　→",
+          "x": 988.8125,
+          "y": 651,
+          "w": 240,
+          "h": 49
+        }
+      ]
+    },
+    {
+      "name": "1280x800/game/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "暂停游戏",
+            "x": 1204,
+            "y": 22,
+            "w": 52,
+            "h": 52
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x800/game/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x800/game/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "暂停游戏",
+          "x": 1204,
+          "y": 22,
+          "w": 52,
+          "h": 52
+        }
+      ]
+    },
+    {
+      "name": "1280x800/result/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1184.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "再开一局",
+            "x": 425.3125,
+            "y": 551,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "翻看交子",
+            "x": 573.4375,
+            "y": 551,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回舆图",
+            "x": 721.5625,
+            "y": 551,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x800/result/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x800/result/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1184.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "再开一局",
+          "x": 425.3125,
+          "y": 551,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "翻看交子",
+          "x": 573.4375,
+          "y": 551,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "返回舆图",
+          "x": 721.5625,
+          "y": 551,
+          "w": 133.125,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "1280x800/collection/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "bodyWidth": 1280,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 51.1875,
+            "y": 20,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 1184.8125,
+            "y": 18,
+            "w": 44,
+            "h": 44
+          },
+          {
+            "label": "再去开工",
+            "x": 701.359375,
+            "y": 472.859375,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回首页",
+            "x": 852.484375,
+            "y": 472.859375,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x800/collection/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1280x800/collection/controls_in_screen",
+      "pass": true,
+      "evidence": [
+        {
+          "label": "← 返回首页",
+          "x": 51.1875,
+          "y": 20,
+          "w": 88.765625,
+          "h": 40
+        },
+        {
+          "label": "⚙",
+          "x": 1184.8125,
+          "y": 18,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "再去开工",
+          "x": 701.359375,
+          "y": 472.859375,
+          "w": 133.125,
+          "h": 55
+        },
+        {
+          "label": "返回首页",
+          "x": 852.484375,
+          "y": 472.859375,
+          "w": 133.125,
+          "h": 55
+        }
+      ]
+    },
+    {
+      "name": "390x844/title/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "一起开工　→",
+            "x": 48.1875,
+            "y": 678,
+            "w": 158.171875,
+            "h": 52
+          },
+          {
+            "label": "交子收藏",
+            "x": 220.359375,
+            "y": 678,
+            "w": 121.453125,
+            "h": 52
+          },
+          {
+            "label": "设置与操作",
+            "x": 145,
+            "y": 744,
+            "w": 100,
+            "h": 40
+          }
+        ]
+      }
+    },
+    {
+      "name": "390x844/title/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390x844/level/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 375,
+        "bodyWidth": 375,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 15.59375,
+            "y": 26,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 319.40625,
+            "y": 24,
+            "w": 40,
+            "h": 44
+          },
+          {
+            "label": "挑选搭档　→",
+            "x": 51.59375,
+            "y": 950.390625,
+            "w": 167.6875,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "390x844/level/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390x844/select/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 375,
+        "bodyWidth": 375,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 15.59375,
+            "y": 26,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 319.40625,
+            "y": 24,
+            "w": 40,
+            "h": 44
+          },
+          {
+            "label": "交换角色 ⇄",
+            "x": 270.640625,
+            "y": 90,
+            "w": 88.765625,
+            "h": 43
+          },
+          {
+            "label": "‹",
+            "x": 43.59375,
+            "y": 401.484375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 115.5,
+            "y": 401.484375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 39.59375,
+            "y": 535.3125,
+            "w": 117.90625,
+            "h": 52
+          },
+          {
+            "label": "‹",
+            "x": 221.5,
+            "y": 401.484375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "›",
+            "x": 293.40625,
+            "y": 401.484375,
+            "w": 38,
+            "h": 46
+          },
+          {
+            "label": "确认选择",
+            "x": 217.5,
+            "y": 535.3125,
+            "w": 117.90625,
+            "h": 52
+          },
+          {
+            "label": "一起进坊　→",
+            "x": 15.59375,
+            "y": 735.5,
+            "w": 343.8125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "390x844/select/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390x844/game/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyWidth": 390,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "暂停游戏",
+            "x": 342,
+            "y": 10,
+            "w": 40,
+            "h": 44
+          }
+        ]
+      }
+    },
+    {
+      "name": "390x844/game/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390x844/result/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 375,
+        "bodyWidth": 375,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 15.59375,
+            "y": 26,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 319.40625,
+            "y": 24,
+            "w": 40,
+            "h": 44
+          },
+          {
+            "label": "再开一局",
+            "x": 46.875,
+            "y": 1065,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "翻看交子",
+            "x": 195,
+            "y": 1065,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回舆图",
+            "x": 120.9375,
+            "y": 1135,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "390x844/result/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390x844/collection/no_horizontal_overflow",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 375,
+        "bodyWidth": 375,
+        "brokenImages": [],
+        "buttons": [
+          {
+            "label": "← 返回首页",
+            "x": 15.59375,
+            "y": 26,
+            "w": 88.765625,
+            "h": 40
+          },
+          {
+            "label": "⚙",
+            "x": 319.40625,
+            "y": 24,
+            "w": 40,
+            "h": 44
+          },
+          {
+            "label": "再去开工",
+            "x": 15.59375,
+            "y": 871.859375,
+            "w": 133.125,
+            "h": 55
+          },
+          {
+            "label": "返回首页",
+            "x": 166.71875,
+            "y": 871.859375,
+            "w": 133.125,
+            "h": 55
+          }
+        ]
+      }
+    },
+    {
+      "name": "390x844/collection/no_broken_images",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "no_uncaught_runtime_errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "index.html_unchanged_during_run",
+      "pass": true,
+      "evidence": "47bfe14d0b05c2052a0346ce80b57963da68fb93202dff4032d44c071b46c651"
+    },
+    {
+      "name": "style.css_unchanged_during_run",
+      "pass": true,
+      "evidence": "2a74098a084eca1459f6d3e52db499dee41c4b14c237e66b4ebd494ac67f6d67"
+    },
+    {
+      "name": "app.js_unchanged_during_run",
+      "pass": true,
+      "evidence": "e0091666a539b184b283613a6ef65e9decdd849b44fc03445726a339f6e769cf"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "previews/01_标题_1920x1080.png",
+      "sha256": "ded94ff43895ae573e203cbce6502ed9a7509c353993377f550cd2fbd5f9a2f3"
+    },
+    {
+      "file": "previews/02_关卡_1920x1080.png",
+      "sha256": "086d1ae350747104c0f982974bdfe900e07fb41846580df5a8a17e1f97850889"
+    },
+    {
+      "file": "previews/03_双人选角_1920x1080.png",
+      "sha256": "556ab437195cdb1ea044c9b193731497ef2b96fba52c7f240935f7b01e7a21f5"
+    },
+    {
+      "file": "previews/04_局内HUD_1920x1080.png",
+      "sha256": "577597a150108990efed3d1eba6a59125e79688ac871a3c7eb70e33fc1dae074"
+    },
+    {
+      "file": "previews/05_暂停_1920x1080.png",
+      "sha256": "6292401e7939da31b4d834f7554d3f76319c8b7874d4797f275b642ca30259cd"
+    },
+    {
+      "file": "previews/06_设置_1920x1080.png",
+      "sha256": "5965477e806e28c6a11ed813ceb26c5bd4ee3acffb1169142ba730752480c32a"
+    },
+    {
+      "file": "previews/07_结算_1920x1080.png",
+      "sha256": "28f42c2903869a83e65edeb88de0940c30d5c2fa587df98e1250c6af46fcefd7"
+    },
+    {
+      "file": "previews/08_交子收藏_1920x1080.png",
+      "sha256": "48fe673eb4295121fada0513637692e2f09dd9908a139cb0b3f30439150ef290"
+    },
+    {
+      "file": "previews/移动预览_title_390x844.png",
+      "sha256": "7f5cd9e219b13805ebd67e0311bb0a45580a5869b7ade6883a98bcaba801f268"
+    },
+    {
+      "file": "previews/移动预览_game_390x844.png",
+      "sha256": "46e7f30b655e6109706662c9f347327dbde6146a880c83c1128010ad39e73444"
+    }
+  ],
+  "limitations": [
+    "This checks a UI state simulator, not 3D movement or Unity integration.",
+    "Audio is checked for browser playback and volume state, not human listening.",
+    "Browser fullscreen and preview canvas resolution do not validate Unity window resolution."
+  ],
+  "index.html_sha256": "47bfe14d0b05c2052a0346ce80b57963da68fb93202dff4032d44c071b46c651",
+  "style.css_sha256": "2a74098a084eca1459f6d3e52db499dee41c4b14c237e66b4ebd494ac67f6d67",
+  "app.js_sha256": "e0091666a539b184b283613a6ef65e9decdd849b44fc03445726a339f6e769cf",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/157.0.8103.51",
+    "revision": "@653674df293788cf4932c40d914e9e15b41a2d31",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "jsVersion": "15.7.112.23"
+  },
+  "status": "passed",
+  "finished_at": "2026-11-13T08:58:18.316Z",
+  "passed": 103,
+  "total": 103,
+  "runtime_errors": []
+}

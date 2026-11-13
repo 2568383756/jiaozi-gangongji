@@ -1,0 +1,22 @@
+[
+  {
+    "file": "portrait_zhituan.png",
+    "source_repo_path": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.blend",
+    "source_sha256": "835c350ae2c6b21ff161309d6a78ca45bc7cc20608d349bb8bd468ab380e40aa",
+    "source_unmodified": true,
+    "width": 768,
+    "height": 768,
+    "alpha": true,
+    "render": "Cycles CUDA 48 samples, original v02 mesh/Idle frame 1, transparent studio, no model save"
+  },
+  {
+    "file": "portrait_yintao.png",
+    "source_repo_path": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.blend",
+    "source_sha256": "2dcccfaa581a7a8d8210c9d1b7a958c537c3ecff2515e71126882e8113f4e193",
+    "source_unmodified": true,
+    "width": 768,
+    "height": 768,
+    "alpha": true,
+    "render": "Cycles CUDA 48 samples, original v02 mesh/Idle frame 1, transparent studio, no model save"
+  }
+]

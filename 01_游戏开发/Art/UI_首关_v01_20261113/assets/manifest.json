@@ -1,0 +1,681 @@
+{
+  "version": "v01_20261113",
+  "authoring": "Original editable SVG vector shapes; PNG rasterization preserves alpha. Existing local art reused only as byte copies. Portraits rendered from actual v02 BLEND, no source model mutation.",
+  "reference_resolution": [
+    1920,
+    1080
+  ],
+  "color_palette": {
+    "paper": "#fff2cf",
+    "ink": "#294c67",
+    "vermilion": "#bf4932",
+    "gold": "#e8ad3b"
+  },
+  "units": "pixels; nine_slice_lbrt order is left,bottom,right,top",
+  "scaling": "Panels/buttons: stretch center, preserve corners. Icons: preserve aspect. Text and changing numbers are separate UI elements.",
+  "assets": [
+    {
+      "id": "panel_paper",
+      "source": "panel_paper.svg",
+      "file": "panel_paper.png",
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "6d53785c6a5008867563b9d8e38b5002cf195136e234a2f367bd44823d3bf775",
+      "svg_sha256": "461687dd4afad8a23aae444b928a02ef98ce4e01ccd64b8eb9f1b72394a0a152",
+      "raster_check": {
+        "width": 256,
+        "height": 256,
+        "transparent_pixel_count": 5669,
+        "opaque_pixel_count": 57447
+      }
+    },
+    {
+      "id": "button_primary_normal",
+      "source": "button_primary_normal.svg",
+      "file": "button_primary_normal.png",
+      "width": 320,
+      "height": 96,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        48,
+        28,
+        48,
+        28
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "acbaa4f38265e4fc5563caa0f6d69bfab99be59a7318bb6ad302673923a12e31",
+      "svg_sha256": "5480c82c56b1a81ba1e58d939345b8b691c64c3c88dfa0fc6be710b145068f2a",
+      "raster_check": {
+        "width": 320,
+        "height": 96,
+        "transparent_pixel_count": 6255,
+        "opaque_pixel_count": 22902
+      }
+    },
+    {
+      "id": "button_primary_hover",
+      "source": "button_primary_hover.svg",
+      "file": "button_primary_hover.png",
+      "width": 320,
+      "height": 96,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        48,
+        28,
+        48,
+        28
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "1ee297ead68904863623df5c0ea297e61b7819542ebaf2fe1b6ef4b83e3ae880",
+      "svg_sha256": "3c826e0f2bf0b5b70cfc6445c2956affa98ad660000861101d4c3fe8e9c82415",
+      "raster_check": {
+        "width": 320,
+        "height": 96,
+        "transparent_pixel_count": 5648,
+        "opaque_pixel_count": 23507
+      }
+    },
+    {
+      "id": "button_primary_pressed",
+      "source": "button_primary_pressed.svg",
+      "file": "button_primary_pressed.png",
+      "width": 320,
+      "height": 96,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        48,
+        28,
+        48,
+        28
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "c510d7ca4aca7ddbf542dc4b1fa73a558366420e072b811a3c99ce66a3cea7d0",
+      "svg_sha256": "a565dd9a384ded4a6feec959289eac4ec3a750453a130f68d60c097c7e4e2a4a",
+      "raster_check": {
+        "width": 320,
+        "height": 96,
+        "transparent_pixel_count": 9871,
+        "opaque_pixel_count": 20783
+      }
+    },
+    {
+      "id": "button_primary_disabled",
+      "source": "button_primary_disabled.svg",
+      "file": "button_primary_disabled.png",
+      "width": 320,
+      "height": 96,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        48,
+        28,
+        48,
+        28
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "db141aa5e3b4509bad6b43f668698f90686f2f352a104d73ea7038a1c809c99c",
+      "svg_sha256": "9e8db7a41218c5152d3539d4559d17d44060156fd159e84403de38f57aacd8ce",
+      "raster_check": {
+        "width": 320,
+        "height": 96,
+        "transparent_pixel_count": 6255,
+        "opaque_pixel_count": 22902
+      }
+    },
+    {
+      "id": "button_primary_focus",
+      "source": "button_primary_focus.svg",
+      "file": "button_primary_focus.png",
+      "width": 320,
+      "height": 96,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        48,
+        28,
+        48,
+        28
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "3f966c0d872175247f539b1a34a437f48d244040ea33d0f308b1f3b1271738e0",
+      "svg_sha256": "33f34f972f727cc29e6b3b5dbe77b7071c27803d9b841d86ddeed02d797e8515",
+      "raster_check": {
+        "width": 320,
+        "height": 96,
+        "transparent_pixel_count": 5384,
+        "opaque_pixel_count": 23678
+      }
+    },
+    {
+      "id": "button_secondary",
+      "source": "button_secondary.svg",
+      "file": "button_secondary.png",
+      "width": 320,
+      "height": 96,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        32,
+        24,
+        32,
+        24
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "c72d827220a3c32ed657aa18090b9d7e0dc329cbffdbeedc950705a5df1592ac",
+      "svg_sha256": "b60f0e4641dd8f12ac73fba1a25478e8243080c43fca9da6c9ace2af3eb3317d",
+      "raster_check": {
+        "width": 320,
+        "height": 96,
+        "transparent_pixel_count": 5863,
+        "opaque_pixel_count": 22320
+      }
+    },
+    {
+      "id": "progress_track",
+      "source": "progress_track.svg",
+      "file": "progress_track.png",
+      "width": 320,
+      "height": 32,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        16,
+        12,
+        16,
+        12
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "d653353ca8462776bf3d6f792efce48234af0640696c90f5a6623ef28151e87f",
+      "svg_sha256": "60541c9eecfaae223c0243cc940411da94f6143367d003397945daab944bf5e1",
+      "raster_check": {
+        "width": 320,
+        "height": 32,
+        "transparent_pixel_count": 3106,
+        "opaque_pixel_count": 6146
+      }
+    },
+    {
+      "id": "progress_fill",
+      "source": "progress_fill.svg",
+      "file": "progress_fill.png",
+      "width": 320,
+      "height": 32,
+      "alpha": true,
+      "nine_slice_lbrt": [
+        16,
+        12,
+        16,
+        12
+      ],
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "1e0ef0c105d8cc13bfb88b329b42c81737a41555ede4a6b7a378f3984f77851f",
+      "svg_sha256": "90404b900cbb2f0aa08eec02aebf278435c1dcefaeeb454bf802522936f1f8d0",
+      "raster_check": {
+        "width": 320,
+        "height": 32,
+        "transparent_pixel_count": 4672,
+        "opaque_pixel_count": 5500
+      }
+    },
+    {
+      "id": "icon_wet",
+      "source": "icon_wet.svg",
+      "file": "icon_wet.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "ba355e8e569903d660a9f1751d0a6f36004330dc2725019a1698125d213c306d",
+      "svg_sha256": "acb3b6bbc1498df31747b555590a81eb61f6078953cfff0a05f9925f9f77b205",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 6917,
+        "opaque_pixel_count": 8766
+      }
+    },
+    {
+      "id": "icon_dry",
+      "source": "icon_dry.svg",
+      "file": "icon_dry.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "4ecd89beb5ead380ef5b734bf2c17a090c626f563391c9b5f2070c001658aa70",
+      "svg_sha256": "bd99f692b7558ed9b3f7f448a2911dde071cf8610a8054ebc1e9543ade71faa7",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 6917,
+        "opaque_pixel_count": 8766
+      }
+    },
+    {
+      "id": "icon_black",
+      "source": "icon_black.svg",
+      "file": "icon_black.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "ce5a264bea0baf836b6a9bf8b0339b8a1f57ced13594dc1d99ac78bdd77f21e4",
+      "svg_sha256": "93fa9133b75f96169e88259d4e3b0f222f5b89ba34957b1a9c663499e2cbd769",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 6917,
+        "opaque_pixel_count": 8766
+      }
+    },
+    {
+      "id": "icon_red",
+      "source": "icon_red.svg",
+      "file": "icon_red.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "e437d76945318faf3735ce5b171021d5e75693b5e6199e5e1f539d5c3f94c600",
+      "svg_sha256": "ac78325afadcf8282a2474db62bad6477a7468767d950525d44d6f2d052b7de4",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 6917,
+        "opaque_pixel_count": 8766
+      }
+    },
+    {
+      "id": "icon_clock",
+      "source": "icon_clock.svg",
+      "file": "icon_clock.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "865bc5be1a4a5484bc8f3fc3a65ea1ba3b6ee781a75028396e9f378e1a6b5a65",
+      "svg_sha256": "cd0d84f4cc18383dc160dd362234f05b48c9dbe4f766090f668442c556d226b9",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 7047,
+        "opaque_pixel_count": 6898
+      }
+    },
+    {
+      "id": "icon_pause",
+      "source": "icon_pause.svg",
+      "file": "icon_pause.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "19a1e97fab883925543ca58c6998ad7fe969c4723907968f5e8336444147e84b",
+      "svg_sha256": "e40c1a2e0ed91597f731cec25f31f80a0b6d018b156cf3ecebe07fc0072b02db",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 11814,
+        "opaque_pixel_count": 4502
+      }
+    },
+    {
+      "id": "icon_order",
+      "source": "icon_order.svg",
+      "file": "icon_order.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "94f05d80041bfb8a49a2d724e199fb41f338c1fcc24974ab95d26d05580b2fd0",
+      "svg_sha256": "1e1e70a779466939469c3268c9059011bd26e4ea28e52757af85e6e0c3f1640f",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 8820,
+        "opaque_pixel_count": 7262
+      }
+    },
+    {
+      "id": "icon_star",
+      "source": "icon_star.svg",
+      "file": "icon_star.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "9073781685e05bb79af56403f8bdb61b243d962662d3fa4d5cefbb4e8a6b33ab",
+      "svg_sha256": "fd927eb7ed5aa38db27fedcc0d5e2ebf43b52ca8e8285b5601a7f0185ae37a6f",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 11461,
+        "opaque_pixel_count": 4175
+      }
+    },
+    {
+      "id": "icon_lock",
+      "source": "icon_lock.svg",
+      "file": "icon_lock.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "3c644f8e5ca318d1b0a25ea0864540605757dcdbc0e3fa8bf1a537100d80b5e9",
+      "svg_sha256": "5fd1fd6dcd066a680a83fc5acef6f0eb309dace37d79ecd9fd9e27942967cd97",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 10164,
+        "opaque_pixel_count": 5765
+      }
+    },
+    {
+      "id": "icon_check",
+      "source": "icon_check.svg",
+      "file": "icon_check.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "a94d9848a5a9665a1e8ceac70a44759fc2077b851ce35de6cfc38af1accb32e7",
+      "svg_sha256": "61e4af466c374455a2ea43dd0caec1874b9e0f34f1fd9db09e430c04f1fdd46d",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 13232,
+        "opaque_pixel_count": 2753
+      }
+    },
+    {
+      "id": "badge_p1",
+      "source": "badge_p1.svg",
+      "file": "badge_p1.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "3669f010ff3b4edc062f7d8065e88bdeba591014adf76d825e8fc8c984609723",
+      "svg_sha256": "d9b1689e3aed38a4bb2b20bd18ef4bb17d9d58ba819cda3507d381edce83e666",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 6876,
+        "opaque_pixel_count": 9400
+      }
+    },
+    {
+      "id": "badge_p2",
+      "source": "badge_p2.svg",
+      "file": "badge_p2.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "95ab37211654087461732ea8c4c08a4e32528d4d5ff029dc4ad8d57175fb54a4",
+      "svg_sha256": "34f6d4c83f6d4932e84130a083e7fe407ca7350a48086694dd1fa2b1efc5cad3",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 6876,
+        "opaque_pixel_count": 9400
+      }
+    },
+    {
+      "id": "icon_back",
+      "source": "icon_back.svg",
+      "file": "icon_back.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "230d89b14c5292f537a59a4e5ea49f29109079ab078f184ff3438082051eeaee",
+      "svg_sha256": "76a07bd3b7c7a952c0015d70de191cd58023ef47276b14ffee178b4103e52704",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 14362,
+        "opaque_pixel_count": 1740
+      }
+    },
+    {
+      "id": "icon_settings",
+      "source": "icon_settings.svg",
+      "file": "icon_settings.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "nine_slice_lbrt": null,
+      "padding_px": 8,
+      "dynamic_text_baked": false,
+      "sha256": "dbd14f003b4d7e3ac373824c4084fb4a47663ad14461e6cb20c5dc5639eddf11",
+      "svg_sha256": "a2d77c8d83d0d51f5fffe4386f2d2bfcf198c0c26ffcc91347b1d2eb392814a6",
+      "raster_check": {
+        "width": 128,
+        "height": 128,
+        "transparent_pixel_count": 9536,
+        "opaque_pixel_count": 6480
+      }
+    }
+  ],
+  "copied_sources": [
+    {
+      "file": "scene.png",
+      "source_repo_path": "01_游戏开发/Models/首关整合_v02_20261111/预览_触台比例全景_v02_20261111.png",
+      "sha256": "a6160e2e154ef365737668c438a5515d18448e439501c5e4f96be5999a11bb9a",
+      "copied_bytes_identical": true,
+      "purpose": "Existing approved local visual reference, unmodified byte copy."
+    },
+    {
+      "file": "logo.png",
+      "source_repo_path": "01_游戏开发/Art/品牌标识/方形Logo_v01_20261110/Logo_交子赶工记_正方形_v01_20261110.png",
+      "sha256": "44b53951dcfc0daebc1b4169dabbfbefdfa71bb5743a1ae1ba075a251f187890",
+      "copied_bytes_identical": true,
+      "purpose": "Existing approved local visual reference, unmodified byte copy."
+    },
+    {
+      "file": "ticket.png",
+      "source_repo_path": "01_游戏开发/Art/开场纸书_v05_20261111/assets/组合交子_纸团印桃_引用_v01.png",
+      "sha256": "d456659f9d62fbe27f01efd6def017c7ca5fc318dfcfa46ee17c86939154e1c2",
+      "copied_bytes_identical": true,
+      "purpose": "Existing approved local visual reference, unmodified byte copy."
+    },
+    {
+      "file": "preview_music.wav",
+      "source_repo_path": "01_游戏开发/Art/开场纸书_v05_20261111/assets/开场配乐与纸声_v05.wav",
+      "sha256": "2ce53be1852d4b803c25a973c0b54d6e7b6e6208135cb9698939aa7d3abfd2a8",
+      "copied_bytes_identical": true,
+      "purpose": "Existing preview soundtrack for UI volume audition; not new final gameplay music."
+    }
+  ],
+  "portraits": [
+    "portrait_zhituan.png",
+    "portrait_yintao.png"
+  ],
+  "sprite_count": 23,
+  "unity_import": "PNG Texture Type Sprite (2D and UI), sRGB on, Alpha Is Transparency on; use nine_slice_lbrt as Sprite Editor borders. UI Toolkit may use matching -unity-slice values. No Unity import validation claimed.",
+  "portrait_details": [
+    {
+      "file": "portrait_zhituan.png",
+      "source_repo_path": "01_游戏开发/Models/首批角色_v02_20261111/角色_纸团_整合_v02_20261111.blend",
+      "source_sha256": "835c350ae2c6b21ff161309d6a78ca45bc7cc20608d349bb8bd468ab380e40aa",
+      "source_unmodified": true,
+      "width": 768,
+      "height": 768,
+      "alpha": true,
+      "render": "Cycles CUDA 48 samples, original v02 mesh/Idle frame 1, transparent studio, no model save",
+      "sha256": "01d6f4cae2dd6d05d24367c96c3d3898a77126c292a23eed1e247d354320e789",
+      "pixel_check": {
+        "width": 768,
+        "height": 768,
+        "transparent_pixel_count": 356555,
+        "opaque_pixel_count": 227331
+      }
+    },
+    {
+      "file": "portrait_yintao.png",
+      "source_repo_path": "01_游戏开发/Models/首批角色_v02_20261111/角色_印桃_整合_v02_20261111.blend",
+      "source_sha256": "2dcccfaa581a7a8d8210c9d1b7a958c537c3ecff2515e71126882e8113f4e193",
+      "source_unmodified": true,
+      "width": 768,
+      "height": 768,
+      "alpha": true,
+      "render": "Cycles CUDA 48 samples, original v02 mesh/Idle frame 1, transparent studio, no model save",
+      "sha256": "95fc86e0c43a638c83fabf5391cd61b96a9393033cfeb239900ccf38cc2142d8",
+      "pixel_check": {
+        "width": 768,
+        "height": 768,
+        "transparent_pixel_count": 339929,
+        "opaque_pixel_count": 243699
+      }
+    }
+  ],
+  "validation": {
+    "checks": [
+      {
+        "id": "panel_paper",
+        "pass": true
+      },
+      {
+        "id": "button_primary_normal",
+        "pass": true
+      },
+      {
+        "id": "button_primary_hover",
+        "pass": true
+      },
+      {
+        "id": "button_primary_pressed",
+        "pass": true
+      },
+      {
+        "id": "button_primary_disabled",
+        "pass": true
+      },
+      {
+        "id": "button_primary_focus",
+        "pass": true
+      },
+      {
+        "id": "button_secondary",
+        "pass": true
+      },
+      {
+        "id": "progress_track",
+        "pass": true
+      },
+      {
+        "id": "progress_fill",
+        "pass": true
+      },
+      {
+        "id": "icon_wet",
+        "pass": true
+      },
+      {
+        "id": "icon_dry",
+        "pass": true
+      },
+      {
+        "id": "icon_black",
+        "pass": true
+      },
+      {
+        "id": "icon_red",
+        "pass": true
+      },
+      {
+        "id": "icon_clock",
+        "pass": true
+      },
+      {
+        "id": "icon_pause",
+        "pass": true
+      },
+      {
+        "id": "icon_order",
+        "pass": true
+      },
+      {
+        "id": "icon_star",
+        "pass": true
+      },
+      {
+        "id": "icon_lock",
+        "pass": true
+      },
+      {
+        "id": "icon_check",
+        "pass": true
+      },
+      {
+        "id": "badge_p1",
+        "pass": true
+      },
+      {
+        "id": "badge_p2",
+        "pass": true
+      },
+      {
+        "id": "icon_back",
+        "pass": true
+      },
+      {
+        "id": "icon_settings",
+        "pass": true
+      },
+      {
+        "id": "portrait_zhituan.png",
+        "pass": true
+      },
+      {
+        "id": "portrait_yintao.png",
+        "pass": true
+      }
+    ],
+    "passed": 25,
+    "total": 25,
+    "all_passed": true,
+    "method": "Headless Chromium canvas rasterization and pixel inspection; source SVG and Blender renders unchanged."
+  },
+  "generated_png_count": 25
+}
