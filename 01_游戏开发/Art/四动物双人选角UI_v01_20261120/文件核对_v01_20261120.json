@@ -1,0 +1,118 @@
+{
+  "version": "v01_20261120",
+  "method": "PNG IHDR and SHA-256; visual review by assistant",
+  "current_page_count": 5,
+  "archive_draft_count": 2,
+  "files": [
+    {
+      "file": "01_四角色总览_UI整页_v01_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 3216196,
+      "sha256": "6a49802a6a8462e0a4bdec249bb8863770512d786edc592451f0e082175bd8cf",
+      "source_copy_identical": true
+    },
+    {
+      "file": "02_泡泡详情_UI整页_头像统一_v02_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2583474,
+      "sha256": "b1436eb4d6329ac8b6052aabc28c00a24887c7458a82f8a5c34e649d6c0aadc0",
+      "source_copy_identical": true
+    },
+    {
+      "file": "03_递蕉详情_UI整页_玩家角标统一_v02_20261120.png",
+      "status": "current",
+      "width": 1671,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2603102,
+      "sha256": "f8712739fcd056924dd529567df5e0c14cf7f7799ecee70903957646eb7221bc",
+      "source_copy_identical": true
+    },
+    {
+      "file": "04_墨墩详情_UI整页_v01_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2833336,
+      "sha256": "5d8d1d072db1b43ba56f703c37070b4e013eb65c5f5dc3564fe3c264a47b34f4",
+      "source_copy_identical": true
+    },
+    {
+      "file": "05_烘栗详情_UI整页_v01_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2823892,
+      "sha256": "865adead11cca09cd75482049abddcd3478f2e892581ab313defa244d0f44f9d",
+      "source_copy_identical": true
+    },
+    {
+      "file": "迭代/02_泡泡详情_UI整页_头像未统一_v01_20261120.png",
+      "status": "superseded",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2990838,
+      "sha256": "13108f25ff1b18fb470dad7670f80d4fcc01580b1c741ab38ac485b1ce8edfd2",
+      "source_copy_identical": true
+    },
+    {
+      "file": "迭代/03_递蕉详情_UI整页_缺少P1角标_v01_20261120.png",
+      "status": "superseded",
+      "width": 1671,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2779390,
+      "sha256": "c45b6ab433d1653ca23c2bae72dba11df37899592725d27c783db69511c44113",
+      "source_copy_identical": true
+    }
+  ],
+  "visual_review": [
+    "四动物正式名、旧技能及不重复双人组合核对",
+    "所有角色立体效果预览位于选择按钮上方",
+    "P1青绿圆标/P2朱红菱标，状态文字与确认勾标",
+    "纸纤维、暖白贴纸切边、分层底座与柔和投影",
+    "泡泡头像统一v02与递蕉P1角标统一v02采用；旧稿仅归档"
+  ],
+  "not_validated": [
+    "实际3D模型/贴图/骨架",
+    "独立UI组件与动态文字分层",
+    "Unity双人输入/场景加载/运行结果"
+  ],
+  "link_validation": {
+    "documents": [
+      "README.md",
+      "01_游戏开发/Docs/新窗口交接_游戏开发_v02_20261120.md",
+      "01_游戏开发/Docs/设定同步_v01_20261120/世界观角色与技能统一设定_v01_20261120.md",
+      "01_游戏开发/Docs/四动物双人选角UI交接_v01_20261120.md",
+      "01_游戏开发/Docs/四动物角色设定图交接_v01_20261120.md",
+      "01_游戏开发/Art/四动物双人选角UI_v01_20261120/从这里开始.md",
+      "01_游戏开发/Art/四动物角色设定图_v01_20261120/从这里开始.md"
+    ],
+    "local_links_checked": 283,
+    "missing": []
+  },
+  "json_files_parsed": 6
+}

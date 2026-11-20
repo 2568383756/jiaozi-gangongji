@@ -1,0 +1,63 @@
+{
+  "version": "v01_20261120",
+  "method": "built-in image_gen",
+  "current_sheets": 4,
+  "files": [
+    {
+      "file": "01_泡泡_水獭_角色设定图_v01_20261120.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2743223,
+      "sha256": "07434e1683ca88e41b644e2006918edc2d6f1ed29bfc9cc3d471d3599b667db5",
+      "png_color_type": 2
+    },
+    {
+      "file": "02_递蕉_金丝猴_角色设定图_v01_20261120.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3023571,
+      "sha256": "28ce0c4ebd1577acd1e656154e65424e7edc73126ce4a2c83edc2df597b74feb",
+      "png_color_type": 2
+    },
+    {
+      "file": "03_墨墩_大熊猫_角色设定图_雕版修正_v02_20261120.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2709829,
+      "sha256": "19add5388439d70b621b4f7b9ec8c77cb8cea796aa588c41d9ca6eb9c07f00e2",
+      "png_color_type": 2
+    },
+    {
+      "file": "04_烘栗_小熊猫_角色设定图_v01_20261120.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2763209,
+      "sha256": "357b22950a94ac25f54cec2d0cfafedd79d7ca7de490064c6a6b7bfc0295d2e6",
+      "png_color_type": 2
+    }
+  ],
+  "references": [
+    {
+      "file": "参考/参考01_人物设定版式与手绘墨线.png",
+      "sha256": "7856ec31ef2f14ab46c12d564f4df957226f7204ba4a7873243c4c8d82737f54"
+    },
+    {
+      "file": "参考/参考02_小熊猫旧设定_仅形象参考.png",
+      "sha256": "d19b07e55a66b03c4181f4d6fbf771257ffffd798adeb92593bd3927c6d54a18"
+    }
+  ],
+  "archived_variant": "迭代/03_墨墩_雕版未采用_v01_20261120.png",
+  "review": {
+    "names_and_species_match": true,
+    "expressions_per_sheet": 3,
+    "hero_per_sheet": 1,
+    "action_vignettes_per_sheet": 3,
+    "hongli_fan_not_stamp": true,
+    "modun_plate_revision": "Removed deer plaque and easel; flat woodblock and animal jiaozi print, consistent in prop/action examples",
+    "paper_and_prints_are_concept_illustrations_not_production_layers": true,
+    "human_characters_in_current_sheets": false,
+    "independent_sprite_extraction_completed": false,
+    "animation_or_rigging_completed": false,
+    "unity_runtime_tested": false
+  }
+}

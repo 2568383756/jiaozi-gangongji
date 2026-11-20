@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "asset_version": "animal_selection_ui_v01_20261120",
+  "status": "design_handoff_only_not_runtime_implemented",
+  "authority": "2026-11-20四动物统一设定；单机双人；旧版技能；本合同细化选角页面状态",
+  "scope": {
+    "character_ids": [
+      "paopao",
+      "dijiao",
+      "modun",
+      "hongli"
+    ],
+    "player_ids": [
+      "P1",
+      "P2"
+    ],
+    "same_character_allowed": false,
+    "in_round_switching": false,
+    "overview_pages": 1,
+    "detail_pages": 4
+  },
+  "art_direction": {
+    "surface": "宣纸底、手绘墨线、克制朱红边框、青绿/朱红交互标记",
+    "character_presentation": "选择按钮上方的立体角色预览，外观沿用手绘角色设定；强化纸纤维、折叠体块与贴纸切边，让角色自然融入纸艺页面",
+    "image_generation_preview_is_real_model": false,
+    "combat_radar_or_new_skills": false
+  },
+  "player_markers": {
+    "P1": {
+      "label": "P1",
+      "color_family": "青绿",
+      "shape": "circle",
+      "state_text_required": true
+    },
+    "P2": {
+      "label": "P2",
+      "color_family": "朱红",
+      "shape": "diamond",
+      "state_text_required": true
+    },
+    "rule": "编号、形状、文字与颜色同时使用；颜色不能单独表示玩家归属或准备状态"
+  },
+  "source_files": {
+    "characters": "../../Docs/设定同步_v01_20261120/当前角色与组合合同_v01_20261120.json",
+    "setting": "../../Docs/设定同步_v01_20261120/世界观角色与技能统一设定_v01_20261120.md",
+    "character_sheets": "../四动物角色设定图_v01_20261120/从这里开始.md"
+  },
+  "state_schema": {
+    "page": {
+      "view": "overview|detail",
+      "detailOwnerPlayerId": "P1|P2|null",
+      "detailCharacterId": "characterId|null",
+      "transitionPending": "boolean",
+      "entrySnapshot": "null|immutable {P1CharacterId,P2CharacterId,combinationKey}"
+    },
+    "players": {
+      "P1": {
+        "focusedId": "characterId|null",
+        "selectedId": "characterId|null",
+        "ready": "boolean"
+      },
+      "P2": {
+        "focusedId": "characterId|null",
+        "selectedId": "characterId|null",
+        "ready": "boolean"
+      }
+    },
+    "fields": {
+      "focusedId": "当前浏览对象。可浏览搭档已选角色，浏览不占用也不改已选。",
+      "selectedId": "本玩家已选择并占用的角色，与focusedId可不同；必须与另一人的selectedId不同。",
+      "ready": "本玩家已确认准备。ready=true要求selectedId有效，准备后不能直接换角。"
+    },
+    "global_transition_guard": "transitionPending=true时，拒绝browse/select_and_confirm/confirm_key/取消准备/open_detail/切换详情归属/返回/重复进入；只处理此次进入请求的成功或失败回调。不得修改双方选择、准备与页面候选。",
+    "derived": {
+      "selectedBy": "按两人的selectedId查归属，不能由模型颜色猜测",
+      "canEnterWorkshop": "两人ready且selectedId有效、不同，且没有正在提交的转换",
+      "combinationKey": "对两个selectedId排序，以_连接；仅进入工坊使用，不在选角阶段解锁收藏"
+    }
+  },
+  "input": {
+    "P1": {
+      "previous": "A",
+      "next": "D",
+      "confirm_or_cancel": "F"
+    },
+    "P2": {
+      "previous": "ArrowLeft",
+      "next": "ArrowRight",
+      "confirm_or_cancel": "Slash"
+    },
+    "shared_back": "Escape",
+    "key_confirmation": "未准备时，F或Slash对本玩家当前focusedId执行原子选择并准备；准备时再次按键只取消自己的准备，保留selectedId。",
+    "pointer_rule": "每个确认/取消/详情请求显式携带playerId。详情大按钮作用于可见的detailOwnerPlayerId；键盘始终归输入所属玩家，不被详情页所有者劫持。取消准备只作用于发出请求的玩家；搭档已准备标识仅展示，不是取消搭档准备的按钮。",
+    "select_button": "未准备时，模型正下方唯一的选择角色按钮执行select_and_confirm(playerId,characterId)，原子选择并准备，与F/Slash同义；准备后按钮显示取消准备，再次确认只取消准备并保留selectedId。无额外第二次准备流程。"
+  },
+  "transitions": [
+    {
+      "event": "browse(playerId,characterId)",
+      "precondition": "characterId有效且该玩家未准备",
+      "effect": "只更新该玩家focusedId；若其拥有当前详情页，同时更新detailCharacterId以保持按钮与键盘目标一致。不改变selectedId/ready及另一玩家；浏览占用角色时显示归属而不强换"
+    },
+    {
+      "event": "select_and_confirm(playerId,characterId)",
+      "precondition": "角色有效、该玩家未准备且另一人未占用该角色",
+      "effect": "原子更新该玩家selectedId和focusedId，ready=true；释放自己的旧selectedId占用。屏幕选择按钮与键盘未准备时的确认共用此规则"
+    },
+    {
+      "event": "select_conflict",
+      "precondition": "目标已是另一玩家selectedId",
+      "effect": "拒绝该请求，保留双方selectedId与ready；提示该角色已由P1/P2选择，浏览焦点可保持该角色"
+    },
+    {
+      "event": "confirm_key(playerId)",
+      "precondition": "ready=false且focusedId有效、未被另一玩家占用",
+      "effect": "原子设selectedId=focusedId并ready=true；若冲突，整个操作不修改已选/准备"
+    },
+    {
+      "event": "confirm_key_when_ready(playerId)",
+      "precondition": "发起玩家本人的ready=true；不得以另一玩家的准备状态代替判断",
+      "effect": "只将发起玩家ready=false，保留其selectedId，另一玩家不变；若该玩家是当前详情owner，则同时设focusedId=detailCharacterId，保证随后确认键与选择按钮仍指向相同候选。再浏览或选择其他角色"
+    },
+    {
+      "event": "open_detail(playerId,characterId)",
+      "precondition": "角色有效且有明确玩家归属",
+      "effect": "view=detail、detailOwnerPlayerId=playerId、detailCharacterId=characterId；该玩家未准备时同时将focusedId设为所查看角色，保持选择按钮与确认键目标一致。不自动选择、不取消任何人的准备；已准备时详情操作仍只能取消准备，不能直接改选"
+    },
+    {
+      "event": "switch_detail_owner_explicitly",
+      "precondition": "另一玩家显式请求查看详情",
+      "effect": "执行该玩家的open_detail规则，不改双方选择；普通移动焦点不得悄悄抢占另一人正在看的详情"
+    },
+    {
+      "event": "back_from_detail",
+      "precondition": "view=detail",
+      "effect": "回总览，保留双方focusedId/selectedId/ready"
+    },
+    {
+      "event": "back_from_overview",
+      "precondition": "view=overview",
+      "effect": "返回地图并结束本次临时选角状态；不改已保存成绩/收藏"
+    },
+    {
+      "event": "enter_workshop",
+      "precondition": "canEnterWorkshop=true",
+      "effect": "原子设transitionPending=true，并捕获不可变entrySnapshot={P1CharacterId,P2CharacterId,combinationKey}；按该快照仅发起一次场景加载。pending期间按全局守卫拒绝浏览、选择、准备取消、打开详情、返回和重复进入；不满足条件则保留选角"
+    },
+    {
+      "event": "enter_workshop_failed",
+      "precondition": "当前进入请求失败且transitionPending=true",
+      "effect": "清除transitionPending及失败请求快照，保留发起时双方的选择与准备，提示失败并恢复操作；允许在条件仍满足时重试"
+    },
+    {
+      "event": "enter_workshop_succeeded",
+      "precondition": "当前进入请求成功且transitionPending=true",
+      "effect": "向目标关卡移交此次不可变entrySnapshot；结束选角页，不重新读取已变更或另一请求的角色状态"
+    }
+  ],
+  "invariants": [
+    "两玩家selectedId均非空时必须不同；focusedId允许相同。",
+    "ready=true必须有有效selectedId；选角页不直接改变技能、分数或收藏。",
+    "准备后先取消准备再换角；详情浏览与返回不隐式取消。",
+    "同帧选择同一角色由规则层按稳定玩家顺序P1再P2裁决，只成功一次，不由UI动画决定。",
+    "UI只渲染状态快照并发送带playerId的意图；模型预览、按钮文字和底部身份栏须来自同一快照。",
+    "同帧双确认完成仅令进入按钮可用，不创建两次进入流程。",
+    "进入请求的pending标志与不可变双人快照原子建立；pending期间禁止改选、取消准备、详情和返回；失败恢复原选择与准备，成功只移交捕获快照。",
+    "无效或被占用选择有文本原因，保留已有选择。"
+  ],
+  "preview_interface_proposal": {
+    "real_model_ready": false,
+    "suggested_runtime": "每角色独立预览对象或预览相机/RenderTexture；以目标Unity工程实际UI架构选型",
+    "fields": [
+      "characterId",
+      "previewAssetRef",
+      "displayName",
+      "skillLabel",
+      "focusedBy[]",
+      "selectedBy",
+      "readyBy[]"
+    ],
+    "owner": "规则层维护选择与准备，UI层呈现，预览组件不得持有独立阵容状态",
+    "layout_invariants": [
+      "四个预览按泡泡、递蕉、墨墩、烘栗横向排列",
+      "总览每个预览在对应选择按钮上方",
+      "个人详情保持同一纸张/墨线/按钮/玩家标识语言",
+      "每页同时看见P1和P2状态",
+      "同尺度机位下可比较体量，不能把胖瘦差异变成模型随机缩放",
+      "手绘贴图、纸纤维、贴纸切边与柔和立体体块结合，避免写实人物或毛绒材质"
+    ],
+    "pending_assets": [
+      "四动物三维预览模型",
+      "姿态与待机动作",
+      "独立头像与UI拆件",
+      "目标工程相机/材质/渲染验证"
+    ]
+  },
+  "skill_summary": {
+    "paopao": {
+      "label": "抄纸加速",
+      "duration_seconds": 1.4,
+      "normal_seconds": 2
+    },
+    "dijiao": {
+      "label": "递交更远",
+      "partner_range_m": 2,
+      "station_range_m": 1.2,
+      "recipient_empty_required": true,
+      "wall_blocking": true
+    },
+    "modun": {
+      "label": "印刷加速",
+      "duration_seconds": 1.4,
+      "normal_seconds": 2
+    },
+    "hongli": {
+      "label": "单槽扇风加速",
+      "total_drying_rate_multiplier": 2,
+      "target_slots": 1,
+      "hold_work_required": true,
+      "release_or_leave_restores_normal_rate": true,
+      "stacks_with_natural_rate": false,
+      "normal_drying_seconds": 4
+    }
+  },
+  "visual_examples": {
+    "status": "five_current_images_generated_and_visually_reviewed",
+    "note": "图中的玩家占用/准备状态是静态设计例，不等于引擎实际运行结果。已选且未准备可由取消准备保留selectedId产生，不意味着还要额外按一个准备按钮。详情的P1未确认候选不自动推断为selectedId；正式游戏须另从状态快照读取其已选。五张图均不展示双方准备后的进入按钮可用态，不得把示例写死为运行状态。",
+    "format": "8-bit RGB PNG, opaque, no alpha",
+    "pages": [
+      {
+        "file": "01_四角色总览_UI整页_v01_20261120.png",
+        "version": "v01_20261120",
+        "width": 1672,
+        "height": 941,
+        "view": "overview",
+        "P1": { "focusedId": "paopao", "selectedId": "paopao", "ready": false, "display": "泡泡已选，未准备" },
+        "P2": { "selectedId": "modun", "ready": true, "display": "墨墩已准备" },
+        "canEnterWorkshop": false
+      },
+      {
+        "file": "02_泡泡详情_UI整页_头像统一_v02_20261120.png",
+        "version": "v02_20261120",
+        "width": 1672,
+        "height": 941,
+        "view": "detail",
+        "detailOwnerPlayerId": "P1",
+        "detailCharacterId": "paopao",
+        "P1": { "focusedId": "paopao", "ready": false, "display": "浏览泡泡，未确认" },
+        "P2": { "selectedId": "modun", "ready": true, "display": "墨墩已准备" },
+        "canEnterWorkshop": false,
+        "revision": "采用头像统一v02，初版已转入迭代目录"
+      },
+      {
+        "file": "03_递蕉详情_UI整页_玩家角标统一_v02_20261120.png",
+        "version": "v02_20261120",
+        "width": 1671,
+        "height": 941,
+        "view": "detail",
+        "detailOwnerPlayerId": "P1",
+        "detailCharacterId": "dijiao",
+        "P1": { "focusedId": "dijiao", "ready": false, "display": "浏览递蕉，未确认" },
+        "P2": { "selectedId": "modun", "ready": true, "display": "墨墩已准备" },
+        "canEnterWorkshop": false,
+        "revision": "采用补齐P1角标v02；实测宽1671，不补边或拉伸原图；初版已转入迭代目录"
+      },
+      {
+        "file": "04_墨墩详情_UI整页_v01_20261120.png",
+        "version": "v01_20261120",
+        "width": 1672,
+        "height": 941,
+        "view": "detail",
+        "detailOwnerPlayerId": "P1",
+        "detailCharacterId": "modun",
+        "P1": { "focusedId": "modun", "ready": false, "display": "浏览墨墩，未确认" },
+        "P2": { "selectedId": "paopao", "ready": true, "display": "泡泡已准备" },
+        "canEnterWorkshop": false
+      },
+      {
+        "file": "05_烘栗详情_UI整页_v01_20261120.png",
+        "version": "v01_20261120",
+        "width": 1672,
+        "height": 941,
+        "view": "detail",
+        "detailOwnerPlayerId": "P1",
+        "detailCharacterId": "hongli",
+        "P1": { "focusedId": "hongli", "ready": false, "display": "浏览烘栗，未确认" },
+        "P2": { "selectedId": "modun", "ready": true, "display": "墨墩已准备" },
+        "canEnterWorkshop": false
+      }
+    ],
+    "archived_iterations": [
+      "迭代/02_泡泡详情_UI整页_头像未统一_v01_20261120.png",
+      "迭代/03_递蕉详情_UI整页_缺少P1角标_v01_20261120.png"
+    ],
+    "not_depicted": ["双方已准备后的进入按钮可用态", "同角色冲突提示态", "取消准备后改选过程"]
+  },
+  "acceptance_scenarios": [
+    "P1浏览P2已选角色只看到归属；尝试选择被拒，P2选择与准备不变。",
+    "双方同帧选择同一未占用角色，只有一人成功；另一人原选择保持。",
+    "P1取消准备、换角，不改变P2的准备；成功换角释放旧角色。",
+    "已准备玩家打开另一角色详情，再取消准备；selectedId保留原角色，focusedId同步当前详情角色，下一次F/Slash与选择按钮指向同一候选。",
+    "详情返回总览，双方已选与准备保持；Esc再次返回地图。",
+    "P2键盘确认仍作用于P2，即使详情当前归P1；鼠标按钮显示并传入作用玩家。",
+    "只有两人选不同动物并准备后才可进入，连续触发只加载一次。",
+    "进入加载期间尝试浏览、选择、取消准备、开详情或返回，全部被拒，进入快照保持不变；失败后清pending并恢复原选择与准备，成功按捕获快照创建双方角色。",
+    "所有页面在灰度或弱化颜色后仍通过P1/P2、圆/菱和文字辨识归属。",
+    "四技能文案与旧值一致，没有战力/职业锁/局内换角等新机制。",
+    "屏幕中的立体效果与真实模型交付分开记录，未建模不得标为已完成模型。"
+  ],
+  "validation": {
+    "unity_runtime_tested": false,
+    "interactive_page_implemented": false,
+    "three_dimensional_models_built": false,
+    "generated_image_review_completed": true,
+    "current_image_count": 5,
+    "archived_iteration_count": 2,
+    "png_headers_checked": true,
+    "review_basis": "主代理逐页目视检查；本交接复核文件存在、PNG尺寸、RGB格式、JSON结构与设定来源"
+  }
+}
