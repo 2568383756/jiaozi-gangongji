@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "version": "v01_20261120",
+  "status": "design_contract_only_not_runtime_implemented",
+  "authority": "2026-11-20 用户要求新世界观、仅四动物、用旧版本技能；旧参数源自11-10设计第6节",
+  "characters": [
+    {
+      "id": "paopao",
+      "name": "泡泡",
+      "species": "水獭",
+      "gender": "女",
+      "source_alias": "沐沐",
+      "skill": {
+        "id": "papermaking_fast",
+        "station": "papermaking",
+        "duration_seconds": 1.4,
+        "normal_duration_seconds": 2,
+        "work_threshold": 2,
+        "work_rate": 1.4285714285714286
+      }
+    },
+    {
+      "id": "dijiao",
+      "name": "递蕉",
+      "species": "金丝猴",
+      "gender": "男",
+      "source_alias": "金豆",
+      "skill": {
+        "id": "partner_pass_range",
+        "partner_range_m": 2,
+        "station_range_m": 1.2,
+        "line_of_sight_required": true,
+        "recipient_empty_required": true
+      }
+    },
+    {
+      "id": "modun",
+      "name": "墨墩",
+      "species": "大熊猫",
+      "gender": "女",
+      "source_alias": "墨墨",
+      "skill": {
+        "id": "printing_fast",
+        "station": "printing",
+        "duration_seconds": 1.4,
+        "normal_duration_seconds": 2,
+        "work_threshold": 2,
+        "work_rate": 1.4285714285714286
+      }
+    },
+    {
+      "id": "hongli",
+      "name": "烘栗",
+      "species": "小熊猫",
+      "gender": "男",
+      "source_alias": "阿绒",
+      "skill": {
+        "id": "active_fanning",
+        "target": "one_highlighted_wet_drying_slot",
+        "hold_work_required": true,
+        "total_drying_rate_multiplier": 2,
+        "normal_drying_seconds": 4,
+        "release_restores_normal_rate": true,
+        "stacks_with_natural_rate": false
+      }
+    }
+  ],
+  "active_character_ids": [
+    "dijiao",
+    "hongli",
+    "modun",
+    "paopao"
+  ],
+  "retired_character_ids": [
+    "zhituan",
+    "yintao"
+  ],
+  "selection": {
+    "players": 2,
+    "distinct_required": true,
+    "in_round_switching": false,
+    "human_player_avatar": false
+  },
+  "input": {
+    "P1": {
+      "move": "WASD",
+      "take_place_pass": "F",
+      "hold_work": "G"
+    },
+    "P2": {
+      "move": "ArrowKeys",
+      "take_place_pass": "Slash",
+      "hold_work": "Period"
+    },
+    "pause": "Escape"
+  },
+  "rules": {
+    "held_item_capacity": 1,
+    "active_orders": 1,
+    "workstations": 5,
+    "shared_table_slots": 1,
+    "drying_slots": 2,
+    "round_seconds": 180,
+    "order_quantities": [
+      1,
+      1,
+      2
+    ],
+    "points_per_sheet": 10,
+    "points_per_order": 10,
+    "star_order_thresholds": [
+      2,
+      4,
+      6
+    ]
+  },
+  "combinations": {
+    "key_rule": "sort two distinct stable IDs lexicographically and join with underscore",
+    "keys": [
+      "dijiao_hongli",
+      "dijiao_modun",
+      "dijiao_paopao",
+      "hongli_modun",
+      "hongli_paopao",
+      "modun_paopao"
+    ],
+    "count": 6,
+    "portrait_target_count": 4,
+    "fixed_first_pair": null,
+    "only_formal_delivery_followed_by_settlement_unlocks": true
+  },
+  "save_migration": {
+    "backup_before_migration": true,
+    "human_collection_keys_to_archive": [
+      "yintao_zhituan"
+    ],
+    "automatic_human_to_animal_mapping": false,
+    "allowlist_active_ids_and_pair_keys": true,
+    "runtime_migration_implemented": false
+  },
+  "skill_parameters_status": "旧效果采用，原始调试数值保留，动物联调与平衡未验收",
+  "world": {
+    "location": "财神府纸币司与钱币长卷中的北宋益州忆境",
+    "threat": "空白风",
+    "energy": "新的理解与传递，不由反复印纸无限增加",
+    "visible_characters": "only_four_animal_spirits",
+    "deity_representation": "voice_cloud_and_seal_only",
+    "historical_boss_active": false
+  },
+  "intro": {
+    "duration_seconds": 180,
+    "shot_durations_seconds": [
+      10,
+      12,
+      14,
+      14,
+      18,
+      20,
+      14,
+      14,
+      18,
+      18,
+      16,
+      12
+    ],
+    "human_hands_or_silhouettes": false,
+    "runtime_gameplay_input_unchanged": true
+  },
+  "asset_status": {
+    "new_animal_models_completed": false,
+    "old_human_ui_active": false,
+    "new_animal_ui_generated_this_update": false,
+    "new_intro_rendered": false,
+    "unity_runtime_tested": false
+  }
+}

@@ -1,5 +1,8 @@
 /*
 !/.gitignore
+!/AGENTS.md
+!/README.txt
+!/README.md
 !/01_游戏开发/
 !/02_美术资源/
 *.zip

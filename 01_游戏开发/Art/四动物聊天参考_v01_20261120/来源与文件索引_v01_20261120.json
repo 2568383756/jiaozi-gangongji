@@ -1,0 +1,89 @@
+{
+  "source_thread_id": "6afd6707-a620-83e9-bbd0-6e7394912f45",
+  "source_title": "制作国画开屏图",
+  "readable_turns": 5,
+  "scope": "仅此次工具返回的最近5轮与9附件，不代表全共享历史；附件与具体轮次对应未由工具给出，不猜测图一图二身份",
+  "files": [
+    {
+      "file": "01_image(20261120-075922).png",
+      "source_filename": "image(20261120-075922).png",
+      "sha256": "1571bc933c888c46052a38be9021266dcb9d22e17899aae331c2220c3d09a496",
+      "bytes": 1226758,
+      "width": 1068,
+      "height": 603,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "02_c4cd0116-6246-42b7-8c68-3f11ca09bfbe.png",
+      "source_filename": "c4cd0116-6246-42b7-8c68-3f11ca09bfbe.png",
+      "sha256": "a013a4e09bc1481119870171b2c3d75758a139c1ed04eab00781fb8469f33bd6",
+      "bytes": 3072580,
+      "width": 1536,
+      "height": 1024,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "03_已生成图像 1(5).png",
+      "source_filename": "已生成图像 1(5).png",
+      "sha256": "ae31dea450aa798dd64483fb47994e53353f63b8e5e53aefaaa2fff538ce9bdb",
+      "bytes": 3621800,
+      "width": 1536,
+      "height": 1024,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "04_image(20261119-053842).png",
+      "source_filename": "image(20261119-053842).png",
+      "sha256": "1c964b222b16016dbe3cea62effdf87a7aa8a75800ec3973e3b8501056c8e0d5",
+      "bytes": 2057245,
+      "width": 1041,
+      "height": 1164,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "05_image(20261119-053825).png",
+      "source_filename": "image(20261119-053825).png",
+      "sha256": "6d284a0d3b9d7a044a0c2f1199e4ae96ca56628bd1befbd4330c38c6f0e75cf5",
+      "bytes": 1824822,
+      "width": 1284,
+      "height": 870,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "06_image(20261119-053813).png",
+      "source_filename": "image(20261119-053813).png",
+      "sha256": "9faa65d5b1b96fbfb9e14545a41e6c3098634fe4d5d70df7e691a0d93fae69dc",
+      "bytes": 1844929,
+      "width": 876,
+      "height": 1140,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "07_image(20261119-053739).png",
+      "source_filename": "image(20261119-053739).png",
+      "sha256": "51b108ca1572d72e332d199d75b40037454739c5913946193873fd4da68f8bdc",
+      "bytes": 1366352,
+      "width": 1026,
+      "height": 1230,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "08_image(20261119-053727).png",
+      "source_filename": "image(20261119-053727).png",
+      "sha256": "479402f0f7c9fd8ee8e3509c5a7dcc8e488ff0ce072d4ea610028c06a263479c",
+      "bytes": 1359442,
+      "width": 1056,
+      "height": 1167,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    },
+    {
+      "file": "09_image-markup-preview-file_00000000987c81f884dda2a55419a202.png",
+      "source_filename": "image-markup-preview-file_00000000987c81f884dda2a55419a202.png",
+      "sha256": "2c0755eb8237117d748b4d07189cda3f1f2744cdc2425804e9af4160e6bd4002",
+      "bytes": 2945410,
+      "width": 1536,
+      "height": 1024,
+      "status": "chat_attachment_reference_not_approved_final_asset"
+    }
+  ]
+}

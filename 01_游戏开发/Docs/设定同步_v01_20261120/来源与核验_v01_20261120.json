@@ -1,0 +1,88 @@
+{
+  "version": "v01_20261120",
+  "source_docx": {
+    "original": "C:\\Users\\wangjingjing\\Desktop\\交子赶工记_世界观与开场动画剧本.docx",
+    "project_copy": "01_游戏开发/Docs/设定同步_v01_20261120/来源/交子赶工记_世界观与开场动画剧本_用户原件_20261120.docx",
+    "sha256": "df11f4547eb231974846bc964dc615b379fe921757afdea85de14d888d2830ee",
+    "bytes": 47445,
+    "paragraphs_including_table_cells": 143,
+    "unchanged_copy": true
+  },
+  "shared_chat": {
+    "url": "https://chatgpt.com/share/6b0000e2-2654-83ea-b1ca-d0ff20021b7f",
+    "status": "shared_snapshot_unreadable_same_title_account_chat_recent_turns_retrieved",
+    "observed_web": "Only generic title and share link returned",
+    "observed_browser": "Tab title 制作国画开屏图 observed; body access timed out",
+    "recovered_via": "codex_app list_threads and read_thread",
+    "account_thread_id": "6afd6707-a620-83e9-bbd0-6e7394912f45",
+    "account_thread_title": "制作国画开屏图",
+    "retrieved_turns": 5,
+    "retrieved_attachments": 9,
+    "record": "来源/制作国画开屏图_最近可读记录_20261120.json",
+    "not_claimed_full_shared_history_review": true
+  },
+  "direct_user_decisions": [
+    "世界观用新确定的",
+    "人物名字技能有出入统一",
+    "只保留四个动物角色，不要人类",
+    "用旧版本的角色技能"
+  ],
+  "normalization": {
+    "aliases": {
+      "阿绒": "烘栗",
+      "金豆": "递蕉",
+      "墨墨": "墨墩",
+      "沐沐": "泡泡"
+    },
+    "modified_source_paragraphs": [
+      1,
+      2,
+      12,
+      21,
+      22,
+      30,
+      34,
+      35,
+      37,
+      38,
+      40,
+      41,
+      43,
+      44,
+      47,
+      48,
+      49,
+      54,
+      59,
+      60,
+      83,
+      87,
+      91,
+      103,
+      106,
+      129,
+      130,
+      135,
+      138
+    ],
+    "original_docx_modified": false,
+    "historical_assets_rewritten": false
+  },
+  "validation": {
+    "character_count": 4,
+    "combination_count": 6,
+    "intro_seconds": 180,
+    "old_skills_retained": true,
+    "unity_runtime_tested": false,
+    "active_characters": 4,
+    "distinct_pairs": 6,
+    "old_skill_values_match": true,
+    "script_shots": 12,
+    "script_seconds": 180,
+    "F_rows": 20,
+    "checked_local_links": 356,
+    "broken_links": [],
+    "source_docx_unchanged": true,
+    "chat_attachment_sha256_matches": 9
+  }
+}
