@@ -1,0 +1,45 @@
+{
+  "version": "v01_20261120",
+  "current_page_count": 1,
+  "reference_count": 1,
+  "files": [
+    {
+      "file": "01_首关纸地图_关卡选择_UI整页_v01_20261120.png",
+      "role": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 3323698,
+      "sha256": "bba4f4dadb37a8eba2e45b6015a8bf264c04a2d1bff58e1b34da459bbabbc4db",
+      "source_copy_identical": true
+    },
+    {
+      "file": "参考/用户参考_桌面立体纸地图.png",
+      "role": "user_reference",
+      "width": 828,
+      "height": 462,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 753630,
+      "sha256": "f51909f886a1035fae6236aa3a0f367f1738a8d3a43b3ab7eddce30786232946",
+      "source_copy_identical": true
+    }
+  ],
+  "visual_review": [
+    "桌面展开长卷纸地图、全新宋风木构交子铺与街坊河桥",
+    "仅01开张第一单一个正式入口，背景无其他关卡编号或按钮",
+    "P1圆/P2菱形、双人180秒、选择搭档先进入选角",
+    "无实体人类、旧Boss、商城体力或伪造通关数据"
+  ],
+  "not_validated": [
+    "实际模型与场景布局",
+    "独立UI拆件与印章图标",
+    "Unity导航与双人输入",
+    "票面历史复原与正式六组合交子美术"
+  ],
+  "local_links_checked": 249,
+  "missing_local_links": []
+}
