@@ -1,0 +1,119 @@
+{
+  "version": "v04_20261120",
+  "current_pages": 5,
+  "archived_dark_drafts": 2,
+  "files": [
+    {
+      "file": "01_四角色总览_剪影显现_UI整页_v04_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2693856,
+      "sha256": "2560661a8affa9ebf14413f172fd8240a4aca4c22fef1bd3836a989a03e2fbcd",
+      "source_copy_identical": true
+    },
+    {
+      "file": "01_四角色总览_折屏_UI整页_v03_20261120.png",
+      "status": "superseded",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 3087507,
+      "sha256": "6615a06ec04f3d1d97f068c5c4092971298664c2c45665294fbfac2315cb97b8",
+      "source_copy_identical": true
+    },
+    {
+      "file": "02_泡泡详情_留白_UI整页_v03_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2572905,
+      "sha256": "00151808b41a3fc9a9930a4156ff295d72cc0c5ecc28008640414c1a5882f937",
+      "source_copy_identical": true
+    },
+    {
+      "file": "03_递蕉详情_留白_UI整页_v03_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2409158,
+      "sha256": "c19349cbbc67969c98f98cdee88084ea0f94418e2f7f5b35d7a040b89c6e3658",
+      "source_copy_identical": true
+    },
+    {
+      "file": "04_墨墩详情_留白_UI整页_v03_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2419536,
+      "sha256": "e155b6f65ee7bae078deb51834736681e5e8523f12de0e19e157b405de5d0942",
+      "source_copy_identical": true
+    },
+    {
+      "file": "05_烘栗详情_留白_UI整页_v03_20261120.png",
+      "status": "current",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2390002,
+      "sha256": "2ddf3da6069641223c1c7d396b1957566f658d84faa2d0fcc6215ee7a880d6ac",
+      "source_copy_identical": true
+    },
+    {
+      "file": "迭代/01_总览_暗色未采用_v02_20261120.png",
+      "status": "superseded",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2989125,
+      "sha256": "74788e9c1cc46962aeea7804f6784180a46fb1629d7a971047f892276006787d",
+      "source_copy_identical": true
+    },
+    {
+      "file": "迭代/02_泡泡_暗色未采用_v02_20261120.png",
+      "status": "superseded",
+      "width": 1672,
+      "height": 941,
+      "bit_depth": 8,
+      "color_type": 2,
+      "alpha": false,
+      "bytes": 2929768,
+      "sha256": "1494df8d187de8006ae1c4df2d898e0512ce7199f9d13d980822e589e912e43f",
+      "source_copy_identical": true
+    }
+  ],
+  "visual_review": [
+    "总览平面手绘角色位于各自折屏内；米白留白、青绿和赭色、细纸纹",
+    "总览泡泡/P1与墨墩/P2彩色显现，递蕉/烘栗单色剪影；未选不等于未解锁",
+    "总览每栏选择按钮已删除，右下入坊按钮保留禁用状态",
+    "底部水獭/熊猫章改简化轮廓与清晰阴刻，P1圆/P2菱形标记保留",
+    "四张详情维持v03，大角色、书法名、一句技能、印章剪影导航"
+  ],
+  "not_validated": [
+    "实际三维模型与运行渲染",
+    "拆分后的独立印章图标/按钮/纸卡",
+    "Unity选角与双人输入"
+  ],
+  "superseded_total": 3,
+  "local_links_checked": 263,
+  "missing_local_links": [],
+  "json_files_parsed": 4
+}
