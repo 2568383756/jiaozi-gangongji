@@ -1,0 +1,77 @@
+{
+  "version": "v01_20261121",
+  "date": "2026-11-21",
+  "user_instruction": "我找到了理想的参考风格，同步到我的项目文件和github上",
+  "status": "新优先参考；本次不制作新图",
+  "file_count": 4,
+  "files": [
+    {
+      "order": 1,
+      "file": "01_几何剪纸人物_暖赭配色_参考.png",
+      "source": "C:/Users/WANGJI~1/AppData/Local/Temp/codex-clipboard-cd42f691-2f0e-4809-94a3-22e4625855f1.png",
+      "source_type": "用户本轮提供的参考截图",
+      "bytes": 1135473,
+      "size": [
+        687,
+        1002
+      ],
+      "mode": "RGB",
+      "sha256": "9e9165adfe00d03e679da59750fdff2b067c2abc0f7f3e23ac61664255524286",
+      "source_sha256": "9e9165adfe00d03e679da59750fdff2b067c2abc0f7f3e23ac61664255524286",
+      "usage": "硬边折纸衣片、块面明暗、暖赭与深色对比、纸卡叠层",
+      "status": "用户选定的优先风格参考；不是本项目已制作角色或UI资产",
+      "processing": "原样复制，无裁切/重绘/压缩/抹除截图控件"
+    },
+    {
+      "order": 2,
+      "file": "02_几何剪纸人物_朱红青色_参考.png",
+      "source": "C:/Users/WANGJI~1/AppData/Local/Temp/codex-clipboard-0ae17bef-0475-4d1e-b35d-76762e9a9055.png",
+      "source_type": "用户本轮提供的参考截图",
+      "bytes": 1140823,
+      "size": [
+        689,
+        1008
+      ],
+      "mode": "RGB",
+      "sha256": "cb464c19d1c0cb4636e6070f3fb5fe107ae577056a47ef6ce0a97bc90c85ee8e",
+      "source_sha256": "cb464c19d1c0cb4636e6070f3fb5fe107ae577056a47ef6ce0a97bc90c85ee8e",
+      "usage": "朱红主体与青色点缀、动态剪影、宽窄色面组织",
+      "status": "用户选定的优先风格参考；不是本项目已制作角色或UI资产",
+      "processing": "原样复制，无裁切/重绘/压缩/抹除截图控件"
+    },
+    {
+      "order": 3,
+      "file": "03_几何剪纸动物_蓝紫配色_参考.png",
+      "source": "C:/Users/WANGJI~1/AppData/Local/Temp/codex-clipboard-6066f569-9d72-44c5-8083-c1965f8a1084.png",
+      "source_type": "用户本轮提供的参考截图",
+      "bytes": 1171310,
+      "size": [
+        696,
+        999
+      ],
+      "mode": "RGB",
+      "sha256": "1a126766523e097d4cf136713a64f365864c73faa26d57686d6a3d0be70647b7",
+      "source_sha256": "1a126766523e097d4cf136713a64f365864c73faa26d57686d6a3d0be70647b7",
+      "usage": "动物脸部几何归纳、折线尾部和肢体、蓝紫与橘色分离",
+      "status": "用户选定的优先风格参考；不是本项目已制作角色或UI资产",
+      "processing": "原样复制，无裁切/重绘/压缩/抹除截图控件"
+    },
+    {
+      "order": 4,
+      "file": "04_几何剪纸动物_棕绿配色_参考.png",
+      "source": "C:/Users/WANGJI~1/AppData/Local/Temp/codex-clipboard-dbb37d21-5c76-4743-804b-ab752e05d188.png",
+      "source_type": "用户本轮提供的参考截图",
+      "bytes": 1133072,
+      "size": [
+        693,
+        1008
+      ],
+      "mode": "RGB",
+      "sha256": "040cb5065e4a8a8effcd5178d66798e550267eb95467bbf3b81d50f8f63d6276",
+      "source_sha256": "040cb5065e4a8a8effcd5178d66798e550267eb95467bbf3b81d50f8f63d6276",
+      "usage": "圆方对比的动物轮廓、纸层错位、棕绿暖色组合",
+      "status": "用户选定的优先风格参考；不是本项目已制作角色或UI资产",
+      "processing": "原样复制，无裁切/重绘/压缩/抹除截图控件"
+    }
+  ]
+}
