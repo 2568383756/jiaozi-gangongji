@@ -1,0 +1,167 @@
+{
+  "version": "v01_20261121",
+  "status": "本轮用户未认可；已要求停止设计，仅归档与同步",
+  "count": 16,
+  "files": [
+    {
+      "path": "01_四灵长卷选角_剪影显现_v05_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2799752,
+      "sha256": "2d3a913dfcdf9470211205bbcdcdcb5c930ba82f634a830928a50ecdc58c905c"
+    },
+    {
+      "path": "02_印刷台册页选关_多节点星级_v06_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 3095874,
+      "sha256": "b487cc052b0b5328d6210391e2dbc5461d7a731aa4b7b986314a3a7628c7e88e"
+    },
+    {
+      "path": "02_印刷台册页选关_清爽顺序_v07_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2245628,
+      "sha256": "487f0c2be1a2fc3af307cd84d43c4a3c974aa6639760210cae1eb5e2281fa376"
+    },
+    {
+      "path": "02_印刷台册页选关_疏密层次_v08_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2257227,
+      "sha256": "eb6da56b37a8f56d7dcf657a93676b838de499078e07c6bd0eb5f2e5107229d2"
+    },
+    {
+      "path": "03_双页账册结算_原票头章_v02_20261121.png",
+      "size": [
+        1671,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2250348,
+      "sha256": "83b67467034f28dd75ee19f14afb6cc4565d5dffadd696c0e4de5e74ac725cbe"
+    },
+    {
+      "path": "参考/用户原资源_交子底票.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bytes": 2987342,
+      "sha256": "d41889d922080d17190fde7310494cb6eda06bbe30fb7e12cd31056fd0ac0909"
+    },
+    {
+      "path": "参考/用户参考_册页地图_c5b38b37.png",
+      "size": [
+        831,
+        483
+      ],
+      "mode": "RGB",
+      "bytes": 702310,
+      "sha256": "02ade08d74d4e0ef6026c2a633a9c00653ec02beadffdc3123e77103fe3ae6d8"
+    },
+    {
+      "path": "参考/用户参考_建筑_ca0f5491.png",
+      "size": [
+        723,
+        996
+      ],
+      "mode": "RGB",
+      "bytes": 1025414,
+      "sha256": "e0df28d8d6f62e15cd9ba27b0159fd67c99d0e32fde330162cf547fbc5a00b13"
+    },
+    {
+      "path": "参考/用户参考_结算_09e1926e.png",
+      "size": [
+        831,
+        462
+      ],
+      "mode": "RGB",
+      "bytes": 621792,
+      "sha256": "c783bb949c445e3d286febdbe80c3459cc81b54dd1dff0b0dcc8fd3b4d183594"
+    },
+    {
+      "path": "参考/用户参考_长卷_84a5dbec.png",
+      "size": [
+        909,
+        591
+      ],
+      "mode": "RGB",
+      "bytes": 874113,
+      "sha256": "58b74915d86494b059716f298a7d99208311d1a5a05f3a0a8617c44e74d3f9c1"
+    },
+    {
+      "path": "探索稿/01_多关卡纸地图_探索_v02_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 3288873,
+      "sha256": "efa7fa5910bbfb921e5316a853c9128d03f6b8a38a1654850beb0c158059fef4"
+    },
+    {
+      "path": "探索稿/02_折屏总览_探索_v05_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2544229,
+      "sha256": "6526aedbf8ba1fc0bff363e45d2cbfaa8cb08238b5ca7019867bf6a8ac3a9eaf"
+    },
+    {
+      "path": "探索稿/03_泡泡详情_探索_v05_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2599806,
+      "sha256": "901e33cb9edadb315f0c612db186a5e786967577fd2e42bab45bc2b5818db398"
+    },
+    {
+      "path": "探索稿/04_多节点地图_追加探索_v05_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 3319160,
+      "sha256": "f12bdf52f08ef30e53cb4b647af140d7b6049e652c188efc06021015cd23afdb"
+    },
+    {
+      "path": "探索稿/05_双页账册结算_横票合影未采用_v01_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 3178393,
+      "sha256": "849da387f278fae49d175f18d533d02b4b3e6cf8cdee4b77dc593615c5e90598"
+    },
+    {
+      "path": "探索稿/06_册页地图_雕版修正前_v06_20261121.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 3407720,
+      "sha256": "c6a2ad64c21332ebcc3e9a0c0de5245f50d1fd38406d66cb62cc74bf958f1bb0"
+    }
+  ]
+}
