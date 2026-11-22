@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "description": "配方仅含原始音轨文件信息、剪辑点与增益。自备对应录音用于本机审听。",
+  "cues": [
+    {
+      "id": "title",
+      "title": "采茶扑蝶",
+      "artist": "王中山",
+      "album": "孟姜女",
+      "source_file": "采茶扑蝶.mp3",
+      "source_sha256": "fecb46207ca4e814a7fa0de6a882a9ac3bd50c3a295282035de54438447f6b01",
+      "start_ms": 131145,
+      "end_ms": 177195,
+      "blend_ms": 200,
+      "gain_db": -6.3
+    },
+    {
+      "id": "select",
+      "title": "丟丟铜仔",
+      "artist": "中央民族乐团·丝竹徽音",
+      "album": "台湾情思-中国音乐家大系·合奏篇",
+      "source_file": "丟丟铜仔.mp3",
+      "source_sha256": "5cfc68092426faf50c07062c0357efbc53f7928810577b992b28e35811f1700b",
+      "start_ms": 88220,
+      "end_ms": 126095,
+      "blend_ms": 170,
+      "gain_db": -3.5
+    },
+    {
+      "id": "tutorial",
+      "title": "出水莲",
+      "artist": "郭红莲",
+      "album": "民乐经典古筝演绎Vol.1",
+      "source_file": "出水莲.mp3",
+      "source_sha256": "dad32687375d1489bee18c65732205170b5ef37d95b451e810179b491ce821a3",
+      "start_ms": 87545,
+      "end_ms": 134170,
+      "blend_ms": 240,
+      "gain_db": -1.5
+    },
+    {
+      "id": "workshop",
+      "title": "欢沁",
+      "artist": "蒋彦",
+      "album": "琵琶相",
+      "source_file": "欢沁.mp3",
+      "source_sha256": "601ca203734eb3bdcf8c6294e3edf139abc440bcc71f4cb87239bd9113522b47",
+      "start_ms": 64895,
+      "end_ms": 141095,
+      "blend_ms": 140,
+      "gain_db": -5.7
+    },
+    {
+      "id": "rush",
+      "title": "包楞调",
+      "artist": "王中山",
+      "album": "孟姜女",
+      "source_file": "包楞调.mp3",
+      "source_sha256": "cbed95c106d43667d4b5b65150c80840677dbd1d2da7007019239713e143b997",
+      "start_ms": 44670,
+      "end_ms": 80995,
+      "blend_ms": 120,
+      "gain_db": -3.0
+    },
+    {
+      "id": "pause",
+      "title": "茶花乐谷",
+      "artist": "巫娜",
+      "album": "空花梵行",
+      "source_file": "茶花乐谷.mp3",
+      "source_sha256": "cf8f57eb09808530f88195a9ff61285e075b2cbfe4496a6a13913d2fccf72b3e",
+      "start_ms": 31470,
+      "end_ms": 86070,
+      "blend_ms": 440,
+      "gain_db": -10.8
+    },
+    {
+      "id": "result",
+      "title": "凤阳花鼓",
+      "artist": "王中山",
+      "album": "孟姜女",
+      "source_file": "凤阳花鼓.mp3",
+      "source_sha256": "ec7f634073ad78de89cc65a0349ed8766716ac4b8987fdf9e1273bf5df3f357e",
+      "start_ms": 28195,
+      "end_ms": 57270,
+      "blend_ms": 190,
+      "gain_db": -5.9
+    },
+    {
+      "id": "reflect",
+      "title": "蕉窗夜雨",
+      "artist": "李炜（古筝演奏家）",
+      "album": "高山流水 古筝传说",
+      "source_file": "蕉窗夜雨.mp3",
+      "source_sha256": "4b7d247890b51f58b8254279639714d418108449ba2369cd1af4d9f0fbcc865f",
+      "start_ms": 81270,
+      "end_ms": 126970,
+      "blend_ms": 350,
+      "gain_db": -9.0
+    }
+  ]
+}
