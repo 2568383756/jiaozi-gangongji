@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen",
+  "latest_user_reference": true,
+  "spec": {
+    "name": "方形Logo_圆润参考",
+    "file": "01_交子赶工记_方形Logo_纸层_v02_20261122.png",
+    "transparent": true,
+    "refs": [
+      "C:/Users/WANGJI~1/AppData/Local/Temp/codex-clipboard-60e15779-1351-45a8-bd73-1561f5cd6a0b.png"
+    ],
+    "prompt": "Using this supplied logo as the latest specific shape reference, produce a polished standalone logo for exactly the same Chinese game title 交子赶工记. Preserve the reference's rounded friendly bold brush-letter shapes, two-row arrangement (交子 above, 赶工记 below), warm orange-vermilion text, creamy light outline, restrained golden-cream paper backing and muted teal outer silhouette. Preserve the small note and square-hole bronze coin at upper-left, small cream auspicious cloud on upper-right, tiny red square seal at right. All FIVE title characters complete, readable and spelled exactly 交子赶工记.\nIMPORTANT: the user prefers this rounded reference over the previously produced angular jagged logo. Do NOT turn letter ends into sharp polygons or cut zigzags into the character strokes. Do NOT use a dark brown backing mass. Retain the flowing typographic silhouette of THIS image. Reinterpret its layering as flat cut paper with short shallow offset shadows and clean smooth edges, not an inflated plastic badge or shiny extruded 3D letters. Cream and golden paper layers slightly thinner and quieter, contrast between title and backing strong, background removed entirely.\nOutput a true SQUARE 1:1 PNG canvas with transparent ALPHA background. Keep the logo's natural wide-to-tall shape centered within the square (do not stretch the wordmark to fill square, allow more transparent padding above/below than left/right). Leave at least 6% transparent margin around outer silhouette, nothing cropped. Only the logo mark visible, no cream canvas background, no opaque rectangle, no checkerboard artwork, no mockup. Color blocks clean, a little subtle paper tooth, no grain cloud, dirty cracks, texture noise, confetti or extra decorations. This must feel at home with a warm Chinese Song papermill paper-collage game. No characters/people/animals, no extra text, no English. Faithful to supplied logo geometry and warmth with cleaner restrained paper material."
+  }
+}

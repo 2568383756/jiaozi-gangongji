@@ -1,0 +1,446 @@
+{
+  "version": "v01_20261122",
+  "last_updated": "2026-11-22",
+  "current_files_count": 1,
+  "current_bytes": 2060617,
+  "historical_files_count": 7,
+  "historical_bytes": 10918889,
+  "reference_files_count": 7,
+  "reference_bytes": 6727468,
+  "all_png_count": 15,
+  "all_png_bytes": 19706974,
+  "files": [
+    {
+      "path": "03_游戏设置_红棕剪纸_UI整页_v01_20261122.png",
+      "group": "current",
+      "kind": "settings",
+      "version": "v01_20261122",
+      "status": "generated_static_draft_pending_user_review",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-5e5dedeb-40b4-46e9-829c-77ae2cd87d8c.png",
+      "source_sha256": "0ff05df400c44bd58b7f4fd7144240cef98f6405948458932272d02595a4bdc0",
+      "sha256": "0ff05df400c44bd58b7f4fd7144240cef98f6405948458932272d02595a4bdc0",
+      "source_copy_identical": true,
+      "bytes": 2060617,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    }
+  ],
+  "historical_files": [
+    {
+      "path": "迭代/01_方形Logo_硬折角初稿_v01_20261122.png",
+      "group": "historical",
+      "kind": "logo_hard_corners",
+      "version": "v01_20261122",
+      "status": "historical_iteration_not_current",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-06a4bf14-dc6b-4bb8-a5af-b9eacf207066.png",
+      "source_sha256": "2bce4bf572e9e8dc516b09f080491ff7d4961b0899c7c43eaa86ea6b60f93251",
+      "sha256": "2bce4bf572e9e8dc516b09f080491ff7d4961b0899c7c43eaa86ea6b60f93251",
+      "source_copy_identical": true,
+      "bytes": 1505424,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha": {
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 767596,
+        "opaque_pixels": 1188,
+        "partial_pixels": 803732,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_bbox": [
+          0,
+          19,
+          1248,
+          1254
+        ]
+      }
+    },
+    {
+      "path": "01_交子赶工记_方形Logo_纸层_v02_20261122.png",
+      "group": "historical",
+      "kind": "logo",
+      "version": "v02_20261122",
+      "status": "historical_iteration_user_requested_revision",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-a93e4468-717e-40e9-9570-1e24c2e2fd68.png",
+      "source_sha256": "674b0d757226772df7dca4764138feeca40ab6987db5440b3b50314497ec59b7",
+      "sha256": "674b0d757226772df7dca4764138feeca40ab6987db5440b3b50314497ec59b7",
+      "source_copy_identical": true,
+      "bytes": 1149924,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha": {
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 898506,
+        "opaque_pixels": 986,
+        "partial_pixels": 673024,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_bbox": [
+          0,
+          49,
+          1220,
+          1214
+        ]
+      },
+      "feedback": "用户反馈颜色太鲜艳、红色过多，主页须统一物体透视，Logo需优化；等待Logo v03／主页v02。"
+    },
+    {
+      "path": "02_交子铺台面_主页_UI整页_v01_20261122.png",
+      "group": "historical",
+      "kind": "homepage",
+      "version": "v01_20261122",
+      "status": "historical_iteration_user_requested_revision",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-9dc815aa-74ab-44e8-bddb-fc3da4717167.png",
+      "source_sha256": "29ed7c78793fee167db055161cbfe8b051a35d5bf3c7eb67d0e9faf4e189606d",
+      "sha256": "29ed7c78793fee167db055161cbfe8b051a35d5bf3c7eb67d0e9faf4e189606d",
+      "source_copy_identical": true,
+      "bytes": 2368914,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null,
+      "feedback": "用户反馈颜色太鲜艳、红色过多，主页须统一物体透视，Logo需优化；等待Logo v03／主页v02。"
+    },
+    {
+      "path": "01_交子赶工记_方形Logo_克制配色_v03_20261122.png",
+      "group": "historical",
+      "kind": "logo_restrained_color",
+      "version": "v03_20261122",
+      "status": "historical_iteration_pending_font_replacement",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-cd6204fd-257b-4ff6-855f-9272208a650c.png",
+      "source_sha256": "f509ab081721f46ae42e1f4867a7ef5d9426d066e023f356f8a5f0e5dd7b7d7f",
+      "sha256": "f509ab081721f46ae42e1f4867a7ef5d9426d066e023f356f8a5f0e5dd7b7d7f",
+      "source_copy_identical": true,
+      "bytes": 1134421,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha": {
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 976812,
+        "opaque_pixels": 1213,
+        "partial_pixels": 594491,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_bbox": [
+          0,
+          38,
+          1204,
+          1186
+        ]
+      }
+    },
+    {
+      "path": "01_交子赶工记_方形Logo_手写墨字_v04_20261122.png",
+      "group": "historical",
+      "kind": "logo_handwritten_v04",
+      "version": "v04_20261122",
+      "status": "user_selected_base_pending_rectangle_removal",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-6c218445-3394-4394-a796-015a7abe1240.png",
+      "source_sha256": "a9a6af83753f88e7eb16683b30bdf196d1f672a7393814d1c13610308716fe87",
+      "sha256": "a9a6af83753f88e7eb16683b30bdf196d1f672a7393814d1c13610308716fe87",
+      "source_copy_identical": true,
+      "bytes": 1120667,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha": {
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 963444,
+        "opaque_pixels": 748,
+        "partial_pixels": 608324,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_bbox": [
+          25,
+          25,
+          1240,
+          1254
+        ]
+      },
+      "latest_decision": "用户明确选回此v04作为v07唯一编辑基版，仅移除左上矩形纸片；铜钱及其他元素保留。此文件仍是修改前基版，不替代待生成v07。"
+    },
+    {
+      "path": "01_交子赶工记_Logo_纸边字形未通过_v05_20261122.png",
+      "group": "historical",
+      "kind": "logo_paper_edge_type_rejected",
+      "version": "v05_20261122",
+      "status": "historical_user_rejected_typography_not_final_asset",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-850d4585-ad00-401a-8bf6-a400fed624d2.png",
+      "source_sha256": "bedfa160d9d364e2798a3cce393bade4fb07cf95fe9d8d0fdc465879d6b96f12",
+      "sha256": "bedfa160d9d364e2798a3cce393bade4fb07cf95fe9d8d0fdc465879d6b96f12",
+      "source_copy_identical": true,
+      "bytes": 2291855,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "transparent_pixels": 723785,
+        "opaque_pixels": 0,
+        "partial_pixels": 849079,
+        "corners": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "nonzero_bbox": [
+          0,
+          8,
+          1516,
+          1024
+        ]
+      },
+      "square_canvas": false,
+      "production_specification_met": false,
+      "user_feedback": "字体还是好丑啊，优化",
+      "visual_note": "制作端反馈可见halo；此处仅文件与alpha测量，不声称已完成清边或合格透明Logo。"
+    },
+    {
+      "path": "01_交子赶工记_方形Logo_民艺手写_v06_20261122.png",
+      "group": "historical",
+      "kind": "logo_folk_handwriting",
+      "version": "v06_20261122",
+      "status": "historical_not_selected_user_returned_to_v04",
+      "source": "C:\\Users\\wangjingjing\\.codex\\generated_images\\01a1c539-6493-7f03-9df1-692042b462f4\\exec-1a9de784-15ce-4d47-bb06-c48aaa58c669.png",
+      "source_sha256": "04e30c8961022e0f182e5d6fdb5dbeaa4af1aba489a2dd7c01baf97b36ce596a",
+      "sha256": "04e30c8961022e0f182e5d6fdb5dbeaa4af1aba489a2dd7c01baf97b36ce596a",
+      "source_copy_identical": true,
+      "bytes": 1347684,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha": {
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 911461,
+        "opaque_pixels": 231,
+        "partial_pixels": 660824,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_bbox": [
+          0,
+          28,
+          1228,
+          1254
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "参考/01_用户主页台面构图参考.png",
+      "group": "reference",
+      "kind": "homepage_layout",
+      "version": "user_source",
+      "status": "user_reference_not_game_asset",
+      "source": "C:\\Users\\wangjingjing\\AppData\\Local\\Temp\\codex-clipboard-5c023459-7f9f-428f-91d8-1c289ff83488.png",
+      "source_sha256": "af94f3437a4aa9a9782313e4acffdd885f677fe7dd5727d345dc2e22f3d20ea9",
+      "sha256": "af94f3437a4aa9a9782313e4acffdd885f677fe7dd5727d345dc2e22f3d20ea9",
+      "source_copy_identical": true,
+      "bytes": 3396633,
+      "size": [
+        1974,
+        1098
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    },
+    {
+      "path": "参考/02_用户柜台空间参考.png",
+      "group": "reference",
+      "kind": "counter_space",
+      "version": "user_source",
+      "status": "user_reference_not_game_asset",
+      "source": "C:\\Users\\wangjingjing\\AppData\\Local\\Temp\\codex-clipboard-1603aeb4-c323-4468-8a68-bef61bb98797.png",
+      "source_sha256": "f00a5a979aec730b8e93e78289369539a8b6cc17f4645eac297cc40fc8c4bd5e",
+      "sha256": "f00a5a979aec730b8e93e78289369539a8b6cc17f4645eac297cc40fc8c4bd5e",
+      "source_copy_identical": true,
+      "bytes": 1196628,
+      "size": [
+        1115,
+        624
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    },
+    {
+      "path": "参考/03_用户最新Logo造型参考.png",
+      "group": "reference",
+      "kind": "rounded_logo",
+      "version": "user_source",
+      "status": "user_reference_not_game_asset",
+      "source": "C:\\Users\\wangjingjing\\AppData\\Local\\Temp\\codex-clipboard-60e15779-1351-45a8-bd73-1561f5cd6a0b.png",
+      "source_sha256": "8867810e9552ab4075e9bd5535461a6deff4021a027d56ffd9b101d29e491c21",
+      "sha256": "8867810e9552ab4075e9bd5535461a6deff4021a027d56ffd9b101d29e491c21",
+      "source_copy_identical": true,
+      "bytes": 1416294,
+      "size": [
+        1479,
+        846
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    },
+    {
+      "path": "参考/04_用户手写字标参考.png",
+      "group": "reference",
+      "kind": "handwritten_wordmark",
+      "version": "user_source",
+      "status": "user_reference_not_game_asset",
+      "source": "C:\\Users\\wangjingjing\\AppData\\Local\\Temp\\codex-clipboard-bbeb8803-2208-4b2b-a95a-b45a821d9ab3.png",
+      "source_sha256": "d2e7a6732f568ebeb05e53e2a342473ac524e9702ae498596784848e7829215e",
+      "sha256": "d2e7a6732f568ebeb05e53e2a342473ac524e9702ae498596784848e7829215e",
+      "source_copy_identical": true,
+      "bytes": 337945,
+      "size": [
+        621,
+        423
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    },
+    {
+      "path": "参考/05_用户手写与印章参考.png",
+      "group": "reference",
+      "kind": "handwriting_stamp_relation",
+      "version": "user_source",
+      "status": "user_reference_not_game_asset",
+      "source": "C:\\Users\\wangjingjing\\AppData\\Local\\Temp\\codex-clipboard-e10b8a9a-085c-4f7e-8af3-46cea3c0046c.png",
+      "source_sha256": "ff8f14288b3f4aca343881be879ebd76ff83c5d387ce927e7787b1b816ef2b69",
+      "sha256": "ff8f14288b3f4aca343881be879ebd76ff83c5d387ce927e7787b1b816ef2b69",
+      "source_copy_identical": true,
+      "bytes": 327518,
+      "size": [
+        585,
+        798
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    },
+    {
+      "path": "参考/06_用户交子与铜钱造型修正.png",
+      "group": "reference",
+      "kind": "jiaozi_coin_shape_correction",
+      "version": "user_source",
+      "status": "user_reference_not_game_asset",
+      "source": "C:\\Users\\wangjingjing\\AppData\\Local\\Temp\\codex-clipboard-9dc0c09e-c2b2-460b-a913-177d6d319f4b.png",
+      "source_sha256": "8d44c2f3ddb471d4053bf0d4d2889f36a3d211d195df33c017dbf490bee0adf0",
+      "sha256": "8d44c2f3ddb471d4053bf0d4d2889f36a3d211d195df33c017dbf490bee0adf0",
+      "source_copy_identical": true,
+      "bytes": 27376,
+      "size": [
+        150,
+        159
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    },
+    {
+      "path": "参考/07_用户移除矩形纸片.png",
+      "group": "reference",
+      "kind": "remove_rectangle_keep_coin",
+      "version": "user_source",
+      "status": "user_reference_not_game_asset",
+      "source": "C:\\Users\\wangjingjing\\AppData\\Local\\Temp\\codex-clipboard-64271571-4c3c-4e3d-b79d-cb41d3902d3c.png",
+      "source_sha256": "0fb444c0be4dc645d37ba609696b24e3e9377b62cd1c4a494c7cf6b8048ea57a",
+      "sha256": "0fb444c0be4dc645d37ba609696b24e3e9377b62cd1c4a494c7cf6b8048ea57a",
+      "source_copy_identical": true,
+      "bytes": 25074,
+      "size": [
+        131,
+        132
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha": null
+    }
+  ],
+  "visual_review": "制作端逐张目视检查；当前3稿仍待用户确认。归档端核对全部7份PNG真实规格、读取完整性和源／副本SHA-256，Logo检查真实alpha。",
+  "homepage_logo_note": "主页Logo为同方向生成的视觉复用，不是独立Logo的像素级合成。",
+  "settings_prop_note": "设置页木版为花纹装饰，不是正式游戏交子雕版模型或可交互资产。",
+  "continue_note": "主页继续为无有效存档时灰化的新档样例；读取有效已存进度后进选关，仍需双人选角；不恢复半局。",
+  "pending_current_files_count": 2,
+  "target_current_files_count": 3,
+  "target_historical_files_count": 7,
+  "revision_status": "用户选定v04基版，Logo v07仅去左上矩形纸片，保留铜钱；v05/v06竖票与新字形方向停止。主页v02仍未生成，待v07。设置v01当前待确认。入口和完整交接待稳定结果一次收尾。",
+  "latest_user_feedback": "选回v04，只去掉左上矩形纸片，铜钱保留。",
+  "revision_constraints": [
+    "v07唯一基版为exec-6c218445-3394-4394-a796-015a7abe1240.png（已归档手写墨字v04）。",
+    "只移除左上矩形纸片，铜钱保留；字体、纸边、祥云、印章与其他构图沿用用户选定基版。",
+    "不再执行v05/v06的竖交子纸票替换或进一步新字体设计。",
+    "主页v02待v07；暖木米白底、灰青辅助、红色克制及道具统一透视的主页要求保留。"
+  ],
+  "target_reference_files_count": 7
+}

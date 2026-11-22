@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen",
+  "user_feedback": "字体还是好丑，优化",
+  "spec": {
+    "name": "手写字体重绘v06",
+    "file": "01_交子赶工记_方形Logo_民艺手写_v06_20261122.png",
+    "transparent": true,
+    "refs": [
+      "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-6c218445-3394-4394-a796-015a7abe1240.png",
+      "C:/Users/WANGJI~1/AppData/Local/Temp/codex-clipboard-bbeb8803-2208-4b2b-a95a-b45a821d9ab3.png",
+      "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-850d4585-ad00-401a-8bf6-a400fed624d2.png"
+    ],
+    "prompt": "制作正方形 1:1 透明底游戏 Logo，画布宽高必须相等。图一仅作为方形画布和“交子／赶工记”两行布局；字形必须重新设计，不沿用它。图二是最重要的字体参考。图三仅提供已经修正的左上竖交子票与宣纸边缘，不使用图三的粗字、光晕或长方形画布。\n\n精确文字只有五个字：「交子赶工记」。上排交子，下排赶工记。请像一位民艺书店的手写招牌设计师，重新画这五个字，严格学习图二字体的质朴、灵动、略带稚拙，接近生活中自然手写的楷意，轻松亲切。最重要：每字的结构与留白，粗细反差，不是粗黑力量感。\n\n字形设计：\n- 主笔中等厚度，显著比图一/图三瘦，竖画较细且微微弯曲，短点饱满而不规则。宽窄不同、提按自然，横画略倾斜。\n- 字腔敞开、字距放松，墨块不能粘在一起；纸上看得见呼吸感。各字高低胖瘦有一点手写差异，不是五个统一字体轮廓。\n- “交”下部撇捺收短，没有巨大的横扫尾笔；“子”稍窄、弯钩轻巧，与“交”有宽窄节奏。\n- “赶”的走之底收紧，不伸入“工”字下面；中间“工”稍小，笔画较轻、上下横画之间留空；“记”稍高，右部紧凑，末笔不甩出巨大弯钩。\n- 深墨褐近黑的平印墨字，不加浮雕、描边或厚阴影。边缘仅少量自然渗墨。不能是武侠榜书、粗重行草、粗黑扫笔、长尖锋、夸张飞白，也不能是标准字库字体。实际请做出与图一截然不同的轻巧手写字形。\n- 五字字形完整，赶是走加干，记是言字旁加己，清楚易读。不要写入图二原品牌和其他字。\n\n保留一片暖米白的薄宣纸作为整体字标衬纸，外圈是自然剪贴纸边，少量细短纤维和轻微不规则，但不脏、不毛糙。纸很薄，边缘不画粗线、倒角、金边、侧墙或发光，不做厚泡沫/曲奇徽章。衬纸外轮廓随字标形成舒展完整形状，不给每一笔套胖轮廓。纸纹极轻、局部，文字周边清爽。\n\n左上按图三保留一张2:3竖式交子纸票（外框、顶端简化币纹、小竖“交子”、下方纸坊屋顶线和一小红印），不再画横卡片/信封；后面露出一枚正圆外缘、中央正方形开孔的古铜钱，几何正确且浅纸片拼贴。右侧一片小祥云、一个小朱印作为平衡，不再新增装饰。色彩为米白、墨褐、少量古铜和朱印，避免大面积红黄。\n\n透明交付要求：\nOutput exactly a SQUARE 1:1 PNG canvas, with genuine alpha transparency outside the paper logo. Keep all content centered with ample margin. NO external shadow, NO luminous halo, NO gradient vignette, NO smoky/fuzzy surrounding background, NO black/cream solid rectangle, NO checkerboard. Preserve paper fibers only immediately on the edge, not a broad glow. Thin-paper texture is inside the silhouette. This should be a clean usable transparent logo, not a photographed object or mockup."
+  }
+}

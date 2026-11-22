@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-22",
+  "status": "静态美术评审",
+  "logo": {
+    "output": "01_交子赶工记_方形Logo_铜钱靠字_v08_20261122.png",
+    "tool": "image_gen.imagegen",
+    "inputs": [
+      "迭代/01_去矩形纸片_v07_20261122.png",
+      "参考/08_用户铜钱移位标注.png"
+    ],
+    "prompt": "Make a clinically precise localized edit to the supplied image 1, using image 2 only as red-arrow placement instruction. The new coin CENTER must be at the red arrow tip, (x=297,y=560) in this 1254x1254 frame. This point is up in the blank ivory region on the LEFT of the character 交, not down at the top stroke of 赶. Original (220,446). Move ~77 pixels right and ~114 pixels down. Use SAME scale or slightly smaller coin of diameter ~115px so the bottom of the coin is y=617, entirely ABOVE the top of 赶 at y=628. Never occlude, shorten, move or simplify the 赶 top vertical stroke or the left-sweeping tail of 交. Preserve the ink pixels and the spaces between characters. After the edit there must be a narrow ivory gap between coin bottom and the FIRST BLACK upper stroke of 赶 below it, and between coin right and the side of 交 to its right. Slightly inset the bronze accent into the cream paper, facing the viewer, square hole. Remove coin from its old position and restore left outer paper edge and transparent space, no rectangle. Every other aspect identical to original including the exact hand-drawn typography, glyph strokes, their size, paper outer contour, right cloud and red seal, 2-row five-character lettering 交子 / 赶工记, transparent canvas. No marks or red arrow. Transparent precisely square output, same framing."
+  },
+  "counter": {
+    "output": "分层/主页柜台底图_v02_20261122.png",
+    "tool": "image_gen.imagegen",
+    "inputs": [
+      "02_交子铺台面_主页_UI整页_v01_20261122.png"
+    ],
+    "prompt": "Edit the supplied game HOME SCREEN in place into a polished landscape 16:9 final flat game UI background with the four complete Chinese menu tags but with the large logo temporarily lifted away for exact compositing later. Same centered front-facing camera, tabletop, countertop object groups, lanterns, cabinetry, Song dynasty paper bank setting. The center from x=31%-69%, y=8%-55% has unobstructed cream lattice window and two short subtle thin flax cord ends descending from the overhead beam to y=18%, x=43% and 57% behind the future sign. Remove the entire old central red text, colored paper outline, coin/cloud/board from there; do not paint a new plaque or title. The finished separate brand art is added to this opening in the layout engine. Do not add other text except the exact four menu tags. No human or animal. Bottom counter apron keeps exactly four attached tags, from left to right “开始营业” (main, subdued mineral oxide red and ivory text), “继续” (disabled, pale gray lettering), “图鉴”, “设置” (dark ink). Finely cut corners, shallow cream edges; no glows or heavy gold bezels. Preserve gesture and scale of prior layout. Red is now LIMITED to small seals, one ribbon and the main action. Ivory/flax drapery with grey-sage hems replacing red curtains, softly lit cream lanterns with thin bronze ribs, light honey walnut and warm taupe counter and beams, softly lit vellum windows, a small glimpse of muted sage mountains. Use intentional broad geometric pieces of cut paper and restrained short contact shadows, quiet paper texture and clear edges. Bright warm daylight with quiet value separation, no sepia filter. Props rest convincingly on ONE tabletop in matching perspective: neatly stacked foreshortened paper and small seal blocks at left, three bronze coins LYING FLAT with elliptical outlines and projected square holes, right a low shallow charcoal inkstone with brush resting across rim, cream open ruled ledger with single spine following the same ground plane, simple upright holder, a few paper rolls. Leave wide negative space center counter. Small shops in historic Chengdu, cozy tactile paper toy. Preserve entire 16:9 original page, particularly complete four bottom tags. No captions or watermark."
+  },
+  "home": {
+    "output": "02_交子铺台面_主页_配色透视修正_v02_20261122.png",
+    "layers": [
+      "分层/主页柜台底图_v02_20261122.png",
+      "01_交子赶工记_方形Logo_铜钱靠字_v08_20261122.png"
+    ],
+    "composition": "柜台底图原尺寸，字标 PNG 全图按 736×736 等比缩放，左上角 (468,-72)，以底图左上为原点，保留 Alpha，双三次采样。"
+  },
+  "files": [
+    {
+      "file": "02_交子铺台面_主页_配色透视修正_v02_20261122.png",
+      "width": 1672,
+      "height": 941,
+      "pixelFormat": "Format24bppRgb",
+      "cornerAlpha": 255,
+      "sha256": "d63753e75b670c73299f9ef241b3dfec6ffb93137f9b532f2911a8796645aa9d"
+    },
+    {
+      "file": "01_交子赶工记_方形Logo_铜钱靠字_v08_20261122.png",
+      "width": 1254,
+      "height": 1254,
+      "pixelFormat": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "sha256": "61e3946afbae1b8942fedc8bf42d092368a3c0bb53a6876614c11e4cb45a79e2"
+    },
+    {
+      "file": "分层/主页柜台底图_v02_20261122.png",
+      "width": 1672,
+      "height": 941,
+      "pixelFormat": "Format24bppRgb",
+      "cornerAlpha": 255,
+      "sha256": "dad88e336b11170b82df9ef9de6a71084f9b48bb666d70e9cda38c560c537655"
+    },
+    {
+      "file": "迭代/01_去矩形纸片_v07_20261122.png",
+      "width": 1254,
+      "height": 1254,
+      "pixelFormat": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "sha256": "4e84467a2898da6b40873528995e3b927fe1e82d680e2d26aa8b640f2355b8b6"
+    },
+    {
+      "file": "参考/08_用户铜钱移位标注.png",
+      "width": 1254,
+      "height": 1254,
+      "pixelFormat": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "sha256": "7fc605acba4f79b17bab7e21d6249eee0a579591aa83b2f06daa4577c676e429"
+    },
+    {
+      "file": "03_游戏设置_红棕剪纸_UI整页_v01_20261122.png",
+      "width": 1672,
+      "height": 941,
+      "pixelFormat": "Format24bppRgb",
+      "cornerAlpha": 255,
+      "sha256": "0ff05df400c44bd58b7f4fd7144240cef98f6405948458932272d02595a4bdc0"
+    }
+  ]
+}

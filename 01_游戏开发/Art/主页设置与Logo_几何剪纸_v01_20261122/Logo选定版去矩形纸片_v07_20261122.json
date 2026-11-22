@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen",
+  "user_selected_base": "exec-6c218445-3394-4394-a796-015a7abe1240.png",
+  "spec": {
+    "name": "用户选定v04去矩形纸片v07",
+    "file": "01_交子赶工记_方形Logo_去矩形纸片_v07_20261122.png",
+    "transparent": true,
+    "refs": [
+      "C:/Users/wangjingjing/.codex/generated_images/01a1c539-6493-7f03-9df1-692042b462f4/exec-6c218445-3394-4394-a796-015a7abe1240.png",
+      "C:/Users/WANGJI~1/AppData/Local/Temp/codex-clipboard-64271571-4c3c-4e3d-b79d-cb41d3902d3c.png"
+    ],
+    "prompt": "Very precise minimal edit of IMAGE1. The user has explicitly CHOSEN THIS VERSION and says 还是用这版，去除边边这个矩形. IMAGE2 is a zoom of the unwanted object.\nREMOVE ONLY the small light-cream RECTANGULAR CARD/PAPER NOTE at the UPPER LEFT, including its two thin rectangular frame lines and its blank filled square in the center. Completely remove that rectangular object; do NOT replace it with another vertical note or shape.\nKEEP the bronze round square-hole COIN that sits behind it, same original size, position, material and orientation. Where the removed card had hidden part of the coin, naturally restore its missing circular lower edge so the coin is complete. Cleanly restore the base ivory paper silhouette or transparent background that belongs behind the removed rectangle; no erasure stain or new ornament.\nEverything else EXACTLY matches image1: the existing bold handwritten dark-ink 交子 / 赶工记 letterforms, stroke shapes and spacing, two-row composition, original warm ivory shaped paper backing and its thin beige edge, right little cloud and cinnabar seal. DO NOT redesign the font, thin it, use a different earlier/later logo, change palette, change edge texture, add fibres, add shadow, move any other motif, or resize the whole logo. This is simply this selected logo with that ONE rectangular card removed, coin retained.\nRetain same square 1:1 canvas and original transparent padding. True alpha background outside the logo. No glow, haze, solid background, checkerboard or extra content. Preserve sharp and clean existing artwork."
+  }
+}
