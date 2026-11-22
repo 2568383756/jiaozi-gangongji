@@ -1,0 +1,33 @@
+{
+  "version": "v03_20261122",
+  "task": "F01",
+  "status": "静态评审",
+  "source": "分层/主页柜台底图_v02_20261122.png",
+  "tool": "image_gen.imagegen",
+  "prompt": "Production retouch of the provided exact landscape Chinese paper cutout game MAIN MENU background. Keep the same page camera, 16:9 crop, color palette, old paper shop, broad shapes, warm morning, original cream lanterns, flax drapes, shelves, window, four button positions/labels and disabled second button. Revise only the actual drawing defects below. This should remain recognizable as the same composition; the tabletop objects should be small, legible and designed (a game artist's paper-cut collage), and not chunky. No title/logo, no blank plaque, no people.\n\n1. Remove the TWO short loose floating rope ends in front of the large center lattice window. Restore the pristine uninterrupted beam and continuous window grid behind. This is the separately reusable background; title and supports are in a separate layer later. Maintain precisely registered straight horizontal muntins.\n2. The right brush currently points upward in midair and visually fuses into the shelf behind it. Redraw a fine traditional bamboo brush RESTING ALMOST HORIZONTALLY, shallow diagonal, entirely below the window sill and entirely in the tabletop area. Add a little low pale sage ceramic mountain-shaped brush rest resting ON the countertop just back/right of the existing low dark inkstone to cradle the SHAFT in a visible notch. The tip projects LEFT over the stone and touches the dark ink pool inside, not pointing at outer stone rim. The ferrule and black bristles on the same axis. The handle extends RIGHT just past its support, not into the book. Make the inkstone shallow with dark liquid continuous elliptical hollow (clear inner rim) and a contact shadow. The silhouette of brush, rest, stone, and support must be unambiguous.\n3. The open book to its right has a weird BEIGE semi-circular tab blending into the front edge and an unclear spine. Remove that mysterious protrusion entirely. Draw only two coherent cream recto/verso page blocks connected at a visible midline fold, with thin sage cloth cover below. Book lies flat on the shared tabletop; both halves have clean squared fore-edges and visible subtle thickness. Fine pale rust account ruling cut off inside page margins, perspective follows each half and central crease. Do not place any pen or object on the ledger. Leave slim visible tabletop between inkstone group, book and paper holder.\n4. Left of center: replace the two large stacked red cubes with ONE small usable upright cinnabar square seal with a simple short grip and ONE thin warm brown flat rectangular printing woodblock lying on the counter alongside it, face upwards with shallow relief, two distinct silhouettes and small contact shadows. Preserve stack of ivory paper on the far left. Three loose square-hole bronze coins at their side: do not stand them on edge; thin flattened ellipses in the same horizontal table plane with a foreshortened square hole showing table/shadow. Avoid merged edges or irregular thick cookie shapes.\n5. Four exact Chinese menu signs on the counter front remain crisp “开始营业”, “继续”, “图鉴”, “设置”, with no new labels. Keep the first oxide red, the second faded as intended; the two others dark ink. Keep original clean underlying geometric art and prop proportions; preserve negative space in the middle of counter and window.\nDeliver the FULL CLEAN BACKGROUND, native widescreen, no overlays, captions, annotations, watermarks, outside border or text elsewhere.",
+  "layers": [
+    "分层/主页柜台底图_道具修正_v03_20261122.png",
+    "两根细吊绳从横梁背后连接字标，x=702、969，y=61 至 158。",
+    "01_交子赶工记_方形Logo_铜钱靠字_v08_20261122.png"
+  ],
+  "logoRectangle": {
+    "x": 468,
+    "y": -72,
+    "width": 736,
+    "height": 736
+  },
+  "files": [
+    {
+      "file": "02_交子铺台面_主页_道具修正_v03_20261122.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2be58082700225f0cb3e2fb10fbf22743279870714ded8540ab3e11510f0c88b"
+    },
+    {
+      "file": "分层/主页柜台底图_道具修正_v03_20261122.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "877a3986cac39abaddb45205ba4105bf982e5a8365da0759a0456c95bac91cde"
+    }
+  ]
+}
