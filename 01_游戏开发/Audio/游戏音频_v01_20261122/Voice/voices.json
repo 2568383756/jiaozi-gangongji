@@ -1,0 +1,66 @@
+[
+  {
+    "id": "vo_paopao_ready",
+    "name": "泡泡",
+    "text": "帘子给我，我来抄纸！",
+    "trigger": "确认泡泡",
+    "file": "vo_paopao_ready.wav",
+    "speaker": "saturn_zh_female_tiaopigongzhu_tob"
+  },
+  {
+    "id": "vo_dijiao_ready",
+    "name": "递蕉",
+    "text": "接好喽！我给你递过去。",
+    "trigger": "确认递蕉",
+    "file": "vo_dijiao_ready.wav",
+    "speaker": "saturn_zh_male_shuanglangshaonian_tob"
+  },
+  {
+    "id": "vo_modun_ready",
+    "name": "墨墩",
+    "text": "墨磨好了，把纸铺平吧。",
+    "trigger": "确认墨墩",
+    "file": "vo_modun_ready.wav",
+    "speaker": "saturn_zh_female_keainvsheng_tob"
+  },
+  {
+    "id": "vo_hongli_ready",
+    "name": "烘栗",
+    "text": "湿纸挂这儿，我来扇！",
+    "trigger": "确认烘栗",
+    "file": "vo_hongli_ready.wav",
+    "speaker": "saturn_zh_male_tiancaitongzhuo_tob"
+  },
+  {
+    "id": "vo_tutorial",
+    "name": "旁白",
+    "text": "先把帘子沉进纸浆，再慢慢提起来。",
+    "trigger": "教学首次来到抄纸槽",
+    "file": "vo_tutorial.wav",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  {
+    "id": "vo_open",
+    "name": "旁白",
+    "text": "开张啦！第一单来了。",
+    "trigger": "正式回合开始",
+    "file": "vo_open.wav",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  {
+    "id": "vo_rush",
+    "name": "旁白",
+    "text": "还剩半分钟！",
+    "trigger": "正式回合首次跨过三十秒",
+    "file": "vo_rush.wav",
+    "speaker": "zh_female_vv_uranus_bigtts"
+  },
+  {
+    "id": "vo_first_delivery",
+    "name": "财神",
+    "text": "这张交子，收好啦！",
+    "trigger": "首张正式交子交付",
+    "file": "vo_first_delivery.wav",
+    "speaker": "zh_male_dayi_uranus_bigtts"
+  }
+]
