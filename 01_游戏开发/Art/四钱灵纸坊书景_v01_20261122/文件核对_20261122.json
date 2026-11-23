@@ -1,0 +1,68 @@
+{
+  "current": "四钱灵纸坊_硬折面_v04.png",
+  "assets": [
+    {
+      "path": "迭代/四钱灵纸坊_悬浮托板_v01.png",
+      "source": "exec-3b4f0c48-8585-48c8-bec5-9eb94b31a401.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "bytes": 2827988,
+      "sha256": "ce273553502ed83e5b7358a58317d8e8ecbf83ce5b8972511a5a906f4d839ac1"
+    },
+    {
+      "path": "迭代/四钱灵纸坊_尖屋脊_v02.png",
+      "source": "exec-e75c2033-d0d5-46f7-9e05-57a3af26c132.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "bytes": 2576619,
+      "sha256": "6649daa77883260df43d5b9e1cf58242c2d1be3a78c3f783b85d1afcfcec33c5"
+    },
+    {
+      "path": "迭代/四钱灵纸坊_横屋脊_v03.png",
+      "source": "exec-e2011dbf-f559-4614-9f15-cb368035d184.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "bytes": 2393859,
+      "sha256": "043ed94b01ea24b3d9477d5edaf08508f224478fb6c23590b16bf20df9790dba"
+    },
+    {
+      "path": "四钱灵纸坊_硬折面_v04.png",
+      "source": "exec-08863c73-5fbe-44ea-8fa0-cfaa2783bea4.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "bytes": 2479006,
+      "sha256": "f59695071f9f7306afb0d23c549ab1207b43a85100eca4f1e69db0b3a509dadb"
+    },
+    {
+      "path": "参考/01_用户四钱灵纸坊构图.png",
+      "source": "codex-clipboard-1dec0e4f-2d9a-4063-89ed-f90df1ead1fc.png",
+      "width": 717,
+      "height": 393,
+      "mode": "RGB",
+      "bytes": 558139,
+      "sha256": "8928fb7f2aaa5edbc306b9aa53983f6fb1a4d4c4c646cd217b5bac3b2bafb2b2"
+    },
+    {
+      "path": "参考/02_用户纸书层叠参考.png",
+      "source": "codex-clipboard-846c2220-7a63-4df8-92f1-561eb2444bad.png",
+      "width": 819,
+      "height": 564,
+      "mode": "RGB",
+      "bytes": 669361,
+      "sha256": "792ed5cfa051891bbcf5c46995f190a768a1acb7cfccb8d4eaf646d528572125"
+    },
+    {
+      "path": "参考/03_用户托板问题局部.png",
+      "source": "codex-clipboard-1232af21-dd4a-4200-a4e7-bd895ff7ce55.png",
+      "width": 267,
+      "height": 168,
+      "mode": "RGB",
+      "bytes": 95178,
+      "sha256": "4fc7b411b96d8b2746bf87c9e65153f600ad75d171e9cd8caf46e40c7cf94400"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>益州纸盘 · 选择关卡</title>
+<style>
+:root{
+  --ink:#442e27;
+  --cinnabar:#a74331;
+  --pale:#f7ebd1;
+  --edge:#ad936f;
+  --cut:polygon(0 8px,8px 0,calc(100% - 12px) 0,100% 11px,100% calc(100% - 6px),calc(100% - 6px) 100%,5px 100%,0 calc(100% - 7px));
+}
+*{box-sizing:border-box}
+html,body{height:100%;width:100%;overflow:hidden;margin:0;background:#3c2c24}
+body{display:flex;align-items:center;justify-content:center;color:var(--ink)}
+#mount{position:relative;flex:none}
+.stage{position:relative;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;background:#412b23;font-family:KaiTi,STKaiti,SimSun,serif}
+.terrain{position:absolute;inset:0;width:1920px;height:1080px}
+.top,.current,.cta,.node{position:absolute}
+.top,.current,.cta,.node{filter:drop-shadow(1px 4px 2px #33201455)}
+.paper{background:linear-gradient(110deg,#fff3d9,#f1dfba);clip-path:var(--cut);box-shadow:inset 0 -4px #c9ad80}
+.top{left:54px;top:42px;display:flex;gap:12px;align-items:center}
+.back{display:flex;gap:8px;align-items:center;justify-content:center;padding:0 16px;height:60px;background:linear-gradient(122deg,#77664d,#554838);clip-path:var(--cut);color:#fff1d6;font:700 26px/1 KaiTi,STKaiti,SimSun,serif}
+.back,.cta{cursor:pointer;text-decoration:none}
+.back:hover,.cta:hover{filter:brightness(1.08) drop-shadow(1px 4px 2px #33201455)}
+.back:focus-visible,.cta:focus-visible .paper{outline:none;box-shadow:inset 0 0 0 4px #ffdb82}
+.back svg{width:31px;height:25px}
+.top h1{margin:0;position:relative;font-size:49px;letter-spacing:7px;line-height:83px;padding:0 13px 3px 23px;font-weight:700;color:#462b1f}
+.top h1:before{content:"";position:absolute;top:17px;bottom:17px;left:9px;border-left:2px solid #ae8c64}
+.node{transform:translate(-50%,-50%);min-width:132px}
+.nameplate{position:relative;display:flex;align-items:center;justify-content:center;min-height:45px;min-width:139px;padding:3px 12px 4px 8px;gap:9px;background:linear-gradient(113deg,#fff4db,#eedeae);clip-path:polygon(0 7px,9px 0,calc(100% - 7px) 0,100% 8px,100% calc(100% - 6px),calc(100% - 7px) 100%,6px 100%,0 calc(100% - 6px));box-shadow:inset 0 -3px #c4a675}
+.nameplate strong{font:700 29px/1.2 KaiTi,STKaiti,SimSun,serif;letter-spacing:2px;white-space:nowrap}
+.n{font:700 23px/1 Bahnschrift,"Microsoft YaHei",sans-serif;color:#7e664c;border-right:1px solid #b89e79;padding:0 8px 0 1px}
+.stars{margin:0 auto;width:97px;height:26px;display:flex;gap:5px;align-items:center;justify-content:center;background:#f8eaca;clip-path:polygon(0 0,100% 0,95% 100%,5% 100%);box-shadow:inset 0 -2px #bd9e6e}
+.star{width:20px;height:20px;fill:#fff0cb;stroke:#917c58;stroke-width:1.5}
+.star.filled{fill:#cf993e;stroke:#8a662c}
+.node.selected .nameplate{background:linear-gradient(110deg,#476c65,#345751);color:#fff2d2;box-shadow:inset 0 -3px #35483d}
+.node.selected .n{color:#f3d396;border-color:#d19c70}
+.node.selected:before{content:"";position:absolute;left:-11px;top:14px;width:16px;height:16px;transform:rotate(45deg);border:2px solid #fae6c1;background:#c49c58}
+.current{left:58px;bottom:40px}
+.current>.paper{min-width:350px;padding:12px 30px 14px 22px;display:flex;align-items:center;gap:18px}
+.current .seal{color:#f1deb6;background:#786347;display:grid;align-content:center;padding:6px 8px;line-height:1.05;font-size:19px;letter-spacing:1px;text-align:center}
+.detail .num{font:700 38px/1 Bahnschrift,"Microsoft YaHei",sans-serif;color:#94613c}
+.detail strong{font-size:38px;letter-spacing:3px;margin-left:14px;color:#4c3023}
+.cta{right:54px;bottom:40px}
+.cta .paper{position:relative;background:linear-gradient(105deg,#aa4b34,#8e3a2a);color:#fff0d0;display:flex;align-items:center;gap:22px;min-height:76px;padding:0 28px;box-shadow:inset 0 -5px #753323;font-weight:700;font-size:36px;letter-spacing:2px}
+.cta .paper:before{content:"";position:absolute;top:9px;left:10px;width:11px;height:11px;border-left:2px solid #dcb585;border-top:2px solid #dcb585}
+.cta svg{width:30px;height:18px;fill:none;stroke:#f2d6a2;stroke-width:3}
+</style>
+<div id="mount"><main class="stage">
+  <canvas class="terrain" id="terrain" width="1920" height="1080" aria-label="益州桌面纸艺地图"></canvas>
+  <header class="top"><a id="back" class="back" href="../主页设置与Logo_几何剪纸_v01_20261122/02_交子铺台面_主页_道具修正_v03_20261122.png" aria-label="返回交子铺主页"><svg aria-hidden="true" viewBox="0 0 34 26"><path fill="none" stroke="#fff0d4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M13 4 4 13l9 9M5 13h24"/></svg>返回</a><h1 class="paper">选择关卡</h1></header>
+  <div id="nodes"></div>
+  <div class="current"><div class="paper"><span class="seal">当前<br>关卡</span><div class="detail"><span class="num" id="currentNo"></span><strong id="currentTitle"></strong></div></div></div>
+  <a class="cta" href="../几何剪纸角色与UI_v01_20261121/界面整页/05_双人长卷选角_几何剪纸_v01_20261121.png" aria-label="选择搭档，打开双人选角画面"><span class="paper"><span id="cta"></span><svg aria-hidden="true" viewBox="0 0 32 18"><path d="M1 9h27m-9-7 9 7-9 7"/></svg></span></a>
+</main></div>
+<script>
+// 坐标单位为 1920 × 1080 画布像素，定位点是纸签整体中心。stars 仅展示历史星级。
+const mapLayout={
+  selected:"01",
+  currentTitle:"开张第一单",
+  action:"选择搭档",
+  nodes:[
+    {id:"01",name:"铜钱",stars:3,x:391,y:814},
+    {id:"02",name:"纸张",stars:2,x:617,y:602},
+    {id:"03",name:"交子",stars:1,x:1120,y:596},
+    {id:"04",name:"交子铺",stars:0,x:1522,y:815}
+  ]
+};
+// 纸盘等比居中。上下边距只延展窗框与桌沿，四个立景和纸盘边框均完整保留。
+const sourceImage=new Image();
+sourceImage.addEventListener("load",()=>{
+  const canvas=document.getElementById("terrain");
+  const ctx=canvas.getContext("2d");
+  const sw=sourceImage.naturalWidth,sh=sourceImage.naturalHeight;
+  const scale=Math.min(1920/sw,1080/sh);
+  const w=sw*scale,h=sh*scale,x=(1920-w)/2,y=(1080-h)/2;
+  ctx.save();ctx.translate(0,y);ctx.scale(1,-1);
+  ctx.drawImage(sourceImage,0,0,sw,24,x,0,w,Math.max(1,y+1));ctx.restore();
+  ctx.save();ctx.translate(0,y+h);ctx.scale(1,-1);
+  ctx.drawImage(sourceImage,0,sh-28,sw,28,x,-y-1,w,Math.max(1,y+1));ctx.restore();
+  ctx.drawImage(sourceImage,x,y,w,h);
+});
+sourceImage.src="分层/益州纸盘_首页配色底图_v04.png";
+const svgNS="http://www.w3.org/2000/svg";
+function create(tag,className,text){
+  const element=document.createElement(tag);
+  if(className)element.className=className;
+  if(text!==undefined)element.textContent=text;
+  return element;
+}
+function makeStar(filled){
+  const svg=document.createElementNS(svgNS,"svg");
+  const path=document.createElementNS(svgNS,"path");
+  svg.setAttribute("viewBox","0 0 24 24");
+  svg.setAttribute("class",filled?"star filled":"star");
+  svg.setAttribute("aria-hidden","true");
+  path.setAttribute("d","m12 2.3 2.92 6.1 6.75 1-4.88 4.72 1.18 6.7L12 17.6l-5.97 3.22 1.18-6.7-4.88-4.72 6.75-1Z");
+  svg.appendChild(path);return svg;
+}
+for(const item of mapLayout.nodes){
+  const node=create("div",item.id===mapLayout.selected?"node selected":"node");
+  node.style.left=item.x+"px";node.style.top=item.y+"px";
+  const name=create("div","nameplate");
+  name.append(create("span","n",item.id),create("strong",null,item.name));
+  const stars=create("div","stars");
+  stars.setAttribute("aria-label","历史成绩 "+item.stars+" 星");
+  for(let n=0;n<3;n++)stars.append(makeStar(n<item.stars));
+  node.append(name,stars);document.getElementById("nodes").append(node);
+}
+document.getElementById("currentNo").textContent=mapLayout.selected;
+document.getElementById("currentTitle").textContent=mapLayout.currentTitle;
+document.getElementById("cta").textContent=mapLayout.action;
+function fit(){
+  const scale=Math.min(innerWidth/1920,innerHeight/1080);
+  const mount=document.getElementById("mount");
+  mount.style.width=(1920*scale)+"px";mount.style.height=(1080*scale)+"px";
+  mount.firstElementChild.style.transform="scale("+scale+")";
+}
+addEventListener("keydown",event=>{
+  if(event.key==="Escape"&&!event.repeat){event.preventDefault();document.getElementById("back").click()}
+});
+addEventListener("resize",fit);fit();
+</script></html>

@@ -1,0 +1,154 @@
+{
+  "version": "v02_20261122",
+  "status": "当前静态评审",
+  "hash_algorithm": "SHA-256",
+  "png_count": 18,
+  "current_pages": 6,
+  "current_states": 7,
+  "files": [
+    {
+      "path": "01_开张教学_v02.png",
+      "group": "当前主界面",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2736292,
+      "sha256": "781ca75395fbbba75f00b836bc31f8417617a48f6e2d4bad82953ebbe39f3865"
+    },
+    {
+      "path": "02_局内合作HUD_v01.png",
+      "group": "旧稿",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2796672,
+      "sha256": "96469c3d1883ee7aa2e863cc0905963cd9c0611415dd24ec602711952d534ac8"
+    },
+    {
+      "path": "02_局内合作HUD_v02.png",
+      "group": "当前主界面",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2824999,
+      "sha256": "7cf56a108eac550c2cf0162116a2b3964ee2c523e4d43a349866fe2251428710"
+    },
+    {
+      "path": "03_暂停菜单_v02.png",
+      "group": "当前主界面",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2281373,
+      "sha256": "fd1f36eb8d6552c10a2da17185adfed847ea6b48aacd5ae30e3421e13075d9ca"
+    },
+    {
+      "path": "04_组合交子图鉴_v01.png",
+      "group": "旧稿",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2153300,
+      "sha256": "1928cbc46dbbaf21f1f0957491b1692b8b4ef402e9d6f1e07dc508e073f8bf40"
+    },
+    {
+      "path": "04_组合交子图鉴_v02.png",
+      "group": "当前主界面",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2630548,
+      "sha256": "a8d07ee952f15fbc62d51689ab951a85021a4489923dc44378ecbc4b7d2c6e3a"
+    },
+    {
+      "path": "05_组合交子详情_v01.png",
+      "group": "旧稿",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2561035,
+      "sha256": "c461b0a4d19b02cce184ff7fa5a839ed6a52f370a0ab9e468fe2e9e1f2a329cc"
+    },
+    {
+      "path": "05_组合交子详情_v02.png",
+      "group": "当前主界面",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2622419,
+      "sha256": "c1e4a4d9f99fbd50c2c38faaaeecd10231e579cd88234b02aac20faa8f786005"
+    },
+    {
+      "path": "06_双人操作说明_v01.png",
+      "group": "旧稿",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1774238,
+      "sha256": "b2683624672322155d6f201ad604cae52780fc3db79c12ff91464ccd5601d865"
+    },
+    {
+      "path": "06_双人操作说明_v02.png",
+      "group": "当前主界面",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1831331,
+      "sha256": "858c439aa52adf11555d400d835da77e1c369bf9651e971544b8f71f25d8cd9c"
+    },
+    {
+      "path": "分层/首关场景底图_v01.png",
+      "group": "分层素材",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2723694,
+      "sha256": "0dde0d308af0078ed551f64ad0f53b0de0dcfac6e7795170739e7bf7cd4797ed"
+    },
+    {
+      "path": "状态/教学提示/01_抄纸_v02.png",
+      "group": "当前状态图",
+      "width": 1520,
+      "height": 200,
+      "bytes": 242279,
+      "sha256": "8ead2db968e3c66b117d041128985e72c2141c63f76f1001c145e7ae1b87eb9e"
+    },
+    {
+      "path": "状态/教学提示/02_晾干_v02.png",
+      "group": "当前状态图",
+      "width": 1520,
+      "height": 200,
+      "bytes": 239540,
+      "sha256": "98f74073edb9c2695647c4d2d80dbba394b29d7d3264dd2afeff536b64cb827c"
+    },
+    {
+      "path": "状态/教学提示/03_印刷_v02.png",
+      "group": "当前状态图",
+      "width": 1520,
+      "height": 200,
+      "bytes": 240616,
+      "sha256": "d992654a2435fdc308fce3747707d17135e6292e9de0977d7537373fda2f07f2"
+    },
+    {
+      "path": "状态/教学提示/04_盖印_v02.png",
+      "group": "当前状态图",
+      "width": 1520,
+      "height": 200,
+      "bytes": 239888,
+      "sha256": "a4f68899b588eb65cf2b76c01372d591d9646e4ca01b591a26ad1663e3b426de"
+    },
+    {
+      "path": "状态/教学提示/05_交付_v02.png",
+      "group": "当前状态图",
+      "width": 1520,
+      "height": 200,
+      "bytes": 240177,
+      "sha256": "6cba5767b7a84878df77b8be497fde50504ab5af08e69e553a290514a80cc983"
+    },
+    {
+      "path": "状态/暂停_离开作坊确认_v02.png",
+      "group": "当前状态图",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2293600,
+      "sha256": "01779efd21dee49ffaedba5546e0f6312d6728525c8b49f4bea03626cb5b2c49"
+    },
+    {
+      "path": "状态/暂停_重新开局确认_v02.png",
+      "group": "当前状态图",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2293525,
+      "sha256": "a71ad878ed42538de5e0f5a3f4f936642d211299a8d480dbc37a4f55904eade4"
+    }
+  ]
+}
